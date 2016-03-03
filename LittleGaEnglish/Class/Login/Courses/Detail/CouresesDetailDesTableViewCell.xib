@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="131" id="KGk-i7-Jjw" customClass="CouresesDetailDesTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="322" height="131"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="322" height="130.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iib-jr-nCy">
+                        <rect key="frame" x="8" y="52" width="304" height="1"/>
+                        <color key="backgroundColor" red="0.020106096033370453" green="0.027163461538461497" blue="0.021922417542570329" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="2WP-pt-T3B"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="课程介绍" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="68" translatesAutoresizingMaskIntoConstraints="NO" id="g5K-su-K4B">
+                        <rect key="frame" x="8" y="18" width="68" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="08z-ed-cWz"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="课程介绍详情" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y60-Gx-bPt">
+                        <rect key="frame" x="8" y="69" width="306" height="53.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Y60-Gx-bPt" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" id="6lX-4A-ztT"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Y60-Gx-bPt" secondAttribute="trailing" id="7Wu-RT-X0f"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="iib-jr-nCy" secondAttribute="trailing" id="7zc-gj-Xk5"/>
+                    <constraint firstItem="Y60-Gx-bPt" firstAttribute="top" secondItem="iib-jr-nCy" secondAttribute="bottom" constant="16" id="SQ2-YS-bHM"/>
+                    <constraint firstItem="g5K-su-K4B" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="W5O-5g-QWh"/>
+                    <constraint firstItem="iib-jr-nCy" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="eFp-Qm-VgY"/>
+                    <constraint firstItem="Y60-Gx-bPt" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="tYN-hv-Jrk"/>
+                    <constraint firstItem="g5K-su-K4B" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="10" id="uZe-Sa-Kmn"/>
+                    <constraint firstItem="iib-jr-nCy" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="44" id="zth-v5-ezZ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="desLab" destination="Y60-Gx-bPt" id="Nkt-Xe-sjU"/>
+                <outlet property="nameLab" destination="g5K-su-K4B" id="TU2-Zc-cH1"/>
+            </connections>
+            <point key="canvasLocation" x="292" y="293.5"/>
+        </tableViewCell>
+    </objects>
+</document>

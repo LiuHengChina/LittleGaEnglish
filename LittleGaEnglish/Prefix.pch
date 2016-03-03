@@ -1,0 +1,34 @@
+//
+//  Prefix.pch
+//  LittleGaEnglish
+//
+//  Created by Jed on 16/2/16.
+//  Copyright © 2016年 Jed. All rights reserved.
+//
+
+#ifndef Prefix_pch
+#define Prefix_pch
+
+
+#import <Availability.h>
+
+
+
+#ifdef __OBJC__
+
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import "UIImageView+WebCache.h"
+#import "BBConstColorKey.h"
+#import "UjhConfig.h"
+#import "Masonry.h"
+#import "MJRefresh.h"
+#import "UserDao.h"
+
+
+#endif
+
+
+
+#endif /* Prefix_pch */
+
