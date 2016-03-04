@@ -1,15 +1,15 @@
 {
   "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
-    "7119edd8-4822-4cf1-aa1e-57ac6470fe02++3391" : {
+    "C6369C306636CC96F626C4AFC62530C6000B752B" : {
 
     }
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
-    "7119edd8-4822-4cf1-aa1e-57ac6470fe02++3391" : 0
+    "C6369C306636CC96F626C4AFC62530C6000B752B" : 0
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "40448DEC-487D-46EE-B3B7-3BEA8828D776",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
-    "7119edd8-4822-4cf1-aa1e-57ac6470fe02++3391" : "LittleGaEnglish\/"
+    "C6369C306636CC96F626C4AFC62530C6000B752B" : "LittleGaEnglish\/"
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "LittleGaEnglish",
   "DVTSourceControlWorkspaceBlueprintVersion" : 204,
@@ -18,7 +18,7 @@
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/code.taobao.org\/svn\/SmallCoffeeIOS",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
-      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "7119edd8-4822-4cf1-aa1e-57ac6470fe02++3391"
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "C6369C306636CC96F626C4AFC62530C6000B752B"
     }
   ]
 }
