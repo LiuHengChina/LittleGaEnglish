@@ -580,6 +580,9 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="361"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="usercover" translatesAutoresizingMaskIntoConstraints="NO" id="Zls-5m-xFO">
+                                                    <rect key="frame" x="0.0" y="0.0" width="600" height="361"/>
+                                                </imageView>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="usercover" translatesAutoresizingMaskIntoConstraints="NO" id="7Dl-ne-QKc">
                                                     <rect key="frame" x="269" y="35" width="63.5" height="63.5"/>
                                                     <constraints>
@@ -676,9 +679,6 @@
                                                         <outlet property="delegate" destination="hju-9Y-uyw" id="Opv-sZ-x8L"/>
                                                     </connections>
                                                 </collectionView>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="usercover" translatesAutoresizingMaskIntoConstraints="NO" id="Zls-5m-xFO">
-                                                    <rect key="frame" x="0.0" y="0.0" width="600" height="361"/>
-                                                </imageView>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="PQW-tQ-9qb" firstAttribute="leading" secondItem="ryu-jY-U3e" secondAttribute="trailing" constant="9" id="Bx6-ez-XEF"/>
