@@ -47,7 +47,7 @@
     ForumVC.tabBarItem.selectedImage = [UIImage imageNamed:@"forum_select"];
     MyNavigationController *ForumNC = [[MyNavigationController alloc]initWithRootViewController:ForumVC];
     
-    MineViewController *MineVC =[[MineViewController alloc]init];
+    MineViewController *MineVC = [[UIStoryboard storyboardWithName:@"MineViewController" bundle:nil]instantiateViewControllerWithIdentifier:@"MineViewController"];
     MineVC.tabBarItem.title=@"课程";
     MineVC.tabBarItem.image=[UIImage imageNamed:@"mine_default"];
     MineVC.tabBarItem.selectedImage = [UIImage imageNamed:@"mine_select"];

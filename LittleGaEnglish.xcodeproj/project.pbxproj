@@ -41,7 +41,6 @@
 		85230B091C740CB600B6A48A /* MyUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 85230B081C740CB600B6A48A /* MyUIView.m */; };
 		85230B0C1C74A1D600B6A48A /* MyTextFiled.m in Sources */ = {isa = PBXBuildFile; fileRef = 85230B0B1C74A1D600B6A48A /* MyTextFiled.m */; };
 		85230B0E1C74A1E800B6A48A /* MyTextFiled.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85230B0D1C74A1E800B6A48A /* MyTextFiled.xib */; };
-		85230B161C7600E200B6A48A /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85230B151C7600E100B6A48A /* MineViewController.m */; };
 		85230B191C7600F000B6A48A /* CoursesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85230B181C7600F000B6A48A /* CoursesViewController.m */; };
 		85230B1C1C7600FB00B6A48A /* ForumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85230B1B1C7600FB00B6A48A /* ForumViewController.m */; };
 		85230B1F1C76010800B6A48A /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85230B1E1C76010800B6A48A /* HomeViewController.m */; };
@@ -94,6 +93,9 @@
 		85F1D0B91C7DE8680041B09B /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85F1D0B71C7DE8680041B09B /* HomeTableViewCell.xib */; };
 		85F1D0BC1C7DEB370041B09B /* MyUITableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 85F1D0BB1C7DEB370041B09B /* MyUITableView.m */; };
 		85F1D0C01C7F360B0041B09B /* ImagePlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 85F1D0BF1C7F360B0041B09B /* ImagePlayerView.m */; };
+		9AEE01F41C8941410027ACF0 /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AEE01F31C8941410027ACF0 /* MineViewController.m */; };
+		9AEE01FA1C8948300027ACF0 /* MineViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AEE01F91C8948300027ACF0 /* MineViewController.storyboard */; };
+		9AEE02001C8A87EC0027ACF0 /* MineDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AEE01FF1C8A87EC0027ACF0 /* MineDetails.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -178,8 +180,6 @@
 		85230B0A1C74A1D600B6A48A /* MyTextFiled.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTextFiled.h; sourceTree = "<group>"; };
 		85230B0B1C74A1D600B6A48A /* MyTextFiled.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTextFiled.m; sourceTree = "<group>"; };
 		85230B0D1C74A1E800B6A48A /* MyTextFiled.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyTextFiled.xib; sourceTree = "<group>"; };
-		85230B141C7600E100B6A48A /* MineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineViewController.h; sourceTree = "<group>"; };
-		85230B151C7600E100B6A48A /* MineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
 		85230B171C7600F000B6A48A /* CoursesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoursesViewController.h; sourceTree = "<group>"; };
 		85230B181C7600F000B6A48A /* CoursesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoursesViewController.m; sourceTree = "<group>"; };
 		85230B1A1C7600FB00B6A48A /* ForumViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForumViewController.h; sourceTree = "<group>"; };
@@ -277,6 +277,11 @@
 		85F1D0BF1C7F360B0041B09B /* ImagePlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImagePlayerView.m; sourceTree = "<group>"; };
 		8DEFF1A99ED31ADF16EFB9BA /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		8E9AB67708FB86BFB7A5AD2C /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		9AEE01F21C8941410027ACF0 /* MineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineViewController.h; sourceTree = "<group>"; };
+		9AEE01F31C8941410027ACF0 /* MineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
+		9AEE01F91C8948300027ACF0 /* MineViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MineViewController.storyboard; sourceTree = "<group>"; };
+		9AEE01FE1C8A87EC0027ACF0 /* MineDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineDetails.h; sourceTree = "<group>"; };
+		9AEE01FF1C8A87EC0027ACF0 /* MineDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineDetails.m; sourceTree = "<group>"; };
 		B4D6F1E398CD6B493E69B389 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -560,8 +565,11 @@
 		85230B131C7600AE00B6A48A /* Mine */ = {
 			isa = PBXGroup;
 			children = (
-				85230B141C7600E100B6A48A /* MineViewController.h */,
-				85230B151C7600E100B6A48A /* MineViewController.m */,
+				9AEE01F21C8941410027ACF0 /* MineViewController.h */,
+				9AEE01F31C8941410027ACF0 /* MineViewController.m */,
+				9AEE01FE1C8A87EC0027ACF0 /* MineDetails.h */,
+				9AEE01FF1C8A87EC0027ACF0 /* MineDetails.m */,
+				9AEE01F91C8948300027ACF0 /* MineViewController.storyboard */,
 			);
 			name = Mine;
 			path = Login/Mine;
@@ -841,6 +849,7 @@
 				858BBEF31C81477200F54E42 /* BBCoureseTableViewCell.xib in Resources */,
 				85230AFD1C731ED800B6A48A /* BBLoginViewController.xib in Resources */,
 				85230AE71C7319FD00B6A48A /* big_white_back.png in Resources */,
+				9AEE01FA1C8948300027ACF0 /* MineViewController.storyboard in Resources */,
 				85230B0E1C74A1E800B6A48A /* MyTextFiled.xib in Resources */,
 				858BBF261C82F6A300F54E42 /* CoursesDetailMovieTableViewCell.xib in Resources */,
 				858BBF1C1C82EAEE00F54E42 /* CoureseDetaiNameCell.xib in Resources */,
@@ -926,6 +935,7 @@
 				8554B1141C72C08F00598E62 /* ViewController.m in Sources */,
 				85230AD71C73048F00B6A48A /* WDTipsView.m in Sources */,
 				85230AF41C731AF500B6A48A /* BBConstColorKey.m in Sources */,
+				9AEE02001C8A87EC0027ACF0 /* MineDetails.m in Sources */,
 				85230ACB1C73048F00B6A48A /* NSString+RegularString.m in Sources */,
 				858BBF291C830B2900F54E42 /* CourseDetailModel.m in Sources */,
 				85230AEB1C7319FD00B6A48A /* MyTabBarController.m in Sources */,
@@ -947,6 +957,7 @@
 				85230AEA1C7319FD00B6A48A /* MyNavigationController.m in Sources */,
 				85230AD41C73048F00B6A48A /* UIViewController+Category.m in Sources */,
 				8554B10E1C72C08F00598E62 /* main.m in Sources */,
+				9AEE01F41C8941410027ACF0 /* MineViewController.m in Sources */,
 				858BBF251C82F6A300F54E42 /* CoursesDetailMovieTableViewCell.m in Sources */,
 				85230AD81C73048F00B6A48A /* MyConstantKey.m in Sources */,
 				85230B281C76026B00B6A48A /* RootTabBarController.m in Sources */,
@@ -965,7 +976,6 @@
 				85F1D0BC1C7DEB370041B09B /* MyUITableView.m in Sources */,
 				858BBEF21C81477200F54E42 /* BBCoureseTableViewCell.m in Sources */,
 				858BBF021C81572500F54E42 /* CoureseModel.m in Sources */,
-				85230B161C7600E200B6A48A /* MineViewController.m in Sources */,
 				858BBF0B1C81A2AF00F54E42 /* CoursesDetailViewController.m in Sources */,
 				85D34CDD1C868064004FFCF2 /* BuyViewController.m in Sources */,
 				85230AD21C73048F00B6A48A /* UINavigationController+Autorotate.m in Sources */,
