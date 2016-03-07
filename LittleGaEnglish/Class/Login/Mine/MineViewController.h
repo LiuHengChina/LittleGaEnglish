@@ -2,12 +2,11 @@
 //  MineViewController.h
 //  LittleGaEnglish
 //
-//  Created by Jed on 16/2/18.
+//  Created by 刘璞峰 on 16/3/4.
 //  Copyright © 2016年 Jed. All rights reserved.
 //
 
-#import "MyUIViewController.h"
-
-@interface MineViewController : MyUIViewController
+#import <UIKit/UIKit.h>
+@interface MineViewController : UITableViewController
 
 @end

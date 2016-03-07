@@ -1,74 +1,72 @@
 //
-//  MineViewController.m
+//  MineDetails.m
 //  LittleGaEnglish
 //
-//  Created by 刘璞峰 on 16/3/4.
+//  Created by 刘璞峰 on 16/3/5.
 //  Copyright © 2016年 Jed. All rights reserved.
 //
 
-#import "MineViewController.h"
 #import "MineDetails.h"
+#import "Masonry.h"
 
-@interface MineViewController ()
-@property (strong, nonatomic) IBOutlet UILabel *levelLB;
-@property (strong, nonatomic) IBOutlet UIView *courseLB;
-@property (strong, nonatomic) IBOutlet UIView *postLB;
-@property (strong, nonatomic) IBOutlet UIView *collectionLB;
-@property (strong, nonatomic) IBOutlet UIView *fanLB;
-@property (strong, nonatomic) IBOutlet NSLayoutConstraint *leveLBwidht;
+@interface MineDetailsCollerCell : UICollectionViewCell
+
+@end
+@implementation MineDetailsCollerCell
 
 
 @end
-@implementation MineViewController
+@interface MineDetails ()<UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout>
+@property (strong, nonatomic) IBOutlet UIImageView *usercover;
+@property (strong, nonatomic) IBOutlet UILabel *levelLB;
+
+@end
+
+@implementation MineDetails
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self.navigationController.navigationBar setTitleTextAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:19],NSForegroundColorAttributeName:[UIColor whiteColor]}];
-    self.title = @"我的";
-    self.levelLB.layer.borderColor = [UIColor colorWithRed:73.0f/255.0f green:182.0f/255.0f blue:0 alpha:.5f].CGColor;
-    self.leveLBwidht.constant = self.view.frame.size.width/4;
-    self.navigationController.navigationBar.alpha = 1;
-    self.navigationController.navigationBar.translucent = NO;
+    self.title = @"小鱼儿的主页";
+    self.navigationController.navigationBar.barStyle = UIStatusBarStyleDefault;
+    UIColor *white = [UIColor whiteColor];
+    [self.navigationController.navigationBar setTintColor:white];
+    self.usercover.layer.borderColor = white.CGColor;
+    self.levelLB.layer.borderColor = white.CGColor;
+    self.levelLB.layer.cornerRadius = self.levelLB.frame.size.width/2;
+    
 }
--(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+-(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
-    NSLog(@"%ld",(long)indexPath.row);
-    switch (indexPath.row) {
-        case 0:
-            [self performSegueWithIdentifier:@"userdata" sender:self];
-            break;
-            
-        default:
-            break;
-    }
+    return 10;
 }
--(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+-(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    [super prepareForSegue:segue sender:sender];
-    if ([segue.identifier isEqualToString:@"userdata"]) {
-    }
+    MineDetailsCollerCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"cell" forIndexPath:indexPath];
+
+    return cell;
+}
+-(CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    return CGSizeMake((self.view.frame.size.width-49)/4, (self.view.frame.size.width-49)/4);
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
-- (IBAction)coursetap:(id)sender {
-    NSLog(@"课程");
-}
-- (IBAction)postLB:(id)sender {
-    NSLog(@"帖子");
-}
-- (IBAction)collectionLB:(id)sender {
-    NSLog(@"收藏");
-}
-- (IBAction)fanLB:(id)sender {
-    NSLog(@"粉丝");
 }
 
 #pragma mark - Table view data source
 
 
 
+/*
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    
+    // Configure the cell...
+    
+    return cell;
+}
+*/
 
 /*
 // Override to support conditional editing of the table view.
