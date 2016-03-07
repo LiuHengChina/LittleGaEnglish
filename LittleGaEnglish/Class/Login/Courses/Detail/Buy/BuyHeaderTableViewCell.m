@@ -8,10 +8,25 @@
 
 #import "BuyHeaderTableViewCell.h"
 
+@interface BuyHeaderTableViewCell ()
+
+@property (strong, nonatomic) IBOutlet UILabel *nameLab;
+@property (strong, nonatomic) IBOutlet UILabel *priceLab;
+
+@end
+
+
 @implementation BuyHeaderTableViewCell
 
 - (void)awakeFromNib {
     // Initialization code
+}
+
+
+- (void)setModel:(BuyProductModel *)model
+{
+    self.nameLab.text = model.name;
+    self.priceLab.text = model.price;
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

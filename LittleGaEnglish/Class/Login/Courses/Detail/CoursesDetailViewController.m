@@ -11,6 +11,7 @@
 #import "CoursesDetailBobyiewController.h"
 #import "MYApiCourese.h"
 #import "BBLoginViewController.h"
+#import "BuyViewController.h"
 
 @interface CoursesDetailViewController ()
 
@@ -62,9 +63,12 @@
     if ([self.model.courseClass.is_can_like isEqualToString:@"1"]) {
         [[MYApiCourese share]sendRequestLikeClassWithClassID:self.courseID Success:^(MYApiCourese *request, BaseModel *model) {
             
+            [WDTipsView showTipsViewWithString:@"收藏成功"];
         } Failure:^(MYApiCourese *request, NSError *requestError) {
             
         }];
+    } else {
+        [WDTipsView showTipsViewWithString:@"请勿重复点赞！"];
     }
 }
 
@@ -75,9 +79,13 @@
     }
     if ([self.model.courseClass.is_can_favorite isEqualToString:@"1"]) {
         [[MYApiCourese share]sendRequestFavouriteClassWithClassID:self.courseID Success:^(MYApiCourese *request, BaseModel *model) {
+            
+            [WDTipsView showTipsViewWithString:@"收藏成功"];
         } Failure:^(MYApiCourese *request, NSError *requestError) {
        
         }];
+    } else {
+        [WDTipsView showTipsViewWithString:@"您已经收藏！"];
     }
 }
 
@@ -87,7 +95,9 @@
         return;
     }
     if ([self.model.courseClass.is_can_order isEqualToString:@"1"]) {
-        
+        BuyViewController *buyVC = [BuyViewController new];
+        buyVC.classID = self.courseID;
+        [self.navigationController pushViewController:buyVC animated:YES];
     }
 }
 

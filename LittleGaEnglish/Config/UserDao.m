@@ -39,6 +39,7 @@ NSString *const k_UserDefaults_user = @"k_UserDefaults_user";
         if (dic && dic.count>0) {
             _user = [[LoginModel alloc]init];
             _user.uid = [dic objectForKey:@"uid"];
+            _user.token = [dic objectForKey:@"token"];
             return _user;
         }
     }
@@ -52,6 +53,7 @@ NSString *const k_UserDefaults_user = @"k_UserDefaults_user";
     }else {
         NSMutableDictionary * dic = [NSMutableDictionary dictionary];
         _user.uid? [dic setObject:_user.uid forKey:@"uid"]:0;
+        _user.token?[dic setObject:_user.token forKey:@"token"]:0;
         [[NSUserDefaults standardUserDefaults] setObject:dic forKey:k_UserDefaults_user];
     }
     [[NSUserDefaults standardUserDefaults] synchronize];
@@ -60,7 +62,7 @@ NSString *const k_UserDefaults_user = @"k_UserDefaults_user";
 
 
 - (BOOL)isLogin {
-    if (_user) {
+    if (self.user) {
         return YES;
     }
     return NO;

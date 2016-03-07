@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BuyModel.h"
 
 @interface BuyHeaderTableViewCell : UITableViewCell
+
+@property (nonatomic, strong) BuyProductModel *model;
 
 @end

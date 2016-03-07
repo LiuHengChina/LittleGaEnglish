@@ -67,7 +67,7 @@
             NSLog(@"json : %@",json);
             
             CourseDetailModel *model = [[CourseDetailModel new] initWithDictionary:json error:nil];
-            model.courseClass = [[CourseClassModel new] initWithDictionary:json[@"class"] error:nil];
+            model.courseClass = [[CourseClassModel new] initWithDictionary:json[@"class_detail"] error:nil];
             model.mycomment = [[CourseCommentModel new]initWithDictionary:json[@"comment"] error:nil];
 
             errmsg = model.info;
@@ -175,7 +175,7 @@
                           @"star":star,
                           @"content":content};
     
-    NSString *urlPath = k_url_favoriteClass;
+    NSString *urlPath = k_url_ClassComment;
     
     [self postWithUrl:urlPath params:dic success:^(id json) {
         NSString * errmsg = @"";
@@ -199,7 +199,6 @@
         failure(self,error);
     }];
 }
-
 
 
 @end

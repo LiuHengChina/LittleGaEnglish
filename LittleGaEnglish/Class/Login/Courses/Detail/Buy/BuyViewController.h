@@ -7,7 +7,12 @@
 //
 
 #import "MyUITableViewController.h"
+#import "MyUIViewController.h"
 
-@interface BuyViewController : MyUITableViewController
+@interface BuyViewController : MyUIViewController
+
+@property (nonatomic, copy) NSString * classID;     // 课程id
+@property (nonatomic, copy) NSString * setMealId;   // 套餐id
+@property (nonatomic, copy) NSString * productId;   // 产品id
 
 @end

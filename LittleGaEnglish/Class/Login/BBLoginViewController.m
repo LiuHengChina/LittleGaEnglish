@@ -43,6 +43,8 @@
     }];
     _loginView.hidden = YES;
     _registerView.hidden = YES;
+    _loginView.VC = self;
+    _registerView.VC = self;
     self.selectIndex = self.selectIndex;
 }
 

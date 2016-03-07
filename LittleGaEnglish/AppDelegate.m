@@ -45,8 +45,11 @@
 // 切换根视图控制器
 - (void)changeTabBar
 {
-    RootTabBarController *tab = [RootTabBarController new];
-    self.window.rootViewController = tab;
+    UIViewController *rootVC = self.window.rootViewController;
+    if (![rootVC isKindOfClass:NSClassFromString(@"RootTabBarController")]) {
+        RootTabBarController *tab = [RootTabBarController new];
+        self.window.rootViewController = tab;
+    }
 }
 
 @end

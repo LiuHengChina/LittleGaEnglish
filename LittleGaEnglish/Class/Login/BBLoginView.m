@@ -164,8 +164,13 @@
 {
     [[MyApiLogin share] sendRequestWithPhone:_phoneText.text pwd:_pwdText.text Success:^(MyApiLogin *request, LoginModel *model) {
         NSLog(@"%@",model.token);
-        AppDelegate *app = (AppDelegate *)[UIApplication sharedApplication].delegate;
-        [app changeTabBar];
+        [UserDao share].user = model;
+
+        [self.VC dismissViewControllerAnimated:YES completion:^{
+            AppDelegate *app = (AppDelegate *)[UIApplication sharedApplication].delegate;
+            [app changeTabBar];
+        }];
+        
     } Failure:^(MyApiLogin *request, NSError *requestError) {
         NSLog(@"%@",requestError);
     }];

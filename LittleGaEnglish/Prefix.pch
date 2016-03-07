@@ -24,6 +24,7 @@
 #import "Masonry.h"
 #import "MJRefresh.h"
 #import "UserDao.h"
+#import "WDTipsView.h"
 
 
 #endif

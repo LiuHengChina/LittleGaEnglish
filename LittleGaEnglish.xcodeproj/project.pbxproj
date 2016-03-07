@@ -78,6 +78,13 @@
 		858BBF251C82F6A300F54E42 /* CoursesDetailMovieTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 858BBF231C82F6A300F54E42 /* CoursesDetailMovieTableViewCell.m */; };
 		858BBF261C82F6A300F54E42 /* CoursesDetailMovieTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 858BBF241C82F6A300F54E42 /* CoursesDetailMovieTableViewCell.xib */; };
 		858BBF291C830B2900F54E42 /* CourseDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 858BBF281C830B2900F54E42 /* CourseDetailModel.m */; };
+		85C52FB81C89BD63008348D8 /* BuyMealTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 85C52FB61C89BD63008348D8 /* BuyMealTableViewCell.m */; };
+		85C52FB91C89BD63008348D8 /* BuyMealTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85C52FB71C89BD63008348D8 /* BuyMealTableViewCell.xib */; };
+		85C52FBD1C89C0E0008348D8 /* BuyPreTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 85C52FBB1C89C0E0008348D8 /* BuyPreTableViewCell.m */; };
+		85C52FBE1C89C0E0008348D8 /* BuyPreTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85C52FBC1C89C0E0008348D8 /* BuyPreTableViewCell.xib */; };
+		85C52FC21C89EB8A008348D8 /* MyApiBuy.m in Sources */ = {isa = PBXBuildFile; fileRef = 85C52FC11C89EB8A008348D8 /* MyApiBuy.m */; };
+		85C52FC51C89EC26008348D8 /* BuyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 85C52FC41C89EC26008348D8 /* BuyModel.m */; };
+		85C52FC81C8A8C74008348D8 /* BuyMealView.m in Sources */ = {isa = PBXBuildFile; fileRef = 85C52FC71C8A8C74008348D8 /* BuyMealView.m */; };
 		85CCBF141C847CA20084B11C /* CoursesEvalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85CCBF121C847CA20084B11C /* CoursesEvalViewController.m */; };
 		85CCBF151C847CA20084B11C /* CoursesEvalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85CCBF131C847CA20084B11C /* CoursesEvalViewController.xib */; };
 		85CCBF191C84803A0084B11C /* BBStarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 85CCBF181C84803A0084B11C /* BBStarView.m */; };
@@ -248,6 +255,18 @@
 		858BBF241C82F6A300F54E42 /* CoursesDetailMovieTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CoursesDetailMovieTableViewCell.xib; sourceTree = "<group>"; };
 		858BBF271C830B2900F54E42 /* CourseDetailModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CourseDetailModel.h; sourceTree = "<group>"; };
 		858BBF281C830B2900F54E42 /* CourseDetailModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CourseDetailModel.m; sourceTree = "<group>"; };
+		85C52FB51C89BD63008348D8 /* BuyMealTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuyMealTableViewCell.h; sourceTree = "<group>"; };
+		85C52FB61C89BD63008348D8 /* BuyMealTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BuyMealTableViewCell.m; sourceTree = "<group>"; };
+		85C52FB71C89BD63008348D8 /* BuyMealTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BuyMealTableViewCell.xib; sourceTree = "<group>"; };
+		85C52FBA1C89C0E0008348D8 /* BuyPreTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuyPreTableViewCell.h; sourceTree = "<group>"; };
+		85C52FBB1C89C0E0008348D8 /* BuyPreTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BuyPreTableViewCell.m; sourceTree = "<group>"; };
+		85C52FBC1C89C0E0008348D8 /* BuyPreTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BuyPreTableViewCell.xib; sourceTree = "<group>"; };
+		85C52FC01C89EB8A008348D8 /* MyApiBuy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyApiBuy.h; sourceTree = "<group>"; };
+		85C52FC11C89EB8A008348D8 /* MyApiBuy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyApiBuy.m; sourceTree = "<group>"; };
+		85C52FC31C89EC26008348D8 /* BuyModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuyModel.h; sourceTree = "<group>"; };
+		85C52FC41C89EC26008348D8 /* BuyModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BuyModel.m; sourceTree = "<group>"; };
+		85C52FC61C8A8C74008348D8 /* BuyMealView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuyMealView.h; sourceTree = "<group>"; };
+		85C52FC71C8A8C74008348D8 /* BuyMealView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BuyMealView.m; sourceTree = "<group>"; };
 		85CCBF111C847CA20084B11C /* CoursesEvalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoursesEvalViewController.h; sourceTree = "<group>"; };
 		85CCBF121C847CA20084B11C /* CoursesEvalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoursesEvalViewController.m; sourceTree = "<group>"; };
 		85CCBF131C847CA20084B11C /* CoursesEvalViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CoursesEvalViewController.xib; sourceTree = "<group>"; };
@@ -383,6 +402,7 @@
 		85230AAB1C73048F00B6A48A /* API */ = {
 			isa = PBXGroup;
 			children = (
+				85C52FBF1C89EB76008348D8 /* Buy */,
 				858BBEFC1C81564D00F54E42 /* Course */,
 				85F1D0A41C7C93020041B09B /* Login */,
 				85230B2F1C7B57A400B6A48A /* WDNetAPIRequestWithAFNManage.h */,
@@ -448,6 +468,8 @@
 				858BBF011C81572500F54E42 /* CoureseModel.m */,
 				858BBF271C830B2900F54E42 /* CourseDetailModel.h */,
 				858BBF281C830B2900F54E42 /* CourseDetailModel.m */,
+				85C52FC31C89EC26008348D8 /* BuyModel.h */,
+				85C52FC41C89EC26008348D8 /* BuyModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -690,6 +712,15 @@
 			path = Detail;
 			sourceTree = "<group>";
 		};
+		85C52FBF1C89EB76008348D8 /* Buy */ = {
+			isa = PBXGroup;
+			children = (
+				85C52FC01C89EB8A008348D8 /* MyApiBuy.h */,
+				85C52FC11C89EB8A008348D8 /* MyApiBuy.m */,
+			);
+			path = Buy;
+			sourceTree = "<group>";
+		};
 		85CCBF161C8480320084B11C /* DIY */ = {
 			isa = PBXGroup;
 			children = (
@@ -705,6 +736,14 @@
 				85D34CD51C85F0A5004FFCF2 /* BuyHeaderTableViewCell.h */,
 				85D34CD61C85F0A5004FFCF2 /* BuyHeaderTableViewCell.m */,
 				85D34CD71C85F0A5004FFCF2 /* BuyHeaderTableViewCell.xib */,
+				85C52FB51C89BD63008348D8 /* BuyMealTableViewCell.h */,
+				85C52FB61C89BD63008348D8 /* BuyMealTableViewCell.m */,
+				85C52FB71C89BD63008348D8 /* BuyMealTableViewCell.xib */,
+				85C52FC61C8A8C74008348D8 /* BuyMealView.h */,
+				85C52FC71C8A8C74008348D8 /* BuyMealView.m */,
+				85C52FBA1C89C0E0008348D8 /* BuyPreTableViewCell.h */,
+				85C52FBB1C89C0E0008348D8 /* BuyPreTableViewCell.m */,
+				85C52FBC1C89C0E0008348D8 /* BuyPreTableViewCell.xib */,
 				85D34CDA1C868064004FFCF2 /* BuyViewController.h */,
 				85D34CDB1C868064004FFCF2 /* BuyViewController.m */,
 				85D34CDC1C868064004FFCF2 /* BuyViewController.xib */,
@@ -792,7 +831,7 @@
 				TargetAttributes = {
 					8554B1081C72C08F00598E62 = {
 						CreatedOnToolsVersion = 7.2;
-						DevelopmentTeam = ML7GYLW42D;
+						DevelopmentTeam = VA9J9W4VU6;
 					};
 					8554B1211C72C08F00598E62 = {
 						CreatedOnToolsVersion = 7.2;
@@ -836,6 +875,8 @@
 				8554B11C1C72C08F00598E62 /* LaunchScreen.storyboard in Resources */,
 				858BBEFB1C814E9600F54E42 /* BBCourseBobyViewController.xib in Resources */,
 				8554B1191C72C08F00598E62 /* Assets.xcassets in Resources */,
+				85C52FBE1C89C0E0008348D8 /* BuyPreTableViewCell.xib in Resources */,
+				85C52FB91C89BD63008348D8 /* BuyMealTableViewCell.xib in Resources */,
 				85F1D0B91C7DE8680041B09B /* HomeTableViewCell.xib in Resources */,
 				8554B1171C72C08F00598E62 /* Main.storyboard in Resources */,
 				858BBEF31C81477200F54E42 /* BBCoureseTableViewCell.xib in Resources */,
@@ -963,6 +1004,7 @@
 				85D34CD81C85F0A5004FFCF2 /* BuyHeaderTableViewCell.m in Sources */,
 				85230AD61C73048F00B6A48A /* UIActionSheet+MyActionSheet.m in Sources */,
 				85F1D0BC1C7DEB370041B09B /* MyUITableView.m in Sources */,
+				85C52FC21C89EB8A008348D8 /* MyApiBuy.m in Sources */,
 				858BBEF21C81477200F54E42 /* BBCoureseTableViewCell.m in Sources */,
 				858BBF021C81572500F54E42 /* CoureseModel.m in Sources */,
 				85230B161C7600E200B6A48A /* MineViewController.m in Sources */,
@@ -973,18 +1015,22 @@
 				85230B191C7600F000B6A48A /* CoursesViewController.m in Sources */,
 				858BBEFF1C81567900F54E42 /* MYApiCourese.m in Sources */,
 				858BBEEE1C81448B00F54E42 /* BBCouresesTabView.m in Sources */,
+				85C52FC51C89EC26008348D8 /* BuyModel.m in Sources */,
 				85230B1C1C7600FB00B6A48A /* ForumViewController.m in Sources */,
 				85230AC91C73048F00B6A48A /* CALayer+Helper.m in Sources */,
 				85230AEC1C7319FD00B6A48A /* MyUITableViewController.m in Sources */,
+				85C52FB81C89BD63008348D8 /* BuyMealTableViewCell.m in Sources */,
 				85230B0C1C74A1D600B6A48A /* MyTextFiled.m in Sources */,
 				85230AD31C73048F00B6A48A /* UITableViewCell+FixUITableViewCellAutolayoutIHope.m in Sources */,
 				85230AED1C7319FD00B6A48A /* MyUIViewController.m in Sources */,
 				85230ACF1C73048F00B6A48A /* UIImage+Category.m in Sources */,
 				85230B1F1C76010800B6A48A /* HomeViewController.m in Sources */,
+				85C52FC81C8A8C74008348D8 /* BuyMealView.m in Sources */,
 				85CCBF191C84803A0084B11C /* BBStarView.m in Sources */,
 				85230B2B1C7B543C00B6A48A /* BaseModel.m in Sources */,
 				85230B061C740C3800B6A48A /* BBForgetPWD.m in Sources */,
 				85F1D0AA1C7C95AB0041B09B /* LoginModel.m in Sources */,
+				85C52FBD1C89C0E0008348D8 /* BuyPreTableViewCell.m in Sources */,
 				858BBF1B1C82EAEE00F54E42 /* CoureseDetaiNameCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1057,6 +1103,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -1100,6 +1147,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -1144,7 +1192,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ujuhui.GoodsDealer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "698958c2-d408-412b-9698-8d118dadaf70";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -1172,7 +1220,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ujuhui.GoodsDealer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "698958c2-d408-412b-9698-8d118dadaf70";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
