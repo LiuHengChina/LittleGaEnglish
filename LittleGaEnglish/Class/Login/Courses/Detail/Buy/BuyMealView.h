@@ -7,7 +7,10 @@
 //
 
 #import "MyUIView.h"
+#import "BuyModel.h"
 
 @interface BuyMealView : MyUIView
+
+@property (nonatomic, strong)BuyClassListModel *model;
 
 @end

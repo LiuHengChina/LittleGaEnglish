@@ -49,6 +49,17 @@
 		85230B2B1C7B543C00B6A48A /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 85230B2A1C7B543C00B6A48A /* BaseModel.m */; };
 		85230B2E1C7B568C00B6A48A /* BaseNetRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 85230B2D1C7B568C00B6A48A /* BaseNetRequest.m */; };
 		85230B311C7B57A400B6A48A /* WDNetAPIRequestWithAFNManage.m in Sources */ = {isa = PBXBuildFile; fileRef = 85230B301C7B57A400B6A48A /* WDNetAPIRequestWithAFNManage.m */; };
+		8542F5CF1C8DCEAB00C4FFFD /* BuyHeaderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8542F5C21C8DCEAB00C4FFFD /* BuyHeaderTableViewCell.m */; };
+		8542F5D01C8DCEAB00C4FFFD /* BuyHeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8542F5C31C8DCEAB00C4FFFD /* BuyHeaderTableViewCell.xib */; };
+		8542F5D11C8DCEAB00C4FFFD /* BuyMealTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8542F5C51C8DCEAB00C4FFFD /* BuyMealTableViewCell.m */; };
+		8542F5D21C8DCEAB00C4FFFD /* BuyMealTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8542F5C61C8DCEAB00C4FFFD /* BuyMealTableViewCell.xib */; };
+		8542F5D31C8DCEAB00C4FFFD /* BuyMealView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8542F5C81C8DCEAB00C4FFFD /* BuyMealView.m */; };
+		8542F5D41C8DCEAB00C4FFFD /* BuyPreTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8542F5CA1C8DCEAB00C4FFFD /* BuyPreTableViewCell.m */; };
+		8542F5D51C8DCEAB00C4FFFD /* BuyPreTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8542F5CB1C8DCEAB00C4FFFD /* BuyPreTableViewCell.xib */; };
+		8542F5D61C8DCEAB00C4FFFD /* BuyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8542F5CD1C8DCEAB00C4FFFD /* BuyViewController.m */; };
+		8542F5D71C8DCEAB00C4FFFD /* BuyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8542F5CE1C8DCEAB00C4FFFD /* BuyViewController.xib */; };
+		8542F5DC1C8DCF5500C4FFFD /* BuyExchangeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8542F5DA1C8DCF5500C4FFFD /* BuyExchangeViewController.m */; };
+		8542F5DD1C8DCF5500C4FFFD /* BuyExchangeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8542F5DB1C8DCF5500C4FFFD /* BuyExchangeViewController.xib */; };
 		8554B10E1C72C08F00598E62 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8554B10D1C72C08F00598E62 /* main.m */; };
 		8554B1111C72C08F00598E62 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8554B1101C72C08F00598E62 /* AppDelegate.m */; };
 		8554B1141C72C08F00598E62 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8554B1131C72C08F00598E62 /* ViewController.m */; };
@@ -77,22 +88,13 @@
 		858BBF251C82F6A300F54E42 /* CoursesDetailMovieTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 858BBF231C82F6A300F54E42 /* CoursesDetailMovieTableViewCell.m */; };
 		858BBF261C82F6A300F54E42 /* CoursesDetailMovieTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 858BBF241C82F6A300F54E42 /* CoursesDetailMovieTableViewCell.xib */; };
 		858BBF291C830B2900F54E42 /* CourseDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 858BBF281C830B2900F54E42 /* CourseDetailModel.m */; };
-		85C52FB81C89BD63008348D8 /* BuyMealTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 85C52FB61C89BD63008348D8 /* BuyMealTableViewCell.m */; };
-		85C52FB91C89BD63008348D8 /* BuyMealTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85C52FB71C89BD63008348D8 /* BuyMealTableViewCell.xib */; };
-		85C52FBD1C89C0E0008348D8 /* BuyPreTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 85C52FBB1C89C0E0008348D8 /* BuyPreTableViewCell.m */; };
-		85C52FBE1C89C0E0008348D8 /* BuyPreTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85C52FBC1C89C0E0008348D8 /* BuyPreTableViewCell.xib */; };
 		85C52FC21C89EB8A008348D8 /* MyApiBuy.m in Sources */ = {isa = PBXBuildFile; fileRef = 85C52FC11C89EB8A008348D8 /* MyApiBuy.m */; };
 		85C52FC51C89EC26008348D8 /* BuyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 85C52FC41C89EC26008348D8 /* BuyModel.m */; };
-		85C52FC81C8A8C74008348D8 /* BuyMealView.m in Sources */ = {isa = PBXBuildFile; fileRef = 85C52FC71C8A8C74008348D8 /* BuyMealView.m */; };
 		85CCBF141C847CA20084B11C /* CoursesEvalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85CCBF121C847CA20084B11C /* CoursesEvalViewController.m */; };
 		85CCBF151C847CA20084B11C /* CoursesEvalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85CCBF131C847CA20084B11C /* CoursesEvalViewController.xib */; };
 		85CCBF191C84803A0084B11C /* BBStarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 85CCBF181C84803A0084B11C /* BBStarView.m */; };
 		85CCBF1D1C84813A0084B11C /* CoureseEvalTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 85CCBF1B1C84813A0084B11C /* CoureseEvalTableViewCell.m */; };
 		85CCBF1E1C84813A0084B11C /* CoureseEvalTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85CCBF1C1C84813A0084B11C /* CoureseEvalTableViewCell.xib */; };
-		85D34CD81C85F0A5004FFCF2 /* BuyHeaderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 85D34CD61C85F0A5004FFCF2 /* BuyHeaderTableViewCell.m */; };
-		85D34CD91C85F0A5004FFCF2 /* BuyHeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85D34CD71C85F0A5004FFCF2 /* BuyHeaderTableViewCell.xib */; };
-		85D34CDD1C868064004FFCF2 /* BuyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85D34CDB1C868064004FFCF2 /* BuyViewController.m */; };
-		85D34CDE1C868064004FFCF2 /* BuyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85D34CDC1C868064004FFCF2 /* BuyViewController.xib */; };
 		85F1D0A71C7C93950041B09B /* MyApiLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = 85F1D0A61C7C93950041B09B /* MyApiLogin.m */; };
 		85F1D0AA1C7C95AB0041B09B /* LoginModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 85F1D0A91C7C95AB0041B09B /* LoginModel.m */; };
 		85F1D0AD1C7C9CD20041B09B /* UserDao.m in Sources */ = {isa = PBXBuildFile; fileRef = 85F1D0AC1C7C9CD20041B09B /* UserDao.m */; };
@@ -203,6 +205,23 @@
 		85230B2D1C7B568C00B6A48A /* BaseNetRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNetRequest.m; sourceTree = "<group>"; };
 		85230B2F1C7B57A400B6A48A /* WDNetAPIRequestWithAFNManage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDNetAPIRequestWithAFNManage.h; sourceTree = "<group>"; };
 		85230B301C7B57A400B6A48A /* WDNetAPIRequestWithAFNManage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDNetAPIRequestWithAFNManage.m; sourceTree = "<group>"; };
+		8542F5C11C8DCEAB00C4FFFD /* BuyHeaderTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuyHeaderTableViewCell.h; sourceTree = "<group>"; };
+		8542F5C21C8DCEAB00C4FFFD /* BuyHeaderTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BuyHeaderTableViewCell.m; sourceTree = "<group>"; };
+		8542F5C31C8DCEAB00C4FFFD /* BuyHeaderTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BuyHeaderTableViewCell.xib; sourceTree = "<group>"; };
+		8542F5C41C8DCEAB00C4FFFD /* BuyMealTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuyMealTableViewCell.h; sourceTree = "<group>"; };
+		8542F5C51C8DCEAB00C4FFFD /* BuyMealTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BuyMealTableViewCell.m; sourceTree = "<group>"; };
+		8542F5C61C8DCEAB00C4FFFD /* BuyMealTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BuyMealTableViewCell.xib; sourceTree = "<group>"; };
+		8542F5C71C8DCEAB00C4FFFD /* BuyMealView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuyMealView.h; sourceTree = "<group>"; };
+		8542F5C81C8DCEAB00C4FFFD /* BuyMealView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BuyMealView.m; sourceTree = "<group>"; };
+		8542F5C91C8DCEAB00C4FFFD /* BuyPreTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuyPreTableViewCell.h; sourceTree = "<group>"; };
+		8542F5CA1C8DCEAB00C4FFFD /* BuyPreTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BuyPreTableViewCell.m; sourceTree = "<group>"; };
+		8542F5CB1C8DCEAB00C4FFFD /* BuyPreTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BuyPreTableViewCell.xib; sourceTree = "<group>"; };
+		8542F5CC1C8DCEAB00C4FFFD /* BuyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuyViewController.h; sourceTree = "<group>"; };
+		8542F5CD1C8DCEAB00C4FFFD /* BuyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BuyViewController.m; sourceTree = "<group>"; };
+		8542F5CE1C8DCEAB00C4FFFD /* BuyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BuyViewController.xib; sourceTree = "<group>"; };
+		8542F5D91C8DCF5500C4FFFD /* BuyExchangeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuyExchangeViewController.h; sourceTree = "<group>"; };
+		8542F5DA1C8DCF5500C4FFFD /* BuyExchangeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BuyExchangeViewController.m; sourceTree = "<group>"; };
+		8542F5DB1C8DCF5500C4FFFD /* BuyExchangeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BuyExchangeViewController.xib; sourceTree = "<group>"; };
 		8554B1091C72C08F00598E62 /* LittleGaEnglish.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LittleGaEnglish.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8554B10D1C72C08F00598E62 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8554B10F1C72C08F00598E62 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -255,18 +274,10 @@
 		858BBF241C82F6A300F54E42 /* CoursesDetailMovieTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CoursesDetailMovieTableViewCell.xib; sourceTree = "<group>"; };
 		858BBF271C830B2900F54E42 /* CourseDetailModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CourseDetailModel.h; sourceTree = "<group>"; };
 		858BBF281C830B2900F54E42 /* CourseDetailModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CourseDetailModel.m; sourceTree = "<group>"; };
-		85C52FB51C89BD63008348D8 /* BuyMealTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuyMealTableViewCell.h; sourceTree = "<group>"; };
-		85C52FB61C89BD63008348D8 /* BuyMealTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BuyMealTableViewCell.m; sourceTree = "<group>"; };
-		85C52FB71C89BD63008348D8 /* BuyMealTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BuyMealTableViewCell.xib; sourceTree = "<group>"; };
-		85C52FBA1C89C0E0008348D8 /* BuyPreTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuyPreTableViewCell.h; sourceTree = "<group>"; };
-		85C52FBB1C89C0E0008348D8 /* BuyPreTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BuyPreTableViewCell.m; sourceTree = "<group>"; };
-		85C52FBC1C89C0E0008348D8 /* BuyPreTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BuyPreTableViewCell.xib; sourceTree = "<group>"; };
 		85C52FC01C89EB8A008348D8 /* MyApiBuy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyApiBuy.h; sourceTree = "<group>"; };
 		85C52FC11C89EB8A008348D8 /* MyApiBuy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyApiBuy.m; sourceTree = "<group>"; };
 		85C52FC31C89EC26008348D8 /* BuyModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuyModel.h; sourceTree = "<group>"; };
 		85C52FC41C89EC26008348D8 /* BuyModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BuyModel.m; sourceTree = "<group>"; };
-		85C52FC61C8A8C74008348D8 /* BuyMealView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuyMealView.h; sourceTree = "<group>"; };
-		85C52FC71C8A8C74008348D8 /* BuyMealView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BuyMealView.m; sourceTree = "<group>"; };
 		85CCBF111C847CA20084B11C /* CoursesEvalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoursesEvalViewController.h; sourceTree = "<group>"; };
 		85CCBF121C847CA20084B11C /* CoursesEvalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoursesEvalViewController.m; sourceTree = "<group>"; };
 		85CCBF131C847CA20084B11C /* CoursesEvalViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CoursesEvalViewController.xib; sourceTree = "<group>"; };
@@ -275,12 +286,6 @@
 		85CCBF1A1C84813A0084B11C /* CoureseEvalTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoureseEvalTableViewCell.h; sourceTree = "<group>"; };
 		85CCBF1B1C84813A0084B11C /* CoureseEvalTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoureseEvalTableViewCell.m; sourceTree = "<group>"; };
 		85CCBF1C1C84813A0084B11C /* CoureseEvalTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CoureseEvalTableViewCell.xib; sourceTree = "<group>"; };
-		85D34CD51C85F0A5004FFCF2 /* BuyHeaderTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuyHeaderTableViewCell.h; sourceTree = "<group>"; };
-		85D34CD61C85F0A5004FFCF2 /* BuyHeaderTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BuyHeaderTableViewCell.m; sourceTree = "<group>"; };
-		85D34CD71C85F0A5004FFCF2 /* BuyHeaderTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BuyHeaderTableViewCell.xib; sourceTree = "<group>"; };
-		85D34CDA1C868064004FFCF2 /* BuyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuyViewController.h; sourceTree = "<group>"; };
-		85D34CDB1C868064004FFCF2 /* BuyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BuyViewController.m; sourceTree = "<group>"; };
-		85D34CDC1C868064004FFCF2 /* BuyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BuyViewController.xib; sourceTree = "<group>"; };
 		85F1D0A51C7C93950041B09B /* MyApiLogin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyApiLogin.h; sourceTree = "<group>"; };
 		85F1D0A61C7C93950041B09B /* MyApiLogin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyApiLogin.m; sourceTree = "<group>"; };
 		85F1D0A81C7C95AB0041B09B /* LoginModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginModel.h; sourceTree = "<group>"; };
@@ -542,6 +547,7 @@
 		85230B101C7600AE00B6A48A /* Courses */ = {
 			isa = PBXGroup;
 			children = (
+				8542F5D81C8DCEE000C4FFFD /* BuyExchange */,
 				85D34CD11C85EA63004FFCF2 /* Buy */,
 				858BBF031C81A12D00F54E42 /* Detail */,
 				85230B171C7600F000B6A48A /* CoursesViewController.h */,
@@ -595,6 +601,16 @@
 			);
 			name = Mine;
 			path = Login/Mine;
+			sourceTree = "<group>";
+		};
+		8542F5D81C8DCEE000C4FFFD /* BuyExchange */ = {
+			isa = PBXGroup;
+			children = (
+				8542F5D91C8DCF5500C4FFFD /* BuyExchangeViewController.h */,
+				8542F5DA1C8DCF5500C4FFFD /* BuyExchangeViewController.m */,
+				8542F5DB1C8DCF5500C4FFFD /* BuyExchangeViewController.xib */,
+			);
+			path = BuyExchange;
 			sourceTree = "<group>";
 		};
 		8554B1001C72C08F00598E62 = {
@@ -741,20 +757,20 @@
 		85D34CD11C85EA63004FFCF2 /* Buy */ = {
 			isa = PBXGroup;
 			children = (
-				85D34CD51C85F0A5004FFCF2 /* BuyHeaderTableViewCell.h */,
-				85D34CD61C85F0A5004FFCF2 /* BuyHeaderTableViewCell.m */,
-				85D34CD71C85F0A5004FFCF2 /* BuyHeaderTableViewCell.xib */,
-				85C52FB51C89BD63008348D8 /* BuyMealTableViewCell.h */,
-				85C52FB61C89BD63008348D8 /* BuyMealTableViewCell.m */,
-				85C52FB71C89BD63008348D8 /* BuyMealTableViewCell.xib */,
-				85C52FC61C8A8C74008348D8 /* BuyMealView.h */,
-				85C52FC71C8A8C74008348D8 /* BuyMealView.m */,
-				85C52FBA1C89C0E0008348D8 /* BuyPreTableViewCell.h */,
-				85C52FBB1C89C0E0008348D8 /* BuyPreTableViewCell.m */,
-				85C52FBC1C89C0E0008348D8 /* BuyPreTableViewCell.xib */,
-				85D34CDA1C868064004FFCF2 /* BuyViewController.h */,
-				85D34CDB1C868064004FFCF2 /* BuyViewController.m */,
-				85D34CDC1C868064004FFCF2 /* BuyViewController.xib */,
+				8542F5C11C8DCEAB00C4FFFD /* BuyHeaderTableViewCell.h */,
+				8542F5C21C8DCEAB00C4FFFD /* BuyHeaderTableViewCell.m */,
+				8542F5C31C8DCEAB00C4FFFD /* BuyHeaderTableViewCell.xib */,
+				8542F5C41C8DCEAB00C4FFFD /* BuyMealTableViewCell.h */,
+				8542F5C51C8DCEAB00C4FFFD /* BuyMealTableViewCell.m */,
+				8542F5C61C8DCEAB00C4FFFD /* BuyMealTableViewCell.xib */,
+				8542F5C71C8DCEAB00C4FFFD /* BuyMealView.h */,
+				8542F5C81C8DCEAB00C4FFFD /* BuyMealView.m */,
+				8542F5C91C8DCEAB00C4FFFD /* BuyPreTableViewCell.h */,
+				8542F5CA1C8DCEAB00C4FFFD /* BuyPreTableViewCell.m */,
+				8542F5CB1C8DCEAB00C4FFFD /* BuyPreTableViewCell.xib */,
+				8542F5CC1C8DCEAB00C4FFFD /* BuyViewController.h */,
+				8542F5CD1C8DCEAB00C4FFFD /* BuyViewController.m */,
+				8542F5CE1C8DCEAB00C4FFFD /* BuyViewController.xib */,
 			);
 			name = Buy;
 			path = Detail/Buy;
@@ -880,11 +896,13 @@
 				85230AE81C7319FD00B6A48A /* big_white_back@2x.png in Resources */,
 				85230AE91C7319FD00B6A48A /* big_white_back@3x.png in Resources */,
 				858BBF211C82F40C00F54E42 /* CouresesDetailDesTableViewCell.xib in Resources */,
+				8542F5D01C8DCEAB00C4FFFD /* BuyHeaderTableViewCell.xib in Resources */,
 				8554B11C1C72C08F00598E62 /* LaunchScreen.storyboard in Resources */,
 				858BBEFB1C814E9600F54E42 /* BBCourseBobyViewController.xib in Resources */,
+				8542F5DD1C8DCF5500C4FFFD /* BuyExchangeViewController.xib in Resources */,
+				8542F5D51C8DCEAB00C4FFFD /* BuyPreTableViewCell.xib in Resources */,
+				8542F5D21C8DCEAB00C4FFFD /* BuyMealTableViewCell.xib in Resources */,
 				8554B1191C72C08F00598E62 /* Assets.xcassets in Resources */,
-				85C52FBE1C89C0E0008348D8 /* BuyPreTableViewCell.xib in Resources */,
-				85C52FB91C89BD63008348D8 /* BuyMealTableViewCell.xib in Resources */,
 				85F1D0B91C7DE8680041B09B /* HomeTableViewCell.xib in Resources */,
 				8554B1171C72C08F00598E62 /* Main.storyboard in Resources */,
 				858BBEF31C81477200F54E42 /* BBCoureseTableViewCell.xib in Resources */,
@@ -895,9 +913,8 @@
 				858BBF261C82F6A300F54E42 /* CoursesDetailMovieTableViewCell.xib in Resources */,
 				858BBF1C1C82EAEE00F54E42 /* CoureseDetaiNameCell.xib in Resources */,
 				85CCBF1E1C84813A0084B11C /* CoureseEvalTableViewCell.xib in Resources */,
-				85D34CD91C85F0A5004FFCF2 /* BuyHeaderTableViewCell.xib in Resources */,
 				85CCBF151C847CA20084B11C /* CoursesEvalViewController.xib in Resources */,
-				85D34CDE1C868064004FFCF2 /* BuyViewController.xib in Resources */,
+				8542F5D71C8DCEAB00C4FFFD /* BuyViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -975,6 +992,7 @@
 				85230ACE1C73048F00B6A48A /* UIImage+Blur.m in Sources */,
 				8554B1141C72C08F00598E62 /* ViewController.m in Sources */,
 				85230AD71C73048F00B6A48A /* WDTipsView.m in Sources */,
+				8542F5D61C8DCEAB00C4FFFD /* BuyViewController.m in Sources */,
 				85230AF41C731AF500B6A48A /* BBConstColorKey.m in Sources */,
 				9AEE02001C8A87EC0027ACF0 /* MineDetails.m in Sources */,
 				85230ACB1C73048F00B6A48A /* NSString+RegularString.m in Sources */,
@@ -992,6 +1010,7 @@
 				85F1D0AD1C7C9CD20041B09B /* UserDao.m in Sources */,
 				85F1D0B81C7DE8680041B09B /* HomeTableViewCell.m in Sources */,
 				85230AEE1C7319FD00B6A48A /* UIViewController+WDNavResponderAction.m in Sources */,
+				8542F5D11C8DCEAB00C4FFFD /* BuyMealTableViewCell.m in Sources */,
 				85F1D0A71C7C93950041B09B /* MyApiLogin.m in Sources */,
 				85CCBF1D1C84813A0084B11C /* CoureseEvalTableViewCell.m in Sources */,
 				85230B221C76011900B6A48A /* AssessMentViewController.m in Sources */,
@@ -999,6 +1018,7 @@
 				85230AD41C73048F00B6A48A /* UIViewController+Category.m in Sources */,
 				8554B10E1C72C08F00598E62 /* main.m in Sources */,
 				9AEE01F41C8941410027ACF0 /* MineViewController.m in Sources */,
+				8542F5DC1C8DCF5500C4FFFD /* BuyExchangeViewController.m in Sources */,
 				858BBF251C82F6A300F54E42 /* CoursesDetailMovieTableViewCell.m in Sources */,
 				85230AD81C73048F00B6A48A /* MyConstantKey.m in Sources */,
 				85230B281C76026B00B6A48A /* RootTabBarController.m in Sources */,
@@ -1012,14 +1032,13 @@
 				85230B311C7B57A400B6A48A /* WDNetAPIRequestWithAFNManage.m in Sources */,
 				858BBEEB1C8138AB00F54E42 /* SegmentTapView.m in Sources */,
 				85230ACC1C73048F00B6A48A /* NSURL+Parameters.m in Sources */,
-				85D34CD81C85F0A5004FFCF2 /* BuyHeaderTableViewCell.m in Sources */,
 				85230AD61C73048F00B6A48A /* UIActionSheet+MyActionSheet.m in Sources */,
+				8542F5CF1C8DCEAB00C4FFFD /* BuyHeaderTableViewCell.m in Sources */,
 				85F1D0BC1C7DEB370041B09B /* MyUITableView.m in Sources */,
 				85C52FC21C89EB8A008348D8 /* MyApiBuy.m in Sources */,
 				858BBEF21C81477200F54E42 /* BBCoureseTableViewCell.m in Sources */,
 				858BBF021C81572500F54E42 /* CoureseModel.m in Sources */,
 				858BBF0B1C81A2AF00F54E42 /* CoursesDetailViewController.m in Sources */,
-				85D34CDD1C868064004FFCF2 /* BuyViewController.m in Sources */,
 				85230AD21C73048F00B6A48A /* UINavigationController+Autorotate.m in Sources */,
 				858BBF141C81B40200F54E42 /* CoursesDetailDesViewController.m in Sources */,
 				85230B191C7600F000B6A48A /* CoursesViewController.m in Sources */,
@@ -1028,19 +1047,18 @@
 				85C52FC51C89EC26008348D8 /* BuyModel.m in Sources */,
 				85230B1C1C7600FB00B6A48A /* ForumViewController.m in Sources */,
 				85230AC91C73048F00B6A48A /* CALayer+Helper.m in Sources */,
+				8542F5D41C8DCEAB00C4FFFD /* BuyPreTableViewCell.m in Sources */,
+				8542F5D31C8DCEAB00C4FFFD /* BuyMealView.m in Sources */,
 				85230AEC1C7319FD00B6A48A /* MyUITableViewController.m in Sources */,
-				85C52FB81C89BD63008348D8 /* BuyMealTableViewCell.m in Sources */,
 				85230B0C1C74A1D600B6A48A /* MyTextFiled.m in Sources */,
 				85230AD31C73048F00B6A48A /* UITableViewCell+FixUITableViewCellAutolayoutIHope.m in Sources */,
 				85230AED1C7319FD00B6A48A /* MyUIViewController.m in Sources */,
 				85230ACF1C73048F00B6A48A /* UIImage+Category.m in Sources */,
 				85230B1F1C76010800B6A48A /* HomeViewController.m in Sources */,
-				85C52FC81C8A8C74008348D8 /* BuyMealView.m in Sources */,
 				85CCBF191C84803A0084B11C /* BBStarView.m in Sources */,
 				85230B2B1C7B543C00B6A48A /* BaseModel.m in Sources */,
 				85230B061C740C3800B6A48A /* BBForgetPWD.m in Sources */,
 				85F1D0AA1C7C95AB0041B09B /* LoginModel.m in Sources */,
-				85C52FBD1C89C0E0008348D8 /* BuyPreTableViewCell.m in Sources */,
 				858BBF1B1C82EAEE00F54E42 /* CoureseDetaiNameCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

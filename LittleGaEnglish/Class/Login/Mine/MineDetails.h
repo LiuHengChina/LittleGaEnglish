@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MyUITableViewController.h"
 
-@interface MineDetails : UITableViewController
+@interface MineDetails : MyUITableViewController
 
 @end

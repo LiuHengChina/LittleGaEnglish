@@ -29,8 +29,7 @@
 
 - (void)setModel:(BuyModel *)model
 {
-//    self.countLab.text = [NSString stringWithFormat:@"共 %@ 咖啡豆",model.recommend_set_meal.]
-    
+    self.countLab.text = [NSString stringWithFormat:@"共 %@ 咖啡豆",model.product.is_can_exchange_coffee_score];
 }
 
 @end

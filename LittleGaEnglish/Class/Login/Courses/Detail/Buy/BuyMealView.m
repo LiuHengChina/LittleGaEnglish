@@ -32,16 +32,36 @@
     self.defaultIamge = [UIImageView new];
     [self addSubview:_defaultIamge];
     [_defaultIamge mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.centerY.equalTo(self.mas_centerY);
-        make.right.equalTo(self.mas_right);
-        make.width.equalTo(@125);
-        make.height.equalTo(@75);
+        make.top.left.top.bottom.equalTo(@0);
     }];
     
-    
     self.titleLab = [UILabel new];
+    [_defaultIamge addSubview:_titleLab];
+    [_titleLab mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(@5);
+        make.left.equalTo(@5);
+        make.right.equalTo(self.mas_right).offset(-5);
+    }];
     
+    self.priceLab = [UILabel new];
+    [_defaultIamge addSubview:_priceLab];
+    [_priceLab mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.right.equalTo(self.mas_right).offset(-5);
+        make.bottom.equalTo(self.mas_bottom).offset(-5);
+    }];
+    _priceLab.textAlignment = NSTextAlignmentRight;
     
+    _priceLab.font = [UIFont systemFontOfSize:11];
+    _titleLab.font = [UIFont systemFontOfSize:11];
+    _priceLab.textColor = [UIColor whiteColor];
+    _titleLab.textColor = [UIColor whiteColor];
+}
+
+- (void)setModel:(BuyClassListModel *)model
+{
+    [_defaultIamge sd_setImageWithURL:[NSURL URLWithString:model.class_cover_url] placeholderImage:nil completed:nil];
+    _priceLab.text = [NSString stringWithFormat:@"原价: %@",model.class_price];
+    _titleLab.text = model.class_name;
 }
 
 

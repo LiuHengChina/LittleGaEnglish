@@ -42,7 +42,7 @@
     MyNavigationController *CourseNC = [[MyNavigationController alloc]initWithRootViewController:CourseVC];
     
     ForumViewController *ForumVC =[[ForumViewController alloc]init];
-    ForumVC.tabBarItem.title=@"课程";
+    ForumVC.tabBarItem.title=@"论坛";
     ForumVC.tabBarItem.image=[UIImage imageNamed:@"forum_default"];
     ForumVC.tabBarItem.selectedImage = [UIImage imageNamed:@"forum_select"];
     MyNavigationController *ForumNC = [[MyNavigationController alloc]initWithRootViewController:ForumVC];

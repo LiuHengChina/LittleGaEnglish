@@ -22,44 +22,44 @@
                             <constraint firstAttribute="height" constant="1" id="wD2-K6-w4V"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="推荐套餐" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M9x-6C-anD">
                         <rect key="frame" x="13" y="13" width="68" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ut4-4w-XmW">
-                        <rect key="frame" x="8" y="49" width="332" height="72.5"/>
-                        <color key="backgroundColor" red="1" green="0.25073753170000002" blue="0.1819811284" alpha="1" colorSpace="calibratedRGB"/>
-                    </view>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="600" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="21.5" translatesAutoresizingMaskIntoConstraints="NO" id="6bO-xm-Glg">
-                        <rect key="frame" x="302" y="131" width="21.5" height="20"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="600" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="21.5" translatesAutoresizingMaskIntoConstraints="NO" id="6bO-xm-Glg">
+                        <rect key="frame" x="302" y="131" width="21.5" height="19.5"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <fontDescription key="fontDescription" type="system" pointSize="11"/>
                         <color key="textColor" red="0.4941176471" green="0.49803921569999998" blue="0.4941176471" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="优惠价  ￥ 600" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="21.5" translatesAutoresizingMaskIntoConstraints="NO" id="CAq-YJ-Cvw">
-                        <rect key="frame" x="211" y="131" width="75" height="20"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="优惠价  ￥ 600" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="21.5" translatesAutoresizingMaskIntoConstraints="NO" id="CAq-YJ-Cvw">
+                        <rect key="frame" x="211" y="131" width="75" height="19.5"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <fontDescription key="fontDescription" type="system" pointSize="11"/>
                         <color key="textColor" red="1" green="0.25073753170000002" blue="0.1819811284" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v40-AF-qRZ">
-                        <rect key="frame" x="13" y="131" width="21" height="20"/>
+                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v40-AF-qRZ">
+                        <rect key="frame" x="13" y="131" width="21" height="19.5"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="21" id="Ywx-qu-xRJ"/>
                         </constraints>
                     </button>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cIG-U7-3eG">
-                        <rect key="frame" x="42" y="131" width="44" height="20"/>
+                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cIG-U7-3eG">
+                        <rect key="frame" x="42" y="131" width="44" height="19.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="11"/>
                         <state key="normal" title="购买套餐"/>
                     </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ut4-4w-XmW">
+                        <rect key="frame" x="8" y="49" width="332" height="72.5"/>
+                        <color key="backgroundColor" red="1" green="0.25073753170000002" blue="0.1819811284" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
                 </subviews>
                 <constraints>
                     <constraint firstAttribute="bottomMargin" secondItem="Ut4-4w-XmW" secondAttribute="bottom" constant="40" id="0qO-qn-EnB"/>

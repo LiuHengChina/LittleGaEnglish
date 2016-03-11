@@ -21,7 +21,7 @@
 
 - (void)setClass_list:(NSMutableArray<BuyClassListModel *> *)class_list
 {
-    _class_list = [BuyProductModel arrayOfModelsFromDictionaries:class_list];
+    _class_list = [BuyClassListModel arrayOfModelsFromDictionaries:class_list];
 }
 
 @end
