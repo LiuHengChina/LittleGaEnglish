@@ -40,6 +40,9 @@
         case 1:
             
             break;
+        case 3:
+            [self performSegueWithIdentifier:@"oeder" sender:self];
+            break;
         default:
             break;
     }
@@ -68,6 +71,7 @@
 }
 - (IBAction)fanLB:(id)sender {
     NSLog(@"粉丝");
+    [self performSegueWithIdentifier:@"fan" sender:self];
 }
 
 #pragma mark - Table view data source

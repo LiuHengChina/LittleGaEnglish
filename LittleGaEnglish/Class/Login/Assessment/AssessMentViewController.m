@@ -7,6 +7,18 @@
 //
 
 #import "AssessMentViewController.h"
+#import "yuyincepingmain.h"
+//
+@interface AssessMentView : UIView
+@property (strong, nonatomic) IBOutlet UIImageView *yuyin;
+@property (strong, nonatomic) IBOutlet UIImageView *danci;
+@property (strong, nonatomic) IBOutlet UIImageView *wenhua;
+
+@end
+@implementation AssessMentView
+
+
+@end
 
 @interface AssessMentViewController ()
 
@@ -21,9 +33,30 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"评测";
+    NSArray *assessment = [[NSBundle mainBundle] loadNibNamed:@"assessment" owner:nil options:nil];
+    AssessMentView *view = [assessment lastObject];
+    view.frame = self.view.frame;
+    [self.view addSubview:view];
+    
+    [view.yuyin addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(yuyin:)]];
+    [view.danci addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(danci:)]];
+    [view.wenhua addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(wenhua:)]];
+
     // Do any additional setup after loading the view.
 }
-
+-(void)wenhua:(id)sender
+{
+    NSLog(@"wenhua");
+}
+-(void)danci:(id)sender
+{
+    NSLog(@"danci");
+}
+-(void)yuyin:(id)sender
+{
+    yuyincepingmain *yuyin = [yuyincepingmain new];
+    [self.navigationController pushViewController:yuyin animated:YES];
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

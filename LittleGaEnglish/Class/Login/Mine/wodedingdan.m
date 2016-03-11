@@ -1,43 +1,50 @@
 //
-//  ReplyController.m
+//  wodedingdan.m
 //  LittleGaEnglish
 //
-//  Created by 刘璞峰 on 16/3/7.
+//  Created by 刘璞峰 on 16/3/9.
 //  Copyright © 2016年 Jed. All rights reserved.
 //
 
-#import "ReplyController.h"
+#import "wodedingdan.h"
 #import "PieceWise.h"
-#import "ReplyDetail.h"
-#import "Replymypost.h"
-@interface ReplyController ()
+#import "kecheng.h"
+#import "shangpin.h"
+@interface wodedingdan ()
 @property (nonatomic,weak) THSegmentedPager * tabControl;
 
 @end
 
-@implementation ReplyController
+@implementation wodedingdan
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"我的帖子";
+    self.title = @"我的订单";
     self.navigationController.navigationBar.barStyle = UIStatusBarStyleDefault;
     [self.navigationController.navigationBar setTintColor:[UIColor whiteColor]];
+    // Do any additional setup after loading the view.
     NSArray *controllers = @[];
-    ReplyDetail *replydetail = [[UIStoryboard storyboardWithName:@"MineViewController" bundle:nil] instantiateViewControllerWithIdentifier:@"ReplyDetail"];
-    replydetail.title = @"我发布的";
-    Replymypost *myreplydetail = [[UIStoryboard storyboardWithName:@"MineViewController" bundle:nil] instantiateViewControllerWithIdentifier:@"Replymypost"];
-    myreplydetail.title = @"我回复的";
+    kecheng *replydetail = [[UIStoryboard storyboardWithName:@"MineViewController" bundle:nil] instantiateViewControllerWithIdentifier:@"kecheng"];
+    replydetail.title = @"课程";
+    
+    shangpin *wodefensi = [[UIStoryboard storyboardWithName:@"MineViewController" bundle:nil] instantiateViewControllerWithIdentifier:@"shangpin"];
+    wodefensi.title = @"商品";
+//
+//    woguanzhude *woguanzhude = [[UIStoryboard storyboardWithName:@"MineViewController" bundle:nil] instantiateViewControllerWithIdentifier:@"woguanzhude"];
+//    woguanzhude.title = @"我的粉丝";
+    
     controllers = [controllers arrayByAddingObject:replydetail];
-    controllers = [controllers arrayByAddingObject:myreplydetail];
+    controllers = [controllers arrayByAddingObject:wodefensi];
+//    controllers = [controllers arrayByAddingObject:woguanzhude];
+    
     [self.tabControl setPages:[controllers mutableCopy]];
     [self.tabControl updateTitleLabels];
     [self.tabControl setSelectedPageIndex:0 animated:NO];
-    // Do any additional setup after loading the view.
 }
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     [super prepareForSegue:segue sender:sender];
-    if ([segue.identifier isEqualToString:@"artistpost"]) {
+    if ([segue.identifier isEqualToString:@"orders"]) {
         self.tabControl = segue.destinationViewController;
     }
 }
