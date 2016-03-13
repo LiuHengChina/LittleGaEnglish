@@ -93,6 +93,10 @@
 		85F1D0B91C7DE8680041B09B /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85F1D0B71C7DE8680041B09B /* HomeTableViewCell.xib */; };
 		85F1D0BC1C7DEB370041B09B /* MyUITableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 85F1D0BB1C7DEB370041B09B /* MyUITableView.m */; };
 		85F1D0C01C7F360B0041B09B /* ImagePlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 85F1D0BF1C7F360B0041B09B /* ImagePlayerView.m */; };
+		9ADCCDCE1C93E639002F269F /* yuyincepingview.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ADCCDCD1C93E639002F269F /* yuyincepingview.m */; };
+		9ADCCDD21C93FF9D002F269F /* daojishiview.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9ADCCDD11C93FF9D002F269F /* daojishiview.xib */; };
+		9ADCCDDA1C940897002F269F /* yuyinpingce.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9ADCCDD91C940897002F269F /* yuyinpingce.xib */; };
+		9ADCCDDD1C940DCE002F269F /* UIViewController+BackButtonHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ADCCDDC1C940DCE002F269F /* UIViewController+BackButtonHandler.m */; };
 		9AEE01F41C8941410027ACF0 /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AEE01F31C8941410027ACF0 /* MineViewController.m */; };
 		9AEE01FA1C8948300027ACF0 /* MineViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AEE01F91C8948300027ACF0 /* MineViewController.storyboard */; };
 		9AEE02001C8A87EC0027ACF0 /* MineDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AEE01FF1C8A87EC0027ACF0 /* MineDetails.m */; };
@@ -301,6 +305,12 @@
 		85F1D0BF1C7F360B0041B09B /* ImagePlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImagePlayerView.m; sourceTree = "<group>"; };
 		8DEFF1A99ED31ADF16EFB9BA /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		8E9AB67708FB86BFB7A5AD2C /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		9ADCCDCC1C93E639002F269F /* yuyincepingview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yuyincepingview.h; sourceTree = "<group>"; };
+		9ADCCDCD1C93E639002F269F /* yuyincepingview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = yuyincepingview.m; sourceTree = "<group>"; };
+		9ADCCDD11C93FF9D002F269F /* daojishiview.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = daojishiview.xib; sourceTree = "<group>"; };
+		9ADCCDD91C940897002F269F /* yuyinpingce.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = yuyinpingce.xib; sourceTree = "<group>"; };
+		9ADCCDDB1C940DCE002F269F /* UIViewController+BackButtonHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+BackButtonHandler.h"; sourceTree = "<group>"; };
+		9ADCCDDC1C940DCE002F269F /* UIViewController+BackButtonHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+BackButtonHandler.m"; sourceTree = "<group>"; };
 		9AEE01F21C8941410027ACF0 /* MineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineViewController.h; sourceTree = "<group>"; };
 		9AEE01F31C8941410027ACF0 /* MineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
 		9AEE01F91C8948300027ACF0 /* MineViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MineViewController.storyboard; sourceTree = "<group>"; };
@@ -587,7 +597,11 @@
 				9AEE02401C916A650027ACF0 /* assessment.xib */,
 				9AEE02421C92A0920027ACF0 /* yuyincepingmain.h */,
 				9AEE02431C92A0920027ACF0 /* yuyincepingmain.m */,
+				9ADCCDCC1C93E639002F269F /* yuyincepingview.h */,
+				9ADCCDCD1C93E639002F269F /* yuyincepingview.m */,
 				9AEE02451C92A0A10027ACF0 /* yuyincepingmain.xib */,
+				9ADCCDD11C93FF9D002F269F /* daojishiview.xib */,
+				9ADCCDD91C940897002F269F /* yuyinpingce.xib */,
 			);
 			name = Assessment;
 			path = Login/Assessment;
@@ -817,6 +831,8 @@
 		85CCBF161C8480320084B11C /* DIY */ = {
 			isa = PBXGroup;
 			children = (
+				9ADCCDDB1C940DCE002F269F /* UIViewController+BackButtonHandler.h */,
+				9ADCCDDC1C940DCE002F269F /* UIViewController+BackButtonHandler.m */,
 				85CCBF171C84803A0084B11C /* BBStarView.h */,
 				85CCBF181C84803A0084B11C /* BBStarView.m */,
 			);
@@ -959,6 +975,7 @@
 				858BBF211C82F40C00F54E42 /* CouresesDetailDesTableViewCell.xib in Resources */,
 				8554B11C1C72C08F00598E62 /* LaunchScreen.storyboard in Resources */,
 				858BBEFB1C814E9600F54E42 /* BBCourseBobyViewController.xib in Resources */,
+				9ADCCDD21C93FF9D002F269F /* daojishiview.xib in Resources */,
 				8554B1191C72C08F00598E62 /* Assets.xcassets in Resources */,
 				85F1D0B91C7DE8680041B09B /* HomeTableViewCell.xib in Resources */,
 				8554B1171C72C08F00598E62 /* Main.storyboard in Resources */,
@@ -967,6 +984,7 @@
 				85230AE71C7319FD00B6A48A /* big_white_back.png in Resources */,
 				9AEE02461C92A0A10027ACF0 /* yuyincepingmain.xib in Resources */,
 				9AEE01FA1C8948300027ACF0 /* MineViewController.storyboard in Resources */,
+				9ADCCDDA1C940897002F269F /* yuyinpingce.xib in Resources */,
 				85230B0E1C74A1E800B6A48A /* MyTextFiled.xib in Resources */,
 				858BBF261C82F6A300F54E42 /* CoursesDetailMovieTableViewCell.xib in Resources */,
 				858BBF1C1C82EAEE00F54E42 /* CoureseDetaiNameCell.xib in Resources */,
@@ -1120,9 +1138,11 @@
 				9AEE022A1C8FD4650027ACF0 /* wodehaoyou.m in Sources */,
 				85230B1C1C7600FB00B6A48A /* ForumViewController.m in Sources */,
 				9AEE02211C8EBE350027ACF0 /* collpost.m in Sources */,
+				9ADCCDCE1C93E639002F269F /* yuyincepingview.m in Sources */,
 				85230AC91C73048F00B6A48A /* CALayer+Helper.m in Sources */,
 				85230AEC1C7319FD00B6A48A /* MyUITableViewController.m in Sources */,
 				85230B0C1C74A1D600B6A48A /* MyTextFiled.m in Sources */,
+				9ADCCDDD1C940DCE002F269F /* UIViewController+BackButtonHandler.m in Sources */,
 				9AEE02301C8FF5770027ACF0 /* woguanzhude.m in Sources */,
 				85230AD31C73048F00B6A48A /* UITableViewCell+FixUITableViewCellAutolayoutIHope.m in Sources */,
 				9AEE021B1C8D8BA40027ACF0 /* mycollection.m in Sources */,
