@@ -2367,6 +2367,10 @@
         <scene sceneID="g6G-OO-OSH">
             <objects>
                 <viewController hidesBottomBarWhenPushed="YES" id="z6g-44-7Sn" customClass="PieceWise" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="B1S-WI-e3w"/>
+                        <viewControllerLayoutGuide type="bottom" id="VYx-bl-x8L"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Oqn-qE-1K3">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="580"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2761,6 +2765,10 @@
         <scene sceneID="7d5-7C-mo5">
             <objects>
                 <viewController hidesBottomBarWhenPushed="YES" id="7IB-dM-81Z" customClass="PieceWise" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Plc-Pq-CgN"/>
+                        <viewControllerLayoutGuide type="bottom" id="emF-WY-qFe"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="oU7-EF-zYO">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="580"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

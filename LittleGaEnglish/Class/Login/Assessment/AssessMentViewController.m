@@ -8,7 +8,8 @@
 
 #import "AssessMentViewController.h"
 #import "yuyincepingmain.h"
-//
+#import "cewenhuamain.h"
+#import "dancipingce.h"
 @interface AssessMentView : UIView
 @property (strong, nonatomic) IBOutlet UIImageView *yuyin;
 @property (strong, nonatomic) IBOutlet UIImageView *danci;
@@ -47,10 +48,15 @@
 -(void)wenhua:(id)sender
 {
     NSLog(@"wenhua");
+    cewenhuamain *cewenhua = [cewenhuamain new];
+    cewenhua.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:cewenhua animated:YES];
 }
 -(void)danci:(id)sender
 {
     NSLog(@"danci");
+    dancipingce *danciping = [dancipingce new];
+    [self.navigationController pushViewController:danciping animated:YES];
 }
 -(void)yuyin:(id)sender
 {

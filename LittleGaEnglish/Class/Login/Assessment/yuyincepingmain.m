@@ -11,6 +11,8 @@
 #import "MyUITableView.h"
 #import "ReactiveCocoa.h"
 #import "UIViewController+BackButtonHandler.h"
+static BOOL viewhiden;
+
 @interface dajishiview : UIView
 @property (strong, nonatomic) IBOutlet UILabel *time;
 
@@ -102,7 +104,7 @@
                 self.yuyincepingxiangqing.frame = self.view.bounds;
                 [self.view addSubview:self.yuyincepingxiangqing];
                 self.title = @"小咖脱口秀语音测评";
-                self.navigationController.navigationItem.backBarButtonItem.action = @selector(back);
+                viewhiden = true;
             });
         }else{
             int seconds = timeout % 120;
@@ -118,18 +120,16 @@
     });
     dispatch_resume(_timer);
 }
--(void)back
-{
-    NSLog(@"sasasa");
-}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 -(BOOL) navigationShouldPopOnBackButton
 {
-    if (self.yuyincepingxiangqing.hidden == false) {
+    if (viewhiden) {
         self.yuyincepingxiangqing.hidden = YES;
+        viewhiden = false;
         self.title = @"我的测评";
         return NO;
     }

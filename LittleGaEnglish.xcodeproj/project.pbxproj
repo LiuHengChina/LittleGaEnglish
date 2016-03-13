@@ -93,6 +93,19 @@
 		85F1D0B91C7DE8680041B09B /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85F1D0B71C7DE8680041B09B /* HomeTableViewCell.xib */; };
 		85F1D0BC1C7DEB370041B09B /* MyUITableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 85F1D0BB1C7DEB370041B09B /* MyUITableView.m */; };
 		85F1D0C01C7F360B0041B09B /* ImagePlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 85F1D0BF1C7F360B0041B09B /* ImagePlayerView.m */; };
+		9A1E1F101C952A3D00D77564 /* dancipingce.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A1E1F0F1C952A3D00D77564 /* dancipingce.m */; };
+		9A1E1F121C952B1700D77564 /* dancipingce.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A1E1F111C952B1700D77564 /* dancipingce.xib */; };
+		9A1E1F151C952B9C00D77564 /* dancipingcecellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A1E1F141C952B9C00D77564 /* dancipingcecellTableViewCell.m */; };
+		9A1E1F171C952EC100D77564 /* dancipingcexiangqing.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A1E1F161C952EC100D77564 /* dancipingcexiangqing.xib */; };
+		9A1E1F191C954B7300D77564 /* wanchengdanci.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A1E1F181C954B7300D77564 /* wanchengdanci.xib */; };
+		9A1E1F1B1C954DDB00D77564 /* dancipingcecell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A1E1F1A1C954DDB00D77564 /* dancipingcecell.xib */; };
+		9A1E1F1E1C955F9400D77564 /* cewenhuamain.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A1E1F1D1C955F9400D77564 /* cewenhuamain.m */; };
+		9A1E1F201C955FA500D77564 /* cewenhua.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A1E1F1F1C955FA500D77564 /* cewenhua.xib */; };
+		9A1E1F251C95611900D77564 /* wenhuaceshixiangqing.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A1E1F241C95611900D77564 /* wenhuaceshixiangqing.xib */; };
+		9A1E1F271C95673100D77564 /* wenhuaceshiwancheng.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A1E1F261C95673100D77564 /* wenhuaceshiwancheng.xib */; };
+		9A1E1F291C9568E500D77564 /* wenhuachengjicell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A1E1F281C9568E500D77564 /* wenhuachengjicell.xib */; };
+		9A1E1F2B1C956B3500D77564 /* dancicuoti.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A1E1F2A1C956B3500D77564 /* dancicuoti.xib */; };
+		9A1E1F2D1C95715A00D77564 /* wenhuacuoti.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A1E1F2C1C95715A00D77564 /* wenhuacuoti.xib */; };
 		9ADCCDCE1C93E639002F269F /* yuyincepingview.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ADCCDCD1C93E639002F269F /* yuyincepingview.m */; };
 		9ADCCDD21C93FF9D002F269F /* daojishiview.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9ADCCDD11C93FF9D002F269F /* daojishiview.xib */; };
 		9ADCCDDA1C940897002F269F /* yuyinpingce.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9ADCCDD91C940897002F269F /* yuyinpingce.xib */; };
@@ -305,6 +318,22 @@
 		85F1D0BF1C7F360B0041B09B /* ImagePlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImagePlayerView.m; sourceTree = "<group>"; };
 		8DEFF1A99ED31ADF16EFB9BA /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		8E9AB67708FB86BFB7A5AD2C /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		9A1E1F0E1C952A3D00D77564 /* dancipingce.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dancipingce.h; sourceTree = "<group>"; };
+		9A1E1F0F1C952A3D00D77564 /* dancipingce.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dancipingce.m; sourceTree = "<group>"; };
+		9A1E1F111C952B1700D77564 /* dancipingce.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = dancipingce.xib; sourceTree = "<group>"; };
+		9A1E1F131C952B9C00D77564 /* dancipingcecellTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dancipingcecellTableViewCell.h; sourceTree = "<group>"; };
+		9A1E1F141C952B9C00D77564 /* dancipingcecellTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dancipingcecellTableViewCell.m; sourceTree = "<group>"; };
+		9A1E1F161C952EC100D77564 /* dancipingcexiangqing.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = dancipingcexiangqing.xib; sourceTree = "<group>"; };
+		9A1E1F181C954B7300D77564 /* wanchengdanci.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = wanchengdanci.xib; sourceTree = "<group>"; };
+		9A1E1F1A1C954DDB00D77564 /* dancipingcecell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = dancipingcecell.xib; sourceTree = "<group>"; };
+		9A1E1F1C1C955F9400D77564 /* cewenhuamain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cewenhuamain.h; sourceTree = "<group>"; };
+		9A1E1F1D1C955F9400D77564 /* cewenhuamain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cewenhuamain.m; sourceTree = "<group>"; };
+		9A1E1F1F1C955FA500D77564 /* cewenhua.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = cewenhua.xib; sourceTree = "<group>"; };
+		9A1E1F241C95611900D77564 /* wenhuaceshixiangqing.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = wenhuaceshixiangqing.xib; sourceTree = "<group>"; };
+		9A1E1F261C95673100D77564 /* wenhuaceshiwancheng.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = wenhuaceshiwancheng.xib; sourceTree = "<group>"; };
+		9A1E1F281C9568E500D77564 /* wenhuachengjicell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = wenhuachengjicell.xib; sourceTree = "<group>"; };
+		9A1E1F2A1C956B3500D77564 /* dancicuoti.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = dancicuoti.xib; sourceTree = "<group>"; };
+		9A1E1F2C1C95715A00D77564 /* wenhuacuoti.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = wenhuacuoti.xib; sourceTree = "<group>"; };
 		9ADCCDCC1C93E639002F269F /* yuyincepingview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yuyincepingview.h; sourceTree = "<group>"; };
 		9ADCCDCD1C93E639002F269F /* yuyincepingview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = yuyincepingview.m; sourceTree = "<group>"; };
 		9ADCCDD11C93FF9D002F269F /* daojishiview.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = daojishiview.xib; sourceTree = "<group>"; };
@@ -602,6 +631,22 @@
 				9AEE02451C92A0A10027ACF0 /* yuyincepingmain.xib */,
 				9ADCCDD11C93FF9D002F269F /* daojishiview.xib */,
 				9ADCCDD91C940897002F269F /* yuyinpingce.xib */,
+				9A1E1F0E1C952A3D00D77564 /* dancipingce.h */,
+				9A1E1F0F1C952A3D00D77564 /* dancipingce.m */,
+				9A1E1F131C952B9C00D77564 /* dancipingcecellTableViewCell.h */,
+				9A1E1F141C952B9C00D77564 /* dancipingcecellTableViewCell.m */,
+				9A1E1F111C952B1700D77564 /* dancipingce.xib */,
+				9A1E1F161C952EC100D77564 /* dancipingcexiangqing.xib */,
+				9A1E1F181C954B7300D77564 /* wanchengdanci.xib */,
+				9A1E1F1A1C954DDB00D77564 /* dancipingcecell.xib */,
+				9A1E1F2A1C956B3500D77564 /* dancicuoti.xib */,
+				9A1E1F1C1C955F9400D77564 /* cewenhuamain.h */,
+				9A1E1F1D1C955F9400D77564 /* cewenhuamain.m */,
+				9A1E1F1F1C955FA500D77564 /* cewenhua.xib */,
+				9A1E1F241C95611900D77564 /* wenhuaceshixiangqing.xib */,
+				9A1E1F261C95673100D77564 /* wenhuaceshiwancheng.xib */,
+				9A1E1F281C9568E500D77564 /* wenhuachengjicell.xib */,
+				9A1E1F2C1C95715A00D77564 /* wenhuacuoti.xib */,
 			);
 			name = Assessment;
 			path = Login/Assessment;
@@ -971,7 +1016,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				85230AE81C7319FD00B6A48A /* big_white_back@2x.png in Resources */,
+				9A1E1F201C955FA500D77564 /* cewenhua.xib in Resources */,
+				9A1E1F2B1C956B3500D77564 /* dancicuoti.xib in Resources */,
 				85230AE91C7319FD00B6A48A /* big_white_back@3x.png in Resources */,
+				9A1E1F2D1C95715A00D77564 /* wenhuacuoti.xib in Resources */,
 				858BBF211C82F40C00F54E42 /* CouresesDetailDesTableViewCell.xib in Resources */,
 				8554B11C1C72C08F00598E62 /* LaunchScreen.storyboard in Resources */,
 				858BBEFB1C814E9600F54E42 /* BBCourseBobyViewController.xib in Resources */,
@@ -982,7 +1030,9 @@
 				858BBEF31C81477200F54E42 /* BBCoureseTableViewCell.xib in Resources */,
 				85230AFD1C731ED800B6A48A /* BBLoginViewController.xib in Resources */,
 				85230AE71C7319FD00B6A48A /* big_white_back.png in Resources */,
+				9A1E1F171C952EC100D77564 /* dancipingcexiangqing.xib in Resources */,
 				9AEE02461C92A0A10027ACF0 /* yuyincepingmain.xib in Resources */,
+				9A1E1F121C952B1700D77564 /* dancipingce.xib in Resources */,
 				9AEE01FA1C8948300027ACF0 /* MineViewController.storyboard in Resources */,
 				9ADCCDDA1C940897002F269F /* yuyinpingce.xib in Resources */,
 				85230B0E1C74A1E800B6A48A /* MyTextFiled.xib in Resources */,
@@ -990,9 +1040,14 @@
 				858BBF1C1C82EAEE00F54E42 /* CoureseDetaiNameCell.xib in Resources */,
 				85CCBF1E1C84813A0084B11C /* CoureseEvalTableViewCell.xib in Resources */,
 				85D34CD91C85F0A5004FFCF2 /* BuyHeaderTableViewCell.xib in Resources */,
+				9A1E1F291C9568E500D77564 /* wenhuachengjicell.xib in Resources */,
+				9A1E1F191C954B7300D77564 /* wanchengdanci.xib in Resources */,
 				9AEE02411C916A650027ACF0 /* assessment.xib in Resources */,
 				85CCBF151C847CA20084B11C /* CoursesEvalViewController.xib in Resources */,
+				9A1E1F1B1C954DDB00D77564 /* dancipingcecell.xib in Resources */,
+				9A1E1F251C95611900D77564 /* wenhuaceshixiangqing.xib in Resources */,
 				85D34CDE1C868064004FFCF2 /* BuyViewController.xib in Resources */,
+				9A1E1F271C95673100D77564 /* wenhuaceshiwancheng.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1066,6 +1121,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				858BBF201C82F40C00F54E42 /* CouresesDetailDesTableViewCell.m in Sources */,
+				9A1E1F101C952A3D00D77564 /* dancipingce.m in Sources */,
 				85230AD51C73048F00B6A48A /* APIUrl.m in Sources */,
 				85230ACE1C73048F00B6A48A /* UIImage+Blur.m in Sources */,
 				8554B1141C72C08F00598E62 /* ViewController.m in Sources */,
@@ -1076,6 +1132,7 @@
 				9AEE02121C8D7E0E0027ACF0 /* ReplyController.m in Sources */,
 				9AEE02001C8A87EC0027ACF0 /* MineDetails.m in Sources */,
 				85230ACB1C73048F00B6A48A /* NSString+RegularString.m in Sources */,
+				9A1E1F1E1C955F9400D77564 /* cewenhuamain.m in Sources */,
 				858BBF291C830B2900F54E42 /* CourseDetailModel.m in Sources */,
 				85230AEB1C7319FD00B6A48A /* MyTabBarController.m in Sources */,
 				8554B1111C72C08F00598E62 /* AppDelegate.m in Sources */,
@@ -1092,6 +1149,7 @@
 				85F1D0AD1C7C9CD20041B09B /* UserDao.m in Sources */,
 				85F1D0B81C7DE8680041B09B /* HomeTableViewCell.m in Sources */,
 				85230AEE1C7319FD00B6A48A /* UIViewController+WDNavResponderAction.m in Sources */,
+				9A1E1F151C952B9C00D77564 /* dancipingcecellTableViewCell.m in Sources */,
 				85F1D0A71C7C93950041B09B /* MyApiLogin.m in Sources */,
 				85CCBF1D1C84813A0084B11C /* CoureseEvalTableViewCell.m in Sources */,
 				85230B221C76011900B6A48A /* AssessMentViewController.m in Sources */,
