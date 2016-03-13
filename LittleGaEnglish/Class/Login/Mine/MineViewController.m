@@ -37,7 +37,12 @@
         case 0:
             [self performSegueWithIdentifier:@"userdata" sender:self];
             break;
+        case 1:
             
+            break;
+        case 3:
+            [self performSegueWithIdentifier:@"oeder" sender:self];
+            break;
         default:
             break;
     }
@@ -54,15 +59,19 @@
 }
 - (IBAction)coursetap:(id)sender {
     NSLog(@"课程");
+    [self performSegueWithIdentifier:@"courseLB" sender:self];
 }
 - (IBAction)postLB:(id)sender {
     NSLog(@"帖子");
+    [self performSegueWithIdentifier:@"mypost" sender:self];
 }
 - (IBAction)collectionLB:(id)sender {
     NSLog(@"收藏");
+    [self performSegueWithIdentifier:@"collection" sender:self];
 }
 - (IBAction)fanLB:(id)sender {
     NSLog(@"粉丝");
+    [self performSegueWithIdentifier:@"fan" sender:self];
 }
 
 #pragma mark - Table view data source

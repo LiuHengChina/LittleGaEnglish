@@ -92,7 +92,7 @@
     detailVC.courseID = model.id;
     detailVC.title = model.name;
     [self.VC.navigationController pushViewController:detailVC animated:YES];
-}
+} 
 
 
 

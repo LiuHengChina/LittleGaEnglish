@@ -100,9 +100,50 @@
 		85F1D0B91C7DE8680041B09B /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85F1D0B71C7DE8680041B09B /* HomeTableViewCell.xib */; };
 		85F1D0BC1C7DEB370041B09B /* MyUITableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 85F1D0BB1C7DEB370041B09B /* MyUITableView.m */; };
 		85F1D0C01C7F360B0041B09B /* ImagePlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 85F1D0BF1C7F360B0041B09B /* ImagePlayerView.m */; };
+		9A1E1F101C952A3D00D77564 /* dancipingce.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A1E1F0F1C952A3D00D77564 /* dancipingce.m */; };
+		9A1E1F121C952B1700D77564 /* dancipingce.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A1E1F111C952B1700D77564 /* dancipingce.xib */; };
+		9A1E1F151C952B9C00D77564 /* dancipingcecellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A1E1F141C952B9C00D77564 /* dancipingcecellTableViewCell.m */; };
+		9A1E1F171C952EC100D77564 /* dancipingcexiangqing.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A1E1F161C952EC100D77564 /* dancipingcexiangqing.xib */; };
+		9A1E1F191C954B7300D77564 /* wanchengdanci.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A1E1F181C954B7300D77564 /* wanchengdanci.xib */; };
+		9A1E1F1B1C954DDB00D77564 /* dancipingcecell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A1E1F1A1C954DDB00D77564 /* dancipingcecell.xib */; };
+		9A1E1F1E1C955F9400D77564 /* cewenhuamain.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A1E1F1D1C955F9400D77564 /* cewenhuamain.m */; };
+		9A1E1F201C955FA500D77564 /* cewenhua.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A1E1F1F1C955FA500D77564 /* cewenhua.xib */; };
+		9A1E1F251C95611900D77564 /* wenhuaceshixiangqing.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A1E1F241C95611900D77564 /* wenhuaceshixiangqing.xib */; };
+		9A1E1F271C95673100D77564 /* wenhuaceshiwancheng.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A1E1F261C95673100D77564 /* wenhuaceshiwancheng.xib */; };
+		9A1E1F291C9568E500D77564 /* wenhuachengjicell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A1E1F281C9568E500D77564 /* wenhuachengjicell.xib */; };
+		9A1E1F2B1C956B3500D77564 /* dancicuoti.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A1E1F2A1C956B3500D77564 /* dancicuoti.xib */; };
+		9A1E1F2D1C95715A00D77564 /* wenhuacuoti.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A1E1F2C1C95715A00D77564 /* wenhuacuoti.xib */; };
+		9ADCCDCE1C93E639002F269F /* yuyincepingview.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ADCCDCD1C93E639002F269F /* yuyincepingview.m */; };
+		9ADCCDD21C93FF9D002F269F /* daojishiview.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9ADCCDD11C93FF9D002F269F /* daojishiview.xib */; };
+		9ADCCDDA1C940897002F269F /* yuyinpingce.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9ADCCDD91C940897002F269F /* yuyinpingce.xib */; };
+		9ADCCDDD1C940DCE002F269F /* UIViewController+BackButtonHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ADCCDDC1C940DCE002F269F /* UIViewController+BackButtonHandler.m */; };
 		9AEE01F41C8941410027ACF0 /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AEE01F31C8941410027ACF0 /* MineViewController.m */; };
 		9AEE01FA1C8948300027ACF0 /* MineViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AEE01F91C8948300027ACF0 /* MineViewController.storyboard */; };
 		9AEE02001C8A87EC0027ACF0 /* MineDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AEE01FF1C8A87EC0027ACF0 /* MineDetails.m */; };
+		9AEE02031C8D21610027ACF0 /* CourseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AEE02021C8D21610027ACF0 /* CourseViewController.m */; };
+		9AEE02061C8D230D0027ACF0 /* PieceWise.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AEE02051C8D230D0027ACF0 /* PieceWise.m */; };
+		9AEE02091C8D2A530027ACF0 /* CourseViewDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AEE02081C8D2A530027ACF0 /* CourseViewDetail.m */; };
+		9AEE020C1C8D2DCC0027ACF0 /* CompleteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AEE020B1C8D2DCC0027ACF0 /* CompleteViewController.m */; };
+		9AEE020F1C8D424B0027ACF0 /* ClassRecommended.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AEE020E1C8D424B0027ACF0 /* ClassRecommended.m */; };
+		9AEE02121C8D7E0E0027ACF0 /* ReplyController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AEE02111C8D7E0E0027ACF0 /* ReplyController.m */; };
+		9AEE02151C8D7E740027ACF0 /* ReplyDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AEE02141C8D7E740027ACF0 /* ReplyDetail.m */; };
+		9AEE02181C8D822D0027ACF0 /* Replymypost.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AEE02171C8D822D0027ACF0 /* Replymypost.m */; };
+		9AEE021B1C8D8BA40027ACF0 /* mycollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AEE021A1C8D8BA40027ACF0 /* mycollection.m */; };
+		9AEE021E1C8D8CF90027ACF0 /* CollectionDelete.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AEE021D1C8D8CF90027ACF0 /* CollectionDelete.m */; };
+		9AEE02211C8EBE350027ACF0 /* collpost.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AEE02201C8EBE350027ACF0 /* collpost.m */; };
+		9AEE02241C8ECE030027ACF0 /* goodscontro.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AEE02231C8ECE030027ACF0 /* goodscontro.m */; };
+		9AEE02271C8FD4080027ACF0 /* fan1.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AEE02261C8FD4080027ACF0 /* fan1.m */; };
+		9AEE022A1C8FD4650027ACF0 /* wodehaoyou.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AEE02291C8FD4650027ACF0 /* wodehaoyou.m */; };
+		9AEE022D1C8FF1D90027ACF0 /* wodefensi.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AEE022C1C8FF1D90027ACF0 /* wodefensi.m */; };
+		9AEE02301C8FF5770027ACF0 /* woguanzhude.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AEE022F1C8FF5770027ACF0 /* woguanzhude.m */; };
+		9AEE02331C8FFDCE0027ACF0 /* wodedingdan.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AEE02321C8FFDCE0027ACF0 /* wodedingdan.m */; };
+		9AEE02361C8FFE570027ACF0 /* kecheng.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AEE02351C8FFE570027ACF0 /* kecheng.m */; };
+		9AEE02391C9001C60027ACF0 /* shangpin.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AEE02381C9001C60027ACF0 /* shangpin.m */; };
+		9AEE023C1C90043A0027ACF0 /* zhifujiemian.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AEE023B1C90043A0027ACF0 /* zhifujiemian.m */; };
+		9AEE023F1C90263F0027ACF0 /* quxiaodingdan.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AEE023E1C90263F0027ACF0 /* quxiaodingdan.m */; };
+		9AEE02411C916A650027ACF0 /* assessment.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AEE02401C916A650027ACF0 /* assessment.xib */; };
+		9AEE02441C92A0920027ACF0 /* yuyincepingmain.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AEE02431C92A0920027ACF0 /* yuyincepingmain.m */; };
+		9AEE02461C92A0A10027ACF0 /* yuyincepingmain.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AEE02451C92A0A10027ACF0 /* yuyincepingmain.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -296,11 +337,79 @@
 		85F1D0BF1C7F360B0041B09B /* ImagePlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImagePlayerView.m; sourceTree = "<group>"; };
 		8DEFF1A99ED31ADF16EFB9BA /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		8E9AB67708FB86BFB7A5AD2C /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		9A1E1F0E1C952A3D00D77564 /* dancipingce.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dancipingce.h; sourceTree = "<group>"; };
+		9A1E1F0F1C952A3D00D77564 /* dancipingce.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dancipingce.m; sourceTree = "<group>"; };
+		9A1E1F111C952B1700D77564 /* dancipingce.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = dancipingce.xib; sourceTree = "<group>"; };
+		9A1E1F131C952B9C00D77564 /* dancipingcecellTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dancipingcecellTableViewCell.h; sourceTree = "<group>"; };
+		9A1E1F141C952B9C00D77564 /* dancipingcecellTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dancipingcecellTableViewCell.m; sourceTree = "<group>"; };
+		9A1E1F161C952EC100D77564 /* dancipingcexiangqing.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = dancipingcexiangqing.xib; sourceTree = "<group>"; };
+		9A1E1F181C954B7300D77564 /* wanchengdanci.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = wanchengdanci.xib; sourceTree = "<group>"; };
+		9A1E1F1A1C954DDB00D77564 /* dancipingcecell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = dancipingcecell.xib; sourceTree = "<group>"; };
+		9A1E1F1C1C955F9400D77564 /* cewenhuamain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cewenhuamain.h; sourceTree = "<group>"; };
+		9A1E1F1D1C955F9400D77564 /* cewenhuamain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cewenhuamain.m; sourceTree = "<group>"; };
+		9A1E1F1F1C955FA500D77564 /* cewenhua.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = cewenhua.xib; sourceTree = "<group>"; };
+		9A1E1F241C95611900D77564 /* wenhuaceshixiangqing.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = wenhuaceshixiangqing.xib; sourceTree = "<group>"; };
+		9A1E1F261C95673100D77564 /* wenhuaceshiwancheng.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = wenhuaceshiwancheng.xib; sourceTree = "<group>"; };
+		9A1E1F281C9568E500D77564 /* wenhuachengjicell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = wenhuachengjicell.xib; sourceTree = "<group>"; };
+		9A1E1F2A1C956B3500D77564 /* dancicuoti.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = dancicuoti.xib; sourceTree = "<group>"; };
+		9A1E1F2C1C95715A00D77564 /* wenhuacuoti.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = wenhuacuoti.xib; sourceTree = "<group>"; };
+		9ADCCDCC1C93E639002F269F /* yuyincepingview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yuyincepingview.h; sourceTree = "<group>"; };
+		9ADCCDCD1C93E639002F269F /* yuyincepingview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = yuyincepingview.m; sourceTree = "<group>"; };
+		9ADCCDD11C93FF9D002F269F /* daojishiview.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = daojishiview.xib; sourceTree = "<group>"; };
+		9ADCCDD91C940897002F269F /* yuyinpingce.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = yuyinpingce.xib; sourceTree = "<group>"; };
+		9ADCCDDB1C940DCE002F269F /* UIViewController+BackButtonHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+BackButtonHandler.h"; sourceTree = "<group>"; };
+		9ADCCDDC1C940DCE002F269F /* UIViewController+BackButtonHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+BackButtonHandler.m"; sourceTree = "<group>"; };
 		9AEE01F21C8941410027ACF0 /* MineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineViewController.h; sourceTree = "<group>"; };
 		9AEE01F31C8941410027ACF0 /* MineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
 		9AEE01F91C8948300027ACF0 /* MineViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MineViewController.storyboard; sourceTree = "<group>"; };
 		9AEE01FE1C8A87EC0027ACF0 /* MineDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineDetails.h; sourceTree = "<group>"; };
 		9AEE01FF1C8A87EC0027ACF0 /* MineDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineDetails.m; sourceTree = "<group>"; };
+		9AEE02011C8D21610027ACF0 /* CourseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CourseViewController.h; sourceTree = "<group>"; };
+		9AEE02021C8D21610027ACF0 /* CourseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CourseViewController.m; sourceTree = "<group>"; };
+		9AEE02041C8D230D0027ACF0 /* PieceWise.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PieceWise.h; sourceTree = "<group>"; };
+		9AEE02051C8D230D0027ACF0 /* PieceWise.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PieceWise.m; sourceTree = "<group>"; };
+		9AEE02071C8D2A530027ACF0 /* CourseViewDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CourseViewDetail.h; sourceTree = "<group>"; };
+		9AEE02081C8D2A530027ACF0 /* CourseViewDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CourseViewDetail.m; sourceTree = "<group>"; };
+		9AEE020A1C8D2DCC0027ACF0 /* CompleteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompleteViewController.h; sourceTree = "<group>"; };
+		9AEE020B1C8D2DCC0027ACF0 /* CompleteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompleteViewController.m; sourceTree = "<group>"; };
+		9AEE020D1C8D424B0027ACF0 /* ClassRecommended.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassRecommended.h; sourceTree = "<group>"; };
+		9AEE020E1C8D424B0027ACF0 /* ClassRecommended.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassRecommended.m; sourceTree = "<group>"; };
+		9AEE02101C8D7E0E0027ACF0 /* ReplyController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReplyController.h; sourceTree = "<group>"; };
+		9AEE02111C8D7E0E0027ACF0 /* ReplyController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReplyController.m; sourceTree = "<group>"; };
+		9AEE02131C8D7E740027ACF0 /* ReplyDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReplyDetail.h; sourceTree = "<group>"; };
+		9AEE02141C8D7E740027ACF0 /* ReplyDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReplyDetail.m; sourceTree = "<group>"; };
+		9AEE02161C8D822D0027ACF0 /* Replymypost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Replymypost.h; sourceTree = "<group>"; };
+		9AEE02171C8D822D0027ACF0 /* Replymypost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Replymypost.m; sourceTree = "<group>"; };
+		9AEE02191C8D8BA40027ACF0 /* mycollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mycollection.h; sourceTree = "<group>"; };
+		9AEE021A1C8D8BA40027ACF0 /* mycollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mycollection.m; sourceTree = "<group>"; };
+		9AEE021C1C8D8CF90027ACF0 /* CollectionDelete.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionDelete.h; sourceTree = "<group>"; };
+		9AEE021D1C8D8CF90027ACF0 /* CollectionDelete.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionDelete.m; sourceTree = "<group>"; };
+		9AEE021F1C8EBE350027ACF0 /* collpost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = collpost.h; sourceTree = "<group>"; };
+		9AEE02201C8EBE350027ACF0 /* collpost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = collpost.m; sourceTree = "<group>"; };
+		9AEE02221C8ECE030027ACF0 /* goodscontro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = goodscontro.h; sourceTree = "<group>"; };
+		9AEE02231C8ECE030027ACF0 /* goodscontro.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = goodscontro.m; sourceTree = "<group>"; };
+		9AEE02251C8FD4080027ACF0 /* fan1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fan1.h; sourceTree = "<group>"; };
+		9AEE02261C8FD4080027ACF0 /* fan1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = fan1.m; sourceTree = "<group>"; };
+		9AEE02281C8FD4650027ACF0 /* wodehaoyou.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wodehaoyou.h; sourceTree = "<group>"; };
+		9AEE02291C8FD4650027ACF0 /* wodehaoyou.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = wodehaoyou.m; sourceTree = "<group>"; };
+		9AEE022B1C8FF1D90027ACF0 /* wodefensi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wodefensi.h; sourceTree = "<group>"; };
+		9AEE022C1C8FF1D90027ACF0 /* wodefensi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = wodefensi.m; sourceTree = "<group>"; };
+		9AEE022E1C8FF5770027ACF0 /* woguanzhude.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = woguanzhude.h; sourceTree = "<group>"; };
+		9AEE022F1C8FF5770027ACF0 /* woguanzhude.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = woguanzhude.m; sourceTree = "<group>"; };
+		9AEE02311C8FFDCE0027ACF0 /* wodedingdan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wodedingdan.h; sourceTree = "<group>"; };
+		9AEE02321C8FFDCE0027ACF0 /* wodedingdan.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = wodedingdan.m; sourceTree = "<group>"; };
+		9AEE02341C8FFE570027ACF0 /* kecheng.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kecheng.h; sourceTree = "<group>"; };
+		9AEE02351C8FFE570027ACF0 /* kecheng.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = kecheng.m; sourceTree = "<group>"; };
+		9AEE02371C9001C60027ACF0 /* shangpin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = shangpin.h; sourceTree = "<group>"; };
+		9AEE02381C9001C60027ACF0 /* shangpin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = shangpin.m; sourceTree = "<group>"; };
+		9AEE023A1C90043A0027ACF0 /* zhifujiemian.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zhifujiemian.h; sourceTree = "<group>"; };
+		9AEE023B1C90043A0027ACF0 /* zhifujiemian.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = zhifujiemian.m; sourceTree = "<group>"; };
+		9AEE023D1C90263F0027ACF0 /* quxiaodingdan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = quxiaodingdan.h; sourceTree = "<group>"; };
+		9AEE023E1C90263F0027ACF0 /* quxiaodingdan.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = quxiaodingdan.m; sourceTree = "<group>"; };
+		9AEE02401C916A650027ACF0 /* assessment.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = assessment.xib; sourceTree = "<group>"; };
+		9AEE02421C92A0920027ACF0 /* yuyincepingmain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yuyincepingmain.h; sourceTree = "<group>"; };
+		9AEE02431C92A0920027ACF0 /* yuyincepingmain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = yuyincepingmain.m; sourceTree = "<group>"; };
+		9AEE02451C92A0A10027ACF0 /* yuyincepingmain.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = yuyincepingmain.xib; sourceTree = "<group>"; };
 		B4D6F1E398CD6B493E69B389 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -495,6 +604,8 @@
 				85230ADC1C7319FD00B6A48A /* big_white_back@3x.png */,
 				85230ADD1C7319FD00B6A48A /* MyNavigationController.h */,
 				85230ADE1C7319FD00B6A48A /* MyNavigationController.m */,
+				9AEE02041C8D230D0027ACF0 /* PieceWise.h */,
+				9AEE02051C8D230D0027ACF0 /* PieceWise.m */,
 				85230ADF1C7319FD00B6A48A /* MyTabBarController.h */,
 				85230AE01C7319FD00B6A48A /* MyTabBarController.m */,
 				85230AE11C7319FD00B6A48A /* MyUITableViewController.h */,
@@ -534,6 +645,30 @@
 			children = (
 				85230B201C76011900B6A48A /* AssessMentViewController.h */,
 				85230B211C76011900B6A48A /* AssessMentViewController.m */,
+				9AEE02401C916A650027ACF0 /* assessment.xib */,
+				9AEE02421C92A0920027ACF0 /* yuyincepingmain.h */,
+				9AEE02431C92A0920027ACF0 /* yuyincepingmain.m */,
+				9ADCCDCC1C93E639002F269F /* yuyincepingview.h */,
+				9ADCCDCD1C93E639002F269F /* yuyincepingview.m */,
+				9AEE02451C92A0A10027ACF0 /* yuyincepingmain.xib */,
+				9ADCCDD11C93FF9D002F269F /* daojishiview.xib */,
+				9ADCCDD91C940897002F269F /* yuyinpingce.xib */,
+				9A1E1F0E1C952A3D00D77564 /* dancipingce.h */,
+				9A1E1F0F1C952A3D00D77564 /* dancipingce.m */,
+				9A1E1F131C952B9C00D77564 /* dancipingcecellTableViewCell.h */,
+				9A1E1F141C952B9C00D77564 /* dancipingcecellTableViewCell.m */,
+				9A1E1F111C952B1700D77564 /* dancipingce.xib */,
+				9A1E1F161C952EC100D77564 /* dancipingcexiangqing.xib */,
+				9A1E1F181C954B7300D77564 /* wanchengdanci.xib */,
+				9A1E1F1A1C954DDB00D77564 /* dancipingcecell.xib */,
+				9A1E1F2A1C956B3500D77564 /* dancicuoti.xib */,
+				9A1E1F1C1C955F9400D77564 /* cewenhuamain.h */,
+				9A1E1F1D1C955F9400D77564 /* cewenhuamain.m */,
+				9A1E1F1F1C955FA500D77564 /* cewenhua.xib */,
+				9A1E1F241C95611900D77564 /* wenhuaceshixiangqing.xib */,
+				9A1E1F261C95673100D77564 /* wenhuaceshiwancheng.xib */,
+				9A1E1F281C9568E500D77564 /* wenhuachengjicell.xib */,
+				9A1E1F2C1C95715A00D77564 /* wenhuacuoti.xib */,
 			);
 			name = Assessment;
 			path = Login/Assessment;
@@ -591,6 +726,46 @@
 				9AEE01F31C8941410027ACF0 /* MineViewController.m */,
 				9AEE01FE1C8A87EC0027ACF0 /* MineDetails.h */,
 				9AEE01FF1C8A87EC0027ACF0 /* MineDetails.m */,
+				9AEE02011C8D21610027ACF0 /* CourseViewController.h */,
+				9AEE02021C8D21610027ACF0 /* CourseViewController.m */,
+				9AEE02071C8D2A530027ACF0 /* CourseViewDetail.h */,
+				9AEE02081C8D2A530027ACF0 /* CourseViewDetail.m */,
+				9AEE020A1C8D2DCC0027ACF0 /* CompleteViewController.h */,
+				9AEE020B1C8D2DCC0027ACF0 /* CompleteViewController.m */,
+				9AEE020D1C8D424B0027ACF0 /* ClassRecommended.h */,
+				9AEE020E1C8D424B0027ACF0 /* ClassRecommended.m */,
+				9AEE02101C8D7E0E0027ACF0 /* ReplyController.h */,
+				9AEE02111C8D7E0E0027ACF0 /* ReplyController.m */,
+				9AEE02131C8D7E740027ACF0 /* ReplyDetail.h */,
+				9AEE02141C8D7E740027ACF0 /* ReplyDetail.m */,
+				9AEE02161C8D822D0027ACF0 /* Replymypost.h */,
+				9AEE02171C8D822D0027ACF0 /* Replymypost.m */,
+				9AEE02191C8D8BA40027ACF0 /* mycollection.h */,
+				9AEE021A1C8D8BA40027ACF0 /* mycollection.m */,
+				9AEE021C1C8D8CF90027ACF0 /* CollectionDelete.h */,
+				9AEE021D1C8D8CF90027ACF0 /* CollectionDelete.m */,
+				9AEE021F1C8EBE350027ACF0 /* collpost.h */,
+				9AEE02201C8EBE350027ACF0 /* collpost.m */,
+				9AEE02221C8ECE030027ACF0 /* goodscontro.h */,
+				9AEE02231C8ECE030027ACF0 /* goodscontro.m */,
+				9AEE02251C8FD4080027ACF0 /* fan1.h */,
+				9AEE02261C8FD4080027ACF0 /* fan1.m */,
+				9AEE02281C8FD4650027ACF0 /* wodehaoyou.h */,
+				9AEE02291C8FD4650027ACF0 /* wodehaoyou.m */,
+				9AEE022B1C8FF1D90027ACF0 /* wodefensi.h */,
+				9AEE022C1C8FF1D90027ACF0 /* wodefensi.m */,
+				9AEE022E1C8FF5770027ACF0 /* woguanzhude.h */,
+				9AEE022F1C8FF5770027ACF0 /* woguanzhude.m */,
+				9AEE02311C8FFDCE0027ACF0 /* wodedingdan.h */,
+				9AEE02321C8FFDCE0027ACF0 /* wodedingdan.m */,
+				9AEE02341C8FFE570027ACF0 /* kecheng.h */,
+				9AEE02351C8FFE570027ACF0 /* kecheng.m */,
+				9AEE02371C9001C60027ACF0 /* shangpin.h */,
+				9AEE02381C9001C60027ACF0 /* shangpin.m */,
+				9AEE023A1C90043A0027ACF0 /* zhifujiemian.h */,
+				9AEE023B1C90043A0027ACF0 /* zhifujiemian.m */,
+				9AEE023D1C90263F0027ACF0 /* quxiaodingdan.h */,
+				9AEE023E1C90263F0027ACF0 /* quxiaodingdan.m */,
 				9AEE01F91C8948300027ACF0 /* MineViewController.storyboard */,
 			);
 			name = Mine;
@@ -732,6 +907,8 @@
 		85CCBF161C8480320084B11C /* DIY */ = {
 			isa = PBXGroup;
 			children = (
+				9ADCCDDB1C940DCE002F269F /* UIViewController+BackButtonHandler.h */,
+				9ADCCDDC1C940DCE002F269F /* UIViewController+BackButtonHandler.m */,
 				85CCBF171C84803A0084B11C /* BBStarView.h */,
 				85CCBF181C84803A0084B11C /* BBStarView.m */,
 			);
@@ -878,10 +1055,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				85230AE81C7319FD00B6A48A /* big_white_back@2x.png in Resources */,
+				9A1E1F201C955FA500D77564 /* cewenhua.xib in Resources */,
+				9A1E1F2B1C956B3500D77564 /* dancicuoti.xib in Resources */,
 				85230AE91C7319FD00B6A48A /* big_white_back@3x.png in Resources */,
+				9A1E1F2D1C95715A00D77564 /* wenhuacuoti.xib in Resources */,
 				858BBF211C82F40C00F54E42 /* CouresesDetailDesTableViewCell.xib in Resources */,
 				8554B11C1C72C08F00598E62 /* LaunchScreen.storyboard in Resources */,
 				858BBEFB1C814E9600F54E42 /* BBCourseBobyViewController.xib in Resources */,
+				9ADCCDD21C93FF9D002F269F /* daojishiview.xib in Resources */,
 				8554B1191C72C08F00598E62 /* Assets.xcassets in Resources */,
 				85C52FBE1C89C0E0008348D8 /* BuyPreTableViewCell.xib in Resources */,
 				85C52FB91C89BD63008348D8 /* BuyMealTableViewCell.xib in Resources */,
@@ -890,14 +1071,24 @@
 				858BBEF31C81477200F54E42 /* BBCoureseTableViewCell.xib in Resources */,
 				85230AFD1C731ED800B6A48A /* BBLoginViewController.xib in Resources */,
 				85230AE71C7319FD00B6A48A /* big_white_back.png in Resources */,
+				9A1E1F171C952EC100D77564 /* dancipingcexiangqing.xib in Resources */,
+				9AEE02461C92A0A10027ACF0 /* yuyincepingmain.xib in Resources */,
+				9A1E1F121C952B1700D77564 /* dancipingce.xib in Resources */,
 				9AEE01FA1C8948300027ACF0 /* MineViewController.storyboard in Resources */,
+				9ADCCDDA1C940897002F269F /* yuyinpingce.xib in Resources */,
 				85230B0E1C74A1E800B6A48A /* MyTextFiled.xib in Resources */,
 				858BBF261C82F6A300F54E42 /* CoursesDetailMovieTableViewCell.xib in Resources */,
 				858BBF1C1C82EAEE00F54E42 /* CoureseDetaiNameCell.xib in Resources */,
 				85CCBF1E1C84813A0084B11C /* CoureseEvalTableViewCell.xib in Resources */,
 				85D34CD91C85F0A5004FFCF2 /* BuyHeaderTableViewCell.xib in Resources */,
+				9A1E1F291C9568E500D77564 /* wenhuachengjicell.xib in Resources */,
+				9A1E1F191C954B7300D77564 /* wanchengdanci.xib in Resources */,
+				9AEE02411C916A650027ACF0 /* assessment.xib in Resources */,
 				85CCBF151C847CA20084B11C /* CoursesEvalViewController.xib in Resources */,
+				9A1E1F1B1C954DDB00D77564 /* dancipingcecell.xib in Resources */,
+				9A1E1F251C95611900D77564 /* wenhuaceshixiangqing.xib in Resources */,
 				85D34CDE1C868064004FFCF2 /* BuyViewController.xib in Resources */,
+				9A1E1F271C95673100D77564 /* wenhuaceshiwancheng.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -971,13 +1162,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				858BBF201C82F40C00F54E42 /* CouresesDetailDesTableViewCell.m in Sources */,
+				9A1E1F101C952A3D00D77564 /* dancipingce.m in Sources */,
 				85230AD51C73048F00B6A48A /* APIUrl.m in Sources */,
 				85230ACE1C73048F00B6A48A /* UIImage+Blur.m in Sources */,
 				8554B1141C72C08F00598E62 /* ViewController.m in Sources */,
 				85230AD71C73048F00B6A48A /* WDTipsView.m in Sources */,
+				9AEE02151C8D7E740027ACF0 /* ReplyDetail.m in Sources */,
+				9AEE02031C8D21610027ACF0 /* CourseViewController.m in Sources */,
 				85230AF41C731AF500B6A48A /* BBConstColorKey.m in Sources */,
+				9AEE02121C8D7E0E0027ACF0 /* ReplyController.m in Sources */,
 				9AEE02001C8A87EC0027ACF0 /* MineDetails.m in Sources */,
 				85230ACB1C73048F00B6A48A /* NSString+RegularString.m in Sources */,
+				9A1E1F1E1C955F9400D77564 /* cewenhuamain.m in Sources */,
 				858BBF291C830B2900F54E42 /* CourseDetailModel.m in Sources */,
 				85230AEB1C7319FD00B6A48A /* MyTabBarController.m in Sources */,
 				8554B1111C72C08F00598E62 /* AppDelegate.m in Sources */,
@@ -986,15 +1182,19 @@
 				85230ACD1C73048F00B6A48A /* UIColor+Category.m in Sources */,
 				858BBF0E1C81A32000F54E42 /* CoursesDetailView.m in Sources */,
 				85230AD11C73048F00B6A48A /* UILabel+Categoy.m in Sources */,
+				9AEE02061C8D230D0027ACF0 /* PieceWise.m in Sources */,
 				858BBEFA1C814E9600F54E42 /* BBCourseBobyViewController.m in Sources */,
 				85230ACA1C73048F00B6A48A /* NSObject+runtime.m in Sources */,
 				85230B001C740C0800B6A48A /* BBLoginView.m in Sources */,
+				9AEE02181C8D822D0027ACF0 /* Replymypost.m in Sources */,
 				85F1D0AD1C7C9CD20041B09B /* UserDao.m in Sources */,
 				85F1D0B81C7DE8680041B09B /* HomeTableViewCell.m in Sources */,
 				85230AEE1C7319FD00B6A48A /* UIViewController+WDNavResponderAction.m in Sources */,
+				9A1E1F151C952B9C00D77564 /* dancipingcecellTableViewCell.m in Sources */,
 				85F1D0A71C7C93950041B09B /* MyApiLogin.m in Sources */,
 				85CCBF1D1C84813A0084B11C /* CoureseEvalTableViewCell.m in Sources */,
 				85230B221C76011900B6A48A /* AssessMentViewController.m in Sources */,
+				9AEE023F1C90263F0027ACF0 /* quxiaodingdan.m in Sources */,
 				85230AEA1C7319FD00B6A48A /* MyNavigationController.m in Sources */,
 				85230AD41C73048F00B6A48A /* UIViewController+Category.m in Sources */,
 				8554B10E1C72C08F00598E62 /* main.m in Sources */,
@@ -1006,18 +1206,26 @@
 				85230B2E1C7B568C00B6A48A /* BaseNetRequest.m in Sources */,
 				85230AD01C73048F00B6A48A /* UIImage+Screenshot.m in Sources */,
 				858BBEEA1C8138AB00F54E42 /* FJSlidingController.m in Sources */,
+				9AEE020F1C8D424B0027ACF0 /* ClassRecommended.m in Sources */,
 				858BBF111C81B3B900F54E42 /* CoursesDetailBobyiewController.m in Sources */,
+				9AEE02391C9001C60027ACF0 /* shangpin.m in Sources */,
 				85230B031C740C1D00B6A48A /* BBRegisterView.m in Sources */,
 				85CCBF141C847CA20084B11C /* CoursesEvalViewController.m in Sources */,
 				85230B311C7B57A400B6A48A /* WDNetAPIRequestWithAFNManage.m in Sources */,
+				9AEE02091C8D2A530027ACF0 /* CourseViewDetail.m in Sources */,
 				858BBEEB1C8138AB00F54E42 /* SegmentTapView.m in Sources */,
 				85230ACC1C73048F00B6A48A /* NSURL+Parameters.m in Sources */,
 				85D34CD81C85F0A5004FFCF2 /* BuyHeaderTableViewCell.m in Sources */,
+				9AEE022D1C8FF1D90027ACF0 /* wodefensi.m in Sources */,
+				9AEE020C1C8D2DCC0027ACF0 /* CompleteViewController.m in Sources */,
 				85230AD61C73048F00B6A48A /* UIActionSheet+MyActionSheet.m in Sources */,
 				85F1D0BC1C7DEB370041B09B /* MyUITableView.m in Sources */,
 				85C52FC21C89EB8A008348D8 /* MyApiBuy.m in Sources */,
 				858BBEF21C81477200F54E42 /* BBCoureseTableViewCell.m in Sources */,
 				858BBF021C81572500F54E42 /* CoureseModel.m in Sources */,
+				9AEE02331C8FFDCE0027ACF0 /* wodedingdan.m in Sources */,
+				9AEE02441C92A0920027ACF0 /* yuyincepingmain.m in Sources */,
+				9AEE02271C8FD4080027ACF0 /* fan1.m in Sources */,
 				858BBF0B1C81A2AF00F54E42 /* CoursesDetailViewController.m in Sources */,
 				85D34CDD1C868064004FFCF2 /* BuyViewController.m in Sources */,
 				85230AD21C73048F00B6A48A /* UINavigationController+Autorotate.m in Sources */,
@@ -1026,13 +1234,22 @@
 				858BBEFF1C81567900F54E42 /* MYApiCourese.m in Sources */,
 				858BBEEE1C81448B00F54E42 /* BBCouresesTabView.m in Sources */,
 				85C52FC51C89EC26008348D8 /* BuyModel.m in Sources */,
+				9AEE023C1C90043A0027ACF0 /* zhifujiemian.m in Sources */,
+				9AEE02361C8FFE570027ACF0 /* kecheng.m in Sources */,
+				9AEE022A1C8FD4650027ACF0 /* wodehaoyou.m in Sources */,
 				85230B1C1C7600FB00B6A48A /* ForumViewController.m in Sources */,
+				9AEE02211C8EBE350027ACF0 /* collpost.m in Sources */,
+				9ADCCDCE1C93E639002F269F /* yuyincepingview.m in Sources */,
 				85230AC91C73048F00B6A48A /* CALayer+Helper.m in Sources */,
 				85230AEC1C7319FD00B6A48A /* MyUITableViewController.m in Sources */,
 				85C52FB81C89BD63008348D8 /* BuyMealTableViewCell.m in Sources */,
 				85230B0C1C74A1D600B6A48A /* MyTextFiled.m in Sources */,
+				9ADCCDDD1C940DCE002F269F /* UIViewController+BackButtonHandler.m in Sources */,
+				9AEE02301C8FF5770027ACF0 /* woguanzhude.m in Sources */,
 				85230AD31C73048F00B6A48A /* UITableViewCell+FixUITableViewCellAutolayoutIHope.m in Sources */,
+				9AEE021B1C8D8BA40027ACF0 /* mycollection.m in Sources */,
 				85230AED1C7319FD00B6A48A /* MyUIViewController.m in Sources */,
+				9AEE021E1C8D8CF90027ACF0 /* CollectionDelete.m in Sources */,
 				85230ACF1C73048F00B6A48A /* UIImage+Category.m in Sources */,
 				85230B1F1C76010800B6A48A /* HomeViewController.m in Sources */,
 				85C52FC81C8A8C74008348D8 /* BuyMealView.m in Sources */,
@@ -1042,6 +1259,7 @@
 				85F1D0AA1C7C95AB0041B09B /* LoginModel.m in Sources */,
 				85C52FBD1C89C0E0008348D8 /* BuyPreTableViewCell.m in Sources */,
 				858BBF1B1C82EAEE00F54E42 /* CoureseDetaiNameCell.m in Sources */,
+				9AEE02241C8ECE030027ACF0 /* goodscontro.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
