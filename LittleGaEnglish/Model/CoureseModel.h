@@ -17,4 +17,8 @@
 @property (nonatomic, copy) NSString *lesson_num;   // 课程数
 @property (nonatomic, copy) NSString *learn_num;    // 学习人数
 
+@property (nonatomic, copy) NSString *total_lesson; 
+@property (nonatomic, copy) NSString *price;
+@property (nonatomic, copy) NSString *classId;
+
 @end

@@ -29,3 +29,5 @@ UIKIT_EXTERN NSString *const k_url_checkCoupon;    // 检测优惠券是否有�
 UIKIT_EXTERN NSString *const k_url_submit;  // 购买操作
 
 UIKIT_EXTERN NSString *const k_url_selMealList;  // 学员列表
+
+UIKIT_EXTERN NSString *const k_url_userCenter;  // 个人中心

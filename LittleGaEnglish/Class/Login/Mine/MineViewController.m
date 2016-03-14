@@ -8,15 +8,21 @@
 
 #import "MineViewController.h"
 #import "MineDetails.h"
+#import "MyApiMine.h"
 
 @interface MineViewController ()
-@property (strong, nonatomic) IBOutlet UILabel *levelLB;
-@property (strong, nonatomic) IBOutlet UIView *courseLB;
-@property (strong, nonatomic) IBOutlet UIView *postLB;
-@property (strong, nonatomic) IBOutlet UIView *collectionLB;
-@property (strong, nonatomic) IBOutlet UIView *fanLB;
-@property (strong, nonatomic) IBOutlet NSLayoutConstraint *leveLBwidht;
 
+@property (strong, nonatomic) IBOutlet UIImageView *image;
+@property (strong, nonatomic) IBOutlet UILabel *nameLab;
+@property (strong, nonatomic) IBOutlet UILabel *vipLab;
+
+@property (strong, nonatomic) IBOutlet UILabel *levelLB;
+@property (strong, nonatomic) IBOutlet UILabel *courseLB;
+@property (strong, nonatomic) IBOutlet UILabel *postLB;
+@property (strong, nonatomic) IBOutlet UILabel *collectionLB;
+@property (strong, nonatomic) IBOutlet UILabel *fanLB;
+@property (strong, nonatomic) IBOutlet NSLayoutConstraint *leveLBwidht;
+@property (nonatomic, strong) MineModel *model;
 
 @end
 @implementation MineViewController
@@ -29,6 +35,7 @@
     self.leveLBwidht.constant = self.view.frame.size.width/4;
     self.navigationController.navigationBar.alpha = 1;
     self.navigationController.navigationBar.translucent = NO;
+    [self getData];
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -37,7 +44,9 @@
         case 0:
             [self performSegueWithIdentifier:@"userdata" sender:self];
             break;
+        case 1:
             
+            break;
         default:
             break;
     }
@@ -54,12 +63,15 @@
 }
 - (IBAction)coursetap:(id)sender {
     NSLog(@"课程");
+    [self performSegueWithIdentifier:@"courseLB" sender:self];
 }
 - (IBAction)postLB:(id)sender {
     NSLog(@"帖子");
+    [self performSegueWithIdentifier:@"mypost" sender:self];
 }
 - (IBAction)collectionLB:(id)sender {
     NSLog(@"收藏");
+    [self performSegueWithIdentifier:@"collection" sender:self];
 }
 - (IBAction)fanLB:(id)sender {
     NSLog(@"粉丝");
@@ -67,7 +79,35 @@
 
 #pragma mark - Table view data source
 
+- (void)setModel:(MineModel *)model
+{
+    _model = model;
+    [self.image sd_setImageWithURL:[NSURL URLWithString:model.portrait] placeholderImage:nil completed:nil];
+    self.nameLab.text = model.uname;
+    if ([model.isVip isEqualToString:@"1"]) {
+        self.vipLab.text = @"VIP";
+    } else {
+        self.vipLab.text = @"";
+    }
+    
+    self.levelLB.text = model.gradeName;
+    self.courseLB.text = model.courseNumber;
+    self.postLB.text = model.postNumber;
+    self.collectionLB.text = model.enshrineNumber;
+    self.fanLB.text = model.fansNumber;
+    [self.tableView reloadData];
+}
 
+
+
+- (void)getData
+{
+    [[MyApiMine share]getMyInfoSuccess:^(MyApiMine *request, MineModel *model) {
+        self.model = model;
+    } Failure:^(MyApiMine *request, NSError *requestError) {
+        [WDTipsView showTipsViewWithString:@"网络错误"];
+    }];
+}
 
 
 /*

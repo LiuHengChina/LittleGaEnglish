@@ -28,6 +28,8 @@ NSString *const k_url_submit = @"/Class/Submit";  // 购买操作
 
 NSString *const k_url_selMealList = @"%@/Class/SelMealList";  // 学员列表
 
+NSString *const k_url_userCenter = @"/userCenter/my"; //个人中心
+
 //NSString *const k_url_ = @"%@";
 //NSString *const k_url_ = @"%@";
 //NSString *const k_url_ = @"%@";

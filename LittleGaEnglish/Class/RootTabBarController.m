@@ -48,7 +48,7 @@
     MyNavigationController *ForumNC = [[MyNavigationController alloc]initWithRootViewController:ForumVC];
     
     MineViewController *MineVC = [[UIStoryboard storyboardWithName:@"MineViewController" bundle:nil]instantiateViewControllerWithIdentifier:@"MineViewController"];
-    MineVC.tabBarItem.title=@"课程";
+    MineVC.tabBarItem.title=@"我的";
     MineVC.tabBarItem.image=[UIImage imageNamed:@"mine_default"];
     MineVC.tabBarItem.selectedImage = [UIImage imageNamed:@"mine_select"];
     MyNavigationController *MineNC = [[MyNavigationController alloc]initWithRootViewController:MineVC];
