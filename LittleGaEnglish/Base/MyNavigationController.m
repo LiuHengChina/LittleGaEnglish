@@ -77,10 +77,7 @@ static const CGFloat kAnimationDuration = 0.5f;
 - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated{
     [super pushViewController:viewController animated:animated];
     
-//    if (!self.panViewControllers) {
-//        self.panViewControllers = [NSMutableArray array];
-//    }
-//    [self.panViewControllers addObject:viewController];
+
     
     if (self.viewControllers.count>1) {
         [self addPanGestureToView:viewController];
@@ -119,6 +116,7 @@ static const CGFloat kAnimationDuration = 0.5f;
                                                                                  action:@selector(gestureRecognizerDidPan:)];
     panGesture.cancelsTouchesInView = YES;
     panGesture.delegate = self;
+
     [panResponderVC.view addGestureRecognizer:panGesture];
     panGesture = nil;
     

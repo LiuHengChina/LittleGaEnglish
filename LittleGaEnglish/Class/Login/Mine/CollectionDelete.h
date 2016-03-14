@@ -8,7 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "THSegmentedPageViewControllerDelegate.h"
-
 @interface CollectionDelete : UIViewController<THSegmentedPageViewControllerDelegate>
+@property (strong,nonatomic) NSMutableArray *arraylist;
+@property (strong, nonatomic) IBOutlet UIView *viewhiden;
 
 @end
