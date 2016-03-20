@@ -11,8 +11,15 @@
 #import "MyUITableView.h"
 #import "ReactiveCocoa.h"
 #import "UIViewController+BackButtonHandler.h"
+#import "MyApiEvaluation.h"
+#import "EngineManager.h"
+
+
 static BOOL viewhiden;
 
+
+
+#pragma mark ---
 @interface dajishiview : UIView
 @property (strong, nonatomic) IBOutlet UILabel *time;
 
@@ -23,21 +30,146 @@ static BOOL viewhiden;
 
 @end
 
-@interface yuyincepingxiangqing : UIView
+
+
+#pragma Mark ---语音评测详情
+@interface yuyincepingxiangqing : MyUIView <EngineManagerDelegate>
+@property (nonatomic, copy) NSString *dataId;
+@property (strong, nonatomic) IBOutlet UITextView *yuyinText;
+
+@property (nonatomic, assign) BOOL isBegin;
+
+@property (strong, nonatomic) IBOutlet UILabel *timeLab;
+@property (strong, nonatomic) IBOutlet UILabel *luyinLab;
+
+@property (nonatomic, strong) NSMutableString *resultText;
+@property (nonatomic, strong) EngineManager *enginer;
 
 @end
 @implementation yuyincepingxiangqing
 
+- (void)awakeFromNib
+{
+    [self initEngineManager];
+}
+
+-(void)initEngineManager
+{
+    self.enginer = [EngineManager sharedManager];
+    self.enginer.delegate = self;
+}
+
+- (void)setDataId:(NSString *)dataId
+{
+    _dataId = dataId;
+}
+
+- (IBAction)tapAction:(id)sender {
+    _isBegin = !_isBegin;
+    if (_isBegin) {
+        
+    } else{
+        
+    }
+}
+
+- (void)getData
+{
+    [[MyApiEvaluation share]getKaotiWithID:_dataId Success:^(MyApiEvaluation *request, NSMutableArray *arr) {
+        if (arr.count > 1) {
+            KaoTiModel *model = arr[0];
+            self.yuyinText.text = model.subject;
+        }
+    } Failure:^(MyApiEvaluation *request, NSError *requestError) {
+        [WDTipsView  showTipsViewWithString:requestError.domain];
+    }];
+}
+
+#pragma mark USCRecognizerDelegate
+
+- (void)onBeginOral
+{
+
+//    [self currentCondition:@"开始录音" error:NO finish:NO];
+}
+
+- (void)onStopOral
+{
+
+}
+
+// 识别结果
+- (void)onResult:(NSString *)result isLast:(BOOL)isLast
+{
+//    [resultText appendString:result];
+//    NSString *jsonResult = [self jsonPrint:resultText];
+//    protocalView.text = jsonResult;
+}
+
+- (void)onEndOral:(NSError *)error
+{
+    if (error)
+    {
+        NSLog(@"onEndOral | error = %@", error);
+        NSString *errorStr = [NSString stringWithFormat:@"%@ \n %ld",error.domain,(long)error.code];
+        
+        UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"提示"
+                                                       message:errorStr
+                                                      delegate:self
+                                             cancelButtonTitle:@"确定"
+                                             otherButtonTitles:nil];
+        [alert show];
+        
+    }
+    
+}
+
+- (void)onUpdateVolume:(int)volume
+{
+}
+
+- (void)onVADTimeout
+{
+//    [waitingView startAnimating];
+//    [_inputView micBtnReset];
+//    [inputView_Plugin appear];
+//    [_inputView setMicBtnEnable:NO];
+//    
+//    [self currentCondition:@"VAD超时" error:NO finish:NO];
+}
+
+- (void)onRecordingBuffer:(NSData *)recordingData
+{
+    //NSLog(@"recordingDatas len=%i", recordingData.length);
+}
+
+- (void)oralEngineDidInit:(NSError *)error
+{
+    NSLog(@"oralEngineDidInit : %@ ",error);
+}
+
+- (void)audioFileDidRecord:(NSString *)url
+{
+    NSLog(@"--audioFileDidRecord : %@",url);
+}
+
+
 
 @end
+
+
+
+
+#pragma Mark ---语音评测主页
 
 @interface yuyincepingmain ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (nonatomic, strong)MyUITableView *tableView;
 @property (nonatomic, strong)dajishiview *dajishiview;
 @property (nonatomic, strong)yuyincepingxiangqing *yuyincepingxiangqing;
-
-
+@property (nonatomic, strong) NSMutableArray *dataArr;
+@property (nonatomic, strong) EvaluationModel *model;
+@property (nonatomic, strong) NSString *dataId; // 试卷id
 
 @end
 
@@ -59,10 +191,14 @@ static BOOL viewhiden;
     self.tableView.delegate = self;
     self.view = self.tableView;
     
+    [self getData];
     // Do any additional setup after loading the view.
 }
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 2;
+    if (self.dataArr) {
+        return self.dataArr.count;
+    }
+    return 0;
 }
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -72,18 +208,23 @@ static BOOL viewhiden;
         NSArray *nibs = [[NSBundle mainBundle]loadNibNamed:@"yuyincepingmain" owner:nil options:nil];
         cell= nibs.firstObject;
     }
+    cell.height_show = self.model.height_show;
+    cell.middle_show = self.model.height_show;
+    EvaluationListModel *model = self.dataArr[indexPath.row];
+    cell.model = model;
+    
+    WS(wself);
+    cell.chickBeginBlock = ^(){
+        wself.dajishiview = [[NSBundle mainBundle] loadNibNamed:@"daojishiview" owner:nil options:nil].lastObject;
+        wself.dajishiview.frame = self.view.bounds;
+        [wself buttonTime];
+        wself.dataId = model.id;
+        [wself.view addSubview:self.dajishiview];
+    };
+    
     return cell;
 }
--(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
-#pragma mark
-    //测试倒计时背景图
-    self.dajishiview = [[NSBundle mainBundle] loadNibNamed:@"daojishiview" owner:nil options:nil].lastObject;
-    self.dajishiview.frame = self.view.bounds;
-    [self buttonTime];
-    [self.view addSubview:self.dajishiview];
-    
-}
+
 
 -(void)buttonTime
 {
@@ -103,6 +244,8 @@ static BOOL viewhiden;
                 self.yuyincepingxiangqing = [[NSBundle mainBundle] loadNibNamed:@"yuyinpingce" owner:nil options:nil].lastObject;
                 self.yuyincepingxiangqing.frame = self.view.bounds;
                 [self.view addSubview:self.yuyincepingxiangqing];
+                self.yuyincepingxiangqing.VC = self;
+                self.yuyincepingxiangqing.dataId = self.dataId;
                 self.title = @"小咖脱口秀语音测评";
                 viewhiden = true;
             });
@@ -136,6 +279,23 @@ static BOOL viewhiden;
     return YES;
     
 }
+
+
+- (void)getData
+{
+    [[MyApiEvaluation share]sendRequestWithType:@"1" page:@"1" Success:^(MyApiEvaluation *request, EvaluationModel *model) {
+        self.dataArr = model.list;
+        self.model = model;
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self.tableView reloadData];
+        });
+    } Failure:^(MyApiEvaluation *request, NSError *requestError) {
+        [WDTipsView showTipsViewWithString:@"请求失败"];
+    }];
+}
+
+
+
 /*
 #pragma mark - Navigation
 

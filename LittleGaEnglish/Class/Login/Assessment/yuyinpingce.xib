@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -23,7 +23,6 @@
                     <constraints>
                         <constraint firstAttribute="height" constant="155" id="XC0-lb-CLx"/>
                     </constraints>
-                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -36,6 +35,10 @@
                 </textView>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yuyincepinganniu" translatesAutoresizingMaskIntoConstraints="NO" id="UWM-G7-5W5">
                     <rect key="frame" x="256.5" y="434.5" width="87" height="87"/>
+                    <gestureRecognizers/>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="OXt-f6-Mhm" appends="YES" id="Ay9-EQ-Tz0"/>
+                    </connections>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="klm-Ou-8j0">
                     <rect key="frame" x="274" y="531.5" width="52.5" height="14.5"/>
@@ -64,7 +67,17 @@
                 <constraint firstAttribute="trailing" secondItem="SFE-pl-PFK" secondAttribute="trailing" constant="10" id="iEo-A3-Rs5"/>
                 <constraint firstItem="E3x-HW-nlp" firstAttribute="top" secondItem="klm-Ou-8j0" secondAttribute="bottom" constant="10" id="xJL-bR-Ho2"/>
             </constraints>
+            <connections>
+                <outlet property="luyinLab" destination="E3x-HW-nlp" id="S54-b4-T3v"/>
+                <outlet property="timeLab" destination="klm-Ou-8j0" id="A1b-ek-Ddq"/>
+                <outlet property="yuyinText" destination="SFE-pl-PFK" id="Bs3-qJ-ldc"/>
+            </connections>
         </view>
+        <tapGestureRecognizer id="OXt-f6-Mhm">
+            <connections>
+                <action selector="tapAction:" destination="iN0-l3-epB" id="72J-IO-Wwn"/>
+            </connections>
+        </tapGestureRecognizer>
     </objects>
     <resources>
         <image name="yuyincepinganniu" width="87" height="87"/>

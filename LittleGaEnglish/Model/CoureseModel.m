@@ -9,5 +9,9 @@
 #import "CoureseModel.h"
 
 @implementation CoureseModel
++(BOOL)propertyIsOptional:(NSString*)propertyName
+{
+    return YES;
+}
 
 @end

@@ -30,6 +30,10 @@ NSString *const k_url_selMealList = @"%@/Class/SelMealList";  // 学员列表
 
 NSString *const k_url_userCenter = @"/userCenter/my"; //个人中心
 
+NSString *const k_url_evaluationList = @"/Evaluation/evaluationlist/";  // 评测列表接口
+
+NSString *const k_url_getKaoTi = @"/Evaluation/getKaoTi";   // 考题列表
+
 //NSString *const k_url_ = @"%@";
 //NSString *const k_url_ = @"%@";
 //NSString *const k_url_ = @"%@";

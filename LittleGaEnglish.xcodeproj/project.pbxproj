@@ -95,8 +95,15 @@
 		85CCBF191C84803A0084B11C /* BBStarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 85CCBF181C84803A0084B11C /* BBStarView.m */; };
 		85CCBF1D1C84813A0084B11C /* CoureseEvalTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 85CCBF1B1C84813A0084B11C /* CoureseEvalTableViewCell.m */; };
 		85CCBF1E1C84813A0084B11C /* CoureseEvalTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85CCBF1C1C84813A0084B11C /* CoureseEvalTableViewCell.xib */; };
+		85D43BDD1C9D01CE00240091 /* KaoTiListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 85D43BDC1C9D01CE00240091 /* KaoTiListModel.m */; };
+		85D43BE11C9D092600240091 /* libusc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 85D43BDF1C9D092600240091 /* libusc.a */; };
+		85D43BE51C9D093700240091 /* EngineManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 85D43BE41C9D093700240091 /* EngineManager.m */; };
+		85D43BE91C9D093D00240091 /* MP3Player.m in Sources */ = {isa = PBXBuildFile; fileRef = 85D43BE81C9D093D00240091 /* MP3Player.m */; };
+		85D43BED1C9D094300240091 /* PCMPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 85D43BEC1C9D094300240091 /* PCMPlayer.m */; };
 		85E295751C94603400570196 /* MineModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 85E295741C94603400570196 /* MineModel.m */; };
 		85E295791C9460F700570196 /* MyApiMine.m in Sources */ = {isa = PBXBuildFile; fileRef = 85E295781C9460F700570196 /* MyApiMine.m */; };
+		85E295C01C9702F900570196 /* MyApiEvaluation.m in Sources */ = {isa = PBXBuildFile; fileRef = 85E295BF1C9702F900570196 /* MyApiEvaluation.m */; };
+		85E295C41C97035100570196 /* EvaluationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 85E295C31C97035100570196 /* EvaluationModel.m */; };
 		85F1D0A71C7C93950041B09B /* MyApiLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = 85F1D0A61C7C93950041B09B /* MyApiLogin.m */; };
 		85F1D0AA1C7C95AB0041B09B /* LoginModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 85F1D0A91C7C95AB0041B09B /* LoginModel.m */; };
 		85F1D0AD1C7C9CD20041B09B /* UserDao.m in Sources */ = {isa = PBXBuildFile; fileRef = 85F1D0AC1C7C9CD20041B09B /* UserDao.m */; };
@@ -329,10 +336,24 @@
 		85CCBF1A1C84813A0084B11C /* CoureseEvalTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoureseEvalTableViewCell.h; sourceTree = "<group>"; };
 		85CCBF1B1C84813A0084B11C /* CoureseEvalTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoureseEvalTableViewCell.m; sourceTree = "<group>"; };
 		85CCBF1C1C84813A0084B11C /* CoureseEvalTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CoureseEvalTableViewCell.xib; sourceTree = "<group>"; };
+		85D43BDB1C9D01CE00240091 /* KaoTiListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KaoTiListModel.h; path = "../../Common/API/评测/KaoTiListModel.h"; sourceTree = "<group>"; };
+		85D43BDC1C9D01CE00240091 /* KaoTiListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KaoTiListModel.m; path = "../../Common/API/评测/KaoTiListModel.m"; sourceTree = "<group>"; };
+		85D43BDF1C9D092600240091 /* libusc.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libusc.a; sourceTree = "<group>"; };
+		85D43BE01C9D092600240091 /* USCRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = USCRecognizer.h; sourceTree = "<group>"; };
+		85D43BE31C9D093700240091 /* EngineManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EngineManager.h; sourceTree = "<group>"; };
+		85D43BE41C9D093700240091 /* EngineManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EngineManager.m; sourceTree = "<group>"; };
+		85D43BE71C9D093D00240091 /* MP3Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MP3Player.h; sourceTree = "<group>"; };
+		85D43BE81C9D093D00240091 /* MP3Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MP3Player.m; sourceTree = "<group>"; };
+		85D43BEB1C9D094300240091 /* PCMPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCMPlayer.h; sourceTree = "<group>"; };
+		85D43BEC1C9D094300240091 /* PCMPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCMPlayer.m; sourceTree = "<group>"; };
 		85E295731C94603400570196 /* MineModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineModel.h; sourceTree = "<group>"; };
 		85E295741C94603400570196 /* MineModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineModel.m; sourceTree = "<group>"; };
 		85E295771C9460F700570196 /* MyApiMine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyApiMine.h; sourceTree = "<group>"; };
 		85E295781C9460F700570196 /* MyApiMine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyApiMine.m; sourceTree = "<group>"; };
+		85E295BE1C9702F900570196 /* MyApiEvaluation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyApiEvaluation.h; sourceTree = "<group>"; };
+		85E295BF1C9702F900570196 /* MyApiEvaluation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyApiEvaluation.m; sourceTree = "<group>"; };
+		85E295C21C97035100570196 /* EvaluationModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EvaluationModel.h; sourceTree = "<group>"; };
+		85E295C31C97035100570196 /* EvaluationModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EvaluationModel.m; sourceTree = "<group>"; };
 		85F1D0A51C7C93950041B09B /* MyApiLogin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyApiLogin.h; sourceTree = "<group>"; };
 		85F1D0A61C7C93950041B09B /* MyApiLogin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyApiLogin.m; sourceTree = "<group>"; };
 		85F1D0A81C7C95AB0041B09B /* LoginModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginModel.h; sourceTree = "<group>"; };
@@ -430,6 +451,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1E32AEBEC49556E5AFBDA797 /* libPods.a in Frameworks */,
+				85D43BE11C9D092600240091 /* libusc.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -527,6 +549,7 @@
 		85230AAB1C73048F00B6A48A /* API */ = {
 			isa = PBXGroup;
 			children = (
+				85E295BD1C9702D300570196 /* 评测 */,
 				85E295761C9460CD00570196 /* Mine */,
 				85C52FBF1C89EB76008348D8 /* Buy */,
 				858BBEFC1C81564D00F54E42 /* Course */,
@@ -588,6 +611,7 @@
 		85230AC71C73048F00B6A48A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				85E295C11C97032600570196 /* 评测 */,
 				85F1D0A81C7C95AB0041B09B /* LoginModel.h */,
 				85F1D0A91C7C95AB0041B09B /* LoginModel.m */,
 				858BBF001C81572500F54E42 /* CoureseModel.h */,
@@ -605,6 +629,7 @@
 		85230AC81C73048F00B6A48A /* ThreeLibraries */ = {
 			isa = PBXGroup;
 			children = (
+				85D43BDE1C9D08CF00240091 /* 语音 */,
 				858BBEE41C8138AB00F54E42 /* FJSlidingController */,
 			);
 			path = ThreeLibraries;
@@ -962,6 +987,45 @@
 			path = Detail/Buy;
 			sourceTree = "<group>";
 		};
+		85D43BDE1C9D08CF00240091 /* 语音 */ = {
+			isa = PBXGroup;
+			children = (
+				85D43BEA1C9D094300240091 /* PCMPlayer */,
+				85D43BE61C9D093D00240091 /* MP3Player */,
+				85D43BE21C9D093700240091 /* EngineManager */,
+				85D43BDF1C9D092600240091 /* libusc.a */,
+				85D43BE01C9D092600240091 /* USCRecognizer.h */,
+			);
+			path = "语音";
+			sourceTree = "<group>";
+		};
+		85D43BE21C9D093700240091 /* EngineManager */ = {
+			isa = PBXGroup;
+			children = (
+				85D43BE31C9D093700240091 /* EngineManager.h */,
+				85D43BE41C9D093700240091 /* EngineManager.m */,
+			);
+			path = EngineManager;
+			sourceTree = "<group>";
+		};
+		85D43BE61C9D093D00240091 /* MP3Player */ = {
+			isa = PBXGroup;
+			children = (
+				85D43BE71C9D093D00240091 /* MP3Player.h */,
+				85D43BE81C9D093D00240091 /* MP3Player.m */,
+			);
+			path = MP3Player;
+			sourceTree = "<group>";
+		};
+		85D43BEA1C9D094300240091 /* PCMPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				85D43BEB1C9D094300240091 /* PCMPlayer.h */,
+				85D43BEC1C9D094300240091 /* PCMPlayer.m */,
+			);
+			path = PCMPlayer;
+			sourceTree = "<group>";
+		};
 		85E295761C9460CD00570196 /* Mine */ = {
 			isa = PBXGroup;
 			children = (
@@ -969,6 +1033,26 @@
 				85E295781C9460F700570196 /* MyApiMine.m */,
 			);
 			path = Mine;
+			sourceTree = "<group>";
+		};
+		85E295BD1C9702D300570196 /* 评测 */ = {
+			isa = PBXGroup;
+			children = (
+				85E295BE1C9702F900570196 /* MyApiEvaluation.h */,
+				85E295BF1C9702F900570196 /* MyApiEvaluation.m */,
+			);
+			path = "评测";
+			sourceTree = "<group>";
+		};
+		85E295C11C97032600570196 /* 评测 */ = {
+			isa = PBXGroup;
+			children = (
+				85E295C21C97035100570196 /* EvaluationModel.h */,
+				85E295C31C97035100570196 /* EvaluationModel.m */,
+				85D43BDB1C9D01CE00240091 /* KaoTiListModel.h */,
+				85D43BDC1C9D01CE00240091 /* KaoTiListModel.m */,
+			);
+			path = "评测";
 			sourceTree = "<group>";
 		};
 		85F1D0A41C7C93020041B09B /* Login */ = {
@@ -1118,14 +1202,12 @@
 				85CCBF1E1C84813A0084B11C /* CoureseEvalTableViewCell.xib in Resources */,
 				85CCBF151C847CA20084B11C /* CoursesEvalViewController.xib in Resources */,
 				8542F5D71C8DCEAB00C4FFFD /* BuyViewController.xib in Resources */,
-				85D34CD91C85F0A5004FFCF2 /* BuyHeaderTableViewCell.xib in Resources */,
 				9A1E1F291C9568E500D77564 /* wenhuachengjicell.xib in Resources */,
 				9A1E1F191C954B7300D77564 /* wanchengdanci.xib in Resources */,
 				9AEE02411C916A650027ACF0 /* assessment.xib in Resources */,
 				85CCBF151C847CA20084B11C /* CoursesEvalViewController.xib in Resources */,
 				9A1E1F1B1C954DDB00D77564 /* dancipingcecell.xib in Resources */,
 				9A1E1F251C95611900D77564 /* wenhuaceshixiangqing.xib in Resources */,
-				85D34CDE1C868064004FFCF2 /* BuyViewController.xib in Resources */,
 				9A1E1F271C95673100D77564 /* wenhuaceshiwancheng.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1244,13 +1326,16 @@
 				8542F5DC1C8DCF5500C4FFFD /* BuyExchangeViewController.m in Sources */,
 				858BBF251C82F6A300F54E42 /* CoursesDetailMovieTableViewCell.m in Sources */,
 				85230AD81C73048F00B6A48A /* MyConstantKey.m in Sources */,
+				85E295C41C97035100570196 /* EvaluationModel.m in Sources */,
 				85230B281C76026B00B6A48A /* RootTabBarController.m in Sources */,
+				85D43BED1C9D094300240091 /* PCMPlayer.m in Sources */,
 				85230B091C740CB600B6A48A /* MyUIView.m in Sources */,
 				85230B2E1C7B568C00B6A48A /* BaseNetRequest.m in Sources */,
 				85230AD01C73048F00B6A48A /* UIImage+Screenshot.m in Sources */,
 				858BBEEA1C8138AB00F54E42 /* FJSlidingController.m in Sources */,
 				9AEE020F1C8D424B0027ACF0 /* ClassRecommended.m in Sources */,
 				858BBF111C81B3B900F54E42 /* CoursesDetailBobyiewController.m in Sources */,
+				85D43BE51C9D093700240091 /* EngineManager.m in Sources */,
 				9AEE02391C9001C60027ACF0 /* shangpin.m in Sources */,
 				85230B031C740C1D00B6A48A /* BBRegisterView.m in Sources */,
 				85CCBF141C847CA20084B11C /* CoursesEvalViewController.m in Sources */,
@@ -1258,7 +1343,6 @@
 				9AEE02091C8D2A530027ACF0 /* CourseViewDetail.m in Sources */,
 				858BBEEB1C8138AB00F54E42 /* SegmentTapView.m in Sources */,
 				85230ACC1C73048F00B6A48A /* NSURL+Parameters.m in Sources */,
-				85D34CD81C85F0A5004FFCF2 /* BuyHeaderTableViewCell.m in Sources */,
 				9AEE022D1C8FF1D90027ACF0 /* wodefensi.m in Sources */,
 				9AEE020C1C8D2DCC0027ACF0 /* CompleteViewController.m in Sources */,
 				85230AD61C73048F00B6A48A /* UIActionSheet+MyActionSheet.m in Sources */,
@@ -1267,6 +1351,7 @@
 				85C52FC21C89EB8A008348D8 /* MyApiBuy.m in Sources */,
 				858BBEF21C81477200F54E42 /* BBCoureseTableViewCell.m in Sources */,
 				858BBF021C81572500F54E42 /* CoureseModel.m in Sources */,
+				85D43BE91C9D093D00240091 /* MP3Player.m in Sources */,
 				9AEE02331C8FFDCE0027ACF0 /* wodedingdan.m in Sources */,
 				9AEE02441C92A0920027ACF0 /* yuyincepingmain.m in Sources */,
 				9AEE02271C8FD4080027ACF0 /* fan1.m in Sources */,
@@ -1274,6 +1359,7 @@
 				85230AD21C73048F00B6A48A /* UINavigationController+Autorotate.m in Sources */,
 				858BBF141C81B40200F54E42 /* CoursesDetailDesViewController.m in Sources */,
 				85230B191C7600F000B6A48A /* CoursesViewController.m in Sources */,
+				85D43BDD1C9D01CE00240091 /* KaoTiListModel.m in Sources */,
 				858BBEFF1C81567900F54E42 /* MYApiCourese.m in Sources */,
 				858BBEEE1C81448B00F54E42 /* BBCouresesTabView.m in Sources */,
 				85C52FC51C89EC26008348D8 /* BuyModel.m in Sources */,
@@ -1281,6 +1367,7 @@
 				9AEE02361C8FFE570027ACF0 /* kecheng.m in Sources */,
 				9AEE022A1C8FD4650027ACF0 /* wodehaoyou.m in Sources */,
 				85230B1C1C7600FB00B6A48A /* ForumViewController.m in Sources */,
+				85E295C01C9702F900570196 /* MyApiEvaluation.m in Sources */,
 				9AEE02211C8EBE350027ACF0 /* collpost.m in Sources */,
 				9ADCCDCE1C93E639002F269F /* yuyincepingview.m in Sources */,
 				85230AC91C73048F00B6A48A /* CALayer+Helper.m in Sources */,
@@ -1396,6 +1483,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -1433,6 +1521,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -1459,6 +1548,8 @@
 					"$(PROJECT_DIR)/LittleGaEnglish/Common/Tools/umengShareManage/umeng_4_2_5/UMSocial_Sdk_Extra_Frameworks/SinaSSO",
 					"$(PROJECT_DIR)/LittleGaEnglish/Common/Tools/umengShareManage/umeng_4_2_5/UMSocial_Sdk_Extra_Frameworks/TencentOpenAPI",
 					"$(PROJECT_DIR)/LittleGaEnglish/Common/Tools/voiceManage/arm/lib",
+					"$(PROJECT_DIR)/LittleGaEnglish/ThreeLibraries",
+					"$(PROJECT_DIR)/LittleGaEnglish/ThreeLibraries/语音",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ujuhui.GoodsDealer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1487,6 +1578,8 @@
 					"$(PROJECT_DIR)/LittleGaEnglish/Common/Tools/umengShareManage/umeng_4_2_5/UMSocial_Sdk_Extra_Frameworks/SinaSSO",
 					"$(PROJECT_DIR)/LittleGaEnglish/Common/Tools/umengShareManage/umeng_4_2_5/UMSocial_Sdk_Extra_Frameworks/TencentOpenAPI",
 					"$(PROJECT_DIR)/LittleGaEnglish/Common/Tools/voiceManage/arm/lib",
+					"$(PROJECT_DIR)/LittleGaEnglish/ThreeLibraries",
+					"$(PROJECT_DIR)/LittleGaEnglish/ThreeLibraries/语音",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ujuhui.GoodsDealer;
 				PRODUCT_NAME = "$(TARGET_NAME)";

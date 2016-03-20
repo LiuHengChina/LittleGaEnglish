@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 #import "MyUIView.h"
+#import "EvaluationModel.h"
 @interface yuyincepingview : UITableViewCell
+
+@property (nonatomic, strong) EvaluationListModel *model;
+@property (nonatomic, assign) BOOL middle_show; // 中级评测
+@property (nonatomic, assign) BOOL height_show; // 高级评测
+@property (nonatomic, copy) void (^chickBeginBlock)(void);
 
 @end

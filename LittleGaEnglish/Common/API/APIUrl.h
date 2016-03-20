@@ -31,3 +31,7 @@ UIKIT_EXTERN NSString *const k_url_submit;  // 购买操作
 UIKIT_EXTERN NSString *const k_url_selMealList;  // 学员列表
 
 UIKIT_EXTERN NSString *const k_url_userCenter;  // 个人中心
+
+UIKIT_EXTERN NSString *const k_url_evaluationList;  // 评测列表接口
+
+UIKIT_EXTERN NSString *const k_url_getKaoTi; // 获取考题列表
