@@ -42,6 +42,10 @@
         <scene sceneID="JY1-vZ-fGG">
             <objects>
                 <viewController id="ZDX-fR-PC7" customClass="PieceWise" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="c4m-Lj-bCW"/>
+                        <viewControllerLayoutGuide type="bottom" id="udc-4f-tBG"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="CeB-pO-kZo">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="580"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -608,6 +612,10 @@
         <scene sceneID="7fK-vR-d63">
             <objects>
                 <viewController id="Ozg-jw-LCI" customClass="remenhuati" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ALc-Uz-DLW"/>
+                        <viewControllerLayoutGuide type="bottom" id="qxq-Wc-bWV"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="BQj-iT-00k">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="90"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -808,6 +816,10 @@
         <scene sceneID="fZr-aL-U82">
             <objects>
                 <viewController id="NVs-YJ-uas" customClass="gengduoweibo" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="FAF-vT-5ZV"/>
+                        <viewControllerLayoutGuide type="bottom" id="Rt3-Mj-6tT"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="fOa-A3-cRm">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="115"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1214,6 +1226,10 @@
         <scene sceneID="yhq-3O-QIa">
             <objects>
                 <viewController hidesBottomBarWhenPushed="YES" id="yQk-SE-ypm" customClass="PieceWise" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WgW-qU-u1z"/>
+                        <viewControllerLayoutGuide type="bottom" id="thj-Rb-J77"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="fX6-hQ-OHb">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="580"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
