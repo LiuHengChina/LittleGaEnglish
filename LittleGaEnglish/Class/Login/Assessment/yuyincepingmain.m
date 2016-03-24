@@ -45,6 +45,8 @@ static BOOL viewhiden;
 @property (nonatomic, strong) NSMutableString *resultText;
 @property (nonatomic, strong) EngineManager *enginer;
 
+@property (nonatomic, assign) BOOL canPlay;
+
 @end
 @implementation yuyincepingxiangqing
 
@@ -62,23 +64,30 @@ static BOOL viewhiden;
 - (void)setDataId:(NSString *)dataId
 {
     _dataId = dataId;
+    [self getData];
 }
 
 - (IBAction)tapAction:(id)sender {
-    _isBegin = !_isBegin;
-    if (_isBegin) {
-        
-    } else{
-        
+    if (self.canPlay) {
+        _isBegin = !_isBegin;
+        if (_isBegin) {
+            [_enginer setOralText:_yuyinText.text];
+            [_enginer startRecognize];
+        } else{
+            [_enginer stopRecognize];
+        }
+    } else {
+        [WDTipsView showTipsViewWithString:@"请稍等"];
     }
 }
 
 - (void)getData
 {
     [[MyApiEvaluation share]getKaotiWithID:_dataId Success:^(MyApiEvaluation *request, NSMutableArray *arr) {
-        if (arr.count > 1) {
+        if (arr.count > 0) {
             KaoTiModel *model = arr[0];
             self.yuyinText.text = model.subject;
+            self.canPlay = YES;
         }
     } Failure:^(MyApiEvaluation *request, NSError *requestError) {
         [WDTipsView  showTipsViewWithString:requestError.domain];
@@ -89,18 +98,19 @@ static BOOL viewhiden;
 
 - (void)onBeginOral
 {
-
+    NSLog(@"开始");
 //    [self currentCondition:@"开始录音" error:NO finish:NO];
 }
 
 - (void)onStopOral
 {
-
+    NSLog(@"停止");
 }
 
 // 识别结果
 - (void)onResult:(NSString *)result isLast:(BOOL)isLast
 {
+    NSLog(@"%@",result);
 //    [resultText appendString:result];
 //    NSString *jsonResult = [self jsonPrint:resultText];
 //    protocalView.text = jsonResult;
@@ -126,21 +136,17 @@ static BOOL viewhiden;
 
 - (void)onUpdateVolume:(int)volume
 {
+    NSLog(@"onUpdateVolume");
 }
 
 - (void)onVADTimeout
 {
-//    [waitingView startAnimating];
-//    [_inputView micBtnReset];
-//    [inputView_Plugin appear];
-//    [_inputView setMicBtnEnable:NO];
-//    
-//    [self currentCondition:@"VAD超时" error:NO finish:NO];
+    NSLog(@"超时");
 }
 
 - (void)onRecordingBuffer:(NSData *)recordingData
 {
-    //NSLog(@"recordingDatas len=%i", recordingData.length);
+    NSLog(@"recordingDatas len=%lu", (unsigned long)recordingData.length);
 }
 
 - (void)oralEngineDidInit:(NSError *)error
@@ -166,7 +172,7 @@ static BOOL viewhiden;
 
 @property (nonatomic, strong)MyUITableView *tableView;
 @property (nonatomic, strong)dajishiview *dajishiview;
-@property (nonatomic, strong)yuyincepingxiangqing *yuyincepingxiangqing;
+@property (nonatomic, strong) yuyincepingxiangqing *yuyincepingxiangqing;
 @property (nonatomic, strong) NSMutableArray *dataArr;
 @property (nonatomic, strong) EvaluationModel *model;
 @property (nonatomic, strong) NSString *dataId; // 试卷id
@@ -241,9 +247,9 @@ static BOOL viewhiden;
                 //设置界面的按钮显示 根据自己需求设置
                 @strongify(self)
                 self.dajishiview.hidden = YES;
-                self.yuyincepingxiangqing = [[NSBundle mainBundle] loadNibNamed:@"yuyinpingce" owner:nil options:nil].lastObject;
-                self.yuyincepingxiangqing.frame = self.view.bounds;
+                self.yuyincepingxiangqing = [[NSBundle mainBundle] loadNibNamed:@"yuyinpingce" owner:nil options:nil].firstObject;
                 [self.view addSubview:self.yuyincepingxiangqing];
+                self.yuyincepingxiangqing.frame = self.view.bounds;
                 self.yuyincepingxiangqing.VC = self;
                 self.yuyincepingxiangqing.dataId = self.dataId;
                 self.title = @"小咖脱口秀语音测评";
