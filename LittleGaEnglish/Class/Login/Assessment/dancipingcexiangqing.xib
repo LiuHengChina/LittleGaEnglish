@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -54,7 +54,7 @@
                             <color key="textColor" red="0.4039215686" green="0.41568627450000001" blue="0.45882352939999999" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请选择对应的中文意思:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Fb-du-tFi">
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请选择对应的中文意思:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="144.5" translatesAutoresizingMaskIntoConstraints="NO" id="8Fb-du-tFi">
                             <rect key="frame" x="10" y="57" width="144.5" height="17"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -176,9 +176,14 @@
             <nil key="simulatedStatusBarMetrics"/>
             <connections>
                 <outlet property="A" destination="nX3-gM-4Wd" id="Asm-Cc-IER"/>
+                <outlet property="Alabel" destination="19M-Rn-vSt" id="Ozy-X3-HRq"/>
                 <outlet property="B" destination="edd-wy-rt6" id="Lc1-cJ-3wd"/>
+                <outlet property="BLabel" destination="pIi-G2-A9W" id="ObQ-5J-hyT"/>
                 <outlet property="C" destination="LAk-H3-Pd1" id="iuH-mg-QYM"/>
+                <outlet property="CLabel" destination="TDw-lv-Qd3" id="ROf-RE-kjL"/>
                 <outlet property="D" destination="PtE-qX-zaw" id="yxQ-kF-oP3"/>
+                <outlet property="Dlabel" destination="Ok8-eC-eYT" id="DYF-Cz-yL3"/>
+                <outlet property="TipLabel" destination="8Fb-du-tFi" id="LfA-E5-f1u"/>
                 <outlet property="danci" destination="lEI-bd-iXk" id="eWz-UT-sX1"/>
                 <outlet property="daojishi" destination="u9y-lr-bqa" id="39U-uQ-eIP"/>
                 <outlet property="xuanxianga" destination="ZUy-Bq-8qJ" id="b31-wB-x9P"/>

@@ -34,7 +34,10 @@ NSString *const k_url_evaluationList = @"/Evaluation/evaluationlist/";  // 评�
 
 NSString *const k_url_getKaoTi = @"/Evaluation/getKaoTi";   // 考题列表
 
-//NSString *const k_url_ = @"%@";
+NSString *const k_url_addUserVoiceAnswer = @"/Evaluation/addUserVoiceAnswer/"; // 上传语音答案
+
+
+NSString *const k_url_addUserAnswer = @"/Evaluation/addUserAnswer/"; // 单词和文化测评用户答题接口
 //NSString *const k_url_ = @"%@";
 //NSString *const k_url_ = @"%@";
 //NSString *const k_url_ = @"%@";

@@ -35,3 +35,7 @@ UIKIT_EXTERN NSString *const k_url_userCenter;  // 个人中心
 UIKIT_EXTERN NSString *const k_url_evaluationList;  // 评测列表接口
 
 UIKIT_EXTERN NSString *const k_url_getKaoTi; // 获取考题列表
+
+UIKIT_EXTERN NSString *const k_url_addUserVoiceAnswer;  // 语音测评用户答题接口
+
+UIKIT_EXTERN NSString *const k_url_addUserAnswer;   // 单词和文化测评用户答题接口传

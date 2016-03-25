@@ -265,12 +265,7 @@ static EngineManager *mEngineManager;
 }
 
 - (void)onEndOral:(NSError *)error
-{        
-    if (delegate != NULL && [delegate respondsToSelector:@selector(onEndOral:)])
-    {
-        [delegate onEndOral:error];
-    }
-    
+{
     //保存录音文件(为确保音频文件完整，请在此回调中完成MP3拼接)
     [self writeFile];
     
@@ -278,6 +273,10 @@ static EngineManager *mEngineManager;
     NSLog(@"------- -------");
     NSLog(@"------- -------");
     NSLog(@"------- -------");
+    if (delegate != NULL && [delegate respondsToSelector:@selector(onEndOral:)])
+    {
+        [delegate onEndOral:error];
+    }
 }
 
 - (void)onUpdateVolume:(int)volume
@@ -332,7 +331,7 @@ static EngineManager *mEngineManager;
 - (void)audioFileDidRecord:(NSString *)url
 {
     NSLog(@"audioFileDidRecord : %@",url);
-    
+    [self writeFile];
     if (delegate != NULL && [delegate respondsToSelector:@selector(audioFileDidRecord:)])
     {
         [delegate audioFileDidRecord:url];

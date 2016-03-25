@@ -23,6 +23,7 @@
 
 -(void)playWithFile:(NSString *)path;
 
+- (NSTimeInterval)getDuration;
 @end
 
 @protocol MP3PlayerDelegate <NSObject>

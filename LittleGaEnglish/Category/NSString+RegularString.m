@@ -326,6 +326,18 @@
     return [NSString stringWithFormat:@"%@%@",symbolStr,result];
 }
 
+
++(NSString*)TimeformatFromSeconds:(NSInteger)seconds
+{
+    //format of minute
+    NSString *str_minute = [NSString stringWithFormat:@"%02ld",(seconds%3600)/60];
+    //format of second
+    NSString *str_second = [NSString stringWithFormat:@"%02ld",seconds%60];
+    //format of time
+    NSString *format_time = [NSString stringWithFormat:@"%@:%@",str_minute,str_second];
+    return format_time;
+}
+
 + (BOOL)isEmpty:(NSString *)msg {
     if (msg && ![msg isEqualToString:@""]) {
         return NO;
@@ -335,6 +347,29 @@
 
 - (BOOL)isEmpty {
     return [NSString isEmpty:self];
+}
+
+
+/*!
+ * @brief 把格式化的JSON格式的字符串转换成字典
+ * @param jsonString JSON格式的字符串
+ * @return 返回字典
+ */
++ (NSDictionary *)dictionaryWithJsonString:(NSString *)jsonString {
+    if (jsonString == nil) {
+        return nil;
+    }
+    
+    NSData *jsonData = [jsonString dataUsingEncoding:NSUTF8StringEncoding];
+    NSError *err;
+    NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:jsonData
+                                                        options:NSJSONReadingMutableContainers
+                                                          error:&err];
+    if(err) {
+        NSLog(@"json解析失败：%@",err);
+        return nil;
+    }
+    return dic;
 }
 
 @end

@@ -40,6 +40,11 @@
     [player prepareToPlay];
 }
 
+- (NSTimeInterval)getDuration
+{
+    return player.duration;
+}
+
 - (void) stop
 {
     [player stop];

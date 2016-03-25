@@ -10,6 +10,7 @@
 
 #import "EvaluationModel.h"
 #import "KaoTiListModel.h"
+#import "KaoTIAnswer.h"
 
 @interface MyApiEvaluation : BaseNetRequest
 
@@ -37,6 +38,25 @@
 - (void)getKaotiWithID:(NSString *)idStr
             Success:(void(^)(MyApiEvaluation * request , NSMutableArray * arr))success
             Failure:(void(^)(MyApiEvaluation * request ,NSError *requestError))failure;
+
+
+/**
+ * 语音测评用户答题接口
+ */
+- (void)addUserVoiceAnswer:(NSString *)kjID
+                      ktId:(NSString *)ktid
+                     score:(NSString *)score
+               user_answer:(NSString *)user_answer
+                   Success:(void(^)(MyApiEvaluation * request , NSMutableArray * arr))success
+                   Failure:(void(^)(MyApiEvaluation * request ,NSError *requestError))failure;
+
+/**
+ * 单词和文化测评用户答题接口
+ */
+- (void)addUserAnswer:(NSString *)kjID
+                score:(NSArray *)anseer
+              Success:(void(^)(MyApiEvaluation * request , KaoTIAnswer * model))success
+              Failure:(void(^)(MyApiEvaluation * request ,NSError *requestError))failure;
 
 
 

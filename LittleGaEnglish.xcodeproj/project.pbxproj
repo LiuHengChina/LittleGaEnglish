@@ -49,6 +49,9 @@
 		85230B2B1C7B543C00B6A48A /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 85230B2A1C7B543C00B6A48A /* BaseModel.m */; };
 		85230B2E1C7B568C00B6A48A /* BaseNetRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 85230B2D1C7B568C00B6A48A /* BaseNetRequest.m */; };
 		85230B311C7B57A400B6A48A /* WDNetAPIRequestWithAFNManage.m in Sources */ = {isa = PBXBuildFile; fileRef = 85230B301C7B57A400B6A48A /* WDNetAPIRequestWithAFNManage.m */; };
+		852623DE1CA3A338006F6C29 /* YuYinDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 852623DC1CA3A338006F6C29 /* YuYinDetailViewController.m */; };
+		852623DF1CA3A338006F6C29 /* YuYinDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 852623DD1CA3A338006F6C29 /* YuYinDetailViewController.xib */; };
+		852623E21CA42435006F6C29 /* KaoTIAnswer.m in Sources */ = {isa = PBXBuildFile; fileRef = 852623E11CA42435006F6C29 /* KaoTIAnswer.m */; };
 		8542F5CF1C8DCEAB00C4FFFD /* BuyHeaderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8542F5C21C8DCEAB00C4FFFD /* BuyHeaderTableViewCell.m */; };
 		8542F5D01C8DCEAB00C4FFFD /* BuyHeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8542F5C31C8DCEAB00C4FFFD /* BuyHeaderTableViewCell.xib */; };
 		8542F5D11C8DCEAB00C4FFFD /* BuyMealTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8542F5C51C8DCEAB00C4FFFD /* BuyMealTableViewCell.m */; };
@@ -265,6 +268,11 @@
 		85230B2D1C7B568C00B6A48A /* BaseNetRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNetRequest.m; sourceTree = "<group>"; };
 		85230B2F1C7B57A400B6A48A /* WDNetAPIRequestWithAFNManage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDNetAPIRequestWithAFNManage.h; sourceTree = "<group>"; };
 		85230B301C7B57A400B6A48A /* WDNetAPIRequestWithAFNManage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDNetAPIRequestWithAFNManage.m; sourceTree = "<group>"; };
+		852623DB1CA3A338006F6C29 /* YuYinDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YuYinDetailViewController.h; sourceTree = "<group>"; };
+		852623DC1CA3A338006F6C29 /* YuYinDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YuYinDetailViewController.m; sourceTree = "<group>"; };
+		852623DD1CA3A338006F6C29 /* YuYinDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YuYinDetailViewController.xib; sourceTree = "<group>"; };
+		852623E01CA42435006F6C29 /* KaoTIAnswer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KaoTIAnswer.h; sourceTree = "<group>"; };
+		852623E11CA42435006F6C29 /* KaoTIAnswer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KaoTIAnswer.m; sourceTree = "<group>"; };
 		8542F5C11C8DCEAB00C4FFFD /* BuyHeaderTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuyHeaderTableViewCell.h; sourceTree = "<group>"; };
 		8542F5C21C8DCEAB00C4FFFD /* BuyHeaderTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BuyHeaderTableViewCell.m; sourceTree = "<group>"; };
 		8542F5C31C8DCEAB00C4FFFD /* BuyHeaderTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BuyHeaderTableViewCell.xib; sourceTree = "<group>"; };
@@ -721,6 +729,9 @@
 				9AEE02451C92A0A10027ACF0 /* yuyincepingmain.xib */,
 				9ADCCDD11C93FF9D002F269F /* daojishiview.xib */,
 				9ADCCDD91C940897002F269F /* yuyinpingce.xib */,
+				852623DB1CA3A338006F6C29 /* YuYinDetailViewController.h */,
+				852623DC1CA3A338006F6C29 /* YuYinDetailViewController.m */,
+				852623DD1CA3A338006F6C29 /* YuYinDetailViewController.xib */,
 				9A1E1F0E1C952A3D00D77564 /* dancipingce.h */,
 				9A1E1F0F1C952A3D00D77564 /* dancipingce.m */,
 				9A1E1F131C952B9C00D77564 /* dancipingcecellTableViewCell.h */,
@@ -1099,6 +1110,8 @@
 				85E295C31C97035100570196 /* EvaluationModel.m */,
 				85D43BDB1C9D01CE00240091 /* KaoTiListModel.h */,
 				85D43BDC1C9D01CE00240091 /* KaoTiListModel.m */,
+				852623E01CA42435006F6C29 /* KaoTIAnswer.h */,
+				852623E11CA42435006F6C29 /* KaoTIAnswer.m */,
 			);
 			path = "评测";
 			sourceTree = "<group>";
@@ -1249,6 +1262,7 @@
 				858BBF261C82F6A300F54E42 /* CoursesDetailMovieTableViewCell.xib in Resources */,
 				858BBF1C1C82EAEE00F54E42 /* CoureseDetaiNameCell.xib in Resources */,
 				85CCBF1E1C84813A0084B11C /* CoureseEvalTableViewCell.xib in Resources */,
+				852623DF1CA3A338006F6C29 /* YuYinDetailViewController.xib in Resources */,
 				85CCBF151C847CA20084B11C /* CoursesEvalViewController.xib in Resources */,
 				8542F5D71C8DCEAB00C4FFFD /* BuyViewController.xib in Resources */,
 				9A1E1F291C9568E500D77564 /* wenhuachengjicell.xib in Resources */,
@@ -1365,6 +1379,7 @@
 				9AEE02181C8D822D0027ACF0 /* Replymypost.m in Sources */,
 				85F1D0AD1C7C9CD20041B09B /* UserDao.m in Sources */,
 				85F1D0B81C7DE8680041B09B /* HomeTableViewCell.m in Sources */,
+				852623E21CA42435006F6C29 /* KaoTIAnswer.m in Sources */,
 				85230AEE1C7319FD00B6A48A /* UIViewController+WDNavResponderAction.m in Sources */,
 				8542F5D11C8DCEAB00C4FFFD /* BuyMealTableViewCell.m in Sources */,
 				9A1E1F151C952B9C00D77564 /* dancipingcecellTableViewCell.m in Sources */,
@@ -1372,6 +1387,7 @@
 				85CCBF1D1C84813A0084B11C /* CoureseEvalTableViewCell.m in Sources */,
 				85230B221C76011900B6A48A /* AssessMentViewController.m in Sources */,
 				9AEE023F1C90263F0027ACF0 /* quxiaodingdan.m in Sources */,
+				852623DE1CA3A338006F6C29 /* YuYinDetailViewController.m in Sources */,
 				85230AEA1C7319FD00B6A48A /* MyNavigationController.m in Sources */,
 				85230AD41C73048F00B6A48A /* UIViewController+Category.m in Sources */,
 				8554B10E1C72C08F00598E62 /* main.m in Sources */,

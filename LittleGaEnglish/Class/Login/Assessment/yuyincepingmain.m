@@ -13,7 +13,7 @@
 #import "UIViewController+BackButtonHandler.h"
 #import "MyApiEvaluation.h"
 #import "EngineManager.h"
-
+#import "YuYinDetailViewController.h"
 
 static BOOL viewhiden;
 
@@ -35,6 +35,7 @@ static BOOL viewhiden;
 #pragma Mark ---语音评测详情
 @interface yuyincepingxiangqing : MyUIView <EngineManagerDelegate>
 @property (nonatomic, copy) NSString *dataId;
+@property (nonatomic, copy) NSString *kaoTiId;
 @property (strong, nonatomic) IBOutlet UITextView *yuyinText;
 
 @property (nonatomic, assign) BOOL isBegin;
@@ -45,6 +46,8 @@ static BOOL viewhiden;
 @property (nonatomic, strong) NSMutableString *resultText;
 @property (nonatomic, strong) EngineManager *enginer;
 
+@property (nonatomic, copy) NSString *userText;
+@property (nonatomic, copy) NSString *score;
 @property (nonatomic, assign) BOOL canPlay;
 
 @end
@@ -87,12 +90,14 @@ static BOOL viewhiden;
         if (arr.count > 0) {
             KaoTiModel *model = arr[0];
             self.yuyinText.text = model.subject;
+            self.kaoTiId = model.id;
             self.canPlay = YES;
         }
     } Failure:^(MyApiEvaluation *request, NSError *requestError) {
         [WDTipsView  showTipsViewWithString:requestError.domain];
     }];
 }
+
 
 #pragma mark USCRecognizerDelegate
 
@@ -111,9 +116,11 @@ static BOOL viewhiden;
 - (void)onResult:(NSString *)result isLast:(BOOL)isLast
 {
     NSLog(@"%@",result);
-//    [resultText appendString:result];
-//    NSString *jsonResult = [self jsonPrint:resultText];
-//    protocalView.text = jsonResult;
+    NSDictionary *resultDic = [NSString dictionaryWithJsonString:result];
+    NSArray *lineArr = resultDic[@"lines"];
+    NSDictionary *dic = lineArr[0];
+    self.userText = dic[@"usertext"];
+    self.score = dic[@"score"];
 }
 
 - (void)onEndOral:(NSError *)error
@@ -130,6 +137,19 @@ static BOOL viewhiden;
                                              otherButtonTitles:nil];
         [alert show];
         
+    } else {
+        
+        [[MyApiEvaluation share] addUserVoiceAnswer:self.dataId ktId:self.kaoTiId score:self.score user_answer:self.userText Success:^(MyApiEvaluation *request, NSMutableArray *arr) {
+           
+            YuYinDetailViewController *vc = [YuYinDetailViewController new];
+            vc.sampleText = self.yuyinText.text;
+            vc.userText = self.userText;
+            vc.score = self.score;
+            [self.VC.navigationController pushViewController:vc animated:YES];
+            
+        } Failure:^(MyApiEvaluation *request, NSError *requestError) {
+            [WDTipsView showTipsViewWithString:requestError.domain];
+        }];
     }
     
 }
@@ -158,8 +178,6 @@ static BOOL viewhiden;
 {
     NSLog(@"--audioFileDidRecord : %@",url);
 }
-
-
 
 @end
 
@@ -296,7 +314,7 @@ static BOOL viewhiden;
             [self.tableView reloadData];
         });
     } Failure:^(MyApiEvaluation *request, NSError *requestError) {
-        [WDTipsView showTipsViewWithString:@"请求失败"];
+        [WDTipsView showTipsViewWithString:requestError.domain];
     }];
 }
 

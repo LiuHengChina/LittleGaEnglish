@@ -73,6 +73,10 @@
  */
 + (NSString *)formatNumWithString:(NSString *)string;
 
+
+
++(NSString*)TimeformatFromSeconds:(NSInteger)seconds;
+
 /**
  *  判断字符串是否为空（标准不等于nil和@“”）
  *
@@ -82,4 +86,7 @@
  */
 + (BOOL)isEmpty:(NSString *)msg;
 - (BOOL)isEmpty;
+
+
++ (NSDictionary *)dictionaryWithJsonString:(NSString *)jsonString;
 @end
