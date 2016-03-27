@@ -7,8 +7,11 @@
 //
 
 #import "fabuhuati.h"
-
+#import "GCPlaceholderTextView.h"
 @interface fabuhuati ()
+@property (strong, nonatomic) IBOutlet GCPlaceholderTextView *shuodinshenme;
+@property (strong, nonatomic) IBOutlet UITextField *huatititle;
+@property (strong, nonatomic) IBOutlet UILabel *di25tiandaka;
 
 @end
 
@@ -16,7 +19,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.shuodinshenme.placeholderColor = [UIColor colorWithRed:187.0/255.0f green:187.0/255.0f blue:187.0/255.0f alpha:1];
+    self.shuodinshenme.placeholder = NSLocalizedString(@"说点什么...",);
     // Do any additional setup after loading the view.
+}
+- (IBAction)xuanzehuati:(id)sender {
+    NSLog(@"选择话题");
+}
+- (IBAction)luyin:(id)sender {
+    [self performSegueWithIdentifier:@"luyinaaaaaaa" sender:self];
+}
+- (IBAction)tupin:(id)sender {
 }
 
 - (void)didReceiveMemoryWarning {
