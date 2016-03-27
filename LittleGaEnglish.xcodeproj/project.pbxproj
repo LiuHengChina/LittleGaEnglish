@@ -123,6 +123,9 @@
 		9A1E1F491C9BECFD00D77564 /* fabu.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A1E1F481C9BECFD00D77564 /* fabu.m */; };
 		9A1E1F4C1C9BEDE300D77564 /* fabutiezi.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A1E1F4B1C9BEDE300D77564 /* fabutiezi.m */; };
 		9A1E1F4F1C9BEDFF00D77564 /* fabuhuati.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A1E1F4E1C9BEDFF00D77564 /* fabuhuati.m */; };
+		9A4794B31CA7B6AA005F3A15 /* GCPlaceholderTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A4794B21CA7B6AA005F3A15 /* GCPlaceholderTextView.m */; };
+		9A4794B61CA7B990005F3A15 /* luyinjiemian.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A4794B51CA7B990005F3A15 /* luyinjiemian.m */; };
+		9A4794B91CA7CA72005F3A15 /* xuanzeimage.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A4794B81CA7CA72005F3A15 /* xuanzeimage.m */; };
 		9ADCCDCE1C93E639002F269F /* yuyincepingview.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ADCCDCD1C93E639002F269F /* yuyincepingview.m */; };
 		9ADCCDD21C93FF9D002F269F /* daojishiview.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9ADCCDD11C93FF9D002F269F /* daojishiview.xib */; };
 		9ADCCDDA1C940897002F269F /* yuyinpingce.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9ADCCDD91C940897002F269F /* yuyinpingce.xib */; };
@@ -382,6 +385,12 @@
 		9A1E1F4B1C9BEDE300D77564 /* fabutiezi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = fabutiezi.m; sourceTree = "<group>"; };
 		9A1E1F4D1C9BEDFF00D77564 /* fabuhuati.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fabuhuati.h; sourceTree = "<group>"; };
 		9A1E1F4E1C9BEDFF00D77564 /* fabuhuati.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = fabuhuati.m; sourceTree = "<group>"; };
+		9A4794B11CA7B6AA005F3A15 /* GCPlaceholderTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCPlaceholderTextView.h; sourceTree = "<group>"; };
+		9A4794B21CA7B6AA005F3A15 /* GCPlaceholderTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCPlaceholderTextView.m; sourceTree = "<group>"; };
+		9A4794B41CA7B990005F3A15 /* luyinjiemian.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = luyinjiemian.h; sourceTree = "<group>"; };
+		9A4794B51CA7B990005F3A15 /* luyinjiemian.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = luyinjiemian.m; sourceTree = "<group>"; };
+		9A4794B71CA7CA72005F3A15 /* xuanzeimage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xuanzeimage.h; sourceTree = "<group>"; };
+		9A4794B81CA7CA72005F3A15 /* xuanzeimage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = xuanzeimage.m; sourceTree = "<group>"; };
 		9ADCCDCC1C93E639002F269F /* yuyincepingview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yuyincepingview.h; sourceTree = "<group>"; };
 		9ADCCDCD1C93E639002F269F /* yuyincepingview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = yuyincepingview.m; sourceTree = "<group>"; };
 		9ADCCDD11C93FF9D002F269F /* daojishiview.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = daojishiview.xib; sourceTree = "<group>"; };
@@ -746,6 +755,10 @@
 				9A1E1F4B1C9BEDE300D77564 /* fabutiezi.m */,
 				9A1E1F4D1C9BEDFF00D77564 /* fabuhuati.h */,
 				9A1E1F4E1C9BEDFF00D77564 /* fabuhuati.m */,
+				9A4794B41CA7B990005F3A15 /* luyinjiemian.h */,
+				9A4794B51CA7B990005F3A15 /* luyinjiemian.m */,
+				9A4794B71CA7CA72005F3A15 /* xuanzeimage.h */,
+				9A4794B81CA7CA72005F3A15 /* xuanzeimage.m */,
 				9A1E1F331C9AB00800D77564 /* luntan.storyboard */,
 			);
 			name = Forum;
@@ -845,6 +858,7 @@
 		8554B10B1C72C08F00598E62 /* LittleGaEnglish */ = {
 			isa = PBXGroup;
 			children = (
+				9A4794B01CA7B6AA005F3A15 /* GCPlaceholderTextView */,
 				85CCBF161C8480320084B11C /* DIY */,
 				85230AD91C7319FD00B6A48A /* Base */,
 				85230A901C73048F00B6A48A /* Category */,
@@ -992,6 +1006,15 @@
 				85F1D0A61C7C93950041B09B /* MyApiLogin.m */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		9A4794B01CA7B6AA005F3A15 /* GCPlaceholderTextView */ = {
+			isa = PBXGroup;
+			children = (
+				9A4794B11CA7B6AA005F3A15 /* GCPlaceholderTextView.h */,
+				9A4794B21CA7B6AA005F3A15 /* GCPlaceholderTextView.m */,
+			);
+			path = GCPlaceholderTextView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1245,6 +1268,7 @@
 				85230AEE1C7319FD00B6A48A /* UIViewController+WDNavResponderAction.m in Sources */,
 				9A1E1F151C952B9C00D77564 /* dancipingcecellTableViewCell.m in Sources */,
 				85F1D0A71C7C93950041B09B /* MyApiLogin.m in Sources */,
+				9A4794B31CA7B6AA005F3A15 /* GCPlaceholderTextView.m in Sources */,
 				85CCBF1D1C84813A0084B11C /* CoureseEvalTableViewCell.m in Sources */,
 				85230B221C76011900B6A48A /* AssessMentViewController.m in Sources */,
 				9AEE023F1C90263F0027ACF0 /* quxiaodingdan.m in Sources */,
@@ -1262,6 +1286,7 @@
 				858BBEEA1C8138AB00F54E42 /* FJSlidingController.m in Sources */,
 				9AEE020F1C8D424B0027ACF0 /* ClassRecommended.m in Sources */,
 				858BBF111C81B3B900F54E42 /* CoursesDetailBobyiewController.m in Sources */,
+				9A4794B61CA7B990005F3A15 /* luyinjiemian.m in Sources */,
 				9AEE02391C9001C60027ACF0 /* shangpin.m in Sources */,
 				85230B031C740C1D00B6A48A /* BBRegisterView.m in Sources */,
 				85CCBF141C847CA20084B11C /* CoursesEvalViewController.m in Sources */,
@@ -1285,6 +1310,7 @@
 				858BBF0B1C81A2AF00F54E42 /* CoursesDetailViewController.m in Sources */,
 				85D34CDD1C868064004FFCF2 /* BuyViewController.m in Sources */,
 				85230AD21C73048F00B6A48A /* UINavigationController+Autorotate.m in Sources */,
+				9A4794B91CA7CA72005F3A15 /* xuanzeimage.m in Sources */,
 				858BBF141C81B40200F54E42 /* CoursesDetailDesViewController.m in Sources */,
 				85230B191C7600F000B6A48A /* CoursesViewController.m in Sources */,
 				858BBEFF1C81567900F54E42 /* MYApiCourese.m in Sources */,

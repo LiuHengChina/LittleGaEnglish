@@ -27,7 +27,7 @@
     fabutiezi *woguanzhude = [[UIStoryboard storyboardWithName:@"luntan" bundle:nil] instantiateViewControllerWithIdentifier:@"fabutiezi"];
     woguanzhude.title = @"帖子";
     
-    fabuhuati *quanbuview = [[UIStoryboard storyboardWithName:@"luntan" bundle:nil] instantiateViewControllerWithIdentifier:@"quanbu"];
+    fabuhuati *quanbuview = [[UIStoryboard storyboardWithName:@"luntan" bundle:nil] instantiateViewControllerWithIdentifier:@"fabuhuati"];
     quanbuview.title = @"话题";
     
     controllers = [controllers arrayByAddingObject:woguanzhude];
