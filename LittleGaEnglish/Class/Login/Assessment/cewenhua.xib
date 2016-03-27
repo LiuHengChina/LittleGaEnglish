@@ -26,7 +26,7 @@
                         <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eSa-oF-6nY">
+                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eSa-oF-6nY">
                         <rect key="frame" x="376" y="12" width="48" height="22"/>
                         <state key="normal" image="weikaishiyuanjiao"/>
                     </button>
@@ -40,6 +40,11 @@
                     <constraint firstItem="FS6-yz-ts2" firstAttribute="centerY" secondItem="lUX-rQ-WTf" secondAttribute="centerY" id="ybn-Uf-Lbw"/>
                 </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="shifoukaishi" destination="eSa-oF-6nY" id="jNS-jH-cT0"/>
+                <outlet property="subtitle" destination="6hn-u0-w0V" id="Pjl-43-rgC"/>
+                <outlet property="title" destination="FS6-yz-ts2" id="l5D-8A-UcC"/>
+            </connections>
             <point key="canvasLocation" x="452.5" y="218.5"/>
         </tableViewCell>
     </objects>

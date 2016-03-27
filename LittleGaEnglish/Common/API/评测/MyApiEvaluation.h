@@ -11,6 +11,7 @@
 #import "EvaluationModel.h"
 #import "KaoTiListModel.h"
 #import "KaoTIAnswer.h"
+#import "KaoTiErrorModel.h"
 
 @interface MyApiEvaluation : BaseNetRequest
 
@@ -57,6 +58,16 @@
                 score:(NSArray *)anseer
               Success:(void(^)(MyApiEvaluation * request , KaoTIAnswer * model))success
               Failure:(void(^)(MyApiEvaluation * request ,NSError *requestError))failure;
+
+
+
+/**
+ * 查看错题解析接口
+ */
+- (void)checkErrorParseWithId:(NSString *)errorId
+                      Success:(void(^)(MyApiEvaluation * request , KaoTiErrorModel * model))success
+                      Failure:(void(^)(MyApiEvaluation * request ,NSError *requestError))failure;
+
 
 
 

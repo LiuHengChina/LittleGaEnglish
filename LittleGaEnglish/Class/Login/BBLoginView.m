@@ -48,6 +48,7 @@
     _phoneText.borderStyle = UITextBorderStyleLine;
     _phoneText.leftViewMode = UITextFieldViewModeAlways;
     _phoneText.placeholder = @"请输入手机号";
+    _phoneText.font = [UIFont systemFontOfSize:11];
     _phoneText.keyboardType = UIKeyboardTypeNumberPad;
     
     [_phoneText mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -65,6 +66,7 @@
     _pwdText.borderStyle = UITextBorderStyleLine;
     _pwdText.leftViewMode = UITextFieldViewModeAlways;
     _pwdText.placeholder = @"请输入6-20位密码";
+    _pwdText.font = [UIFont systemFontOfSize:11];
     [_pwdText mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(_phoneText.mas_bottom).offset(scales(20));
         make.centerX.equalTo(defaultImage.mas_centerX);

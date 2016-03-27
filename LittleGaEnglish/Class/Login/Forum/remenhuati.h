@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "LunTanMainModel.h"
 
 @interface remenhuati : UIViewController
 
+@property (nonatomic, strong) NSMutableArray<HotTopicModel *> *dataArr;
 @property (strong,nonatomic) NSString *str;
 
 @end

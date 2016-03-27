@@ -4,6 +4,8 @@ UIKIT_EXTERN NSString *const k_url_login; // 登录
 
 UIKIT_EXTERN NSString *const k_url_register; // 注册
 
+UIKIT_EXTERN NSString *const k_url_sendCode;   // 发送验证码
+
 UIKIT_EXTERN NSString *const k_url_openClass; // 小卡公开课
 
 UIKIT_EXTERN NSString *const k_url_College; // 小卡学院
@@ -39,3 +41,8 @@ UIKIT_EXTERN NSString *const k_url_getKaoTi; // 获取考题列表
 UIKIT_EXTERN NSString *const k_url_addUserVoiceAnswer;  // 语音测评用户答题接口
 
 UIKIT_EXTERN NSString *const k_url_addUserAnswer;   // 单词和文化测评用户答题接口传
+
+UIKIT_EXTERN NSString *const k_url_checkErrorParse;  // 查看错题解析接口
+
+UIKIT_EXTERN NSString *const k_url_bbsIndex; // 论坛首页接口
+

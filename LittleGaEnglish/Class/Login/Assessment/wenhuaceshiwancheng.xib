@@ -125,6 +125,7 @@
             <connections>
                 <outlet property="collect" destination="B9m-Xp-R67" id="fON-SE-loI"/>
                 <outlet property="fenxiangchengji" destination="NZO-OV-l0w" id="fb9-Pj-28Q"/>
+                <outlet property="scoreLab" destination="Adq-dI-n4i" id="MEP-6K-mVF"/>
                 <outlet property="widht" destination="NCO-fG-JsG" id="Lrk-UC-Ghf"/>
                 <outlet property="zailaiyici" destination="dRc-DM-XBB" id="Jig-8Z-D2u"/>
             </connections>

@@ -36,12 +36,12 @@
     _model = model;
     self.subtitle.text = model.name;
     switch (model.level.intValue) {
-        case 0:{
+        case 1:{
             [self.shifoukaishi setImage:[UIImage imageNamed:@"kaishiyuanjiao"] forState:UIControlStateNormal];
             self.title.text = @"初级";
         }
             break;
-        case 1:{
+        case 2:{
             if (self.middle_show) {
                 [self.shifoukaishi setImage:[UIImage imageNamed:@"kaishiyuanjiao"] forState:UIControlStateNormal];
             } else {
@@ -51,7 +51,7 @@
             self.title.text = @"中级";
         }
             break;
-        case 2:{
+        case 3:{
             if (self.height_show) {
                 [self.shifoukaishi setImage:[UIImage imageNamed:@"kaishiyuanjiao"] forState:UIControlStateNormal];
             } else {

@@ -269,6 +269,11 @@
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <connections>
+                <outlet property="ALabel" destination="wfw-FJ-vIU" id="84U-6k-sfO"/>
+                <outlet property="BLabel" destination="dWi-Np-EzN" id="fqz-1I-3qg"/>
+                <outlet property="CLabel" destination="bn4-bj-det" id="m6G-I7-ULr"/>
+                <outlet property="DLabel" destination="qKr-ul-qlL" id="FdD-ky-jiJ"/>
+                <outlet property="TipLabel" destination="Qie-Pn-9IJ" id="Vfq-77-h4P"/>
                 <outlet property="a" destination="6Uw-kn-eb4" id="m9K-hl-zGj"/>
                 <outlet property="b" destination="Vqc-VS-B3K" id="AR5-uE-HTx"/>
                 <outlet property="c" destination="Uzg-Tj-QwT" id="djx-Gg-MRj"/>

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -425,7 +425,7 @@
                                                                 <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="s6O-mA-d53">
                                                                     <rect key="frame" x="338" y="209" width="164" height="33"/>
                                                                     <subviews>
-                                                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hgn-cA-lC8">
+                                                                        <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hgn-cA-lC8">
                                                                             <rect key="frame" x="19" y="4" width="73" height="22"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                             <state key="normal" title="1231" image="liebiaopinglun">
@@ -448,7 +448,7 @@
                                                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
-                                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="53p-K0-Xfl">
+                                                                        <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="53p-K0-Xfl">
                                                                             <rect key="frame" x="57" y="7" width="49" height="19"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                             <state key="normal" title="1231" image="liebiaoxihuan">
@@ -478,7 +478,7 @@
                                                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
-                                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9zG-Io-qMS">
+                                                                        <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9zG-Io-qMS">
                                                                             <rect key="frame" x="57" y="7" width="49" height="19"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                             <state key="normal" title="1231" image="liebiaodianzan">
@@ -523,6 +523,11 @@
                                                             <constraint firstItem="s6O-mA-d53" firstAttribute="top" secondItem="Jyu-BW-77l" secondAttribute="bottom" id="zqT-GE-hmA"/>
                                                         </constraints>
                                                         <connections>
+                                                            <outlet property="dianzanLab" destination="9zG-Io-qMS" id="7qT-2l-n22"/>
+                                                            <outlet property="myImage" destination="8Io-Ah-sCW" id="tIg-ay-dWM"/>
+                                                            <outlet property="pinglunLab" destination="hgn-cA-lC8" id="4vs-tg-Bon"/>
+                                                            <outlet property="shoucangLab" destination="53p-K0-Xfl" id="dSz-Bi-vd4"/>
+                                                            <outlet property="titleLab" destination="2L3-KU-0qO" id="JXT-ig-MHE"/>
                                                             <outlet property="widht" destination="E0D-5U-Jth" id="BiU-7c-9Ki"/>
                                                         </connections>
                                                     </collectionViewCell>
@@ -602,6 +607,10 @@
                     <connections>
                         <outlet property="collcetion" destination="iei-Nw-c1n" id="VcG-FL-nbB"/>
                         <outlet property="hight" destination="YMK-bc-G35" id="GSw-X0-Qic"/>
+                        <outlet property="signBtn" destination="gRY-Uv-Ire" id="aRp-Yn-VJN"/>
+                        <outlet property="signCountLab" destination="Acm-eT-vWs" id="KML-WX-cWb"/>
+                        <outlet property="tileLabel" destination="ixB-Mu-wZr" id="8lp-ez-og3"/>
+                        <outlet property="weekLab" destination="YV2-I4-rvv" id="4S5-8B-ln7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wE4-Hn-qco" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -942,7 +951,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cu6-5Z-jnx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2604" y="731.5"/>
+            <point key="canvasLocation" x="2568" y="811.5"/>
         </scene>
         <!--Weiba-->
         <scene sceneID="e0O-Os-Hhz">

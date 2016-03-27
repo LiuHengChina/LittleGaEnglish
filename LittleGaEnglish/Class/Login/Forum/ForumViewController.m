@@ -30,6 +30,7 @@
     UIColor *white = [UIColor whiteColor];
     [self.navigationController.navigationBar setTintColor:white];
     NSArray *controllers = @[];
+    
     JINGXUAN *woguanzhude = [[UIStoryboard storyboardWithName:@"luntan" bundle:nil] instantiateViewControllerWithIdentifier:@"JINGXUAN"];
     woguanzhude.title = @"精选";
 
@@ -51,6 +52,7 @@
     fabu *fa = [[UIStoryboard storyboardWithName:@"luntan" bundle:nil] instantiateViewControllerWithIdentifier:@"fabu"];
     [self.navigationController pushViewController:fa animated:YES];
 }
+
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     [super prepareForSegue:segue sender:sender];
@@ -58,6 +60,7 @@
         self.tabControl = segue.destinationViewController;
     }
 }
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

@@ -125,6 +125,7 @@
             <connections>
                 <outlet property="collection" destination="gs4-nt-C12" id="wwO-iq-67a"/>
                 <outlet property="fenxiangchengji" destination="MW4-RJ-mS7" id="84g-CR-83j"/>
+                <outlet property="scoreLab" destination="Yc9-3J-myj" id="wPL-vk-UeU"/>
                 <outlet property="widht" destination="mBW-gC-0l5" id="2tp-xf-a7K"/>
                 <outlet property="zailaiyici" destination="YZS-5X-V7b" id="TF5-Zh-JyF"/>
             </connections>

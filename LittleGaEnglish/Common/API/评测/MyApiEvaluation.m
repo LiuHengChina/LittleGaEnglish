@@ -177,6 +177,42 @@
 
 
 
+/**
+ * 查看错题解析接口
+ */
+- (void)checkErrorParseWithId:(NSString *)errorId
+                      Success:(void(^)(MyApiEvaluation * request , KaoTiErrorModel * model))success
+                      Failure:(void(^)(MyApiEvaluation * request ,NSError *requestError))failure
+{
+    if (errorId == nil) {
+        [WDTipsView showTipsViewWithString:@"数据错误"];
+        return;
+    }
+    
+    NSDictionary *dic = @{@"id":errorId};
+    [self postWithUrl:k_url_addUserAnswer params:dic success:^(id json) {
+        NSString * errmsg = @"";
+        if (json) {
+            NSLog(@"json : %@",json);
+            KaoTiErrorModel *model = [[KaoTiErrorModel new]initWithDictionary:json error:nil];
+            errmsg = model.info;
+            if (model.status == 1) {
+                success(self,model);
+                return;
+            }
+            if(!errmsg || [errmsg isEqualToString:@""]){
+                errmsg = @"服务器数据错误";
+            }
+            NSError * error = [[NSError alloc]initWithDomain:errmsg code:0 userInfo:nil];
+            failure(self,error);
+        }
+        
+    } failure:^(NSError *error) {
+        failure(self,error);
+    }];
+}
+
+
 
 
 @end

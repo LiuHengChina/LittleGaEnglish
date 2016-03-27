@@ -82,6 +82,40 @@
     }];
 }
 
+//1.3	获取验证码
+- (void)sendCodeByPhone:(NSString *)phone
+               sendType:(NSString *)type
+                Success:(void(^)(MyApiLogin * request))success
+                Failure:(void(^)(MyApiLogin * request ,NSError *requestError))failure
+{
+    if (phone.isEmpty || type.isEmpty) {
+        return;
+    }
+    NSDictionary *dic = @{@"mobile":phone,
+                          @"sendType":type};
+    
+    
+    [self postWithUrl:k_url_sendCode params:dic success:^(id json) {
+        NSString * errmsg = @"";
+        if (json) {
+            NSLog(@"json : %@",json);
+            BaseModel *model = [[BaseModel new]initWithDictionary:json error:nil];
+            errmsg = model.info;
+            if (model.status == 1) {
+                success(self);
+                return;
+            }
+            if(!errmsg || [errmsg isEqualToString:@""]){
+                errmsg = @"登录失败";
+            }
+            NSError * error = [[NSError alloc]initWithDomain:errmsg code:0 userInfo:nil];
+            failure(self,error);
+        }
+    } failure:^(NSError *error) {
+        failure(self,error);
+    }];
+}
+
 
 
 @end

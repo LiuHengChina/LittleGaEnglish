@@ -36,9 +36,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    NSLog(@"%@",self.str);
     // Do any additional setup after loading the view.
 }
+
 - (IBAction)gengduohuati:(id)sender {
     NSLog(@"更多话题");
     huati *hua = [[UIStoryboard storyboardWithName:@"luntan" bundle:nil] instantiateViewControllerWithIdentifier:@"huati"];
@@ -47,18 +47,27 @@
     
 }
 
+- (void)setDataArr:(NSMutableArray<HotTopicModel *> *)dataArr
+{
+    _dataArr = dataArr;
+    [self.collection reloadData];
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 -(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
-    return 6;
+    if (self.dataArr != nil) {
+        return self.dataArr.count;
+    }
+    return 0;
 }
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     remenhuaticell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"remenhuaticell" forIndexPath:indexPath];
-    cell.label.text = @"#数据#";
+    cell.label.text = self.dataArr[indexPath.row].topic_name;
     return cell;
 }
 -(CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath

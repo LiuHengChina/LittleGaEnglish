@@ -54,7 +54,7 @@
                             <color key="textColor" red="0.4039215686" green="0.41568627450000001" blue="0.45882352939999999" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请选择对应的中文意思:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KVk-Ed-STI">
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请选择对应的中文意思:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="144.5" translatesAutoresizingMaskIntoConstraints="NO" id="KVk-Ed-STI">
                             <rect key="frame" x="10" y="57" width="144.5" height="17"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -84,17 +84,17 @@
                             <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="buxuand" translatesAutoresizingMaskIntoConstraints="NO" id="ebU-xm-edt">
+                        <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="buxuand" translatesAutoresizingMaskIntoConstraints="NO" id="ebU-xm-edt">
                             <rect key="frame" x="567" y="287" width="24" height="24"/>
                         </imageView>
-                        <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="buxuanb" translatesAutoresizingMaskIntoConstraints="NO" id="E36-HQ-DYL">
+                        <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="buxuanb" translatesAutoresizingMaskIntoConstraints="NO" id="E36-HQ-DYL">
                             <rect key="frame" x="501" y="287" width="24" height="24"/>
                         </imageView>
-                        <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="buxuana" translatesAutoresizingMaskIntoConstraints="NO" id="cRX-Wy-5uc">
+                        <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="buxuana" translatesAutoresizingMaskIntoConstraints="NO" id="cRX-Wy-5uc">
                             <rect key="frame" x="468" y="287" width="24" height="24"/>
                             <gestureRecognizers/>
                         </imageView>
-                        <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="buxuanc" translatesAutoresizingMaskIntoConstraints="NO" id="dDm-ct-dwA">
+                        <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="buxuanc" translatesAutoresizingMaskIntoConstraints="NO" id="dDm-ct-dwA">
                             <rect key="frame" x="534" y="287" width="24" height="24"/>
                         </imageView>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="start_1" translatesAutoresizingMaskIntoConstraints="NO" id="VNO-tX-o1t">
@@ -180,9 +180,14 @@
             <nil key="simulatedStatusBarMetrics"/>
             <connections>
                 <outlet property="A" destination="cRX-Wy-5uc" id="LW4-qM-2CA"/>
+                <outlet property="ALable" destination="Zjr-97-wuJ" id="YGd-9W-1MY"/>
                 <outlet property="B" destination="E36-HQ-DYL" id="iHw-W4-svG"/>
+                <outlet property="BLabel" destination="jTB-e8-xg0" id="XPP-n3-1tb"/>
                 <outlet property="C" destination="dDm-ct-dwA" id="ONo-2y-UaB"/>
+                <outlet property="CLabel" destination="NaK-We-mu6" id="I5r-Mi-b91"/>
                 <outlet property="D" destination="ebU-xm-edt" id="d2Z-Zm-hqT"/>
+                <outlet property="DLabel" destination="Php-hk-T1B" id="5hp-RZ-az3"/>
+                <outlet property="TipLabel" destination="KVk-Ed-STI" id="AJl-ox-CRC"/>
                 <outlet property="danci" destination="2st-dt-5WG" id="GJz-JJ-HqT"/>
                 <outlet property="daojishi" destination="A1v-xw-lnD" id="Tvf-3Q-LkX"/>
                 <outlet property="xuanxianga" destination="VNO-tX-o1t" id="DGc-6e-wGV"/>

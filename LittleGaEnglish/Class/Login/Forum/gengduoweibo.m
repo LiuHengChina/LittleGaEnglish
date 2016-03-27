@@ -10,7 +10,6 @@
 #import "weiba.h"
 @interface gengduoweibocell : UICollectionViewCell
 @property (strong, nonatomic) IBOutlet UIImageView *imageweiba;
-
 @end
 
 @implementation gengduoweibocell
@@ -29,6 +28,13 @@
     // Do any additional setup after loading the view.
 }
 
+
+- (void)setDataArr:(NSMutableArray<HotWeibaModel *> *)dataArr
+{
+    _dataArr = dataArr;
+    [self.collection reloadData];
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -41,14 +47,19 @@
 
 -(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
-    return 3;
+    if (self.dataArr != nil) {
+        return self.dataArr.count;
+    }
+    return 0;
 }
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     gengduoweibocell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"gengduoweibocell" forIndexPath:indexPath];
-    
+    [cell.imageweiba sd_setImageWithURL:[NSURL URLWithString:self.dataArr[indexPath.row].avatar_middle] placeholderImage:[UIImage imageNamed:@"start_1"] completed:nil];
     return cell;
 }
+
+
 /*
 #pragma mark - Navigation
 

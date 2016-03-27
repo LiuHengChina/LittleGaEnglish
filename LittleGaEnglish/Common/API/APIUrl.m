@@ -2,6 +2,8 @@ NSString *const k_url_login = @"/user/login"; // 登录
 
 NSString *const k_url_register = @"/user/register"; // 注册
 
+NSString *const k_url_sendCode = @"/user/sendVerifyCode";   // 发送验证码
+
 NSString *const k_url_openClass = @"/Class/OpenClass"; // 小卡公开课
 
 NSString *const k_url_College = @"/Class/College"; // 小卡学院
@@ -36,8 +38,9 @@ NSString *const k_url_getKaoTi = @"/Evaluation/getKaoTi";   // 考题列表
 
 NSString *const k_url_addUserVoiceAnswer = @"/Evaluation/addUserVoiceAnswer/"; // 上传语音答案
 
-
 NSString *const k_url_addUserAnswer = @"/Evaluation/addUserAnswer/"; // 单词和文化测评用户答题接口
-//NSString *const k_url_ = @"%@";
-//NSString *const k_url_ = @"%@";
+
+NSString *const k_url_checkErrorParse = @"/Evaluation/checkErrorParse/";   // 6、查看错题解析接口
+
+NSString *const k_url_bbsIndex = @"/bbs/bbsIndex"; // 论坛首页接口
 //NSString *const k_url_ = @"%@";

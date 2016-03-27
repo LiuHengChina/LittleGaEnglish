@@ -89,4 +89,10 @@
 
 
 + (NSDictionary *)dictionaryWithJsonString:(NSString *)jsonString;
+
++ (NSString *)getDateNow;
++ (NSString *)getWeekNow;
+
++ (NSString *)weibaStr:(NSString *)str;
+
 @end

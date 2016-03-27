@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MyUIViewController.h"
 
-@interface JINGXUAN : UIViewController
+@interface JINGXUAN : MyUIViewController
 
 @end

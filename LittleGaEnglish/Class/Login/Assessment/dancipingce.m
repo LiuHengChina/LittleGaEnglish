@@ -12,6 +12,7 @@
 #import "ReactiveCocoa.h"
 #import "KaoTiListModel.h"
 #import "MyApiEvaluation.h"
+#import "MyUIView.h"
 
 @interface cuotijiexi : UIView
 @property (strong, nonatomic) IBOutlet UILabel *danci;
@@ -19,17 +20,63 @@
 @property (strong, nonatomic) IBOutlet UILabel *b;
 @property (strong, nonatomic) IBOutlet UILabel *c;
 @property (strong, nonatomic) IBOutlet UILabel *d;
+
+@property (strong, nonatomic) IBOutlet UILabel *ALabel;
+@property (strong, nonatomic) IBOutlet UILabel *BLabel;
+@property (strong, nonatomic) IBOutlet UILabel *CLabel;
+@property (strong, nonatomic) IBOutlet UILabel *DLabel;
+
 @property (strong, nonatomic) IBOutlet UILabel *zhengquedaan;
 @property (strong, nonatomic) IBOutlet UILabel *cuowudaan;
 @property (strong, nonatomic) IBOutlet UITextView *cuotijiexi;
+@property (strong, nonatomic) IBOutlet UILabel *TipLabel;
+
+
+@property (nonatomic,strong) NSArray *answerArr;
+@property (nonatomic, strong) NSArray *chooseArr;
+
+@property (nonatomic, strong) KaoTiErrorModel *model;
 
 @end
 
 @implementation cuotijiexi
+
+- (void)awakeFromNib
+{
+    self.answerArr = @[self.a, self.b, self.c, self.d];
+    self.chooseArr = @[self.ALabel, self.BLabel, self.CLabel, self.DLabel];
+}
+
+
 - (IBAction)xiayicuoti:(UIButton *)sender {
 }
 
+- (void)setModel:(KaoTiErrorModel *)model
+{
+    self.TipLabel.text = model.subject;
+    self.cuotijiexi.text = model.analyze;
+    self.zhengquedaan.text = model.right_key;
+    self.cuowudaan.text = model.user_answer;
+
+    int i = 0;
+    for (; i < model.option.count; i++) {
+        UILabel *label = _answerArr[i];
+        label.text = model.option[i];
+    }
+    for (; i < _answerArr.count; i++) {
+        UILabel *answerLab = _answerArr[i];
+        UILabel *xuanxiangLabel = _chooseArr[i];
+        xuanxiangLabel.hidden = YES;
+        answerLab.hidden = YES;
+    }
+}
+
+
 @end
+
+
+
+
 @interface collectionViewcell : UICollectionViewCell
 @property (strong, nonatomic) IBOutlet UILabel *cuotijieguo;
 
@@ -43,18 +90,33 @@
 
 @end
 
-@interface dancipingcecellcoller : UIView<UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout>
+
+@protocol dancipingcecellcollerDelegate <NSObject>
+
+- (void)didSelectErrorModel:(KaoTiAnswerListModel *)model indexPath:(NSIndexPath*)indexPath;
+
+@end
+
+@interface dancipingcecellcoller : MyUIView<UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout>
 @property (strong, nonatomic) IBOutlet UICollectionView *collection;
 @property (strong, nonatomic) IBOutlet NSLayoutConstraint *widht;
 @property (strong, nonatomic) IBOutlet UIButton *fenxiangchengji;
 @property (strong, nonatomic) IBOutlet UIButton *zailaiyici;
+@property (strong, nonatomic) IBOutlet UILabel *scoreLab;
+@property (nonatomic, strong) NSMutableArray *errorArr;
+@property (nonatomic, strong) KaoTIAnswer *model;
+@property (nonatomic, weak, nullable) id<dancipingcecellcollerDelegate> delegate;
 
 @end
 @implementation dancipingcecellcoller
 - (IBAction)fenxiangchengji:(UIButton *)sender {
     NSLog(@"分享成绩");
+    //TODO 分享
+    [WDTipsView showTipsViewWithString:@"分享成绩"];
 }
 - (IBAction)zailaiyici:(id)sender {
+    
+    [self.VC.navigationController popToRootViewControllerAnimated:YES];
     NSLog(@"再来一次");
 }
 
@@ -69,7 +131,10 @@
 
 -(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
-    return 3;
+    if (self.model != nil) {
+        return self.model.Errarr.count;
+    }
+    return 0;
 }
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -78,12 +143,32 @@
     if (self.collection.contentSize.width<self.frame.size.width) {
         self.widht.constant = self.collection.contentSize.width;
     }
+    KaoTiAnswerListModel *model = self.model.Errarr[indexPath.row];
+    cell.cuotijieguo.text = model.Order;
     return cell;
 }
 -(CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     return CGSizeMake(20, 20);
 }
+
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (self.delegate && [_delegate respondsToSelector:@selector(didSelectErrorModel:indexPath:)]) {
+        [self.delegate didSelectErrorModel:self.model.Errarr[indexPath.row] indexPath:indexPath];
+    }
+}
+
+
+
+- (void)setModel:(KaoTIAnswer *)model
+{
+    _model = model;
+    _scoreLab.text = model.score;
+    [self.collection reloadData];
+}
+
+
 @end
 
 @interface xuanzexuanxiang : UIView
@@ -104,6 +189,7 @@
 @property (strong, nonatomic) IBOutlet UILabel *xuanxiangb;
 @property (strong, nonatomic) IBOutlet UILabel *xuanxiangc;
 @property (strong, nonatomic) IBOutlet UILabel *xuanxiangd;
+
 
 @property (nonatomic, strong) NSArray *answerArr;    // 答案数组
 @property (nonatomic, strong) NSArray *kaotiArr;     // 考题数组
@@ -151,7 +237,7 @@
 
 
 #pragma mark - 单词评测
-@interface dancipingce ()<UITableViewDataSource,UITableViewDelegate>
+@interface dancipingce ()<UITableViewDataSource,UITableViewDelegate,dancipingcecellcollerDelegate>
 
 {
     dispatch_source_t _mysource;
@@ -167,6 +253,9 @@
 @property (nonatomic, strong)NSMutableArray<KaoTiModel *> *kaoTilistArr; // 考题list
 @property (nonatomic, assign) NSInteger nowIndex; // 当前考题题号
 @property (nonatomic, strong) NSMutableArray *choosekaotiArr; // 用户选择的答案
+
+@property (nonatomic, strong) NSMutableArray *errorArr;
+@property (nonatomic, copy) NSString *kaojuanID;
 
 @end
 
@@ -198,7 +287,6 @@
     };
 
     [self getData];
-    // Do any additional setup after loading the view.
 }
 
 - (void)getData
@@ -240,6 +328,7 @@
     cell.chickBeginBlock = ^(){
         [[MyApiEvaluation share]getKaotiWithID:model.id Success:^(MyApiEvaluation *request, NSMutableArray *arr) {
             if (arr.count > 0) {
+                self.kaojuanID = model.id;
                 self.kaoTilistArr = arr;
                 dispatch_async(dispatch_get_main_queue(), ^{
                     [self showKaoTiView];
@@ -289,23 +378,53 @@
 #pragma mark 成绩结果
 - (void)chooseFinish
 {
-    self.dancipingcewancheng = [[NSBundle mainBundle] loadNibNamed:@"wanchengdanci" owner:nil options:nil].lastObject;
-    self.dancipingcewancheng.frame = self.view.bounds;
-    self.dancipingcewancheng.collection.delegate = self.dancipingcewancheng;
-    self.dancipingcewancheng.collection.dataSource = self.dancipingcewancheng;
-    [self.view addSubview:self.dancipingcewancheng];
+    [[MyApiEvaluation share] addUserAnswer:self.kaojuanID score:self.choosekaotiArr Success:^(MyApiEvaluation *request, KaoTIAnswer *model) {
+        self.errorArr = model.Errarr;
+        self.dancipingcewancheng = [[NSBundle mainBundle] loadNibNamed:@"wanchengdanci" owner:nil options:nil].lastObject;
+        self.dancipingcewancheng.frame = self.view.bounds;
+        self.dancipingcewancheng.collection.delegate = self.dancipingcewancheng;
+        self.dancipingcewancheng.collection.dataSource = self.dancipingcewancheng;
+        self.dancipingcewancheng.model = model;
+        self.dancipingcewancheng.VC = self;
+        self.dancipingcewancheng.delegate = self;
+        [self.view addSubview:self.dancipingcewancheng];
+        
+    } Failure:^(MyApiEvaluation *request, NSError *requestError) {
+        [WDTipsView showTipsViewWithString:requestError.domain];
+    }];
 }
 
 
-- (void)chooseError
+- (void)didSelectErrorModel:(KaoTiAnswerListModel *)model indexPath:(NSIndexPath *)indexPath
 {
-    self.cuoti = [[NSBundle mainBundle] loadNibNamed:@"dancicuoti" owner:nil options:nil].lastObject;
-    self.cuoti.frame = self.view.bounds;
-    [self.view addSubview:self.cuoti];
-    RACSignal *xiayicuoti = [self.cuoti rac_signalForSelector:@selector(xiayicuoti:)];
-    [xiayicuoti subscribeNext:^(id x) {
-        NSLog(@"下一个错题");
+    [self chooseError:indexPath.row];
+}
+
+- (void)chooseError:(NSInteger)index
+{
+    __block NSInteger nextIndex = index++;
+    KaoTiAnswerListModel *model = self.errorArr[index];
+    [[MyApiEvaluation share] checkErrorParseWithId:model.errktid Success:^(MyApiEvaluation *request, KaoTiErrorModel *model) {
+        
+        if ([self.view.subviews containsObject:self.cuoti]) {
+            [self.cuoti removeFromSuperview];
+        }
+        self.cuoti = [[NSBundle mainBundle] loadNibNamed:@"dancicuoti" owner:nil options:nil].lastObject;
+        self.cuoti.frame = self.view.bounds;
+        self.cuoti.model = model;
+        [self.view addSubview:self.cuoti];
+        RACSignal *xiayicuoti = [self.cuoti rac_signalForSelector:@selector(xiayicuoti:)];
+        [xiayicuoti subscribeNext:^(id x) {
+            if (nextIndex >= self.errorArr.count) {
+                [WDTipsView showTipsViewWithString:@"没有下一题了"];
+                return;
+            }
+            [self chooseError:nextIndex];
+        }];
+    } Failure:^(MyApiEvaluation *request, NSError *requestError) {
+        [WDTipsView showTipsViewWithString:requestError.domain];
     }];
+
 }
 
 - (void)didReceiveMemoryWarning {
@@ -335,6 +454,9 @@
 
 - (void)chooseAnswer:(NSString *)answer
 {
+    if (_mysource) {
+        dispatch_suspend(_mysource);
+    }
     [self.choosekaotiArr addObject:@{@"kt_id":self.kaoTilistArr[self.nowIndex - 1].id,
                               @"answer":answer}];
     [self showKaoTiView];

@@ -36,7 +36,7 @@
                             <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请选择对应的中文意思:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6V2-2b-sbJ">
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请选择对应的中文意思:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="144.5" translatesAutoresizingMaskIntoConstraints="NO" id="6V2-2b-sbJ">
                             <rect key="frame" x="10" y="57" width="144.5" height="17"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -254,6 +254,11 @@
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <connections>
+                <outlet property="ALabel" destination="yAS-am-7pP" id="RHq-IE-EM2"/>
+                <outlet property="BLabel" destination="wNv-Bc-Eme" id="VxW-9W-iQo"/>
+                <outlet property="CLabel" destination="Rox-cR-3st" id="xrv-Hp-wbw"/>
+                <outlet property="DLabel" destination="uIx-zH-AEz" id="hyi-vw-ytr"/>
+                <outlet property="TipLabel" destination="6V2-2b-sbJ" id="iSd-nx-P6V"/>
                 <outlet property="a" destination="dJh-S3-c6a" id="c0B-Bj-PgX"/>
                 <outlet property="b" destination="US1-wZ-bia" id="Cdd-3p-LcT"/>
                 <outlet property="c" destination="bzO-PS-Igk" id="VbB-GL-65Q"/>

@@ -372,4 +372,37 @@
     return dic;
 }
 
+
++ (NSString *)getDateNow
+{
+    NSDate *date = [NSDate date];
+    NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+    NSDateComponents *comps = [[NSDateComponents alloc] init];
+    NSInteger unitFlags = NSYearCalendarUnit|NSMonthCalendarUnit|NSDayCalendarUnit|NSWeekdayCalendarUnit|NSHourCalendarUnit|NSMinuteCalendarUnit|NSSecondCalendarUnit;
+    comps = [calendar components:unitFlags fromDate:date];
+    NSInteger year=[comps year];
+    NSInteger month = [comps month];
+    NSInteger day = [comps day];
+    return [NSString stringWithFormat:@"%ld年%ld月%ld日",(long)year,(long)month,(long)day];
+}
+
++ (NSString *)getWeekNow
+{
+    NSArray * arrWeek=[NSArray arrayWithObjects:@"星期日",@"星期一",@"星期二",@"星期三",@"星期四",@"星期五",@"星期六", nil];
+    NSDate *date = [NSDate date];
+    NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+    NSDateComponents *comps = [[NSDateComponents alloc] init];
+    NSInteger unitFlags = NSYearCalendarUnit|NSMonthCalendarUnit|NSDayCalendarUnit|NSWeekdayCalendarUnit|NSHourCalendarUnit|NSMinuteCalendarUnit|NSSecondCalendarUnit;
+    comps = [calendar components:unitFlags fromDate:date];
+    NSInteger week = [comps weekday];
+
+    return [NSString stringWithFormat:@"%@",[arrWeek objectAtIndex:week-1]];
+}
+
++ (NSString *)weibaStr:(NSString *)str
+{
+    return [NSString stringWithFormat:@"#%@#",str];
+}
+
+
 @end

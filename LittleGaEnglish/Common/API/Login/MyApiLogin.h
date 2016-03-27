@@ -24,5 +24,11 @@
                   Success:(void(^)(MyApiLogin * request , LoginModel * model))success
                   Failure:(void(^)(MyApiLogin * request ,NSError *requestError))failure;
 
+//1.3	获取验证码
+- (void)sendCodeByPhone:(NSString *)phone
+               sendType:(NSString *)type
+                Success:(void(^)(MyApiLogin * request))success
+                Failure:(void(^)(MyApiLogin * request ,NSError *requestError))failure;
+
 
 @end

@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
+#import "LunTanMainModel.h"
 @interface gengduoweibo : UIViewController
+
+@property (nonatomic, strong) NSMutableArray<HotWeibaModel *> *dataArr;
 
 @end
