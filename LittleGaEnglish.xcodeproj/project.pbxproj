@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		045B6B1C1CABAFD5000B38AF /* ScoredController.m in Sources */ = {isa = PBXBuildFile; fileRef = 045B6B181CABAFD5000B38AF /* ScoredController.m */; };
+		045B6B1D1CABAFD5000B38AF /* ScoredController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 045B6B191CABAFD5000B38AF /* ScoredController.xib */; };
+		045B6B1E1CABAFD5000B38AF /* RuleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 045B6B1B1CABAFD5000B38AF /* RuleViewController.m */; };
+		045B6B271CABB014000B38AF /* TwoListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 045B6B221CABB014000B38AF /* TwoListCell.m */; };
+		045B6B281CABB014000B38AF /* TwoListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 045B6B231CABB014000B38AF /* TwoListCell.xib */; };
+		045B6B291CABB014000B38AF /* ThreeListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 045B6B251CABB014000B38AF /* ThreeListCell.m */; };
+		045B6B2A1CABB014000B38AF /* ThreeListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 045B6B261CABB014000B38AF /* ThreeListCell.xib */; };
+		045B6B311CABB028000B38AF /* LvCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 045B6B2C1CABB028000B38AF /* LvCell.m */; };
+		045B6B321CABB028000B38AF /* LvCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 045B6B2D1CABB028000B38AF /* LvCell.xib */; };
+		045B6B331CABB028000B38AF /* ListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 045B6B2F1CABB028000B38AF /* ListCell.m */; };
+		045B6B341CABB028000B38AF /* ListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 045B6B301CABB028000B38AF /* ListCell.xib */; };
 		1E32AEBEC49556E5AFBDA797 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B4D6F1E398CD6B493E69B389 /* libPods.a */; };
 		85230AC91C73048F00B6A48A /* CALayer+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 85230A921C73048F00B6A48A /* CALayer+Helper.m */; };
 		85230ACA1C73048F00B6A48A /* NSObject+runtime.m in Sources */ = {isa = PBXBuildFile; fileRef = 85230A941C73048F00B6A48A /* NSObject+runtime.m */; };
@@ -195,6 +206,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		045B6B171CABAFD5000B38AF /* ScoredController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ScoredController.h; path = "../../../../../小咔英语/LittleGaEnglish/LittleGaEnglish/Class/Login/Mine/ScoredController.h"; sourceTree = "<group>"; };
+		045B6B181CABAFD5000B38AF /* ScoredController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ScoredController.m; path = "../../../../../小咔英语/LittleGaEnglish/LittleGaEnglish/Class/Login/Mine/ScoredController.m"; sourceTree = "<group>"; };
+		045B6B191CABAFD5000B38AF /* ScoredController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ScoredController.xib; path = "../../../../../小咔英语/LittleGaEnglish/LittleGaEnglish/Class/Login/Mine/ScoredController.xib"; sourceTree = "<group>"; };
+		045B6B1A1CABAFD5000B38AF /* RuleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RuleViewController.h; path = "../../../../../小咔英语/LittleGaEnglish/LittleGaEnglish/Class/Login/Mine/RuleViewController.h"; sourceTree = "<group>"; };
+		045B6B1B1CABAFD5000B38AF /* RuleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RuleViewController.m; path = "../../../../../小咔英语/LittleGaEnglish/LittleGaEnglish/Class/Login/Mine/RuleViewController.m"; sourceTree = "<group>"; };
+		045B6B211CABB014000B38AF /* TwoListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TwoListCell.h; path = "../../../../../小咔英语/LittleGaEnglish/LittleGaEnglish/Class/Login/Mine/TwoListCell.h"; sourceTree = "<group>"; };
+		045B6B221CABB014000B38AF /* TwoListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TwoListCell.m; path = "../../../../../小咔英语/LittleGaEnglish/LittleGaEnglish/Class/Login/Mine/TwoListCell.m"; sourceTree = "<group>"; };
+		045B6B231CABB014000B38AF /* TwoListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TwoListCell.xib; path = "../../../../../小咔英语/LittleGaEnglish/LittleGaEnglish/Class/Login/Mine/TwoListCell.xib"; sourceTree = "<group>"; };
+		045B6B241CABB014000B38AF /* ThreeListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ThreeListCell.h; path = "../../../../../小咔英语/LittleGaEnglish/LittleGaEnglish/Class/Login/Mine/ThreeListCell.h"; sourceTree = "<group>"; };
+		045B6B251CABB014000B38AF /* ThreeListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ThreeListCell.m; path = "../../../../../小咔英语/LittleGaEnglish/LittleGaEnglish/Class/Login/Mine/ThreeListCell.m"; sourceTree = "<group>"; };
+		045B6B261CABB014000B38AF /* ThreeListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ThreeListCell.xib; path = "../../../../../小咔英语/LittleGaEnglish/LittleGaEnglish/Class/Login/Mine/ThreeListCell.xib"; sourceTree = "<group>"; };
+		045B6B2B1CABB028000B38AF /* LvCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LvCell.h; path = "../../../../../小咔英语/LittleGaEnglish/LittleGaEnglish/Class/Login/Mine/LvCell.h"; sourceTree = "<group>"; };
+		045B6B2C1CABB028000B38AF /* LvCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LvCell.m; path = "../../../../../小咔英语/LittleGaEnglish/LittleGaEnglish/Class/Login/Mine/LvCell.m"; sourceTree = "<group>"; };
+		045B6B2D1CABB028000B38AF /* LvCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LvCell.xib; path = "../../../../../小咔英语/LittleGaEnglish/LittleGaEnglish/Class/Login/Mine/LvCell.xib"; sourceTree = "<group>"; };
+		045B6B2E1CABB028000B38AF /* ListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ListCell.h; path = "../../../../../小咔英语/LittleGaEnglish/LittleGaEnglish/Class/Login/Mine/ListCell.h"; sourceTree = "<group>"; };
+		045B6B2F1CABB028000B38AF /* ListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ListCell.m; path = "../../../../../小咔英语/LittleGaEnglish/LittleGaEnglish/Class/Login/Mine/ListCell.m"; sourceTree = "<group>"; };
+		045B6B301CABB028000B38AF /* ListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ListCell.xib; path = "../../../../../小咔英语/LittleGaEnglish/LittleGaEnglish/Class/Login/Mine/ListCell.xib"; sourceTree = "<group>"; };
 		85230A911C73048F00B6A48A /* CALayer+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+Helper.h"; sourceTree = "<group>"; };
 		85230A921C73048F00B6A48A /* CALayer+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+Helper.m"; sourceTree = "<group>"; };
 		85230A931C73048F00B6A48A /* NSObject+runtime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+runtime.h"; sourceTree = "<group>"; };
@@ -530,6 +558,85 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		045B6B071CAB7286000B38AF /* MineScored(我的积分) */ = {
+			isa = PBXGroup;
+			children = (
+				045B6B0D1CAB72ED000B38AF /* View */,
+				045B6B0C1CAB72DB000B38AF /* Cell */,
+				045B6B0B1CAB72C9000B38AF /* Model */,
+				045B6B091CAB72C0000B38AF /* Controller */,
+			);
+			name = "MineScored(我的积分)";
+			sourceTree = "<group>";
+		};
+		045B6B081CAB728A000B38AF /* Find(发现) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Find(发现)";
+			sourceTree = "<group>";
+		};
+		045B6B091CAB72C0000B38AF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				045B6B171CABAFD5000B38AF /* ScoredController.h */,
+				045B6B181CABAFD5000B38AF /* ScoredController.m */,
+				045B6B191CABAFD5000B38AF /* ScoredController.xib */,
+				045B6B1A1CABAFD5000B38AF /* RuleViewController.h */,
+				045B6B1B1CABAFD5000B38AF /* RuleViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		045B6B0B1CAB72C9000B38AF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		045B6B0C1CAB72DB000B38AF /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				045B6B201CABAFEB000B38AF /* RuleCell */,
+				045B6B1F1CABAFE9000B38AF /* MineScoreCell */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
+		045B6B0D1CAB72ED000B38AF /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		045B6B1F1CABAFE9000B38AF /* MineScoreCell */ = {
+			isa = PBXGroup;
+			children = (
+				045B6B2B1CABB028000B38AF /* LvCell.h */,
+				045B6B2C1CABB028000B38AF /* LvCell.m */,
+				045B6B2D1CABB028000B38AF /* LvCell.xib */,
+				045B6B2E1CABB028000B38AF /* ListCell.h */,
+				045B6B2F1CABB028000B38AF /* ListCell.m */,
+				045B6B301CABB028000B38AF /* ListCell.xib */,
+			);
+			name = MineScoreCell;
+			sourceTree = "<group>";
+		};
+		045B6B201CABAFEB000B38AF /* RuleCell */ = {
+			isa = PBXGroup;
+			children = (
+				045B6B211CABB014000B38AF /* TwoListCell.h */,
+				045B6B221CABB014000B38AF /* TwoListCell.m */,
+				045B6B231CABB014000B38AF /* TwoListCell.xib */,
+				045B6B241CABB014000B38AF /* ThreeListCell.h */,
+				045B6B251CABB014000B38AF /* ThreeListCell.m */,
+				045B6B261CABB014000B38AF /* ThreeListCell.xib */,
+			);
+			name = RuleCell;
+			sourceTree = "<group>";
+		};
 		3973A13A3A06BDC7B65D5CD0 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -850,6 +957,8 @@
 		85230B131C7600AE00B6A48A /* Mine */ = {
 			isa = PBXGroup;
 			children = (
+				045B6B081CAB728A000B38AF /* Find(发现) */,
+				045B6B071CAB7286000B38AF /* MineScored(我的积分) */,
 				9AEE01F21C8941410027ACF0 /* MineViewController.h */,
 				9AEE01F31C8941410027ACF0 /* MineViewController.m */,
 				9AEE01FE1C8A87EC0027ACF0 /* MineDetails.h */,
@@ -1306,6 +1415,7 @@
 				8542F5D21C8DCEAB00C4FFFD /* BuyMealTableViewCell.xib in Resources */,
 				9A1E1F341C9AB00800D77564 /* luntan.storyboard in Resources */,
 				9ADCCDD21C93FF9D002F269F /* daojishiview.xib in Resources */,
+				045B6B2A1CABB014000B38AF /* ThreeListCell.xib in Resources */,
 				8554B1191C72C08F00598E62 /* Assets.xcassets in Resources */,
 				85F1D0B91C7DE8680041B09B /* HomeTableViewCell.xib in Resources */,
 				8554B1171C72C08F00598E62 /* Main.storyboard in Resources */,
@@ -1313,14 +1423,18 @@
 				85230AFD1C731ED800B6A48A /* BBLoginViewController.xib in Resources */,
 				85230AE71C7319FD00B6A48A /* big_white_back.png in Resources */,
 				9A1E1F171C952EC100D77564 /* dancipingcexiangqing.xib in Resources */,
+				045B6B281CABB014000B38AF /* TwoListCell.xib in Resources */,
 				9AEE02461C92A0A10027ACF0 /* yuyincepingmain.xib in Resources */,
 				9A1E1F121C952B1700D77564 /* dancipingce.xib in Resources */,
 				9AEE01FA1C8948300027ACF0 /* MineViewController.storyboard in Resources */,
 				9ADCCDDA1C940897002F269F /* yuyinpingce.xib in Resources */,
+				045B6B1D1CABAFD5000B38AF /* ScoredController.xib in Resources */,
 				85230B0E1C74A1E800B6A48A /* MyTextFiled.xib in Resources */,
 				858BBF261C82F6A300F54E42 /* CoursesDetailMovieTableViewCell.xib in Resources */,
+				045B6B321CABB028000B38AF /* LvCell.xib in Resources */,
 				858BBF1C1C82EAEE00F54E42 /* CoureseDetaiNameCell.xib in Resources */,
 				85CCBF1E1C84813A0084B11C /* CoureseEvalTableViewCell.xib in Resources */,
+				045B6B341CABB028000B38AF /* ListCell.xib in Resources */,
 				852623DF1CA3A338006F6C29 /* YuYinDetailViewController.xib in Resources */,
 				85CCBF151C847CA20084B11C /* CoursesEvalViewController.xib in Resources */,
 				8542F5D71C8DCEAB00C4FFFD /* BuyViewController.xib in Resources */,
@@ -1409,6 +1523,7 @@
 				85E295791C9460F700570196 /* MyApiMine.m in Sources */,
 				85230ACE1C73048F00B6A48A /* UIImage+Blur.m in Sources */,
 				8554B1141C72C08F00598E62 /* ViewController.m in Sources */,
+				045B6B1E1CABAFD5000B38AF /* RuleViewController.m in Sources */,
 				9A1E1F321C9AAE2E00D77564 /* JINGXUAN.m in Sources */,
 				85230AD71C73048F00B6A48A /* WDTipsView.m in Sources */,
 				8542F5D61C8DCEAB00C4FFFD /* BuyViewController.m in Sources */,
@@ -1437,6 +1552,7 @@
 				85E5779F1CA65D3D00710C39 /* MyUICollectionView.m in Sources */,
 				85230B001C740C0800B6A48A /* BBLoginView.m in Sources */,
 				9AEE02181C8D822D0027ACF0 /* Replymypost.m in Sources */,
+				045B6B311CABB028000B38AF /* LvCell.m in Sources */,
 				85F1D0AD1C7C9CD20041B09B /* UserDao.m in Sources */,
 				85F1D0B81C7DE8680041B09B /* HomeTableViewCell.m in Sources */,
 				852623E21CA42435006F6C29 /* KaoTIAnswer.m in Sources */,
@@ -1450,6 +1566,7 @@
 				9AEE023F1C90263F0027ACF0 /* quxiaodingdan.m in Sources */,
 				852623DE1CA3A338006F6C29 /* YuYinDetailViewController.m in Sources */,
 				85230AEA1C7319FD00B6A48A /* MyNavigationController.m in Sources */,
+				045B6B331CABB028000B38AF /* ListCell.m in Sources */,
 				85230AD41C73048F00B6A48A /* UIViewController+Category.m in Sources */,
 				85E5779C1CA658AB00710C39 /* MyApiLunTan.m in Sources */,
 				8554B10E1C72C08F00598E62 /* main.m in Sources */,
@@ -1480,6 +1597,7 @@
 				85230ACC1C73048F00B6A48A /* NSURL+Parameters.m in Sources */,
 				9A1E1F371C9AB3B200D77564 /* quanbu.m in Sources */,
 				9AEE022D1C8FF1D90027ACF0 /* wodefensi.m in Sources */,
+				045B6B291CABB014000B38AF /* ThreeListCell.m in Sources */,
 				9AEE020C1C8D2DCC0027ACF0 /* CompleteViewController.m in Sources */,
 				85230AD61C73048F00B6A48A /* UIActionSheet+MyActionSheet.m in Sources */,
 				8542F5CF1C8DCEAB00C4FFFD /* BuyHeaderTableViewCell.m in Sources */,
@@ -1494,6 +1612,7 @@
 				858BBF0B1C81A2AF00F54E42 /* CoursesDetailViewController.m in Sources */,
 				85230AD21C73048F00B6A48A /* UINavigationController+Autorotate.m in Sources */,
 				9A4794B91CA7CA72005F3A15 /* xuanzeimage.m in Sources */,
+				045B6B271CABB014000B38AF /* TwoListCell.m in Sources */,
 				858BBF141C81B40200F54E42 /* CoursesDetailDesViewController.m in Sources */,
 				85230B191C7600F000B6A48A /* CoursesViewController.m in Sources */,
 				85D43BDD1C9D01CE00240091 /* KaoTiListModel.m in Sources */,
@@ -1518,6 +1637,7 @@
 				85230AD31C73048F00B6A48A /* UITableViewCell+FixUITableViewCellAutolayoutIHope.m in Sources */,
 				9A1E1F431C9BE32A00D77564 /* weiba.m in Sources */,
 				9AEE021B1C8D8BA40027ACF0 /* mycollection.m in Sources */,
+				045B6B1C1CABAFD5000B38AF /* ScoredController.m in Sources */,
 				85230AED1C7319FD00B6A48A /* MyUIViewController.m in Sources */,
 				9AEE021E1C8D8CF90027ACF0 /* CollectionDelete.m in Sources */,
 				9A1E1F491C9BECFD00D77564 /* fabu.m in Sources */,

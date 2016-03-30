@@ -9,6 +9,7 @@
 #import "MineViewController.h"
 #import "MineDetails.h"
 #import "MyApiMine.h"
+#import "ScoredController.h"
 
 @interface MineViewController ()
 
@@ -49,6 +50,12 @@
             break;
         case 3:
             [self performSegueWithIdentifier:@"oeder" sender:self];
+            break;
+        case 4:
+        {
+            ScoredController *scored = [[ScoredController alloc]initWithNibName:nil bundle:nil];
+            [self.navigationController pushViewController:scored animated:YES];
+        }
             break;
         default:
             break;
