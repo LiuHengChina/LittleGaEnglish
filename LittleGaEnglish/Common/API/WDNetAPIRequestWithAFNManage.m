@@ -9,7 +9,7 @@
 #import "WDNetAPIRequestWithAFNManage.h"
 #import <UIKit/UIKit.h>
 #import "AFNetworking.h"
-
+#import "WDNetAPIRequestWithAFNManage.h"
 
 @interface WDNetAPIRequestWithAFNManage ()
 @property (nonatomic,strong)NSMutableDictionary * HTTPHeaderDic;
