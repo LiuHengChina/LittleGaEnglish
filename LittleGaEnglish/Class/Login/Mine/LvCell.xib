@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Lv" rowHeight="88" id="KGk-i7-Jjw" customClass="LvCell">
+            <rect key="frame" x="0.0" y="0.0" width="341" height="75"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="341" height="74"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dM8-nS-qCa">
+                        <rect key="frame" x="18" y="18" width="50" height="50"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="cNb-nV-1bm"/>
+                            <constraint firstAttribute="height" constant="50" id="gwn-PN-S8B"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SRy-o5-4Lf">
+                        <rect key="frame" x="78" y="42" width="154" height="15"/>
+                        <animations/>
+                        <color key="backgroundColor" red="0.26842672410000001" green="0.54485452590000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="0GU-f6-y7H"/>
+                            <constraint firstAttribute="width" constant="154" id="536-Pj-Bds"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lv9" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gxt-uA-Pix">
+                        <rect key="frame" x="78" y="15" width="18" height="12"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <color key="textColor" red="0.28627450980392155" green="0.71372549019607845" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="咖啡豆360" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hrp-bc-B4C">
+                        <rect key="frame" x="133" y="15" width="45" height="11"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                        <color key="textColor" red="1" green="0.40000000000000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <animations/>
+                <constraints>
+                    <constraint firstItem="Gxt-uA-Pix" firstAttribute="leading" secondItem="dM8-nS-qCa" secondAttribute="trailing" constant="10" id="9fp-ko-lPR"/>
+                    <constraint firstItem="Hrp-bc-B4C" firstAttribute="centerY" secondItem="Gxt-uA-Pix" secondAttribute="centerY" id="Lan-aR-igu"/>
+                    <constraint firstItem="SRy-o5-4Lf" firstAttribute="leading" secondItem="dM8-nS-qCa" secondAttribute="trailing" constant="10" id="MJR-uw-UIE"/>
+                    <constraint firstItem="dM8-nS-qCa" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="18" id="Uag-Rj-M9S"/>
+                    <constraint firstItem="Hrp-bc-B4C" firstAttribute="centerX" secondItem="SRy-o5-4Lf" secondAttribute="centerX" id="bYU-Vx-EI7"/>
+                    <constraint firstItem="dM8-nS-qCa" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="18" id="eIu-TN-zeM"/>
+                    <constraint firstItem="SRy-o5-4Lf" firstAttribute="top" secondItem="Gxt-uA-Pix" secondAttribute="bottom" constant="15" id="uRC-vt-FeY"/>
+                    <constraint firstAttribute="bottom" secondItem="SRy-o5-4Lf" secondAttribute="bottom" constant="17" id="zEW-Ah-bIQ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <animations/>
+            <connections>
+                <outlet property="icon" destination="dM8-nS-qCa" id="Q5p-r2-ts8"/>
+                <outlet property="viewOfLv" destination="SRy-o5-4Lf" id="rAB-To-UPf"/>
+            </connections>
+            <point key="canvasLocation" x="255.5" y="258.5"/>
+        </tableViewCell>
+    </objects>
+</document>
