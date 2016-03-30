@@ -18,6 +18,19 @@
 		045B6B321CABB028000B38AF /* LvCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 045B6B2D1CABB028000B38AF /* LvCell.xib */; };
 		045B6B331CABB028000B38AF /* ListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 045B6B2F1CABB028000B38AF /* ListCell.m */; };
 		045B6B341CABB028000B38AF /* ListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 045B6B301CABB028000B38AF /* ListCell.xib */; };
+		045B6B371CABBAB7000B38AF /* MIneScoreInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 045B6B361CABBAB7000B38AF /* MIneScoreInfoModel.m */; };
+		045B6B401CABBD4D000B38AF /* FindController.m in Sources */ = {isa = PBXBuildFile; fileRef = 045B6B3D1CABBD4D000B38AF /* FindController.m */; };
+		045B6B411CABBD4D000B38AF /* ShopeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 045B6B3F1CABBD4D000B38AF /* ShopeController.m */; };
+		045B6B451CABBD65000B38AF /* ShopCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 045B6B431CABBD65000B38AF /* ShopCell.m */; };
+		045B6B461CABBD65000B38AF /* ShopCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 045B6B441CABBD65000B38AF /* ShopCell.xib */; };
+		045B6B4B1CABBD84000B38AF /* CSAdPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 045B6B4A1CABBD84000B38AF /* CSAdPageView.m */; };
+		045B6B531CABBE04000B38AF /* SystenController.m in Sources */ = {isa = PBXBuildFile; fileRef = 045B6B521CABBE04000B38AF /* SystenController.m */; };
+		045B6B5B1CABBEC1000B38AF /* 图层-2_67.png in Resources */ = {isa = PBXBuildFile; fileRef = 045B6B551CABBEC1000B38AF /* 图层-2_67.png */; };
+		045B6B5C1CABBEC1000B38AF /* 图层-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 045B6B561CABBEC1000B38AF /* 图层-2.png */; };
+		045B6B5D1CABBEC1000B38AF /* 图层-2@2x_47.png in Resources */ = {isa = PBXBuildFile; fileRef = 045B6B571CABBEC1000B38AF /* 图层-2@2x_47.png */; };
+		045B6B5E1CABBEC1000B38AF /* 图层-2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 045B6B581CABBEC1000B38AF /* 图层-2@2x.png */; };
+		045B6B5F1CABBEC1000B38AF /* 图层-2@3x_70.png in Resources */ = {isa = PBXBuildFile; fileRef = 045B6B591CABBEC1000B38AF /* 图层-2@3x_70.png */; };
+		045B6B601CABBEC1000B38AF /* 图层-2@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 045B6B5A1CABBEC1000B38AF /* 图层-2@3x.png */; };
 		1E32AEBEC49556E5AFBDA797 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B4D6F1E398CD6B493E69B389 /* libPods.a */; };
 		85230AC91C73048F00B6A48A /* CALayer+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 85230A921C73048F00B6A48A /* CALayer+Helper.m */; };
 		85230ACA1C73048F00B6A48A /* NSObject+runtime.m in Sources */ = {isa = PBXBuildFile; fileRef = 85230A941C73048F00B6A48A /* NSObject+runtime.m */; };
@@ -223,6 +236,25 @@
 		045B6B2E1CABB028000B38AF /* ListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ListCell.h; path = "../../../../../小咔英语/LittleGaEnglish/LittleGaEnglish/Class/Login/Mine/ListCell.h"; sourceTree = "<group>"; };
 		045B6B2F1CABB028000B38AF /* ListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ListCell.m; path = "../../../../../小咔英语/LittleGaEnglish/LittleGaEnglish/Class/Login/Mine/ListCell.m"; sourceTree = "<group>"; };
 		045B6B301CABB028000B38AF /* ListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ListCell.xib; path = "../../../../../小咔英语/LittleGaEnglish/LittleGaEnglish/Class/Login/Mine/ListCell.xib"; sourceTree = "<group>"; };
+		045B6B351CABBAB7000B38AF /* MIneScoreInfoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MIneScoreInfoModel.h; sourceTree = "<group>"; };
+		045B6B361CABBAB7000B38AF /* MIneScoreInfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MIneScoreInfoModel.m; sourceTree = "<group>"; };
+		045B6B3C1CABBD4D000B38AF /* FindController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FindController.h; path = "../../../../../小咔英语/LittleGaEnglish/LittleGaEnglish/Class/Login/Mine/FindController.h"; sourceTree = "<group>"; };
+		045B6B3D1CABBD4D000B38AF /* FindController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FindController.m; path = "../../../../../小咔英语/LittleGaEnglish/LittleGaEnglish/Class/Login/Mine/FindController.m"; sourceTree = "<group>"; };
+		045B6B3E1CABBD4D000B38AF /* ShopeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShopeController.h; path = "../../../../../小咔英语/LittleGaEnglish/LittleGaEnglish/Class/Login/Mine/ShopeController.h"; sourceTree = "<group>"; };
+		045B6B3F1CABBD4D000B38AF /* ShopeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ShopeController.m; path = "../../../../../小咔英语/LittleGaEnglish/LittleGaEnglish/Class/Login/Mine/ShopeController.m"; sourceTree = "<group>"; };
+		045B6B421CABBD65000B38AF /* ShopCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShopCell.h; path = "../../../../../小咔英语/LittleGaEnglish/LittleGaEnglish/Class/Login/Mine/ShopCell.h"; sourceTree = "<group>"; };
+		045B6B431CABBD65000B38AF /* ShopCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ShopCell.m; path = "../../../../../小咔英语/LittleGaEnglish/LittleGaEnglish/Class/Login/Mine/ShopCell.m"; sourceTree = "<group>"; };
+		045B6B441CABBD65000B38AF /* ShopCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ShopCell.xib; path = "../../../../../小咔英语/LittleGaEnglish/LittleGaEnglish/Class/Login/Mine/ShopCell.xib"; sourceTree = "<group>"; };
+		045B6B491CABBD84000B38AF /* CSAdPageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CSAdPageView.h; path = "../../../../../项目代码集/ios/ios/YXStudentDemo/YXStudentDemo/CSAdPageView.h"; sourceTree = "<group>"; };
+		045B6B4A1CABBD84000B38AF /* CSAdPageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CSAdPageView.m; path = "../../../../../项目代码集/ios/ios/YXStudentDemo/YXStudentDemo/CSAdPageView.m"; sourceTree = "<group>"; };
+		045B6B511CABBE04000B38AF /* SystenController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SystenController.h; path = "../../../../../小咔英语/LittleGaEnglish/LittleGaEnglish/Class/Login/Mine/SystenController.h"; sourceTree = "<group>"; };
+		045B6B521CABBE04000B38AF /* SystenController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SystenController.m; path = "../../../../../小咔英语/LittleGaEnglish/LittleGaEnglish/Class/Login/Mine/SystenController.m"; sourceTree = "<group>"; };
+		045B6B551CABBEC1000B38AF /* 图层-2_67.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "图层-2_67.png"; path = "../../../../../../Downloads/小咖切图 ios/小咖/7.1.1-发现/图层-2_67.png"; sourceTree = "<group>"; };
+		045B6B561CABBEC1000B38AF /* 图层-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "图层-2.png"; path = "../../../../../../Downloads/小咖切图 ios/小咖/7.1.1-发现/图层-2.png"; sourceTree = "<group>"; };
+		045B6B571CABBEC1000B38AF /* 图层-2@2x_47.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "图层-2@2x_47.png"; path = "../../../../../../Downloads/小咖切图 ios/小咖/7.1.1-发现/图层-2@2x_47.png"; sourceTree = "<group>"; };
+		045B6B581CABBEC1000B38AF /* 图层-2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "图层-2@2x.png"; path = "../../../../../../Downloads/小咖切图 ios/小咖/7.1.1-发现/图层-2@2x.png"; sourceTree = "<group>"; };
+		045B6B591CABBEC1000B38AF /* 图层-2@3x_70.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "图层-2@3x_70.png"; path = "../../../../../../Downloads/小咖切图 ios/小咖/7.1.1-发现/图层-2@3x_70.png"; sourceTree = "<group>"; };
+		045B6B5A1CABBEC1000B38AF /* 图层-2@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "图层-2@3x.png"; path = "../../../../../../Downloads/小咖切图 ios/小咖/7.1.1-发现/图层-2@3x.png"; sourceTree = "<group>"; };
 		85230A911C73048F00B6A48A /* CALayer+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+Helper.h"; sourceTree = "<group>"; };
 		85230A921C73048F00B6A48A /* CALayer+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+Helper.m"; sourceTree = "<group>"; };
 		85230A931C73048F00B6A48A /* NSObject+runtime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+runtime.h"; sourceTree = "<group>"; };
@@ -572,6 +604,11 @@
 		045B6B081CAB728A000B38AF /* Find(发现) */ = {
 			isa = PBXGroup;
 			children = (
+				045B6B481CABBD73000B38AF /* Cell */,
+				045B6B3B1CABBD1E000B38AF /* Base */,
+				045B6B3A1CABBD06000B38AF /* View */,
+				045B6B391CABBD04000B38AF /* Model */,
+				045B6B381CABBD01000B38AF /* ViewController */,
 			);
 			name = "Find(发现)";
 			sourceTree = "<group>";
@@ -591,6 +628,8 @@
 		045B6B0B1CAB72C9000B38AF /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				045B6B351CABBAB7000B38AF /* MIneScoreInfoModel.h */,
+				045B6B361CABBAB7000B38AF /* MIneScoreInfoModel.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -635,6 +674,81 @@
 				045B6B261CABB014000B38AF /* ThreeListCell.xib */,
 			);
 			name = RuleCell;
+			sourceTree = "<group>";
+		};
+		045B6B381CABBD01000B38AF /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				045B6B3C1CABBD4D000B38AF /* FindController.h */,
+				045B6B3D1CABBD4D000B38AF /* FindController.m */,
+				045B6B3E1CABBD4D000B38AF /* ShopeController.h */,
+				045B6B3F1CABBD4D000B38AF /* ShopeController.m */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		045B6B391CABBD04000B38AF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		045B6B3A1CABBD06000B38AF /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		045B6B3B1CABBD1E000B38AF /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				045B6B491CABBD84000B38AF /* CSAdPageView.h */,
+				045B6B4A1CABBD84000B38AF /* CSAdPageView.m */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		045B6B481CABBD73000B38AF /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				045B6B421CABBD65000B38AF /* ShopCell.h */,
+				045B6B431CABBD65000B38AF /* ShopCell.m */,
+				045B6B441CABBD65000B38AF /* ShopCell.xib */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
+		045B6B4C1CABBDD1000B38AF /* SystemSet(系统设置) */ = {
+			isa = PBXGroup;
+			children = (
+				045B6B4D1CABBDDF000B38AF /* Controller */,
+			);
+			name = "SystemSet(系统设置)";
+			sourceTree = "<group>";
+		};
+		045B6B4D1CABBDDF000B38AF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				045B6B511CABBE04000B38AF /* SystenController.h */,
+				045B6B521CABBE04000B38AF /* SystenController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		045B6B541CABBEAB000B38AF /* Resourse */ = {
+			isa = PBXGroup;
+			children = (
+				045B6B551CABBEC1000B38AF /* 图层-2_67.png */,
+				045B6B561CABBEC1000B38AF /* 图层-2.png */,
+				045B6B571CABBEC1000B38AF /* 图层-2@2x_47.png */,
+				045B6B581CABBEC1000B38AF /* 图层-2@2x.png */,
+				045B6B591CABBEC1000B38AF /* 图层-2@3x_70.png */,
+				045B6B5A1CABBEC1000B38AF /* 图层-2@3x.png */,
+			);
+			name = Resourse;
+			path = Class/Login/Mine;
 			sourceTree = "<group>";
 		};
 		3973A13A3A06BDC7B65D5CD0 /* Pods */ = {
@@ -957,6 +1071,7 @@
 		85230B131C7600AE00B6A48A /* Mine */ = {
 			isa = PBXGroup;
 			children = (
+				045B6B4C1CABBDD1000B38AF /* SystemSet(系统设置) */,
 				045B6B081CAB728A000B38AF /* Find(发现) */,
 				045B6B071CAB7286000B38AF /* MineScored(我的积分) */,
 				9AEE01F21C8941410027ACF0 /* MineViewController.h */,
@@ -1049,6 +1164,7 @@
 				85230AD91C7319FD00B6A48A /* Base */,
 				85230A901C73048F00B6A48A /* Category */,
 				85230AA91C73048F00B6A48A /* Class */,
+				045B6B541CABBEAB000B38AF /* Resourse */,
 				85230AAA1C73048F00B6A48A /* Common */,
 				85230AC11C73048F00B6A48A /* Config */,
 				85230AC71C73048F00B6A48A /* Model */,
@@ -1402,9 +1518,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				85230AE81C7319FD00B6A48A /* big_white_back@2x.png in Resources */,
+				045B6B5F1CABBEC1000B38AF /* 图层-2@3x_70.png in Resources */,
 				9A1E1F201C955FA500D77564 /* cewenhua.xib in Resources */,
 				9A1E1F2B1C956B3500D77564 /* dancicuoti.xib in Resources */,
 				85230AE91C7319FD00B6A48A /* big_white_back@3x.png in Resources */,
+				045B6B5D1CABBEC1000B38AF /* 图层-2@2x_47.png in Resources */,
 				9A1E1F2D1C95715A00D77564 /* wenhuacuoti.xib in Resources */,
 				858BBF211C82F40C00F54E42 /* CouresesDetailDesTableViewCell.xib in Resources */,
 				8542F5D01C8DCEAB00C4FFFD /* BuyHeaderTableViewCell.xib in Resources */,
@@ -1420,7 +1538,9 @@
 				85F1D0B91C7DE8680041B09B /* HomeTableViewCell.xib in Resources */,
 				8554B1171C72C08F00598E62 /* Main.storyboard in Resources */,
 				858BBEF31C81477200F54E42 /* BBCoureseTableViewCell.xib in Resources */,
+				045B6B5C1CABBEC1000B38AF /* 图层-2.png in Resources */,
 				85230AFD1C731ED800B6A48A /* BBLoginViewController.xib in Resources */,
+				045B6B5E1CABBEC1000B38AF /* 图层-2@2x.png in Resources */,
 				85230AE71C7319FD00B6A48A /* big_white_back.png in Resources */,
 				9A1E1F171C952EC100D77564 /* dancipingcexiangqing.xib in Resources */,
 				045B6B281CABB014000B38AF /* TwoListCell.xib in Resources */,
@@ -1430,6 +1550,7 @@
 				9ADCCDDA1C940897002F269F /* yuyinpingce.xib in Resources */,
 				045B6B1D1CABAFD5000B38AF /* ScoredController.xib in Resources */,
 				85230B0E1C74A1E800B6A48A /* MyTextFiled.xib in Resources */,
+				045B6B5B1CABBEC1000B38AF /* 图层-2_67.png in Resources */,
 				858BBF261C82F6A300F54E42 /* CoursesDetailMovieTableViewCell.xib in Resources */,
 				045B6B321CABB028000B38AF /* LvCell.xib in Resources */,
 				858BBF1C1C82EAEE00F54E42 /* CoureseDetaiNameCell.xib in Resources */,
@@ -1439,10 +1560,12 @@
 				85CCBF151C847CA20084B11C /* CoursesEvalViewController.xib in Resources */,
 				8542F5D71C8DCEAB00C4FFFD /* BuyViewController.xib in Resources */,
 				9A1E1F291C9568E500D77564 /* wenhuachengjicell.xib in Resources */,
+				045B6B461CABBD65000B38AF /* ShopCell.xib in Resources */,
 				9A1E1F191C954B7300D77564 /* wanchengdanci.xib in Resources */,
 				9AEE02411C916A650027ACF0 /* assessment.xib in Resources */,
 				85CCBF151C847CA20084B11C /* CoursesEvalViewController.xib in Resources */,
 				9A1E1F1B1C954DDB00D77564 /* dancipingcecell.xib in Resources */,
+				045B6B601CABBEC1000B38AF /* 图层-2@3x.png in Resources */,
 				9A1E1F251C95611900D77564 /* wenhuaceshixiangqing.xib in Resources */,
 				9A1E1F271C95673100D77564 /* wenhuaceshiwancheng.xib in Resources */,
 			);
@@ -1518,6 +1641,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				858BBF201C82F40C00F54E42 /* CouresesDetailDesTableViewCell.m in Sources */,
+				045B6B411CABBD4D000B38AF /* ShopeController.m in Sources */,
 				9A1E1F101C952A3D00D77564 /* dancipingce.m in Sources */,
 				85230AD51C73048F00B6A48A /* APIUrl.m in Sources */,
 				85E295791C9460F700570196 /* MyApiMine.m in Sources */,
@@ -1554,7 +1678,9 @@
 				9AEE02181C8D822D0027ACF0 /* Replymypost.m in Sources */,
 				045B6B311CABB028000B38AF /* LvCell.m in Sources */,
 				85F1D0AD1C7C9CD20041B09B /* UserDao.m in Sources */,
+				045B6B4B1CABBD84000B38AF /* CSAdPageView.m in Sources */,
 				85F1D0B81C7DE8680041B09B /* HomeTableViewCell.m in Sources */,
+				045B6B401CABBD4D000B38AF /* FindController.m in Sources */,
 				852623E21CA42435006F6C29 /* KaoTIAnswer.m in Sources */,
 				85230AEE1C7319FD00B6A48A /* UIViewController+WDNavResponderAction.m in Sources */,
 				8542F5D11C8DCEAB00C4FFFD /* BuyMealTableViewCell.m in Sources */,
@@ -1641,7 +1767,9 @@
 				85230AED1C7319FD00B6A48A /* MyUIViewController.m in Sources */,
 				9AEE021E1C8D8CF90027ACF0 /* CollectionDelete.m in Sources */,
 				9A1E1F491C9BECFD00D77564 /* fabu.m in Sources */,
+				045B6B371CABBAB7000B38AF /* MIneScoreInfoModel.m in Sources */,
 				85230ACF1C73048F00B6A48A /* UIImage+Category.m in Sources */,
+				045B6B531CABBE04000B38AF /* SystenController.m in Sources */,
 				85230B1F1C76010800B6A48A /* HomeViewController.m in Sources */,
 				85CCBF191C84803A0084B11C /* BBStarView.m in Sources */,
 				85230B2B1C7B543C00B6A48A /* BaseModel.m in Sources */,
@@ -1649,6 +1777,7 @@
 				85F1D0AA1C7C95AB0041B09B /* LoginModel.m in Sources */,
 				858BBF1B1C82EAEE00F54E42 /* CoureseDetaiNameCell.m in Sources */,
 				9AEE02241C8ECE030027ACF0 /* goodscontro.m in Sources */,
+				045B6B451CABBD65000B38AF /* ShopCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

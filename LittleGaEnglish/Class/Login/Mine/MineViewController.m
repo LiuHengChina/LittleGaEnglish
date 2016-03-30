@@ -10,6 +10,8 @@
 #import "MineDetails.h"
 #import "MyApiMine.h"
 #import "ScoredController.h"
+#import "FindController.h"
+#import "SystenController.h"
 
 @interface MineViewController ()
 
@@ -57,7 +59,19 @@
             [self.navigationController pushViewController:scored animated:YES];
         }
             break;
+        case 5:
+        {
+            FindController *find = [[FindController alloc]init];
+            [self.navigationController pushViewController:find animated:YES];
+        }
+            break;
         default:
+            break;
+        case 7:
+        {
+            SystenController *system = [[SystenController alloc]init];
+            [self.navigationController pushViewController:system animated:YES];
+        }
             break;
     }
 }
