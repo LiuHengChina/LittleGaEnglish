@@ -40,11 +40,18 @@ static EngineManager *mEngineManager;
 
 - (NSString *)version
 {
+#ifdef __x86_64__
+    
+    return @"";
+#else
     return [USCRecognizer version];
+#endif
 }
 
 -(void)recognizerInit
 {
+#ifdef __x86_64__
+#else
     NSString *sourcePath = [[NSBundle mainBundle].resourcePath stringByAppendingPathComponent:@"tmp_oral_offline.bundle"];
     recognizer = [[USCRecognizer alloc] initWithSource:sourcePath];
     recognizer.delegate = self;
@@ -57,10 +64,13 @@ static EngineManager *mEngineManager;
     
     //默认使用麦克风
     [self setRecognizerMode:Recognize_REC];
+#endif
 }
 
 -(void)startRecognize
 {
+#ifdef __x86_64__
+#else
     printf("\n\n\n\n\n\n");
     NSLog(@" - startRecognize - ");
     
@@ -89,20 +99,27 @@ static EngineManager *mEngineManager;
             }
         }
     }
+#endif
 }
 
 -(void)stopRecognize
 {
+#ifdef __x86_64__
+#else
     NSLog(@" - stopRecognize - ");
     
     [recognizer stop];
+#endif
 }
 
 -(void)cancelRecognize
 {
+#ifdef __x86_64__
+#else
     NSLog(@" - cancelRecognize - ");
     
     [recognizer cancel];
+#endif
 }
 
 -(void)setRecognizerMode:(RecognizeMode)mode
@@ -118,7 +135,12 @@ static EngineManager *mEngineManager;
 
 -(NSString *)getOralTask
 {
+#ifdef __x86_64__
+    return @"";
+#else
+    
     return recognizer.oralTask;
+#endif
 }
 
 -(void)setOralText:(NSString *)text
@@ -128,13 +150,19 @@ static EngineManager *mEngineManager;
     text = [text stringByReplacingOccurrencesOfString:@"\n" withString:@""];
     text = [text stringByReplacingOccurrencesOfString:@"\r" withString:@""];
     
+#ifdef __x86_64__
+#else
     recognizer.oralText = text;
+#endif
 }
 
 -(void)setOralTask:(NSString *)task
 {
     NSLog(@"setOralTask : %@",task);
+#ifdef __x86_64__
+#else
     recognizer.oralTask = task;
+#endif
 }
 
 -(NSString *)pcmFilePath
@@ -152,6 +180,8 @@ static EngineManager *mEngineManager;
 
 -(void)writeFile
 {
+#ifdef __x86_64__
+#else
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     NSString *documentsPath = [paths objectAtIndex:0];
     NSString *testPath = [documentsPath stringByAppendingPathComponent:FILE_NAME_RECORDING];
@@ -165,10 +195,13 @@ static EngineManager *mEngineManager;
     {
         NSLog(@"WriteToFile Fail");
     }
+#endif
 }
 
 -(void)loadRecognizerSettings:(USCRecognizer *)recog
 {
+#ifdef __x86_64__
+#else
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     NSString *document = paths[0];
     NSString *settingPath = [document stringByAppendingPathComponent:@"Setting.plist"];
@@ -229,6 +262,7 @@ static EngineManager *mEngineManager;
             }
         }
     }
+#endif
 }
 
 #pragma mark
@@ -302,6 +336,8 @@ static EngineManager *mEngineManager;
 
 - (void)onRecordingBuffer:(NSData *)recordingData
 {
+#ifdef __x86_64__
+#else
     if (recordData==nil)
     {
         recordData = [[NSMutableData alloc]init];
@@ -316,6 +352,7 @@ static EngineManager *mEngineManager;
     {
         [delegate onRecordingBuffer:recordingData];
     }
+#endif
 }
 
 - (void)oralEngineDidInit:(NSError *)error
