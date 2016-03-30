@@ -232,16 +232,21 @@
         
     } error:nil];
     
-    //设置 HTTPHeaderField
+    // 设置 HTTPHeaderField
     NSMutableDictionary * httpHeadDic = [NSMutableDictionary dictionary];
-    if (httpheaders) {
+    if (httpheaders)
+    {
         [httpHeadDic setValuesForKeysWithDictionary:httpheaders];
-    }else{
-        if (_HTTPHeaderDic) {
+    }
+    else
+    {
+        if (_HTTPHeaderDic)
+        {
             [httpHeadDic setValuesForKeysWithDictionary:_HTTPHeaderDic];
         }
     }
-    if ([[httpHeadDic allKeys] count]>0) {
+    if ([[httpHeadDic allKeys] count]>0)
+    {
         for (NSObject * keyObj in [httpHeadDic allKeys]) {
             NSObject * valuesObj = [httpHeadDic objectForKey:keyObj];
             if ([keyObj isKindOfClass:[NSString class]] && [valuesObj isKindOfClass:[NSString class]] ) {
