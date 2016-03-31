@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0496AF8C1CABCF92002396DC /* WelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0496AF8B1CABCF92002396DC /* WelcomeViewController.m */; };
 		1E32AEBEC49556E5AFBDA797 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B4D6F1E398CD6B493E69B389 /* libPods.a */; };
 		85230AC91C73048F00B6A48A /* CALayer+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 85230A921C73048F00B6A48A /* CALayer+Helper.m */; };
 		85230ACA1C73048F00B6A48A /* NSObject+runtime.m in Sources */ = {isa = PBXBuildFile; fileRef = 85230A941C73048F00B6A48A /* NSObject+runtime.m */; };
@@ -195,6 +196,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0496AF8A1CABCF92002396DC /* WelcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WelcomeViewController.h; sourceTree = "<group>"; };
+		0496AF8B1CABCF92002396DC /* WelcomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WelcomeViewController.m; sourceTree = "<group>"; };
 		85230A911C73048F00B6A48A /* CALayer+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+Helper.h"; sourceTree = "<group>"; };
 		85230A921C73048F00B6A48A /* CALayer+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+Helper.m"; sourceTree = "<group>"; };
 		85230A931C73048F00B6A48A /* NSObject+runtime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+runtime.h"; sourceTree = "<group>"; };
@@ -946,6 +949,8 @@
 				85230AC81C73048F00B6A48A /* ThreeLibraries */,
 				8554B10F1C72C08F00598E62 /* AppDelegate.h */,
 				8554B1101C72C08F00598E62 /* AppDelegate.mm */,
+				0496AF8A1CABCF92002396DC /* WelcomeViewController.h */,
+				0496AF8B1CABCF92002396DC /* WelcomeViewController.m */,
 				8554B1121C72C08F00598E62 /* ViewController.h */,
 				8554B1131C72C08F00598E62 /* ViewController.m */,
 				8554B1151C72C08F00598E62 /* Main.storyboard */,
@@ -1405,6 +1410,7 @@
 			files = (
 				858BBF201C82F40C00F54E42 /* CouresesDetailDesTableViewCell.m in Sources */,
 				9A1E1F101C952A3D00D77564 /* dancipingce.m in Sources */,
+				0496AF8C1CABCF92002396DC /* WelcomeViewController.m in Sources */,
 				85230AD51C73048F00B6A48A /* APIUrl.m in Sources */,
 				85E295791C9460F700570196 /* MyApiMine.m in Sources */,
 				85230ACE1C73048F00B6A48A /* UIImage+Blur.m in Sources */,
@@ -1672,6 +1678,7 @@
 			baseConfigurationReference = 8E9AB67708FB86BFB7A5AD2C /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1703,6 +1710,7 @@
 			baseConfigurationReference = 8DEFF1A99ED31ADF16EFB9BA /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (

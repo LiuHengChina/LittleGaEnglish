@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "WelcomeViewController.h"
+#import "ViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,7 +19,20 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    _window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    
+    if(![[NSUserDefaults standardUserDefaults] boolForKey:@"firstStart"])
+    {
+        [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"firstStart"];
+        NSLog(@"第一次启动");
+        
+        _window.rootViewController = [WelcomeViewController new];
+    }else{
+        NSLog(@"不是第一次启动");
+        
+        _window.rootViewController = [[ViewController alloc]init];
+    }
+    [_window makeKeyAndVisible];
     return YES;
 }
 
