@@ -31,6 +31,7 @@
 		045B6B971CABDFA4000B38AF /* 图层-2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 045B6B911CABDFA4000B38AF /* 图层-2@2x.png */; };
 		045B6B981CABDFA4000B38AF /* 图层-2@3x_70.png in Resources */ = {isa = PBXBuildFile; fileRef = 045B6B921CABDFA4000B38AF /* 图层-2@3x_70.png */; };
 		045B6B991CABDFA4000B38AF /* 图层-2@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 045B6B931CABDFA4000B38AF /* 图层-2@3x.png */; };
+		04E75D8B1CACD4440059068F /* MineCardController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E75D8A1CACD4440059068F /* MineCardController.m */; };
 		1E32AEBEC49556E5AFBDA797 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B4D6F1E398CD6B493E69B389 /* libPods.a */; };
 		85230AC91C73048F00B6A48A /* CALayer+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 85230A921C73048F00B6A48A /* CALayer+Helper.m */; };
 		85230ACA1C73048F00B6A48A /* NSObject+runtime.m in Sources */ = {isa = PBXBuildFile; fileRef = 85230A941C73048F00B6A48A /* NSObject+runtime.m */; };
@@ -255,6 +256,8 @@
 		045B6B911CABDFA4000B38AF /* 图层-2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图层-2@2x.png"; sourceTree = "<group>"; };
 		045B6B921CABDFA4000B38AF /* 图层-2@3x_70.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图层-2@3x_70.png"; sourceTree = "<group>"; };
 		045B6B931CABDFA4000B38AF /* 图层-2@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图层-2@3x.png"; sourceTree = "<group>"; };
+		04E75D891CACD4440059068F /* MineCardController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineCardController.h; sourceTree = "<group>"; };
+		04E75D8A1CACD4440059068F /* MineCardController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineCardController.m; sourceTree = "<group>"; };
 		85230A911C73048F00B6A48A /* CALayer+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+Helper.h"; sourceTree = "<group>"; };
 		85230A921C73048F00B6A48A /* CALayer+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+Helper.m"; sourceTree = "<group>"; };
 		85230A931C73048F00B6A48A /* NSObject+runtime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+runtime.h"; sourceTree = "<group>"; };
@@ -733,6 +736,8 @@
 			children = (
 				045B6B8B1CABDE8D000B38AF /* SystenController.h */,
 				045B6B8C1CABDE8D000B38AF /* SystenController.m */,
+				04E75D891CACD4440059068F /* MineCardController.h */,
+				04E75D8A1CACD4440059068F /* MineCardController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -749,6 +754,15 @@
 			);
 			name = Resourse;
 			path = Class/Login/Mine;
+			sourceTree = "<group>";
+		};
+		04E75D8C1CAD021E0059068F /* MainMine(我的) */ = {
+			isa = PBXGroup;
+			children = (
+				9AEE01F21C8941410027ACF0 /* MineViewController.h */,
+				9AEE01F31C8941410027ACF0 /* MineViewController.m */,
+			);
+			name = "MainMine(我的)";
 			sourceTree = "<group>";
 		};
 		3973A13A3A06BDC7B65D5CD0 /* Pods */ = {
@@ -1074,8 +1088,7 @@
 				045B6B4C1CABBDD1000B38AF /* SystemSet(系统设置) */,
 				045B6B081CAB728A000B38AF /* Find(发现) */,
 				045B6B071CAB7286000B38AF /* MineScored(我的积分) */,
-				9AEE01F21C8941410027ACF0 /* MineViewController.h */,
-				9AEE01F31C8941410027ACF0 /* MineViewController.m */,
+				04E75D8C1CAD021E0059068F /* MainMine(我的) */,
 				9AEE01FE1C8A87EC0027ACF0 /* MineDetails.h */,
 				9AEE01FF1C8A87EC0027ACF0 /* MineDetails.m */,
 				9AEE02011C8D21610027ACF0 /* CourseViewController.h */,
@@ -1718,6 +1731,7 @@
 				85E577981CA6555800710C39 /* LunTanMainModel.m in Sources */,
 				85CCBF141C847CA20084B11C /* CoursesEvalViewController.m in Sources */,
 				85230B311C7B57A400B6A48A /* WDNetAPIRequestWithAFNManage.m in Sources */,
+				04E75D8B1CACD4440059068F /* MineCardController.m in Sources */,
 				9A1E1F461C9BE7EB00D77564 /* huati.m in Sources */,
 				9AEE02091C8D2A530027ACF0 /* CourseViewDetail.m in Sources */,
 				858BBEEB1C8138AB00F54E42 /* SegmentTapView.m in Sources */,

@@ -14,10 +14,11 @@
 #import "WDNetAPIRequestWithAFNManage.h"
 #import "MIneScoreInfoModel.h"
 #import "UIImageView+WebCache.h"
-
+#import <SDWebImage/SDImageCache.h>
+//#import <UIImageView+AFNetworking.h>
 @interface ScoredController ()<UITableViewDataSource,UITableViewDelegate>
 @property (strong, nonatomic) IBOutlet UITableView *table;
-
+@property (nonatomic ,strong)MIneScoreInfoModel *headAndLv;
 @end
 
 @implementation ScoredController
@@ -27,14 +28,17 @@
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
+   
     //界面配置
     [self initializeFace];
     //请求数据
     [self initializeData];
+   
 }
 //请求数据
 - (void)initializeData{
-    NSDictionary *dict = @{@"token":@"3f956b583bbd705adf0f1fb7599b821c"};
+  //暂时写死
+    NSDictionary *dict = @{@"token":@"3cc574ec4ad07fdcc60de9c979298626"};
     [[WDNetAPIRequestWithAFNManage share]httpRequestWithMethod:@"GET" URL:@"http://app.xiaokaen.com/api/userCenter/myIntegralUser" Params:dict HTTPHeader:nil requestSuccess:^(id json) {
         
         NSLog(@"%@",json);
@@ -42,11 +46,8 @@
         NSDictionary *dict = (NSDictionary *)json;
         NSLog(@"dict.class == %@",dict.class);
         NSDictionary *tempDict = dict[@"data"];
-        NSMutableArray *temp = [NSMutableArray array];
-        
-        MIneScoreInfoModel *model = [MIneScoreInfoModel setInfoWithDict:tempDict];
-        [temp addObject:model];
-        
+        _headAndLv = [MIneScoreInfoModel setInfoWithDict:tempDict];
+        [self.table reloadData];
     } requestFailure:^(NSError *error) {
         
     }];
@@ -86,12 +87,21 @@
         //设置icon圆角
         CALayer *cellImage = cell.icon.layer;
         [cellImage setMasksToBounds:YES];
-        [cell.icon setImageWithURL:@"bdf" placeholderImage:[UIImage imageNamed:@""]];
+//        CALayer *Lv = cell.viewOfLv.layer;
+//        [Lv setMasksToBounds:YES];
+      
+        //设置积分,积分昵称,头像
+        cell.gradeLevel.text =[NSString stringWithFormat:@"咖啡豆%@",_headAndLv.gradeLevel];
+        NSLog(@"%@",_headAndLv.gradeName);
+        cell.gradeName.text = _headAndLv.gradeName;
+        //暂时先用此方法
+        [cell.icon sd_setImageWithURL:[NSURL URLWithString:_headAndLv.portrait] placeholderImage:[UIImage imageNamed:@"图层-2_67"]];;
         return cell;
     }else if(indexPath.row == 1) {
         UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:nil];
         cell.textLabel.text = @"积分明细";
         cell.contentView.backgroundColor = [UIColor colorWithRed:51/255.0 green:51/255.0 blue:51/255.0 alpha:0.1];
+        
         return cell;
     
     }else{

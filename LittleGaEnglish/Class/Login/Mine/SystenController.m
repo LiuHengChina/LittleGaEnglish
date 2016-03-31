@@ -8,6 +8,7 @@
 
 #import "SystenController.h"
 #import "Masonry.h"
+#import "MineCardController.h"
 
 @interface SystenController ()<UITableViewDataSource>
 @property (nonatomic ,strong)NSArray *tableData;
@@ -16,14 +17,16 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-//    self.tableView =[[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStyleGrouped];
-    self.tableView.delegate = self;
-    self.tableView.dataSource = self;
-    self.view.backgroundColor = RGBA(250, 250, 250, 1);
-    _tableData = @[@"清理课程缓存",@"设置发帖记录查看",@"去应用商店好评",@"关于小咖"];
-    
+    //数据配置
+    [self setUpData];
 }
 
+- (void)setUpData{
+//    self.tableView.delegate = self;
+//    self.tableView.dataSource = self;
+    self.view.backgroundColor = RGBA(250, 250, 250, 1);
+    _tableData = @[@"清理课程缓存",@"设置发帖记录查看",@"去应用商店好评",@"关于小咖"];
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -88,6 +91,7 @@
 - (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section{
    
     if (section == 1) {
+        //添加退出按钮
         UIView *foot = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 87.5)];
         UIButton *quitBtn = [[UIButton alloc] init];
         quitBtn.layer.cornerRadius = 5;
@@ -109,6 +113,26 @@
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
     UIView *head = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 10)];
     return head;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    if (indexPath.section == 0) {
+        if (indexPath.row == 0) {
+            
+        }else if(indexPath.row == 1){
+            MineCardController *card = [[MineCardController alloc] init];
+            [self.navigationController pushViewController:card animated:YES];            
+        }
+        
+    }else if(indexPath.section == 1){
+        if (indexPath.row == 0) {
+            
+        }else if(indexPath.row == 1){
+        
+        
+        }
+    }
 }
 /*
 // Override to support conditional editing of the table view.

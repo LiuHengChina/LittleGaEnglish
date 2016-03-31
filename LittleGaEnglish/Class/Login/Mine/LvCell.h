@@ -11,5 +11,7 @@
 @interface LvCell : UITableViewCell
 @property (strong, nonatomic) IBOutlet UIImageView *icon;
 @property (strong, nonatomic) IBOutlet UIView *viewOfLv;
+@property (strong, nonatomic) IBOutlet UILabel *gradeLevel;
+@property (strong, nonatomic) IBOutlet UILabel *gradeName;
 
 @end
