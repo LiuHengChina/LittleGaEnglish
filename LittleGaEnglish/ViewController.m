@@ -27,12 +27,15 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-- (IBAction)pushLogin:(id)sender {
+
+- (IBAction)pushLogin:(id)sender
+{
     BBLoginViewController *loginVC = [BBLoginViewController new];
     loginVC.selectIndex = 1;
     [self presentViewController:loginVC animated:YES completion:nil];
 }
-- (IBAction)RootAction:(id)sender {
+- (IBAction)RootAction:(id)sender
+{
     
     AppDelegate *app = (AppDelegate *)[UIApplication sharedApplication].delegate;
     [app changeTabBar];
