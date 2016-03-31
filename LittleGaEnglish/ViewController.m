@@ -17,9 +17,25 @@
 
 @implementation ViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    NSLog(@"enter");
+    self.view.backgroundColor = [UIColor whiteColor];
+    
+    UIButton *LoginButton = [UIButton buttonWithType:UIButtonTypeSystem];
+    LoginButton.frame = CGRectMake(20, 20, 200, 200);
+    [self.view addSubview:LoginButton];
+    [LoginButton setTitle:@"登录" forState:UIControlStateNormal];
+    [LoginButton addTarget:self action:@selector(pushLogin:) forControlEvents:UIControlEventTouchUpInside];
+    
+    
+    UIButton *MainButton = [UIButton buttonWithType:UIButtonTypeSystem];
+    MainButton.frame = CGRectMake(20, 230, 200, 200);
+    [self.view addSubview:MainButton];
+    [MainButton setTitle:@"首页" forState:UIControlStateNormal];
+    [MainButton addTarget:self action:@selector(RootAction:) forControlEvents:UIControlEventTouchUpInside];
     
 }
 
@@ -28,17 +44,31 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)pushLogin:(id)sender
-{
+
+- (void)pushLogin:(id)sender {
     BBLoginViewController *loginVC = [BBLoginViewController new];
     loginVC.selectIndex = 1;
     [self presentViewController:loginVC animated:YES completion:nil];
 }
-- (IBAction)RootAction:(id)sender
+
+- (void)RootAction:(id)sender
 {
-    
     AppDelegate *app = (AppDelegate *)[UIApplication sharedApplication].delegate;
     [app changeTabBar];
 }
+
+
+
+
+//- (IBAction)pushLogin:(id)sender {
+//    BBLoginViewController *loginVC = [BBLoginViewController new];
+//    loginVC.selectIndex = 1;
+//    [self presentViewController:loginVC animated:YES completion:nil];
+//}
+//- (IBAction)RootAction:(id)sender {
+//    
+//    AppDelegate *app = (AppDelegate *)[UIApplication sharedApplication].delegate;
+//    [app changeTabBar];
+//}
 
 @end
