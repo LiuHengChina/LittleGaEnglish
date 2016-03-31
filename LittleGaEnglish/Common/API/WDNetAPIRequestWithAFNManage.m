@@ -9,7 +9,7 @@
 #import "WDNetAPIRequestWithAFNManage.h"
 #import <UIKit/UIKit.h>
 #import "AFNetworking.h"
-
+#import "WDNetAPIRequestWithAFNManage.h"
 
 @interface WDNetAPIRequestWithAFNManage ()
 @property (nonatomic,strong)NSMutableDictionary * HTTPHeaderDic;
@@ -84,7 +84,8 @@
             // 解析json对象
             //NSLog(@"responseObject : %@",responseObject);
             
-            if ([responseObject isKindOfClass:[NSData class]]) {
+            if ([responseObject isKindOfClass:[NSData class]])
+            {
                 id json = [NSJSONSerialization JSONObjectWithData:responseObject options:NSJSONReadingMutableContainers error:nil];
                 success(json);
                 return;
@@ -232,16 +233,21 @@
         
     } error:nil];
     
-    //设置 HTTPHeaderField
+    // 设置 HTTPHeaderField
     NSMutableDictionary * httpHeadDic = [NSMutableDictionary dictionary];
-    if (httpheaders) {
+    if (httpheaders)
+    {
         [httpHeadDic setValuesForKeysWithDictionary:httpheaders];
-    }else{
-        if (_HTTPHeaderDic) {
+    }
+    else
+    {
+        if (_HTTPHeaderDic)
+        {
             [httpHeadDic setValuesForKeysWithDictionary:_HTTPHeaderDic];
         }
     }
-    if ([[httpHeadDic allKeys] count]>0) {
+    if ([[httpHeadDic allKeys] count]>0)
+    {
         for (NSObject * keyObj in [httpHeadDic allKeys]) {
             NSObject * valuesObj = [httpHeadDic objectForKey:keyObj];
             if ([keyObj isKindOfClass:[NSString class]] && [valuesObj isKindOfClass:[NSString class]] ) {

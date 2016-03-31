@@ -9,6 +9,9 @@
 #import "MineViewController.h"
 #import "MineDetails.h"
 #import "MyApiMine.h"
+#import "ScoredController.h"
+#import "FindController.h"
+#import "SystenController.h"
 
 @interface MineViewController ()
 
@@ -50,7 +53,25 @@
         case 3:
             [self performSegueWithIdentifier:@"oeder" sender:self];
             break;
+        case 4:
+        {
+            ScoredController *scored = [[ScoredController alloc]initWithNibName:nil bundle:nil];
+            [self.navigationController pushViewController:scored animated:YES];
+        }
+            break;
+        case 5:
+        {
+            FindController *find = [[FindController alloc]init];
+            [self.navigationController pushViewController:find animated:YES];
+        }
+            break;
         default:
+            break;
+        case 7:
+        {
+            SystenController *system = [[SystenController alloc]init];
+            [self.navigationController pushViewController:system animated:YES];
+        }
             break;
     }
 }

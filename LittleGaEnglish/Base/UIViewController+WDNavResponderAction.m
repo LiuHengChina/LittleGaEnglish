@@ -308,7 +308,7 @@
         return;
     }
     
-    UIView * rightBgView = [[ UIView alloc]initWithFrame:CGRectMake(0, 0,60,44)];
+    UIView * rightBgView = [[ UIView alloc]initWithFrame:CGRectMake(0, 0,100,44)];
     rightBgView.backgroundColor=[UIColor clearColor];
     
     UIButton * rightBtn = [UIButton new];
