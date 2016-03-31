@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "WelcomeViewController.h"
+#import "ViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,11 +19,25 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    _window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    
+    if(![[NSUserDefaults standardUserDefaults] boolForKey:@"firstStart"])
+    {
+        [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"firstStart"];
+        NSLog(@"第一次启动");
+        
+        _window.rootViewController = [WelcomeViewController new];
+    }else{
+        NSLog(@"不是第一次启动");
+        
+        _window.rootViewController = [[ViewController alloc]init];
+    }
+    [_window makeKeyAndVisible];
     return YES;
 }
 
-- (void)applicationWillResignActive:(UIApplication *)application {
+- (void)applicationWillResignActive:(UIApplication *)application
+{
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
     // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
 }
@@ -47,7 +63,8 @@
 - (void)changeTabBar
 {
     UIViewController *rootVC = self.window.rootViewController;
-    if (![rootVC isKindOfClass:NSClassFromString(@"RootTabBarController")]) {
+    if (![rootVC isKindOfClass:NSClassFromString(@"RootTabBarController")])
+    {
         RootTabBarController *tab = [RootTabBarController new];
         self.window.rootViewController = tab;
     }

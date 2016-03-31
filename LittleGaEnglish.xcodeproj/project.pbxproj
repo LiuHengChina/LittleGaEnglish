@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+
+		0496AF8C1CABCF92002396DC /* WelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0496AF8B1CABCF92002396DC /* WelcomeViewController.m */; };
+
 		045B6B371CABBAB7000B38AF /* MIneScoreInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 045B6B361CABBAB7000B38AF /* MIneScoreInfoModel.m */; };
 		045B6B661CABDE34000B38AF /* ScoredController.m in Sources */ = {isa = PBXBuildFile; fileRef = 045B6B621CABDE34000B38AF /* ScoredController.m */; };
 		045B6B671CABDE34000B38AF /* ScoredController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 045B6B631CABDE34000B38AF /* ScoredController.xib */; };
@@ -220,6 +223,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+
+		0496AF8A1CABCF92002396DC /* WelcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WelcomeViewController.h; sourceTree = "<group>"; };
+		0496AF8B1CABCF92002396DC /* WelcomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WelcomeViewController.m; sourceTree = "<group>"; };
+
 		045B6B351CABBAB7000B38AF /* MIneScoreInfoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MIneScoreInfoModel.h; sourceTree = "<group>"; };
 		045B6B361CABBAB7000B38AF /* MIneScoreInfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MIneScoreInfoModel.m; sourceTree = "<group>"; };
 		045B6B611CABDE34000B38AF /* ScoredController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScoredController.h; sourceTree = "<group>"; };
@@ -1184,6 +1191,8 @@
 				85230AC81C73048F00B6A48A /* ThreeLibraries */,
 				8554B10F1C72C08F00598E62 /* AppDelegate.h */,
 				8554B1101C72C08F00598E62 /* AppDelegate.mm */,
+				0496AF8A1CABCF92002396DC /* WelcomeViewController.h */,
+				0496AF8B1CABCF92002396DC /* WelcomeViewController.m */,
 				8554B1121C72C08F00598E62 /* ViewController.h */,
 				8554B1131C72C08F00598E62 /* ViewController.m */,
 				8554B1151C72C08F00598E62 /* Main.storyboard */,
@@ -1655,6 +1664,7 @@
 			files = (
 				858BBF201C82F40C00F54E42 /* CouresesDetailDesTableViewCell.m in Sources */,
 				9A1E1F101C952A3D00D77564 /* dancipingce.m in Sources */,
+				0496AF8C1CABCF92002396DC /* WelcomeViewController.m in Sources */,
 				85230AD51C73048F00B6A48A /* APIUrl.m in Sources */,
 				85E295791C9460F700570196 /* MyApiMine.m in Sources */,
 				85230ACE1C73048F00B6A48A /* UIImage+Blur.m in Sources */,
@@ -1935,6 +1945,7 @@
 			baseConfigurationReference = 8E9AB67708FB86BFB7A5AD2C /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1966,6 +1977,7 @@
 			baseConfigurationReference = 8DEFF1A99ED31ADF16EFB9BA /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
