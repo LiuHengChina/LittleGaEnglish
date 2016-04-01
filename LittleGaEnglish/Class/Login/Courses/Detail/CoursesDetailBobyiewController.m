@@ -27,6 +27,7 @@
     self.titles = @[@"简介",@"评价"];
     self.desVC = [CoursesDetailDesViewController new];
     _desVC.VC = self;
+    _desVC.courseID = self.classId;
     self.evalVC = [CoursesEvalViewController new];
     _evalVC.VC = self;
     _evalVC.courseID = self.classId;

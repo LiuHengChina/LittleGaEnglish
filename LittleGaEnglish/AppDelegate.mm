@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "WelcomeViewController.h"
 #import "ViewController.h"
+#import "PolyvSettings.h"
 
 @interface AppDelegate ()
 
@@ -33,7 +34,18 @@
         _window.rootViewController = [[ViewController alloc]init];
     }
     [_window makeKeyAndVisible];
+    
+    
+    [[PolyvSettings sharedInstance] setDownloadDir:[NSHomeDirectory() stringByAppendingPathComponent:@"Documents/plvideo/a"]];
+    [[PolyvSettings sharedInstance] initVideoSettings:nil Readtoken:@"Wvj117hZyfLjZYXoN6AzU1FW5B9AqzkPGNKFmzAtZ3uABtRfCLSvweIzb92Ji+bilV27AeuFlTPXR/Sh0XkQlL1AeaQhl9L0fPtergpNZPu5Ugj9j7DGhKlP9VhNrSoWNHhelURcUhZ2Zj+t7pyVsw==" Writetoken:nil UserId:nil];
+    
     return YES;
+}
+
+
+-(void)application:(UIApplication *)application handleEventsForBackgroundURLSession:(NSString *)identifier completionHandler:(nonnull void (^)())completionHandler
+{
+    self.backgroundSessionCompletionHandler = completionHandler;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
@@ -52,6 +64,7 @@
 }
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
+    [[PolyvSettings sharedInstance]  reloadSettings];
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
 }
 

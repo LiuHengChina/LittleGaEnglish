@@ -24,6 +24,30 @@
 
 - (void)awakeFromNib {
     self.playImage.hidden = YES;
+    
+    UITapGestureRecognizer *palyTap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(playAction)];
+    [self.playImage addGestureRecognizer:palyTap];
+    
+    
+    
+    UITapGestureRecognizer *buyTap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(buyAction)];
+    [self.buyImage addGestureRecognizer:buyTap];
+    
+    self.buyImage.userInteractionEnabled = YES;
+    self.playImage.userInteractionEnabled = YES;
+}
+
+- (void) playAction{
+    if (self.playBlock) {
+        self.playBlock();
+    }
+}
+
+
+- (void) buyAction{
+    if (self.buyBlock) {
+        self.buyBlock();
+    }
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
@@ -35,6 +59,13 @@
 {
     self.buyImage.hidden = canPlay;
     self.playImage.hidden = !canPlay;
+}
+
+- (void)setModel:(CourseLessonModel *)model
+{
+    _model = model;
+    _nameLab.text = model.name;
+    [_CoverImage sd_setImageWithURL:[NSURL URLWithString:@"cover_url"] placeholderImage:nil completed:nil];
 }
 
 @end
