@@ -25,7 +25,7 @@
 #import "MJRefresh.h"
 #import "UserDao.h"
 #import "WDTipsView.h"
-
+#import "WDNetAPIRequestWithAFNManage.h"
 
 #endif
 

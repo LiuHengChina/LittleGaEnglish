@@ -37,7 +37,8 @@
     AFHTTPRequestSerializer *requestSerializer = [AFHTTPRequestSerializer serializer];
     NSMutableURLRequest *urlRequest = [requestSerializer requestWithMethod:method URLString:urlPath parameters:para error:nil];
     
-    if ([method isEqualToString:@"POST"]) {
+    if ([method isEqualToString:@"POST"])
+    {
         if (para) {
             NSData *bodyData = [para objectForKey:@"bodyData"];
             if (bodyData) {
@@ -82,7 +83,7 @@
         // 执行成功操作块代码:要判断外界代码块是否为空
         if (success) {
             // 解析json对象
-            //NSLog(@"responseObject : %@",responseObject);
+            NSLog(@"\n%@ >>响应:\n%@", [NSString stringWithFormat:@"%@%@", urlPath, para], [NSString stringWithCString:[[responseObject description] UTF8String] encoding:7]);
             
             if ([responseObject isKindOfClass:[NSData class]])
             {
