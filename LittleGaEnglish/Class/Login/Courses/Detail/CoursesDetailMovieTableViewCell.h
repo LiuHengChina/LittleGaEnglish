@@ -13,4 +13,7 @@
 @property (nonatomic, strong) CourseLessonModel *model;
 @property (nonatomic, assign) BOOL canPlay;
 
+@property (nonatomic, copy) void(^playBlock)();
+@property (nonatomic, copy) void(^buyBlock)();
 @end
+

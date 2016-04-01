@@ -12,6 +12,9 @@
 #import "CouresesDetailDesTableViewCell.h"
 #import "CoursesDetailMovieTableViewCell.h"
 #import "CourseDetailModel.h"
+#import "BBMovieViewController.h"
+#import "BuyViewController.h"
+#import "BBLoginViewController.h"
 
 @interface CoursesDetailDesViewController ()<UITableViewDataSource,UITableViewDelegate>
 
@@ -100,10 +103,26 @@
                 cell.canPlay = YES;
             } else {
                 cell.canPlay = NO;
-                if (indexPath.row == 1) {
-                    cell.canPlay = YES;
-                }
             }
+            
+            cell.playBlock = ^(){
+                BBMovieViewController *movieVC= [BBMovieViewController new];
+                movieVC.videoId = model.video_id;
+                movieVC.videoName = model.name;
+                [self.VC.navigationController pushViewController:movieVC animated:YES];
+            };
+            
+            cell.buyBlock = ^(){
+                if (![self isLogin]) {
+                    return;
+                }
+                if ([self.model.courseClass.is_can_order isEqualToString:@"1"]) {
+                    BuyViewController *buyVC = [BuyViewController new];
+                    buyVC.classID = self.courseID;
+                    [self.navigationController pushViewController:buyVC animated:YES];
+                }
+            };
+            
             return cell;
             
             break;
@@ -139,6 +158,29 @@
     return height;
 }
 
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (indexPath.section == 2) {
+        CourseLessonModel *model = self.model.lesson_list[indexPath.row];
+        BBMovieViewController *movieVC= [BBMovieViewController new];
+        movieVC.videoId = model.video_id;
+        movieVC.videoName = model.name;
+        [self.VC.navigationController pushViewController:movieVC animated:YES];
+    }
+}
+
+- (BOOL)isLogin
+{
+    if ([UserDao share].isLogin) {
+        return YES;
+    } else {
+        BBLoginViewController *loginVC = [BBLoginViewController new];
+        loginVC.selectIndex = 1;
+        [self presentViewController:loginVC animated:YES completion:nil];
+    }
+    return NO;
+}
 
 - (void)setModel:(CourseDetailModel *)model
 {

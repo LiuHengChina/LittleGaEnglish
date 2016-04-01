@@ -13,5 +13,6 @@
 @interface CoursesDetailDesViewController : MyUIViewController
 
 @property (nonatomic, strong) CourseDetailModel *model;
+@property (nonatomic, copy) NSString *courseID;
 
 @end
