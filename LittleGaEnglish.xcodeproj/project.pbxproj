@@ -181,6 +181,8 @@
 		9A4794B31CA7B6AA005F3A15 /* GCPlaceholderTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A4794B21CA7B6AA005F3A15 /* GCPlaceholderTextView.m */; };
 		9A4794B61CA7B990005F3A15 /* luyinjiemian.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A4794B51CA7B990005F3A15 /* luyinjiemian.m */; };
 		9A4794B91CA7CA72005F3A15 /* xuanzeimage.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A4794B81CA7CA72005F3A15 /* xuanzeimage.m */; };
+		9A7448221CAF6D47009D3F42 /* weibaxiangqing.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A7448211CAF6D47009D3F42 /* weibaxiangqing.m */; };
+		9A7448251CAF87AD009D3F42 /* dakaxiangqing.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A7448241CAF87AD009D3F42 /* dakaxiangqing.m */; };
 		9ADCCDCE1C93E639002F269F /* yuyincepingview.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ADCCDCD1C93E639002F269F /* yuyincepingview.m */; };
 		9ADCCDD21C93FF9D002F269F /* daojishiview.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9ADCCDD11C93FF9D002F269F /* daojishiview.xib */; };
 		9ADCCDDA1C940897002F269F /* yuyinpingce.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9ADCCDD91C940897002F269F /* yuyinpingce.xib */; };
@@ -557,6 +559,10 @@
 		9A4794B51CA7B990005F3A15 /* luyinjiemian.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = luyinjiemian.m; sourceTree = "<group>"; };
 		9A4794B71CA7CA72005F3A15 /* xuanzeimage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xuanzeimage.h; sourceTree = "<group>"; };
 		9A4794B81CA7CA72005F3A15 /* xuanzeimage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = xuanzeimage.m; sourceTree = "<group>"; };
+		9A7448201CAF6D47009D3F42 /* weibaxiangqing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = weibaxiangqing.h; sourceTree = "<group>"; };
+		9A7448211CAF6D47009D3F42 /* weibaxiangqing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = weibaxiangqing.m; sourceTree = "<group>"; };
+		9A7448231CAF87AD009D3F42 /* dakaxiangqing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dakaxiangqing.h; sourceTree = "<group>"; };
+		9A7448241CAF87AD009D3F42 /* dakaxiangqing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dakaxiangqing.m; sourceTree = "<group>"; };
 		9ADCCDCC1C93E639002F269F /* yuyincepingview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yuyincepingview.h; sourceTree = "<group>"; };
 		9ADCCDCD1C93E639002F269F /* yuyincepingview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = yuyincepingview.m; sourceTree = "<group>"; };
 		9ADCCDD11C93FF9D002F269F /* daojishiview.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = daojishiview.xib; sourceTree = "<group>"; };
@@ -1123,6 +1129,10 @@
 				9A4794B51CA7B990005F3A15 /* luyinjiemian.m */,
 				9A4794B71CA7CA72005F3A15 /* xuanzeimage.h */,
 				9A4794B81CA7CA72005F3A15 /* xuanzeimage.m */,
+				9A7448201CAF6D47009D3F42 /* weibaxiangqing.h */,
+				9A7448211CAF6D47009D3F42 /* weibaxiangqing.m */,
+				9A7448231CAF87AD009D3F42 /* dakaxiangqing.h */,
+				9A7448241CAF87AD009D3F42 /* dakaxiangqing.m */,
 				9A1E1F331C9AB00800D77564 /* luntan.storyboard */,
 			);
 			name = Forum;
@@ -1808,6 +1818,7 @@
 				9AEE02061C8D230D0027ACF0 /* PieceWise.m in Sources */,
 				858BBEFA1C814E9600F54E42 /* BBCourseBobyViewController.m in Sources */,
 				85230ACA1C73048F00B6A48A /* NSObject+runtime.m in Sources */,
+				9A7448221CAF6D47009D3F42 /* weibaxiangqing.m in Sources */,
 				85E5779F1CA65D3D00710C39 /* MyUICollectionView.m in Sources */,
 				85230B001C740C0800B6A48A /* BBLoginView.m in Sources */,
 				9AEE02181C8D822D0027ACF0 /* Replymypost.m in Sources */,
@@ -1829,6 +1840,7 @@
 				85230AEA1C7319FD00B6A48A /* MyNavigationController.m in Sources */,
 				85230AD41C73048F00B6A48A /* UIViewController+Category.m in Sources */,
 				85E5779C1CA658AB00710C39 /* MyApiLunTan.m in Sources */,
+				9A7448251CAF87AD009D3F42 /* dakaxiangqing.m in Sources */,
 				045B6B661CABDE34000B38AF /* ScoredController.m in Sources */,
 				8554B10E1C72C08F00598E62 /* main.m in Sources */,
 				9AEE01F41C8941410027ACF0 /* MineViewController.m in Sources */,
