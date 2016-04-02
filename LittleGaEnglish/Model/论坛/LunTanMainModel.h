@@ -53,6 +53,5 @@
 @property (nonatomic, copy)NSString *favorite;
 @property (nonatomic, copy)NSString *reply_count;
 
-
 @end
 

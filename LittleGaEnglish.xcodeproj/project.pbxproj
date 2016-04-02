@@ -117,6 +117,7 @@
 		858BBF251C82F6A300F54E42 /* CoursesDetailMovieTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 858BBF231C82F6A300F54E42 /* CoursesDetailMovieTableViewCell.m */; };
 		858BBF261C82F6A300F54E42 /* CoursesDetailMovieTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 858BBF241C82F6A300F54E42 /* CoursesDetailMovieTableViewCell.xib */; };
 		858BBF291C830B2900F54E42 /* CourseDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 858BBF281C830B2900F54E42 /* CourseDetailModel.m */; };
+		85A719CA1CAF7A1700C9DBD3 /* LunTanListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 85A719C91CAF7A1700C9DBD3 /* LunTanListModel.m */; };
 		85C52FC21C89EB8A008348D8 /* MyApiBuy.m in Sources */ = {isa = PBXBuildFile; fileRef = 85C52FC11C89EB8A008348D8 /* MyApiBuy.m */; };
 		85C52FC51C89EC26008348D8 /* BuyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 85C52FC41C89EC26008348D8 /* BuyModel.m */; };
 		85CCBF141C847CA20084B11C /* CoursesEvalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85CCBF121C847CA20084B11C /* CoursesEvalViewController.m */; };
@@ -425,6 +426,8 @@
 		858BBF241C82F6A300F54E42 /* CoursesDetailMovieTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CoursesDetailMovieTableViewCell.xib; sourceTree = "<group>"; };
 		858BBF271C830B2900F54E42 /* CourseDetailModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CourseDetailModel.h; sourceTree = "<group>"; };
 		858BBF281C830B2900F54E42 /* CourseDetailModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CourseDetailModel.m; sourceTree = "<group>"; };
+		85A719C81CAF7A1700C9DBD3 /* LunTanListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LunTanListModel.h; sourceTree = "<group>"; };
+		85A719C91CAF7A1700C9DBD3 /* LunTanListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LunTanListModel.m; sourceTree = "<group>"; };
 		85C52FC01C89EB8A008348D8 /* MyApiBuy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyApiBuy.h; sourceTree = "<group>"; };
 		85C52FC11C89EB8A008348D8 /* MyApiBuy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyApiBuy.m; sourceTree = "<group>"; };
 		85C52FC31C89EC26008348D8 /* BuyModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuyModel.h; sourceTree = "<group>"; };
@@ -1505,6 +1508,8 @@
 			children = (
 				85E577961CA6555800710C39 /* LunTanMainModel.h */,
 				85E577971CA6555800710C39 /* LunTanMainModel.m */,
+				85A719C81CAF7A1700C9DBD3 /* LunTanListModel.h */,
+				85A719C91CAF7A1700C9DBD3 /* LunTanListModel.m */,
 			);
 			path = "论坛";
 			sourceTree = "<group>";
@@ -1776,6 +1781,7 @@
 				8554B1141C72C08F00598E62 /* ViewController.m in Sources */,
 				9A1E1F321C9AAE2E00D77564 /* JINGXUAN.m in Sources */,
 				85230AD71C73048F00B6A48A /* WDTipsView.m in Sources */,
+				85A719CA1CAF7A1700C9DBD3 /* LunTanListModel.m in Sources */,
 				045B6B8A1CABDE83000B38AF /* ShopeController.m in Sources */,
 				85D5C2BC1CAD910000D6E299 /* BBMovieViewController.m in Sources */,
 				8542F5D61C8DCEAB00C4FFFD /* BuyViewController.m in Sources */,
