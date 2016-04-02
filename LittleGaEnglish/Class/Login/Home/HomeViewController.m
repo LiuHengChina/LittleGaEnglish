@@ -11,8 +11,6 @@
 #import "HomeTableViewCell.h"
 #import "ImagePlayerView.h"
 
-
-
 @interface HomeViewController ()<UITableViewDataSource,UITableViewDelegate,ImagePlayerViewDelegate>
 
 @property (nonatomic, strong) MyUITableView *tableView;
@@ -24,14 +22,39 @@
 
 @implementation HomeViewController
 
-- (void)viewDidLoad {
+- (void)getTheHomeViewData
+{
+    // 暂时写死
+    NSMutableDictionary *dict = [NSMutableDictionary dictionary];
+    dict[@"token"] = [UserDao share].user.token;
+
+    NSLog(@"%@", [UserDao share].user.token);
+    
+    
+    [[WDNetAPIRequestWithAFNManage share]httpRequestWithMethod:@"GET" URL:@"http://app.xiaokaen.com/api/home/index" Params:dict HTTPHeader:nil requestSuccess:^(id json) {
+        
+        NSDictionary *dict = (NSDictionary *)json;
+        
+        NSLog(@"dict.class == %@",dict.class);
+    
+    } requestFailure:^(NSError *error) {
+        
+    }];
+
+}
+
+
+
+- (void)viewDidLoad
+{
     [super viewDidLoad];
     self.title = @"首页";
-    
+    [self getTheHomeViewData];
     self.tableView = [[MyUITableView alloc]initWithFrame:CGRectZero style:UITableViewStyleGrouped];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     [self.view addSubview:_tableView];
+    
     [_tableView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.left.bottom.right.equalTo(@0);
     }];
@@ -61,7 +84,8 @@
     return 3;
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
     return 1;
 }
 
@@ -70,13 +94,13 @@
 {
     static NSString *identifier = @"IdentifierCell";
     HomeTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
-    if (!cell) {
+    if (!cell)
+    {
         NSArray *nibs = [[NSBundle mainBundle]loadNibNamed:@"HomeTableViewCell" owner:nil options:nil];
-        cell= nibs.firstObject;
+        cell = nibs.firstObject;
     }
     return cell;
 }
-
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -96,17 +120,9 @@
     NSLog(@"did tap index = %d", (int)index);
 }
 
-
-
-
-- (BOOL)hidesBottomBarWhenPushed {
+- (BOOL)hidesBottomBarWhenPushed
+{
     return NO;
 }
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
 
 @end
