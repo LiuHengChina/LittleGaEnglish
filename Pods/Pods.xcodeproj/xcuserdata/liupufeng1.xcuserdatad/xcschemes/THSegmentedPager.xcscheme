@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '89C43B0FBBDDBF4C75A727C2'
+               BlueprintIdentifier = '09AF9E7FA38D80A504D8588A'
                BlueprintName = 'THSegmentedPager'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libTHSegmentedPager.a'>

@@ -1,3 +1,4 @@
+   pod 'UAProgressView', '~> 0.1.3'
 platform:ios,'7.0'
 pod 'JSONModel', '~> 1.0.1'
 pod 'Masonry'

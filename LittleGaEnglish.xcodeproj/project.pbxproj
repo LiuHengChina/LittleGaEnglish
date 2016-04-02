@@ -182,6 +182,8 @@
 		9A4794B91CA7CA72005F3A15 /* xuanzeimage.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A4794B81CA7CA72005F3A15 /* xuanzeimage.m */; };
 		9A7448221CAF6D47009D3F42 /* weibaxiangqing.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A7448211CAF6D47009D3F42 /* weibaxiangqing.m */; };
 		9A7448251CAF87AD009D3F42 /* dakaxiangqing.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A7448241CAF87AD009D3F42 /* dakaxiangqing.m */; };
+		9A7448281CAFA055009D3F42 /* zhifujiemianone.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A7448271CAFA055009D3F42 /* zhifujiemianone.m */; };
+		9A74482B1CAFA060009D3F42 /* zhifushibai.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A74482A1CAFA060009D3F42 /* zhifushibai.m */; };
 		9ADCCDCE1C93E639002F269F /* yuyincepingview.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ADCCDCD1C93E639002F269F /* yuyincepingview.m */; };
 		9ADCCDD21C93FF9D002F269F /* daojishiview.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9ADCCDD11C93FF9D002F269F /* daojishiview.xib */; };
 		9ADCCDDA1C940897002F269F /* yuyinpingce.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9ADCCDD91C940897002F269F /* yuyinpingce.xib */; };
@@ -560,6 +562,10 @@
 		9A7448211CAF6D47009D3F42 /* weibaxiangqing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = weibaxiangqing.m; sourceTree = "<group>"; };
 		9A7448231CAF87AD009D3F42 /* dakaxiangqing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dakaxiangqing.h; sourceTree = "<group>"; };
 		9A7448241CAF87AD009D3F42 /* dakaxiangqing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dakaxiangqing.m; sourceTree = "<group>"; };
+		9A7448261CAFA055009D3F42 /* zhifujiemianone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zhifujiemianone.h; sourceTree = "<group>"; };
+		9A7448271CAFA055009D3F42 /* zhifujiemianone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = zhifujiemianone.m; sourceTree = "<group>"; };
+		9A7448291CAFA05F009D3F42 /* zhifushibai.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zhifushibai.h; sourceTree = "<group>"; };
+		9A74482A1CAFA060009D3F42 /* zhifushibai.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = zhifushibai.m; sourceTree = "<group>"; };
 		9ADCCDCC1C93E639002F269F /* yuyincepingview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yuyincepingview.h; sourceTree = "<group>"; };
 		9ADCCDCD1C93E639002F269F /* yuyincepingview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = yuyincepingview.m; sourceTree = "<group>"; };
 		9ADCCDD11C93FF9D002F269F /* daojishiview.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = daojishiview.xib; sourceTree = "<group>"; };
@@ -1200,6 +1206,10 @@
 				9AEE023B1C90043A0027ACF0 /* zhifujiemian.m */,
 				9AEE023D1C90263F0027ACF0 /* quxiaodingdan.h */,
 				9AEE023E1C90263F0027ACF0 /* quxiaodingdan.m */,
+				9A7448261CAFA055009D3F42 /* zhifujiemianone.h */,
+				9A7448271CAFA055009D3F42 /* zhifujiemianone.m */,
+				9A7448291CAFA05F009D3F42 /* zhifushibai.h */,
+				9A74482A1CAFA060009D3F42 /* zhifushibai.m */,
 				9AEE01F91C8948300027ACF0 /* MineViewController.storyboard */,
 			);
 			name = Mine;
@@ -1840,6 +1850,7 @@
 				9AEE01F41C8941410027ACF0 /* MineViewController.m in Sources */,
 				8542F5DC1C8DCF5500C4FFFD /* BuyExchangeViewController.m in Sources */,
 				858BBF251C82F6A300F54E42 /* CoursesDetailMovieTableViewCell.m in Sources */,
+				9A74482B1CAFA060009D3F42 /* zhifushibai.m in Sources */,
 				85230AD81C73048F00B6A48A /* MyConstantKey.m in Sources */,
 				85E295C41C97035100570196 /* EvaluationModel.m in Sources */,
 				045B6B7B1CABDE51000B38AF /* ListCell.m in Sources */,
@@ -1910,6 +1921,7 @@
 				9AEE021B1C8D8BA40027ACF0 /* mycollection.m in Sources */,
 				85230AED1C7319FD00B6A48A /* MyUIViewController.m in Sources */,
 				9AEE021E1C8D8CF90027ACF0 /* CollectionDelete.m in Sources */,
+				9A7448281CAFA055009D3F42 /* zhifujiemianone.m in Sources */,
 				9A1E1F491C9BECFD00D77564 /* fabu.m in Sources */,
 				045B6B371CABBAB7000B38AF /* MIneScoreInfoModel.m in Sources */,
 				85230ACF1C73048F00B6A48A /* UIImage+Category.m in Sources */,

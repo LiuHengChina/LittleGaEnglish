@@ -2052,7 +2052,7 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tA7-7j-XQ1">
                                 <rect key="frame" x="256" y="255" width="87" height="87"/>
-                                <state key="normal" image="luyin"/>
+                                <state key="normal" image="yuyincepinganniu"/>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="08:08:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W1s-37-HHo">
                                 <rect key="frame" x="273" y="352" width="53" height="15"/>
@@ -2066,14 +2066,28 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AKd-Nj-xa1" customClass="UAProgressView">
+                                <rect key="frame" x="265" y="264" width="69" height="69"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="69" id="R9X-fd-bfY"/>
+                                    <constraint firstAttribute="height" constant="69" id="kx6-fc-Ih6"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="GxF-ID-bcv" appends="YES" id="cv0-t7-A3d"/>
+                                </connections>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="Aby-d3-G0s" firstAttribute="centerX" secondItem="W1s-37-HHo" secondAttribute="centerX" id="2Nj-iW-wzR"/>
+                            <constraint firstItem="AKd-Nj-xa1" firstAttribute="centerX" secondItem="tA7-7j-XQ1" secondAttribute="centerX" id="DNS-MU-d5f"/>
                             <constraint firstItem="W1s-37-HHo" firstAttribute="top" secondItem="tA7-7j-XQ1" secondAttribute="bottom" constant="10" id="HJZ-wc-pr6"/>
                             <constraint firstItem="W1s-37-HHo" firstAttribute="centerX" secondItem="tA7-7j-XQ1" secondAttribute="centerX" id="cjq-SV-MPj"/>
                             <constraint firstItem="tA7-7j-XQ1" firstAttribute="top" secondItem="U4M-Mu-GuE" secondAttribute="bottom" constant="235" id="grl-L9-1uQ"/>
+                            <constraint firstItem="AKd-Nj-xa1" firstAttribute="centerY" secondItem="tA7-7j-XQ1" secondAttribute="centerY" id="iJQ-lA-1go"/>
                             <constraint firstItem="Aby-d3-G0s" firstAttribute="top" secondItem="W1s-37-HHo" secondAttribute="bottom" constant="9" id="lNN-ue-L5c"/>
                             <constraint firstItem="tA7-7j-XQ1" firstAttribute="centerX" secondItem="6zU-yC-7wF" secondAttribute="centerX" id="yo3-Ni-aQY"/>
                         </constraints>
@@ -2081,6 +2095,9 @@
                             <outletCollection property="gestureRecognizers" destination="osS-Ne-3H7" appends="YES" id="Ym6-cP-Pos"/>
                         </connections>
                     </view>
+                    <connections>
+                        <outlet property="previews" destination="AKd-Nj-xa1" id="Tsw-nM-Gvh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eb4-hL-Lz9" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="osS-Ne-3H7">
@@ -2088,8 +2105,13 @@
                         <action selector="dismissview:" destination="hyX-av-QRu" id="nz8-bB-mTi"/>
                     </connections>
                 </tapGestureRecognizer>
+                <tapGestureRecognizer id="GxF-ID-bcv">
+                    <connections>
+                        <action selector="luyinkaishi:" destination="hyX-av-QRu" id="BQh-3n-pdn"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="6192" y="2409"/>
+            <point key="canvasLocation" x="5748" y="2364"/>
         </scene>
         <!--Xuanzeimage-->
         <scene sceneID="dI3-fk-xJd">
@@ -2272,6 +2294,7 @@
         <image name="luyin" width="87" height="87"/>
         <image name="start_1" width="375" height="597"/>
         <image name="start_2" width="375" height="597"/>
+        <image name="yuyincepinganniu" width="87" height="87"/>
         <image name="zanzan" width="27" height="15"/>
     </resources>
     <inferredMetricsTieBreakers>
