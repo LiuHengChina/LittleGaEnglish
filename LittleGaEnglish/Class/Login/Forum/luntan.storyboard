@@ -130,7 +130,7 @@
                                                 <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fgn-IA-Ys0">
                                                     <rect key="frame" x="338" y="209" width="164" height="34"/>
                                                     <subviews>
-                                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s1j-Sk-Dms">
+                                                        <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s1j-Sk-Dms">
                                                             <rect key="frame" x="19" y="4" width="73" height="22"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                             <state key="normal" title="1231" image="liebiaopinglun">
@@ -153,7 +153,7 @@
                                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Ng-kO-q8Y">
+                                                        <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Ng-kO-q8Y">
                                                             <rect key="frame" x="57" y="7" width="49" height="19"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                             <state key="normal" title="1231" image="liebiaoxihuan">
@@ -189,7 +189,7 @@
                                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hcB-Ul-Gi9">
+                                                        <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hcB-Ul-Gi9">
                                                             <rect key="frame" x="57" y="7" width="49" height="19"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                             <state key="normal" title="1231" image="liebiaodianzan">
@@ -234,6 +234,10 @@
                                             <constraint firstItem="7p5-Fp-EGj" firstAttribute="leading" secondItem="6xz-Iv-duR" secondAttribute="leading" constant="10" id="yMS-2i-DPl"/>
                                         </constraints>
                                         <connections>
+                                            <outlet property="dianzanLab" destination="hcB-Ul-Gi9" id="CHL-RJ-g6x"/>
+                                            <outlet property="image" destination="38Q-22-aHi" id="wEF-QD-sGi"/>
+                                            <outlet property="pinglunLab" destination="s1j-Sk-Dms" id="ZZz-IA-MHu"/>
+                                            <outlet property="shoucangLab" destination="9Ng-kO-q8Y" id="cKQ-wB-1hg"/>
                                             <outlet property="widht" destination="hrs-Ki-JdT" id="7Td-so-Mh1"/>
                                         </connections>
                                     </collectionViewCell>

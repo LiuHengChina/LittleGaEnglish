@@ -54,7 +54,7 @@
                     Failure:(void(^)(MyApiLunTan * request ,NSError *requestError))failure
 {
     NSDictionary *dic;
-    if (weibo_id == nil) {
+    if (weibo_id != nil) {
         dic = @{@"weiba_id":weibo_id,
                 @"digest":[NSString stringWithFormat:@"%d",digest],
                 @"order":order,

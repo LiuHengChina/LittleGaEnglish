@@ -15,9 +15,24 @@
 
 @interface quanbucell : UICollectionViewCell
 @property (strong, nonatomic) IBOutlet NSLayoutConstraint *widht;
+@property (nonatomic, strong) HotThreadModel *moedl;
+@property (strong, nonatomic) IBOutlet UIImageView *image;
+@property (strong, nonatomic) IBOutlet UIButton *dianzanLab;
+@property (strong, nonatomic) IBOutlet UIButton *shoucangLab;
+@property (strong, nonatomic) IBOutlet UIButton *pinglunLab;
 @end
 
 @implementation quanbucell
+
+
+- (void)setMoedl:(HotThreadModel *)moedl
+{
+    _moedl = moedl;
+    [self.image sd_setImageWithURL:[NSURL URLWithString:moedl.imgurl] placeholderImage:nil completed:nil];
+    [self.dianzanLab setTitle:moedl.praise forState:UIControlStateNormal];
+    [self.shoucangLab setTitle:moedl.favorite forState:UIControlStateNormal];
+    [self.pinglunLab setTitle:moedl.reply_count forState:UIControlStateNormal];
+}
 
 @end
 
@@ -50,6 +65,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
+    [self getData];
     // Do any additional setup after loading the view.
 }
 
@@ -69,6 +85,7 @@
 {
     quanbucell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"quanbucell" forIndexPath:indexPath];
     cell.widht.constant = self.view.frame.size.width/3;
+    cell.moedl = self.model.list[indexPath.row];
     return cell;
 }
 -(UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath
@@ -108,6 +125,9 @@
 - (void)getData{
     [[MyApiLunTan share] getThreadListDataID:nil digest:NO order:@"1" page:@"1" Success:^(MyApiLunTan *request, LunTanListModel *model) {
         self.model = model;
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self.collect reloadData];
+        });
     } Failure:^(MyApiLunTan *request, NSError *requestError) {
         [WDTipsView showTipsViewWithString:requestError.domain];
     }];

@@ -44,4 +44,4 @@ NSString *const k_url_checkErrorParse = @"/Evaluation/checkErrorParse/";   // 6�
 
 NSString *const k_url_bbsIndex = @"/bbs/bbsIndex"; // 论坛首页接口
 
-NSString *const k_url_threadList = @"/Api/bbs/threadList";  // 帖子列表页
+NSString *const k_url_threadList = @"/bbs/threadList";  // 帖子列表页
