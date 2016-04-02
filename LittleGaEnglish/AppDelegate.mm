@@ -37,7 +37,7 @@
     
     
     [[PolyvSettings sharedInstance] setDownloadDir:[NSHomeDirectory() stringByAppendingPathComponent:@"Documents/plvideo/a"]];
-    [[PolyvSettings sharedInstance] initVideoSettings:nil Readtoken:@"Wvj117hZyfLjZYXoN6AzU1FW5B9AqzkPGNKFmzAtZ3uABtRfCLSvweIzb92Ji+bilV27AeuFlTPXR/Sh0XkQlL1AeaQhl9L0fPtergpNZPu5Ugj9j7DGhKlP9VhNrSoWNHhelURcUhZ2Zj+t7pyVsw==" Writetoken:nil UserId:nil];
+    [[PolyvSettings sharedInstance] initVideoSettings:@"gUJjh1nvn8" Readtoken:@"vSLN1O00n4-FxlU15to0B-h3xSLw15cu" Writetoken:@"MIrqEFb9JH5QoiZ-W2jTbqhEFGNrjaFg" UserId:@"b598a273c0"];
     
     return YES;
 }
