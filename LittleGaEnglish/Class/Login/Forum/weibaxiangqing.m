@@ -104,10 +104,13 @@
     return cell;
 }
 - (IBAction)xihuan:(id)sender {
+    NSLog(@"xihuan");
 }
 - (IBAction)dianzan:(id)sender {
+    NSLog(@"dianzan");
 }
 - (IBAction)pinglun:(id)sender {
+    NSLog(@"pinglun");
 }
 
 /*

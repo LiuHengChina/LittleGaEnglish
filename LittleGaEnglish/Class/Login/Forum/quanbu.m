@@ -9,6 +9,7 @@
 #import "quanbu.h"
 #import "ReactiveCocoa.h"
 #import "weibaxiangqing.h"
+#import "dakaxiangqing.h"
 @interface quanbucell : UICollectionViewCell
 @property (strong, nonatomic) IBOutlet NSLayoutConstraint *widht;
 
@@ -83,7 +84,11 @@
 }
 -(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    [self performSegueWithIdentifier:@"quanbuweiba" sender:@(999999)];
+    if (indexPath.row %2 == 0) {
+        [self performSegueWithIdentifier:@"quanbuweiba" sender:@(999999)];
+    } else {
+        [self performSegueWithIdentifier:@"quanbudaka" sender:self];
+    }
 }
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
