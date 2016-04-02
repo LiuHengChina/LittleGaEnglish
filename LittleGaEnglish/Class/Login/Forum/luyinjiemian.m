@@ -10,7 +10,7 @@
 #import <UAProgressView/UAProgressView.h>
 @interface luyinjiemian ()
 @property (strong, nonatomic) IBOutlet UAProgressView *previews;
-@property (nonatomic, assign) CGFloat localProgress;
+//@property (nonatomic, assign) CGFloat localProgress;
 @property (assign,nonatomic) BOOL jindubool;
 @property (assign,nonatomic) NSInteger datatime;
 @end
@@ -42,7 +42,7 @@
     self.previews.lineWidth = 2;
 }
 - (void)updateProgress:(NSTimer *)timer {
-    if (self.jindubool) {
+    if (self.jindubool || self.datatime > 180) {
         return;
     }
     self.datatime++;
