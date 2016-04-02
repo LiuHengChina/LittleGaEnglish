@@ -7,7 +7,7 @@
 //
 
 #import "zhifujiemian.h"
-
+#import "zhifujiemianone.h"
 @interface zhifujiemian ()
 @property (strong, nonatomic) IBOutlet UILabel *dingdanjine;
 @property (strong, nonatomic) IBOutlet UILabel *dingdangbianhao;
@@ -40,6 +40,7 @@
     
 }
 - (IBAction)jixuzhifu:(id)sender {
+    [self performSegueWithIdentifier:@"zhifujiemianonea" sender:self];
 }
 
 /*

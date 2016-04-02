@@ -12,7 +12,9 @@
 @interface fabutiezi ()
 @property (strong, nonatomic) IBOutlet UILabel *tiezititle;
 @property (strong, nonatomic) IBOutlet GCPlaceholderTextView *neirong;
-
+@property (strong, nonatomic) IBOutlet UITextField *zaixiandizhitext;
+@property (assign, nonatomic) BOOL shipinbool;
+@property (strong, nonatomic) IBOutlet UIView *viewshipin;
 @end
 
 @implementation fabutiezi
@@ -20,6 +22,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.neirong.placeholderColor = [UIColor colorWithRed:187.0/255.0f green:187.0/255.0f blue:187.0/255.0f alpha:1];
+    self.shipinbool = true;
+    self.viewshipin.hidden = YES;
     self.neirong.placeholder = NSLocalizedString(@"说点什么...",);
     // Do any additional setup after loading the view.
 }
@@ -32,11 +36,19 @@
     [self performSegueWithIdentifier:@"luyinaaa" sender:self];
 }
 - (IBAction)fabu:(id)sender {
+    NSLog(@"fabu");
 }
 - (IBAction)tupian:(id)sender {
     [self performSegueWithIdentifier:@"imageaaa" sender:self];
 }
 - (IBAction)shipin:(id)sender {
+    if (self.shipinbool) {
+        self.shipinbool = false;
+        self.viewshipin.hidden = false;
+    } else {
+        self.shipinbool = true;
+        self.viewshipin.hidden = YES;
+    }
 }
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {

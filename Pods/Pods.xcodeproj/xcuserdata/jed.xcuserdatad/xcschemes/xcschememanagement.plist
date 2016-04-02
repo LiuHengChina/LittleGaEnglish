@@ -61,6 +61,11 @@
 			<key>orderHint</key>
 			<integer>9</integer>
 		</dict>
+		<key>UAProgressView.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>10</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
@@ -94,6 +99,11 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>5810B74FAE03FBD9376D68A132F042A8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>764C20D7102A3775CB7D0BEC5B170EA1</key>
 		<dict>
 			<key>primary</key>
@@ -104,12 +114,32 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>91764F790CE253E7368314C257B2FB39</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B1EE062339F920D0C1C62C9DCDDDA4C4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>D7D68945E6C1F4E865D2FB222B67D43F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>DBE654885516D0A25869C460AC1ADC65</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>F0AFD6AD00D64446E559E8D56123A677</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F131ECFFA170ACAF1994AB85DA41D356</key>
 		<dict>
 			<key>primary</key>
 			<true/>
