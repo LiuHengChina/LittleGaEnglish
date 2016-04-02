@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -747,11 +747,11 @@
                                                     <constraint firstItem="d5H-J6-xKS" firstAttribute="centerY" secondItem="toW-Id-WWI" secondAttribute="centerY" id="z5G-2E-QYa"/>
                                                 </constraints>
                                             </view>
-                                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="309" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0Cs-qc-Aq3">
+                                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="309" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0Cs-qc-Aq3">
                                                 <rect key="frame" x="0.0" y="110" width="600" height="1170"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <prototypes>
-                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="dakaxiangqingcell" rowHeight="309" id="U7v-xe-gXR" customClass="dakaxiangqingcell">
+                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="dakaxiangqingcell" rowHeight="309" id="U7v-xe-gXR" customClass="dakaxiangqingcell">
                                                         <rect key="frame" x="0.0" y="28" width="600" height="309"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="U7v-xe-gXR" id="sXp-1W-Ivd">
@@ -836,6 +836,10 @@
                                                         </tableViewCellContentView>
                                                     </tableViewCell>
                                                 </prototypes>
+                                                <connections>
+                                                    <outlet property="dataSource" destination="gr1-wq-Spe" id="24w-Sn-eMt"/>
+                                                    <outlet property="delegate" destination="gr1-wq-Spe" id="fCH-Gq-DOo"/>
+                                                </connections>
                                             </tableView>
                                         </subviews>
                                         <color key="backgroundColor" red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
@@ -870,9 +874,12 @@
                     </view>
                     <connections>
                         <outlet property="daojishi" destination="d5H-J6-xKS" id="gRR-qv-cgs"/>
+                        <outlet property="gandu" destination="yht-rN-t7f" id="UEG-gU-VDc"/>
                         <outlet property="jindu" destination="npW-KA-kR1" id="icR-VT-Bbt"/>
                         <outlet property="julizuo" destination="x5h-iO-0oW" id="2mr-3z-Nmo"/>
+                        <outlet property="shuaxinjiazai" destination="uxT-yc-YII" id="rkz-WF-F1h"/>
                         <outlet property="subtitle" destination="agf-e9-klu" id="pFO-rv-1hZ"/>
+                        <outlet property="tableview" destination="0Cs-qc-Aq3" id="Rwb-S3-Wzh"/>
                         <outlet property="titleview" destination="6M1-Go-obZ" id="1FX-Sr-Q17"/>
                     </connections>
                 </viewController>

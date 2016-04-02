@@ -23,6 +23,9 @@
 @property (strong, nonatomic) IBOutlet UILabel *daojishi;
 @property (strong, nonatomic) IBOutlet NSLayoutConstraint *julizuo;
 @property (strong, nonatomic) IBOutlet UIProgressView *jindu;
+@property (strong, nonatomic) IBOutlet NSLayoutConstraint *gandu;
+@property (strong, nonatomic) IBOutlet UITableView *tableview;
+@property (strong, nonatomic) IBOutlet UIScrollView *shuaxinjiazai;
 
 @end
 
@@ -30,10 +33,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.jindu.progress = 0;
+    
     @weakify(self)
     [RACObserve(self, jindu.progress) subscribeNext:^(id x) {
         @strongify(self)
         self.julizuo.constant = (self.view.frame.size.width - 70 - 112) * [x floatValue] + 70;
+    }];
+    [RACObserve(self, tableview.contentSize) subscribeNext:^(id x) {
+        @strongify(self)
+        self.gandu.constant = self.tableview.contentSize.height + 110;
+        
     }];
     // Do any additional setup after loading the view.
 }

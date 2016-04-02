@@ -8,6 +8,7 @@
 
 #import "BaseNetRequest.h"
 #import "LunTanMainModel.h"
+#import "LunTanListModel.h"
 
 @interface MyApiLunTan : BaseNetRequest
 
@@ -23,7 +24,7 @@
                      digest:(BOOL)digest
                       order:(NSString *)order
                        page:(NSString *)page
-                    Success:(void(^)(MyApiLunTan * request , LunTanMainModel * model))success
+                    Success:(void(^)(MyApiLunTan * request , LunTanListModel * model))success
                     Failure:(void(^)(MyApiLunTan * request ,NSError *requestError))failure;
 
 

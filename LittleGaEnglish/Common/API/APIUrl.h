@@ -46,3 +46,4 @@ UIKIT_EXTERN NSString *const k_url_checkErrorParse;  // 查看错题解析接口
 
 UIKIT_EXTERN NSString *const k_url_bbsIndex; // 论坛首页接口
 
+UIKIT_EXTERN NSString *const k_url_threadList;

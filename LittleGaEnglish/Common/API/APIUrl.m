@@ -43,4 +43,5 @@ NSString *const k_url_addUserAnswer = @"/Evaluation/addUserAnswer/"; // 单词�
 NSString *const k_url_checkErrorParse = @"/Evaluation/checkErrorParse/";   // 6、查看错题解析接口
 
 NSString *const k_url_bbsIndex = @"/bbs/bbsIndex"; // 论坛首页接口
-//NSString *const k_url_ = @"%@";
+
+NSString *const k_url_threadList = @"/Api/bbs/threadList";  // 帖子列表页

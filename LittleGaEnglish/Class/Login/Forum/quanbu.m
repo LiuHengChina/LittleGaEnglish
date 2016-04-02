@@ -10,13 +10,17 @@
 #import "ReactiveCocoa.h"
 #import "weibaxiangqing.h"
 #import "dakaxiangqing.h"
+#import "LunTanListModel.h"
+#import "MyApiLunTan.h"
+
 @interface quanbucell : UICollectionViewCell
 @property (strong, nonatomic) IBOutlet NSLayoutConstraint *widht;
-
 @end
+
 @implementation quanbucell
 
 @end
+
 
 @interface quanbuheader : UICollectionReusableView
 
@@ -38,8 +42,7 @@
 
 @interface quanbu ()<UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout>
 @property (strong, nonatomic) IBOutlet UICollectionView *collect;
-
-
+@property (nonatomic, strong) LunTanListModel *model;
 @end
 
 @implementation quanbu
@@ -97,6 +100,15 @@
         [(weibaxiangqing *)segue.destinationViewController setIdd:[sender integerValue]];
     }
 }
+
+- (void)getData{
+    [[MyApiLunTan share] getThreadListDataID:nil digest:NO order:@"1" page:@"1" Success:^(MyApiLunTan *request, LunTanListModel *model) {
+        self.model = model;
+    } Failure:^(MyApiLunTan *request, NSError *requestError) {
+        [WDTipsView showTipsViewWithString:requestError.domain];
+    }];
+}
+
 
 /*
 #pragma mark - Navigation
