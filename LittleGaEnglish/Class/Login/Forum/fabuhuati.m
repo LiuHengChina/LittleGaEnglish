@@ -8,6 +8,7 @@
 
 #import "fabuhuati.h"
 #import "GCPlaceholderTextView.h"
+#import "xuanzeimage.h"
 @interface fabuhuati ()
 @property (strong, nonatomic) IBOutlet GCPlaceholderTextView *shuodinshenme;
 @property (strong, nonatomic) IBOutlet UITextField *huatititle;
@@ -30,8 +31,17 @@
     [self performSegueWithIdentifier:@"luyinaaaaaaa" sender:self];
 }
 - (IBAction)tupin:(id)sender {
+    [self performSegueWithIdentifier:@"tupiantwo" sender:self];
 }
-
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    [super prepareForSegue:segue sender:sender];
+    if ([segue.identifier isEqualToString:@"tupiantwo"]) {
+        ((xuanzeimage *)segue.destinationViewController).callback = ^(UIImage *image) {
+            NSLog(@"imageaaaaaaaa在这里%@",image);
+        };
+    }
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
