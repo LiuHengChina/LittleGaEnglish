@@ -47,13 +47,13 @@
 @implementation quanbuheader
 
 - (IBAction)zuiixnhuifu:(id)sender {
-//    [_fabuBtn setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
-//    [_huifuBtn setTitleColor:[UIColor customColorWithString:k_Color_navigation] forState:UIControlStateNormal];
+    [_fabuBtn setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
+    [_huifuBtn setTitleColor:[UIColor customColorWithString:k_Color_navigation] forState:UIControlStateNormal];
 }
 
 - (IBAction)zuixinfatie:(id)sender {
-//    [_huifuBtn setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
-//    [_fabuBtn setTitleColor:[UIColor customColorWithString:k_Color_navigation] forState:UIControlStateNormal];
+    [_huifuBtn setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
+    [_fabuBtn setTitleColor:[UIColor customColorWithString:k_Color_navigation] forState:UIControlStateNormal];
 }
 
 
