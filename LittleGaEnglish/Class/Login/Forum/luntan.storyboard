@@ -253,7 +253,7 @@
                                                 <color key="titleColor" red="0.42745098040000001" green="0.42745098040000001" blue="0.42745098040000001" alpha="1" colorSpace="calibratedRGB"/>
                                             </state>
                                             <connections>
-                                                <action selector="zuixinfatie:" destination="OjR-AA-zam" eventType="touchUpInside" id="wkf-MI-cM1"/>
+                                                <action selector="zuixinfatie:" destination="OjR-AA-zam" eventType="touchUpInside" id="yMZ-TT-dEq"/>
                                             </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r6q-hr-TO8">
@@ -263,7 +263,7 @@
                                                 <color key="titleColor" red="0.078431372550000003" green="0.56078431370000004" blue="0.85098039219999999" alpha="1" colorSpace="calibratedRGB"/>
                                             </state>
                                             <connections>
-                                                <action selector="zuiixnhuifu:" destination="OjR-AA-zam" eventType="touchUpInside" id="e0P-YM-7LF"/>
+                                                <action selector="zuiixnhuifu:" destination="OjR-AA-zam" eventType="touchUpInside" id="FAn-zG-h6P"/>
                                             </connections>
                                         </button>
                                     </subviews>

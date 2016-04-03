@@ -11,6 +11,7 @@
 #import "LunTanListModel.h"
 #import "WeiBaListModel.h"
 #import "HuaTiListModel.h"
+#import "ImageModel.h"
 
 @interface MyApiLunTan : BaseNetRequest
 
@@ -40,4 +41,20 @@
 // 微吧列表
 - (void)getWeiBaListSuccess:(void(^)(MyApiLunTan * request, NSMutableArray *array))success
                     Failure:(void(^)(MyApiLunTan * request ,NSError *requestError))failure;
+
+
+/**
+ *  上传图片
+ *
+ *  @param picture
+ *  @param success
+ *  @param failur
+ */
+- (void)sendRequestOpenNewShopOnlineWithPicture:(UIImage *)picture
+                                        Success:(void (^)(MyApiLunTan *request, ImageModel *model))success
+                                        Failure:(void (^)(MyApiLunTan *request, NSError *error))failur;
+
+//- (void)sendYuYin
+
+
 @end

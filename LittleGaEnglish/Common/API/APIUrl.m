@@ -51,3 +51,5 @@ NSString *const k_url_sign = @"/bbs/sign";  // 签到接口
 NSString *const k_url_topicList = @"/bbs/topicList"; // 话题列表
 
 NSString *const k_url_forumList = @"/bbs/forumList"; // 微吧列表
+
+NSString *const k_url_imageupLoad = @"/bbs/imgupload"; // 图片上传

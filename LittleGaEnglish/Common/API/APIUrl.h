@@ -53,3 +53,5 @@ UIKIT_EXTERN NSString *const k_url_sign;   // 签到接口
 UIKIT_EXTERN NSString *const k_url_topicList; // 话题列表
 
 UIKIT_EXTERN NSString *const k_url_forumList; // 微吧列表
+
+UIKIT_EXTERN NSString *const k_url_imageupLoad; // 图片上传

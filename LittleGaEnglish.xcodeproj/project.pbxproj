@@ -120,6 +120,7 @@
 		85A719CA1CAF7A1700C9DBD3 /* LunTanListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 85A719C91CAF7A1700C9DBD3 /* LunTanListModel.m */; };
 		85A719CD1CB0A60400C9DBD3 /* HuaTiListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 85A719CC1CB0A60400C9DBD3 /* HuaTiListModel.m */; };
 		85A719D01CB0A61200C9DBD3 /* WeiBaListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 85A719CF1CB0A61200C9DBD3 /* WeiBaListModel.m */; };
+		85A719D31CB0E68800C9DBD3 /* ImageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 85A719D21CB0E68800C9DBD3 /* ImageModel.m */; };
 		85C52FC21C89EB8A008348D8 /* MyApiBuy.m in Sources */ = {isa = PBXBuildFile; fileRef = 85C52FC11C89EB8A008348D8 /* MyApiBuy.m */; };
 		85C52FC51C89EC26008348D8 /* BuyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 85C52FC41C89EC26008348D8 /* BuyModel.m */; };
 		85CCBF141C847CA20084B11C /* CoursesEvalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85CCBF121C847CA20084B11C /* CoursesEvalViewController.m */; };
@@ -438,6 +439,8 @@
 		85A719CC1CB0A60400C9DBD3 /* HuaTiListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HuaTiListModel.m; sourceTree = "<group>"; };
 		85A719CE1CB0A61200C9DBD3 /* WeiBaListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeiBaListModel.h; sourceTree = "<group>"; };
 		85A719CF1CB0A61200C9DBD3 /* WeiBaListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeiBaListModel.m; sourceTree = "<group>"; };
+		85A719D11CB0E68800C9DBD3 /* ImageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageModel.h; sourceTree = "<group>"; };
+		85A719D21CB0E68800C9DBD3 /* ImageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageModel.m; sourceTree = "<group>"; };
 		85C52FC01C89EB8A008348D8 /* MyApiBuy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyApiBuy.h; sourceTree = "<group>"; };
 		85C52FC11C89EB8A008348D8 /* MyApiBuy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyApiBuy.m; sourceTree = "<group>"; };
 		85C52FC31C89EC26008348D8 /* BuyModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuyModel.h; sourceTree = "<group>"; };
@@ -1540,6 +1543,8 @@
 				85A719CC1CB0A60400C9DBD3 /* HuaTiListModel.m */,
 				85A719CE1CB0A61200C9DBD3 /* WeiBaListModel.h */,
 				85A719CF1CB0A61200C9DBD3 /* WeiBaListModel.m */,
+				85A719D11CB0E68800C9DBD3 /* ImageModel.h */,
+				85A719D21CB0E68800C9DBD3 /* ImageModel.m */,
 			);
 			path = "论坛";
 			sourceTree = "<group>";
@@ -1805,6 +1810,7 @@
 				858BBF201C82F40C00F54E42 /* CouresesDetailDesTableViewCell.m in Sources */,
 				9A1E1F101C952A3D00D77564 /* dancipingce.m in Sources */,
 				0496AF8C1CABCF92002396DC /* WelcomeViewController.m in Sources */,
+				85A719D31CB0E68800C9DBD3 /* ImageModel.m in Sources */,
 				85230AD51C73048F00B6A48A /* APIUrl.m in Sources */,
 				85E295791C9460F700570196 /* MyApiMine.m in Sources */,
 				85230ACE1C73048F00B6A48A /* UIImage+Blur.m in Sources */,

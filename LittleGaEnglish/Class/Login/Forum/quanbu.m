@@ -67,7 +67,7 @@
 @property (nonatomic, assign) NSInteger upPage;
 @property (nonatomic, strong) LunTanListModel *replaceModel;
 @property (nonatomic, strong) LunTanListModel *upModel;
-
+@property (nonatomic, strong) quanbuheader *header;
 @end
 
 @implementation quanbu
@@ -91,7 +91,24 @@
     [self getData];
     // Do any additional setup after loading the view.
 }
-
+-(void)viewDidAppear:(BOOL)animated
+{
+    NSLog(@"dsdds");
+    WS(wself);
+    [[self.header.huifuBtn rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(id x) {
+        _model = nil;
+        wself.page = 1;
+        wself.order = @"1";
+        [wself getData];
+    }];
+    
+    [[self.header.fabuBtn rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(id x) {
+        _model = nil;
+        wself.page = 1;
+        wself.order = @"2";
+        [wself getData];
+    }];
+}
 
 - (void)setModel:(LunTanListModel *)model
 {
@@ -142,26 +159,28 @@
 }
 -(UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath
 {
-    quanbuheader *header = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"quanbuheader" forIndexPath:indexPath];
+
+    self.header = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"quanbuheader" forIndexPath:indexPath];
     
-    WS(wself);
-    RACSignal *zuixinhuifu = [header rac_signalForSelector:@selector(zuiixnhuifu:)];
-    [zuixinhuifu subscribeNext:^(id x) {
-        NSLog(@"最新回复");
-        _model = nil;
-        wself.page = 1;
-        wself.order = @"1";
-        [wself getData];
-    }];
-    RACSignal *zuixinfatie = [header rac_signalForSelector:@selector(zuixinfatie:)];
-    [zuixinfatie subscribeNext:^(id x) {
-        NSLog(@"最新时间");
-        _model = nil;
-        wself.page = 1;
-        wself.order = @"2";
-        [wself getData];
-    }];
-    return header;
+
+    
+//    RACSignal *zuixinhuifu = [header rac_signalForSelector:@selector(zuiixnhuifu:)];
+//    [zuixinhuifu subscribeNext:^(id x) {
+//        NSLog(@"最新回复");
+//        _model = nil;
+//        wself.page = 1;
+//        wself.order = @"1";
+//        [wself getData];
+//    }];
+//    RACSignal *zuixinfatie = [header rac_signalForSelector:@selector(zuixinfatie:)];
+//    [zuixinfatie subscribeNext:^(id x) {
+//        NSLog(@"最新时间");
+//        _model = nil;
+//        wself.page = 1;
+//        wself.order = @"2";
+//        [wself getData];
+//    }];
+    return self.header;
 }
 
 -(CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath

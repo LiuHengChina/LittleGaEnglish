@@ -43,6 +43,38 @@
             endingLineNumber = "156"
             landmarkName = "-addUserAnswer:score:Success:Failure:"
             landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[MyApiEvaluation addUserAnswer:score:Success:Failure:]"
+                  moduleName = "LittleGaEnglish"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jed/LittleGaEnglish/LittleGaEnglish/Common/API/%E8%AF%84%E6%B5%8B/MyApiEvaluation.m"
+                  timestampString = "481358490.549578"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "156"
+                  endingLineNumber = "156"
+                  offsetFromSymbolStart = "400">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__55-[MyApiEvaluation addUserAnswer:score:Success:Failure:]_block_invoke"
+                  moduleName = "LittleGaEnglish"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jed/LittleGaEnglish/LittleGaEnglish/Common/API/%E8%AF%84%E6%B5%8B/MyApiEvaluation.m"
+                  timestampString = "481358490.549703"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "157"
+                  endingLineNumber = "157"
+                  offsetFromSymbolStart = "56">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy

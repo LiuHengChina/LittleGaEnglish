@@ -188,8 +188,10 @@
     self.urlPathStrng = urlPath;
     [self returnMsg_to_digest];
     NSString * urlStr = [NSString stringWithFormat:@"%@%@",kURL,urlPath];
-    
-    [[WDNetAPIRequestWithAFNManage share]uploadFileWithMethod:@"POST" URL:urlStr Params:params image:image HTTPHeader:self.HTTPHeaderFieldPara success:^(id json) {
+    NSMutableDictionary *dic = [NSMutableDictionary dictionaryWithDictionary:params];
+    [dic setValue:[UserDao share].user.uid forKey:@"uid"];
+    [dic setValue:[UserDao share].user.token forKey:@"token"];
+    [[WDNetAPIRequestWithAFNManage share]uploadFileWithMethod:@"POST" URL:urlStr Params:dic image:image HTTPHeader:self.HTTPHeaderFieldPara success:^(id json) {
         
         if (success) {
             success(json);

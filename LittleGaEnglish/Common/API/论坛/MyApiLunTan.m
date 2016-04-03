@@ -171,5 +171,41 @@
     }];
 }
 
+- (void)sendRequestOpenNewShopOnlineWithPicture:(UIImage *)picture Success:(void (^)(MyApiLunTan *, ImageModel *))success Failure:(void (^)(MyApiLunTan *, NSError *))failur
+{
+    if (!picture) {
+        NSError * error = [[NSError alloc]initWithDomain:@"图片上传失败，请重新选取！" code:0 userInfo:nil];
+        failur(self,error);
+        return;
+    }
+
+    NSDictionary * dic = @{};
+    
+    [super uploadFileWithUrl:k_url_imageupLoad params:dic image:picture success:^(id json) {
+        
+        NSString * errmsg = @"";
+        if (json) {
+            ImageModel * responseModel = [[ImageModel alloc]initWithDictionary:json error:nil];
+            errmsg = responseModel.info;
+            if (responseModel.status == 1) {
+                success(self,responseModel);
+                return;
+            }
+        }
+        if(!errmsg || [errmsg isEqualToString:@""]){
+            errmsg = @"连接网络失败，请检查网络状态！";
+        }
+        NSError * error = [[NSError alloc]initWithDomain:errmsg code:0 userInfo:nil];
+        failur(self,error);
+        
+    } failure:^(NSError *error) {
+        failur(self,error);
+    } Progress:^(long long totalBytesWritten, long long totalBytesExpectedToWrite) {
+        
+    }];
+}
+
+
+
 
 @end
