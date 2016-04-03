@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MyUIViewController.h"
 
-@interface quanbu : UIViewController
+@interface quanbu : MyUIViewController
+
+@property (nonatomic, copy) NSString *weiba_id;
 
 @end

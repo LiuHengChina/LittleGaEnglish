@@ -120,6 +120,20 @@
         self.gengduoweibaVC = (gengduoweibo *)segue.destinationViewController;
     }
 }
+- (IBAction)signBtnAction:(id)sender {
+    UIButton *button = sender;
+    NSString *str = button.currentTitle;
+    if ([str isEqualToString:@"签到成功"]) {
+        return;
+    }
+    
+    [[MyApiLunTan share]singSuccess:^(MyApiLunTan *request, NSString *signDate) {
+        [self.signBtn setTitle:@"签到成功" forState:UIControlStateNormal];
+        self.signCountLab.text = [NSString stringWithFormat:@"已经连续签到%@天", signDate];
+    } Failure:^(MyApiLunTan *request, NSError *requestError) {
+        [WDTipsView showTipsViewWithString:requestError.domain];
+    }];
+}
 
 - (void)setMySignModel:(singModel *)mySignModel
 {

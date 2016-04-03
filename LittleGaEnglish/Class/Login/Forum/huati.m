@@ -7,17 +7,27 @@
 //
 
 #import "huati.h"
+#import "MyApiLunTan.h"
+#import "LunTanMainModel.h"
 
 @interface huaticell : UICollectionViewCell
+@property (nonatomic, strong) HotTopicModel *model;
 @property (strong, nonatomic) IBOutlet UILabel *title;
 
 @end
 @implementation huaticell
 
+- (void)setModel:(HotTopicModel *)model
+{
+    _model = model;
+    self.title.text = [NSString weibaStr:model.topic_name];
+}
+
 @end
 
 @interface huati ()<UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout>
 @property (strong, nonatomic) IBOutlet UICollectionView *collection;
+@property (nonatomic, strong) NSMutableArray<HotTopicModel *> *datalist;
 
 @end
 
@@ -28,6 +38,7 @@
     self.navigationController.navigationBar.barStyle = UIStatusBarStyleDefault;
     UIColor *white = [UIColor whiteColor];
     [self.navigationController.navigationBar setTintColor:white];
+    [self getData];
     // Do any additional setup after loading the view.
 }
 
@@ -37,19 +48,36 @@
 }
 -(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
-    return 10;
+    if (self.datalist != nil) {
+        return self.datalist.count;
+    }
+    return 0;
 }
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     huaticell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"huaticell" forIndexPath:indexPath];
-    cell.title.text = @"#测试啊啊#";
+    cell.model = self.datalist[indexPath.row];
     return cell;
 }
 -(CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
-
 {
     return CGSizeMake(self.view.frame.size.width/3, 37.5);
 }
+
+
+- (void)getData
+{
+    [[MyApiLunTan share]getHuaTiListSuccess:^(MyApiLunTan *request, NSMutableArray *array) {
+        self.datalist = array;
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self.collection reloadData];
+        });
+    } Failure:^(MyApiLunTan *request, NSError *requestError) {
+        [WDTipsView showTipsViewWithString:requestError.domain];
+    }];
+}
+
+
 /*
 #pragma mark - Navigation
 

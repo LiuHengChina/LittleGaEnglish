@@ -130,7 +130,7 @@
                                                 <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fgn-IA-Ys0">
                                                     <rect key="frame" x="338" y="209" width="164" height="34"/>
                                                     <subviews>
-                                                        <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s1j-Sk-Dms">
+                                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s1j-Sk-Dms">
                                                             <rect key="frame" x="19" y="4" width="73" height="22"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                             <state key="normal" title="1231" image="liebiaopinglun">
@@ -274,6 +274,10 @@
                                         <constraint firstItem="r6q-hr-TO8" firstAttribute="centerY" secondItem="OjR-AA-zam" secondAttribute="centerY" id="S9I-gP-WtX"/>
                                         <constraint firstItem="BuY-XI-aq0" firstAttribute="centerY" secondItem="OjR-AA-zam" secondAttribute="centerY" id="x1m-AE-oaM"/>
                                     </constraints>
+                                    <connections>
+                                        <outlet property="fabuBtn" destination="BuY-XI-aq0" id="19M-dI-ssc"/>
+                                        <outlet property="huifuBtn" destination="r6q-hr-TO8" id="Z2d-ey-8fK"/>
+                                    </connections>
                                 </collectionReusableView>
                                 <connections>
                                     <outlet property="dataSource" destination="WUN-cm-Zsp" id="9fr-4S-I8u"/>
@@ -937,7 +941,7 @@
                                                             <constraint firstAttribute="width" constant="103" id="rSA-wb-0Pg"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                                        <state key="normal" title="签到成功">
+                                                        <state key="normal" title="今日签到">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         </state>
                                                         <userDefinedRuntimeAttributes>
@@ -946,6 +950,9 @@
                                                             </userDefinedRuntimeAttribute>
                                                             <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                                         </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="signBtnAction:" destination="B7e-7h-1FP" eventType="touchUpInside" id="x1H-HT-Rvw"/>
+                                                        </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="连续签到13天" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Acm-eT-vWs">
                                                         <rect key="frame" x="462" y="61" width="74" height="15"/>

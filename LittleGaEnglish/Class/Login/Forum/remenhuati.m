@@ -42,7 +42,6 @@
 - (IBAction)gengduohuati:(id)sender {
     NSLog(@"更多话题");
     huati *hua = [[UIStoryboard storyboardWithName:@"luntan" bundle:nil] instantiateViewControllerWithIdentifier:@"huati"];
-    
     [self.navigationController pushViewController:hua animated:YES];
     
 }

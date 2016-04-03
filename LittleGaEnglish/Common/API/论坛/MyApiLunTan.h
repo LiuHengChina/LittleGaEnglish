@@ -9,6 +9,8 @@
 #import "BaseNetRequest.h"
 #import "LunTanMainModel.h"
 #import "LunTanListModel.h"
+#import "WeiBaListModel.h"
+#import "HuaTiListModel.h"
 
 @interface MyApiLunTan : BaseNetRequest
 
@@ -27,6 +29,15 @@
                     Success:(void(^)(MyApiLunTan * request , LunTanListModel * model))success
                     Failure:(void(^)(MyApiLunTan * request ,NSError *requestError))failure;
 
+// 签到接口
+- (void)singSuccess:(void(^)(MyApiLunTan * request, NSString *signDate))success
+            Failure:(void(^)(MyApiLunTan * request ,NSError *requestError))failure;
 
+// 话题列表
+- (void)getHuaTiListSuccess:(void(^)(MyApiLunTan * request, NSMutableArray *array))success
+                    Failure:(void(^)(MyApiLunTan * request ,NSError *requestError))failure;
 
+// 微吧列表
+- (void)getWeiBaListSuccess:(void(^)(MyApiLunTan * request, NSMutableArray *array))success
+                    Failure:(void(^)(MyApiLunTan * request ,NSError *requestError))failure;
 @end

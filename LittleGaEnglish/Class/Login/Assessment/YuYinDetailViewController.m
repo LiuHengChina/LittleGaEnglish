@@ -24,9 +24,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+
     [self setCustomNavigationTitle:@"小咖脱口秀语音评测"];
-    [self setLeftBarButtonWithString:@"" responderBlcok:nil];
+    WS(wself);
+    [self setCustomNavLeftBarButton:nil responderBlcok:^{
+        [wself.navigationController popToRootViewControllerAnimated:YES];
+    }];
     self.scoreLab.text =[NSString stringWithFormat:@"%@",self.score];
     self.sampleTextView.text = self.sampleText;
     self.userTextView.text = self.userText;

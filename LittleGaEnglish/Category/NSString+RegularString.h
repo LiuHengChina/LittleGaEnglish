@@ -95,4 +95,6 @@
 
 + (NSString *)weibaStr:(NSString *)str;
 
++ (NSString *)formatWithInter:(NSInteger)time;
+
 @end

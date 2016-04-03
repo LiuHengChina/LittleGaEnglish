@@ -39,17 +39,21 @@
 
 @interface quanbuheader : UICollectionReusableView
 
+@property (strong, nonatomic) IBOutlet UIButton *huifuBtn;
+@property (strong, nonatomic) IBOutlet UIButton *fabuBtn;
+
 @end
 
 @implementation quanbuheader
 
 - (IBAction)zuiixnhuifu:(id)sender {
-    
-    
+//    [_fabuBtn setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
+//    [_huifuBtn setTitleColor:[UIColor customColorWithString:k_Color_navigation] forState:UIControlStateNormal];
 }
 
 - (IBAction)zuixinfatie:(id)sender {
-    
+//    [_huifuBtn setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
+//    [_fabuBtn setTitleColor:[UIColor customColorWithString:k_Color_navigation] forState:UIControlStateNormal];
 }
 
 
@@ -58,16 +62,64 @@
 @interface quanbu ()<UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout>
 @property (strong, nonatomic) IBOutlet UICollectionView *collect;
 @property (nonatomic, strong) LunTanListModel *model;
+@property (nonatomic, strong) NSString *order;
+@property (nonatomic, assign) NSInteger page;
+@property (nonatomic, assign) NSInteger upPage;
+@property (nonatomic, strong) LunTanListModel *replaceModel;
+@property (nonatomic, strong) LunTanListModel *upModel;
+
 @end
 
 @implementation quanbu
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+    self.page = 1;
+    self.upPage = 1;
+    self.order = @"1";
+    
+    self.collect.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
+        self.page = 1;
+        _model = nil;
+        [self getData];
+    }];
+    
+    self.collect.mj_footer = [MJRefreshBackNormalFooter footerWithRefreshingBlock:^{
+        [self getData];
+    }];
+    
     [self getData];
     // Do any additional setup after loading the view.
 }
+
+
+- (void)setModel:(LunTanListModel *)model
+{
+    if(!_model){
+        _model = model;
+    } else{
+        [_model.list addObjectsFromArray:model.list];
+    }
+}
+
+- (void)setUpModel:(LunTanListModel *)upModel
+{
+    if(!_upModel){
+        _upModel = upModel;
+    } else {
+        [_upModel.list addObjectsFromArray:upModel.list];
+    }
+}
+
+- (void)setReplaceModel:(LunTanListModel *)replaceModel
+{
+    if (!_replaceModel) {
+        _replaceModel  = replaceModel;
+    } else {
+        [_replaceModel.list addObjectsFromArray:replaceModel.list];
+    }
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -92,16 +144,26 @@
 {
     quanbuheader *header = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"quanbuheader" forIndexPath:indexPath];
     
+    WS(wself);
     RACSignal *zuixinhuifu = [header rac_signalForSelector:@selector(zuiixnhuifu:)];
     [zuixinhuifu subscribeNext:^(id x) {
         NSLog(@"最新回复");
+        _model = nil;
+        wself.page = 1;
+        wself.order = @"1";
+        [wself getData];
     }];
     RACSignal *zuixinfatie = [header rac_signalForSelector:@selector(zuixinfatie:)];
     [zuixinfatie subscribeNext:^(id x) {
         NSLog(@"最新时间");
+        _model = nil;
+        wself.page = 1;
+        wself.order = @"2";
+        [wself getData];
     }];
     return header;
 }
+
 -(CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     return CGSizeMake(self.view.frame.size.width, 243);
@@ -123,8 +185,16 @@
 }
 
 - (void)getData{
-    [[MyApiLunTan share] getThreadListDataID:nil digest:NO order:@"1" page:@"1" Success:^(MyApiLunTan *request, LunTanListModel *model) {
+    [[MyApiLunTan share] getThreadListDataID:self.weiba_id digest:NO order:self.order page:[NSString stringWithFormat:@"%ld",(long)self.page] Success:^(MyApiLunTan *request, LunTanListModel *model) {
         self.model = model;
+        if (model.list.count == 0) {
+            [self.collect.mj_footer endRefreshingWithNoMoreData];
+            return;
+        }
+        
+        [self.collect.mj_footer endRefreshing];
+        [self.collect.mj_header endRefreshing];
+        
         dispatch_async(dispatch_get_main_queue(), ^{
             [self.collect reloadData];
         });
@@ -132,6 +202,7 @@
         [WDTipsView showTipsViewWithString:requestError.domain];
     }];
 }
+
 
 
 /*

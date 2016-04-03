@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -34,11 +34,8 @@
                     </userDefinedRuntimeAttributes>
                 </textView>
                 <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yuyincepinganniu" translatesAutoresizingMaskIntoConstraints="NO" id="UWM-G7-5W5">
-                    <rect key="frame" x="256.5" y="434.5" width="87" height="87"/>
+                    <rect key="frame" x="256" y="434" width="87" height="87"/>
                     <gestureRecognizers/>
-                    <connections>
-                        <outletCollection property="gestureRecognizers" destination="OXt-f6-Mhm" appends="YES" id="Ay9-EQ-Tz0"/>
-                    </connections>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="klm-Ou-8j0">
                     <rect key="frame" x="274" y="531" width="52.5" height="14.5"/>
@@ -53,23 +50,36 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lYX-WK-0f3" customClass="UAProgressView">
-                    <rect key="frame" x="274" y="448" width="52.5" height="60"/>
+                    <rect key="frame" x="256" y="434" width="87" height="87"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <gestureRecognizers/>
                     <constraints>
                         <constraint firstAttribute="width" constant="52.5" id="BUH-Zw-DcX"/>
                         <constraint firstAttribute="height" constant="60" id="hUx-qO-xzm"/>
                     </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="BUH-Zw-DcX"/>
+                            <exclude reference="hUx-qO-xzm"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="6aC-qN-R6q" appends="YES" id="Cl3-Vv-pAy"/>
+                    </connections>
                 </view>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="E3x-HW-nlp" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="0zj-m1-JBw"/>
-                <constraint firstItem="lYX-WK-0f3" firstAttribute="centerY" secondItem="UWM-G7-5W5" secondAttribute="centerY" id="1N9-Tf-hfg"/>
                 <constraint firstItem="TL2-g9-yXZ" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="2t9-n2-HH8"/>
+                <constraint firstItem="lYX-WK-0f3" firstAttribute="bottom" secondItem="UWM-G7-5W5" secondAttribute="bottom" id="Czg-9h-kwa"/>
                 <constraint firstItem="SFE-pl-PFK" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="EUs-us-zyI"/>
+                <constraint firstItem="lYX-WK-0f3" firstAttribute="top" secondItem="UWM-G7-5W5" secondAttribute="top" id="POF-FQ-0hk"/>
                 <constraint firstItem="UWM-G7-5W5" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="PSf-om-ujW"/>
+                <constraint firstItem="lYX-WK-0f3" firstAttribute="leading" secondItem="UWM-G7-5W5" secondAttribute="leading" id="QoC-r3-3AY"/>
                 <constraint firstItem="klm-Ou-8j0" firstAttribute="top" secondItem="UWM-G7-5W5" secondAttribute="bottom" constant="10" id="R3U-U4-hBu"/>
                 <constraint firstItem="klm-Ou-8j0" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="SxS-zl-d0k"/>
+                <constraint firstItem="lYX-WK-0f3" firstAttribute="trailing" secondItem="UWM-G7-5W5" secondAttribute="trailing" id="TqL-Hf-tIK"/>
                 <constraint firstItem="SFE-pl-PFK" firstAttribute="top" secondItem="TL2-g9-yXZ" secondAttribute="bottom" constant="17.5" id="UCn-lc-m7M"/>
                 <constraint firstItem="UWM-G7-5W5" firstAttribute="top" secondItem="SFE-pl-PFK" secondAttribute="bottom" constant="95" id="alt-aA-QZc"/>
                 <constraint firstItem="TL2-g9-yXZ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="150" id="hzC-ec-UdZ"/>
@@ -77,6 +87,11 @@
                 <constraint firstItem="lYX-WK-0f3" firstAttribute="centerX" secondItem="UWM-G7-5W5" secondAttribute="centerX" id="krR-0d-eNF"/>
                 <constraint firstItem="E3x-HW-nlp" firstAttribute="top" secondItem="klm-Ou-8j0" secondAttribute="bottom" constant="10" id="xJL-bR-Ho2"/>
             </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="krR-0d-eNF"/>
+                </mask>
+            </variation>
             <connections>
                 <outlet property="luyinLab" destination="E3x-HW-nlp" id="S54-b4-T3v"/>
                 <outlet property="previewfer" destination="lYX-WK-0f3" id="eUM-UC-6EM"/>
@@ -84,9 +99,9 @@
                 <outlet property="yuyinText" destination="SFE-pl-PFK" id="Bs3-qJ-ldc"/>
             </connections>
         </view>
-        <tapGestureRecognizer id="OXt-f6-Mhm">
+        <tapGestureRecognizer id="6aC-qN-R6q">
             <connections>
-                <action selector="tapAction:" destination="iN0-l3-epB" id="72J-IO-Wwn"/>
+                <action selector="tapAction:" destination="iN0-l3-epB" id="1fa-sa-359"/>
             </connections>
         </tapGestureRecognizer>
     </objects>

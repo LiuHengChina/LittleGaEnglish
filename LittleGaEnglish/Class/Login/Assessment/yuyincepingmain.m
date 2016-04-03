@@ -56,6 +56,7 @@ static BOOL viewhiden;
 @property (nonatomic, copy) NSString *userText;
 @property (nonatomic, copy) NSString *score;
 @property (nonatomic, assign) BOOL canPlay;
+@property (nonatomic, strong) NSTimer * timer;
 
 @end
 @implementation yuyincepingxiangqing
@@ -63,8 +64,40 @@ static BOOL viewhiden;
 - (void)awakeFromNib
 {
     [self initEngineManager];
+    
+    self.jindubool = true;
+    [self ttttt];
+    self.previewfer.progress = 0;
+    self.datatime = 0;
+//    self.timer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(updateProgress:) userInfo:nil repeats:YES];
+
+    @weakify(self)
+    self.previewfer.didSelectBlock = ^(UAProgressView *progressView){
+        @strongify(self)
+        [self tapAction:nil];
+    };
+    viewhiden = true;
+
+    
 }
 
+-(void)ttttt
+{
+    self.previewfer.tintColor = [UIColor grayColor];
+    self.previewfer.borderWidth = 0;
+    self.previewfer.lineWidth = 2;
+}
+- (void)updateProgress:(NSTimer *)timer {
+    if (self.datatime > 180) {
+        [_enginer stopRecognize];
+        return;
+    }
+    self.datatime++;
+    NSLog(@"总时长180秒 %ld",(long)self.datatime);
+    self.timeLab.text = [NSString formatWithInter:self.datatime];
+    [self.previewfer setProgress:(float)self.datatime/180];
+    
+}
 -(void)initEngineManager
 {
     self.enginer = [EngineManager sharedManager];
@@ -81,10 +114,12 @@ static BOOL viewhiden;
     if (self.canPlay) {
         _isBegin = !_isBegin;
         if (_isBegin) {
+            self.timer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(updateProgress:) userInfo:nil repeats:YES];
             [_enginer setOralText:_yuyinText.text];
             [_enginer startRecognize];
         } else{
             [_enginer stopRecognize];
+            [self.timer invalidate];
         }
     } else {
         [WDTipsView showTipsViewWithString:@"请稍等"];
@@ -211,15 +246,11 @@ static BOOL viewhiden;
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-
-    
-    
-    
     self.title = @"我的测评";
-    self.navigationController.navigationBar.barStyle = UIStatusBarStyleDefault;
-    UIColor *white = [UIColor whiteColor];
-    [self.navigationController.navigationBar setTintColor:white];
+    [self setCustomNavLeftBarButton:nil responderBlcok:nil];
+    //    self.navigationController.navigationBar.barStyle = UIStatusBarStyleDefault;
+//    UIColor *white = [UIColor whiteColor];
+//    [self.navigationController.navigationBar setTintColor:white];
     self.tableView = [[MyUITableView alloc]initWithFrame:self.view.bounds style:UITableViewStylePlain];
     self.tableView.tableFooterView = [UIView new];
     self.tableView.backgroundColor = [UIColor colorWithRed:250.0f/255.0f green:250.0f/255.0f blue:250.0f/255.0f alpha:1];
@@ -228,6 +259,7 @@ static BOOL viewhiden;
     self.view = self.tableView;
     
     [self getData];
+    
     // Do any additional setup after loading the view.
 }
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
@@ -283,17 +315,6 @@ static BOOL viewhiden;
                 self.yuyincepingxiangqing.VC = self;
                 self.yuyincepingxiangqing.dataId = self.dataId;
                 self.title = @"小咖脱口秀语音测评";
-                self.yuyincepingxiangqing.jindubool = true;
-                [self ttttt];
-                self.yuyincepingxiangqing.previewfer.progress = 0;
-                self.yuyincepingxiangqing.datatime = 0;
-                [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(updateProgress:) userInfo:nil repeats:YES];
-                @weakify(self)
-                self.yuyincepingxiangqing.previewfer.didSelectBlock = ^(UAProgressView *progressView){
-                    @strongify(self)
-                    self.yuyincepingxiangqing.jindubool = !self.yuyincepingxiangqing.jindubool;
-                };
-                viewhiden = true;
             });
         }else{
             int seconds = timeout % 120;
@@ -323,21 +344,6 @@ static BOOL viewhiden;
         return NO;
     }
     return YES;
-    
-}
--(void)ttttt
-{
-    self.yuyincepingxiangqing.previewfer.tintColor = [UIColor grayColor];
-    self.yuyincepingxiangqing.previewfer.borderWidth = 0;
-    self.yuyincepingxiangqing.previewfer.lineWidth = 2;
-}
-- (void)updateProgress:(NSTimer *)timer {
-    if (self.yuyincepingxiangqing.jindubool || self.yuyincepingxiangqing.datatime > 180) {
-        return;
-    }
-    self.yuyincepingxiangqing.datatime++;
-    NSLog(@"总时长180秒 %ld",(long)self.yuyincepingxiangqing.datatime);
-    [self.yuyincepingxiangqing.previewfer setProgress:(float)self.yuyincepingxiangqing.datatime/180];
     
 }
 

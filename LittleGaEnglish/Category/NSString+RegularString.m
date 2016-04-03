@@ -405,4 +405,24 @@
 }
 
 
++ (NSString *)formatWithInter:(NSInteger)time
+{
+    NSString *tmphh = [NSString stringWithFormat:@"%ld",time/3600];
+    if ([tmphh length] == 1)
+    {
+        tmphh = [NSString stringWithFormat:@"0%@",tmphh];
+    }
+    NSString *tmpmm = [NSString stringWithFormat:@"%ld",(time/60)%60];
+    if ([tmpmm length] == 1)
+    {
+        tmpmm = [NSString stringWithFormat:@"0%@",tmpmm];
+    }
+    NSString *tmpss = [NSString stringWithFormat:@"%ld",time%60];
+    if ([tmpss length] == 1)
+    {
+        tmpss = [NSString stringWithFormat:@"0%@",tmpss];
+    }
+    return [NSString stringWithFormat:@"%@:%@:%@",tmphh,tmpmm,tmpss]; 
+}
+
 @end
