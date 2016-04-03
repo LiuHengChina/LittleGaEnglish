@@ -87,7 +87,6 @@
 }
 -(void)viewDidAppear:(BOOL)animated
 {
-    NSLog(@"dsdds");
     WS(wself);
     [[self.header.huifuBtn rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(id x) {
         _model = nil;
@@ -149,8 +148,10 @@
     quanbucell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"quanbucell" forIndexPath:indexPath];
     cell.widht.constant = self.view.frame.size.width/3;
     cell.moedl = self.model.list[indexPath.row];
+    cell.pinglunLab.tag = indexPath.row;
     return cell;
 }
+
 -(UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath
 {
 
@@ -214,6 +215,11 @@
     } Failure:^(MyApiLunTan *request, NSError *requestError) {
         [WDTipsView showTipsViewWithString:requestError.domain];
     }];
+}
+- (IBAction)pinglubuttonpd:(id)sender {
+    NSLog(@"点击评论的位置   %ld",[sender tag]);
+    [self performSegueWithIdentifier:@"pinglunone" sender:self];
+    
 }
 
 
