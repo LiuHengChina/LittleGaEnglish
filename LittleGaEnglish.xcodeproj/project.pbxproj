@@ -188,6 +188,7 @@
 		9A7448251CAF87AD009D3F42 /* dakaxiangqing.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A7448241CAF87AD009D3F42 /* dakaxiangqing.m */; };
 		9A7448281CAFA055009D3F42 /* zhifujiemianone.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A7448271CAFA055009D3F42 /* zhifujiemianone.m */; };
 		9A74482B1CAFA060009D3F42 /* zhifushibai.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A74482A1CAFA060009D3F42 /* zhifushibai.m */; };
+		9A7448351CB0DB49009D3F42 /* comentpost.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A7448341CB0DB49009D3F42 /* comentpost.m */; };
 		9ADCCDCE1C93E639002F269F /* yuyincepingview.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ADCCDCD1C93E639002F269F /* yuyincepingview.m */; };
 		9ADCCDD21C93FF9D002F269F /* daojishiview.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9ADCCDD11C93FF9D002F269F /* daojishiview.xib */; };
 		9ADCCDDA1C940897002F269F /* yuyinpingce.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9ADCCDD91C940897002F269F /* yuyinpingce.xib */; };
@@ -578,6 +579,8 @@
 		9A7448271CAFA055009D3F42 /* zhifujiemianone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = zhifujiemianone.m; sourceTree = "<group>"; };
 		9A7448291CAFA05F009D3F42 /* zhifushibai.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zhifushibai.h; sourceTree = "<group>"; };
 		9A74482A1CAFA060009D3F42 /* zhifushibai.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = zhifushibai.m; sourceTree = "<group>"; };
+		9A7448331CB0DB49009D3F42 /* comentpost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = comentpost.h; sourceTree = "<group>"; };
+		9A7448341CB0DB49009D3F42 /* comentpost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = comentpost.m; sourceTree = "<group>"; };
 		9ADCCDCC1C93E639002F269F /* yuyincepingview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yuyincepingview.h; sourceTree = "<group>"; };
 		9ADCCDCD1C93E639002F269F /* yuyincepingview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = yuyincepingview.m; sourceTree = "<group>"; };
 		9ADCCDD11C93FF9D002F269F /* daojishiview.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = daojishiview.xib; sourceTree = "<group>"; };
@@ -1148,6 +1151,8 @@
 				9A7448211CAF6D47009D3F42 /* weibaxiangqing.m */,
 				9A7448231CAF87AD009D3F42 /* dakaxiangqing.h */,
 				9A7448241CAF87AD009D3F42 /* dakaxiangqing.m */,
+				9A7448331CB0DB49009D3F42 /* comentpost.h */,
+				9A7448341CB0DB49009D3F42 /* comentpost.m */,
 				9A1E1F331C9AB00800D77564 /* luntan.storyboard */,
 			);
 			name = Forum;
@@ -1865,6 +1870,7 @@
 				852623DE1CA3A338006F6C29 /* YuYinDetailViewController.m in Sources */,
 				045B6B6F1CABDE46000B38AF /* TwoListCell.m in Sources */,
 				85230AEA1C7319FD00B6A48A /* MyNavigationController.m in Sources */,
+				9A7448351CB0DB49009D3F42 /* comentpost.m in Sources */,
 				85230AD41C73048F00B6A48A /* UIViewController+Category.m in Sources */,
 				85E5779C1CA658AB00710C39 /* MyApiLunTan.m in Sources */,
 				9A7448251CAF87AD009D3F42 /* dakaxiangqing.m in Sources */,
