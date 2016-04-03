@@ -327,22 +327,25 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="点击录制" translatesAutoresizingMaskIntoConstraints="NO" id="rSW-RV-PQN">
-                                                <rect key="frame" x="208" y="178.5" width="73" height="26"/>
+                                                <rect key="frame" x="208" y="178" width="73" height="26"/>
                                                 <gestureRecognizers/>
                                                 <connections>
-                                                    <outletCollection property="gestureRecognizers" destination="Hk5-eV-hfa" appends="YES" id="TsF-Mp-LCM"/>
+                                                    <outletCollection property="gestureRecognizers" destination="6Kx-t7-Acp" appends="YES" id="AiO-vG-MZC"/>
                                                 </connections>
                                             </imageView>
                                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="重新录制" translatesAutoresizingMaskIntoConstraints="NO" id="rQF-25-fWs">
-                                                <rect key="frame" x="318" y="178.5" width="73" height="26"/>
+                                                <rect key="frame" x="318" y="178" width="73" height="26"/>
                                                 <gestureRecognizers/>
                                                 <connections>
-                                                    <outletCollection property="gestureRecognizers" destination="6SQ-8V-zXd" appends="YES" id="Ww2-W2-ply"/>
+                                                    <outletCollection property="gestureRecognizers" destination="feX-FN-8Jf" appends="YES" id="y59-Uw-xmx"/>
                                                 </connections>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j9J-dZ-P8J">
                                                 <rect key="frame" x="256" y="50" width="87" height="87"/>
                                                 <state key="normal" image="yuyincepinganniu"/>
+                                                <connections>
+                                                    <action selector="luzhi:" destination="TPC-Pt-aJK" eventType="touchUpInside" id="5ia-lE-3w5"/>
+                                                </connections>
                                             </button>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8aa-MN-NHm" customClass="UAProgressView">
                                                 <rect key="frame" x="273" y="68" width="53" height="51"/>
@@ -352,9 +355,6 @@
                                                     <constraint firstAttribute="height" constant="51" id="d27-hP-5s5"/>
                                                     <constraint firstAttribute="width" constant="53" id="duk-nn-Odu"/>
                                                 </constraints>
-                                                <connections>
-                                                    <outletCollection property="gestureRecognizers" destination="PNh-wO-Wcn" appends="YES" id="bQf-mC-zgs"/>
-                                                </connections>
                                             </view>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -411,15 +411,19 @@
                                             <constraint firstAttribute="width" constant="30" id="McM-Hj-SEK"/>
                                         </constraints>
                                         <connections>
-                                            <outletCollection property="gestureRecognizers" destination="IcI-X8-VSz" appends="YES" id="Ia4-iJ-MVF"/>
+                                            <outletCollection property="gestureRecognizers" destination="THR-l4-RoM" appends="YES" id="A1K-EW-yiK"/>
                                         </connections>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="plusadd" translatesAutoresizingMaskIntoConstraints="NO" id="4CH-5Y-bMj">
+                                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="plusadd" translatesAutoresizingMaskIntoConstraints="NO" id="4CH-5Y-bMj">
                                         <rect key="frame" x="55" y="5" width="30" height="30"/>
+                                        <gestureRecognizers/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="30" id="BjE-Xs-wL6"/>
                                             <constraint firstAttribute="height" constant="30" id="inZ-UP-S4D"/>
                                         </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="dYR-Jp-a6D" appends="YES" id="6rm-II-6Ou"/>
+                                        </connections>
                                     </imageView>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SSn-A5-aQ3">
                                         <rect key="frame" x="95" y="5" width="410" height="30"/>
@@ -444,15 +448,27 @@
                                     <constraint firstItem="few-YT-o2R" firstAttribute="leading" secondItem="0il-Ub-zaT" secondAttribute="leading" constant="15" id="zgd-UY-wNC"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NQK-Aq-XRp">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="310"/>
+                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="219-8o-zRg" appends="YES" id="Q2V-vy-zN0"/>
+                                </connections>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.4965424408783784" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="NQK-Aq-XRp" firstAttribute="top" secondItem="x1s-tv-ie9" secondAttribute="bottom" id="4OD-2o-Yg9"/>
+                            <constraint firstItem="0il-Ub-zaT" firstAttribute="top" secondItem="NQK-Aq-XRp" secondAttribute="bottom" id="54c-CQ-VsF"/>
                             <constraint firstItem="0il-Ub-zaT" firstAttribute="leading" secondItem="1hz-SU-JB2" secondAttribute="leading" id="8Ba-8Y-pPq"/>
                             <constraint firstAttribute="trailing" secondItem="eHx-Fc-vsw" secondAttribute="trailing" id="9xD-RX-fYG"/>
                             <constraint firstAttribute="trailing" secondItem="0il-Ub-zaT" secondAttribute="trailing" id="BEy-7x-saU"/>
                             <constraint firstItem="eHx-Fc-vsw" firstAttribute="leading" secondItem="1hz-SU-JB2" secondAttribute="leading" id="G3t-Mx-Dae"/>
                             <constraint firstItem="eHx-Fc-vsw" firstAttribute="top" secondItem="x1s-tv-ie9" secondAttribute="bottom" constant="350" id="Laj-aQ-GUd"/>
+                            <constraint firstItem="NQK-Aq-XRp" firstAttribute="leading" secondItem="1hz-SU-JB2" secondAttribute="leading" id="QFz-Jm-gnE"/>
                             <constraint firstItem="eHx-Fc-vsw" firstAttribute="top" secondItem="0il-Ub-zaT" secondAttribute="bottom" id="ShY-3v-AIZ"/>
+                            <constraint firstAttribute="trailing" secondItem="NQK-Aq-XRp" secondAttribute="trailing" id="aXX-qB-4Sv"/>
                             <constraint firstItem="6zi-oq-e2F" firstAttribute="top" secondItem="eHx-Fc-vsw" secondAttribute="bottom" id="cmY-ze-6wX"/>
                         </constraints>
                     </view>
@@ -462,31 +478,37 @@
                         <outlet property="pingluntext" destination="SSn-A5-aQ3" id="PiY-oi-Jx9"/>
                         <outlet property="proess" destination="8aa-MN-NHm" id="9Nc-YU-OLk"/>
                         <outlet property="scroller" destination="eHx-Fc-vsw" id="t7j-YV-nKp"/>
+                        <segue destination="0mK-wf-F9O" kind="presentation" identifier="xuangezhaopian" modalPresentationStyle="overFullScreen" modalTransitionStyle="crossDissolve" id="ODe-VB-RFh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yH2-nR-8wK" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="IcI-X8-VSz">
+                <tapGestureRecognizer id="THR-l4-RoM">
                     <connections>
-                        <action selector="luyinanniu:" destination="TPC-Pt-aJK" id="oMB-Sp-XXm"/>
+                        <action selector="luyinanniu:" destination="TPC-Pt-aJK" id="Ops-Yd-Gx7"/>
                     </connections>
                 </tapGestureRecognizer>
-                <tapGestureRecognizer id="Hk5-eV-hfa">
+                <tapGestureRecognizer id="6Kx-t7-Acp">
                     <connections>
-                        <action selector="dianjiluzhi:" destination="TPC-Pt-aJK" id="nVL-Yp-OGc"/>
+                        <action selector="dianjiluzhi:" destination="TPC-Pt-aJK" id="Udl-ON-aaf"/>
                     </connections>
                 </tapGestureRecognizer>
-                <tapGestureRecognizer id="6SQ-8V-zXd">
+                <tapGestureRecognizer id="feX-FN-8Jf">
                     <connections>
-                        <action selector="chongxinluzhi:" destination="TPC-Pt-aJK" id="kdp-If-B2x"/>
+                        <action selector="chongxinluzhi:" destination="TPC-Pt-aJK" id="K6p-9C-uSP"/>
                     </connections>
                 </tapGestureRecognizer>
-                <tapGestureRecognizer id="PNh-wO-Wcn">
+                <tapGestureRecognizer id="219-8o-zRg">
                     <connections>
-                        <action selector="dianjiluzhidaanniu:" destination="TPC-Pt-aJK" id="mH5-LU-EYt"/>
+                        <action selector="dismissfanhui:" destination="TPC-Pt-aJK" id="EoA-kx-YMP"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="dYR-Jp-a6D">
+                    <connections>
+                        <action selector="xuanzezhaopian:" destination="TPC-Pt-aJK" id="qQM-mD-o4h"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="4087" y="405"/>
+            <point key="canvasLocation" x="4267" y="435"/>
         </scene>
         <!--Weibaxiangqing-->
         <scene sceneID="Ge9-ZK-lUs">
@@ -2417,6 +2439,9 @@
                             <outletCollection property="gestureRecognizers" destination="d18-aF-cTy" appends="YES" id="qV3-fp-Vv1"/>
                         </connections>
                     </view>
+                    <connections>
+                        <outlet property="addimage" destination="ovJ-A8-jmv" id="ZVv-pr-C12"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YqL-7u-P4a" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="d18-aF-cTy">
@@ -2497,7 +2522,7 @@
         <image name="重新录制" width="73" height="26"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="ODe-VB-RFh"/>
         <segue reference="2m3-ae-V57"/>
-        <segue reference="PXa-7M-Q4R"/>
     </inferredMetricsTieBreakers>
 </document>

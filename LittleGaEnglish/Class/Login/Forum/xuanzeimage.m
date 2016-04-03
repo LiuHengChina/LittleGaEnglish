@@ -9,6 +9,7 @@
 #import "xuanzeimage.h"
 
 @interface xuanzeimage ()<UIImagePickerControllerDelegate,UINavigationControllerDelegate>
+@property (strong, nonatomic) IBOutlet UIButton *addimage;
 
 @end
 
@@ -16,6 +17,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    if (self.hahabool) {
+        self.addimage.hidden = YES;
+    }
     // Do any additional setup after loading the view.
 }
 

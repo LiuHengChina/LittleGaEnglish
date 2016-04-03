@@ -12,4 +12,5 @@
 
 @property (copy,nonatomic) void (^callback)(UIImage *);
 
+@property (assign,nonatomic) BOOL hahabool;
 @end
