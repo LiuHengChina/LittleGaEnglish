@@ -77,6 +77,13 @@
     }];
 }
 
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (self.selectBlock) {
+        self.selectBlock(self.datalist[indexPath.row]);
+    }
+}
+
 
 /*
 #pragma mark - Navigation

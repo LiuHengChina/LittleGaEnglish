@@ -94,5 +94,17 @@
     return reSizeImage;
 }
 
++ (UIImage *)yasuoImage:(UIImage *)image
+{
+     NSData * data = UIImageJPEGRepresentation(image, 1);
+    UIImage *myImage;
+    if (data.length > 10000) {
+        myImage = [UIImage imageWithData:UIImageJPEGRepresentation(image, 0.1)];
+    } else {
+        return image;
+    }
+    return myImage;
+}
+
 
 @end

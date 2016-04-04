@@ -7,6 +7,7 @@
 //
 
 #import "MyApiLunTan.h"
+#import "EngineManager.h"
 
 @implementation MyApiLunTan
 
@@ -179,9 +180,10 @@
         return;
     }
 
+    UIImage *myImage = [UIImage yasuoImage:picture];
     NSDictionary * dic = @{};
     
-    [super uploadFileWithUrl:k_url_imageupLoad params:dic image:picture success:^(id json) {
+    [super uploadFileWithUrl:k_url_imageupLoad params:dic image:myImage success:^(id json) {
         
         NSString * errmsg = @"";
         if (json) {
@@ -201,10 +203,159 @@
     } failure:^(NSError *error) {
         failur(self,error);
     } Progress:^(long long totalBytesWritten, long long totalBytesExpectedToWrite) {
-        
+        NSLog(@"已上传 %lld, 共 %lld", totalBytesWritten , totalBytesExpectedToWrite);
     }];
 }
 
+
+// 上传文件
+- (void)sendYuYinSuccess:(void (^)(MyApiLunTan *request, VoiceModel *model))success
+                 Failure:(void (^)(MyApiLunTan *request, NSError *error))failur
+{
+    NSArray *paths = NSSearchPathForDirectoriesInDomains( NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentsDirectory = [paths objectAtIndex:0];
+    NSString *path = [documentsDirectory stringByAppendingPathComponent:FILE_NAME_RECORDING];
+    
+    [super uploadFileWithUrl:k_url_voiceuoLoad params:@{} FilePath:path success:^(id json) {
+        
+        NSString * errmsg = @"";
+        if (json) {
+            VoiceModel * responseModel = [[VoiceModel alloc]initWithDictionary:json error:nil];
+            errmsg = responseModel.info;
+            if (responseModel.status == 1) {
+                success(self,responseModel);
+                return;
+            }
+        }
+        if(!errmsg || [errmsg isEqualToString:@""]){
+            errmsg = @"连接网络失败，请检查网络状态！";
+        }
+        NSError * error = [[NSError alloc]initWithDomain:errmsg code:0 userInfo:nil];
+        failur(self,error);
+    } failure:^(NSError *error) {
+        failur(self,error);
+    }];
+
+}
+
+
+// 发布帖子
+- (void)upThreadWithTitle:(NSString *)title
+                  content:(NSString *)content
+                 weiba_id:(NSString *)weiba_id
+                   urlStr:(NSString *)imageUrl
+                 vocie_id:(NSString *)voice_id
+                flash_url:(NSString *)flash_url
+                  Success:(void (^)(MyApiLunTan *request))success
+                  Failure:(void (^)(MyApiLunTan *request, NSError *error))failur
+{
+    if (title == nil || [title isEmpty]) {
+        [WDTipsView showTipsViewWithString:@"请输入标题"];
+        return;
+    }
+    if (content == nil || [content isEmpty]) {
+        [WDTipsView showTipsViewWithString:@"请输入正文"];
+        return;
+    }
+    if (weiba_id == nil || [weiba_id isEmpty]) {
+        [WDTipsView showTipsViewWithString:@"请选择所属微吧"];
+        return;
+    }
+    
+    NSMutableDictionary *dic = [NSMutableDictionary dictionary];
+    [dic setValue:title forKey:@"title"];
+    [dic setValue:content forKey:@"content"];
+    [dic setValue:weiba_id forKey:@"weiba_id"];
+    
+    if (imageUrl != nil && ! [imageUrl isEmpty]) {
+        [dic setValue:imageUrl forKey:@"urlstr"];
+    }
+
+    if (voice_id != nil && ! [voice_id isEmpty]) {
+        [dic setValue:voice_id forKey:@"voice_id"];
+    }
+    if (flash_url != nil && ! [flash_url isEmpty]) {
+        [dic setValue:flash_url forKey:@"flash_url"];
+    }
+    
+    [super postWithUrl:k_url_postThread params:dic success:^(id json) {
+        
+        NSString * errmsg = @"";
+        if (json) {
+            BaseModel * responseModel = [[BaseModel alloc]initWithDictionary:json error:nil];
+            errmsg = responseModel.info;
+            if (responseModel.status == 1) {
+                success(self);
+                return;
+            }
+        }
+        if(!errmsg || [errmsg isEqualToString:@""]){
+            errmsg = @"连接网络失败，请检查网络状态！";
+        }
+        NSError * error = [[NSError alloc]initWithDomain:errmsg code:0 userInfo:nil];
+        failur(self,error);
+        
+    } failure:^(NSError *error) {
+        failur(self,error);
+    }];
+}
+
+
+// 发布话题
+- (void)upTopicWithTitle:(NSString *)title
+                 content:(NSString *)content
+                  urlStr:(NSString *)imageUrl
+                vocie_id:(NSString *)voice_id
+               flash_url:(NSString *)flash_url
+                 Success:(void (^)(MyApiLunTan *request))success
+                 Failure:(void (^)(MyApiLunTan *request, NSError *error))failur
+{
+    if (title == nil || [title isEmpty]) {
+        [WDTipsView showTipsViewWithString:@"请输入标题"];
+        return;
+    }
+    if (content == nil || [content isEmpty]) {
+        [WDTipsView showTipsViewWithString:@"请输入正文"];
+        return;
+    }
+    
+    NSMutableDictionary *dic = [NSMutableDictionary dictionary];
+    [dic setValue:title forKey:@"title"];
+    [dic setValue:content forKey:@"content"];
+    
+    if (imageUrl != nil && ! [imageUrl isEmpty]) {
+        [dic setValue:imageUrl forKey:@"urlstr"];
+    }
+    
+    if (voice_id != nil && ! [voice_id isEmpty]) {
+        [dic setValue:voice_id forKey:@"voice_id"];
+    }
+    if (flash_url != nil && ! [flash_url isEmpty]) {
+        [dic setValue:flash_url forKey:@"flash_url"];
+    }
+    
+    [super postWithUrl:k_url_postTopic params:dic success:^(id json) {
+        
+        NSString * errmsg = @"";
+        if (json) {
+            BaseModel * responseModel = [[BaseModel alloc]initWithDictionary:json error:nil];
+            errmsg = responseModel.info;
+            if (responseModel.status == 1) {
+                success(self);
+                return;
+            }
+        }
+        if(!errmsg || [errmsg isEqualToString:@""]){
+            errmsg = @"连接网络失败，请检查网络状态！";
+        }
+        NSError * error = [[NSError alloc]initWithDomain:errmsg code:0 userInfo:nil];
+        failur(self,error);
+        
+    } failure:^(NSError *error) {
+        failur(self,error);
+    }];
+
+}
 
 
 

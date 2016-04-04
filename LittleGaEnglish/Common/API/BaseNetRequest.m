@@ -197,10 +197,9 @@
             success(json);
         }
     } failure:^(NSError *error) {
-//        NSLog(@"base request NSError %@ ",error);
+        NSLog(@"base request NSError %@ ",error);
         if (failure) {
-            NSError * myError = [[NSError alloc]initWithDomain:@"有米有连接网络失败，请检查网络状态！" code:-1 userInfo:nil];
-            failure(myError);
+            failure(error);
         }
     } Progress:^(long long totalBytesWritten, long long totalBytesExpectedToWrite) {
         if (progress) {
@@ -225,13 +224,17 @@
     [self returnMsg_to_digest];
     NSString * urlStr = [NSString stringWithFormat:@"%@%@",kURL,urlPath];
     
-    [[WDNetAPIRequestWithAFNManage share]uploadFileWithMethod:@"POST" URL:urlStr Params:params FilePath:file HTTPHeader:self.HTTPHeaderFieldPara success:^(id json) {
+    NSMutableDictionary *dic = [NSMutableDictionary dictionaryWithDictionary:params];
+    [dic setValue:[UserDao share].user.uid forKey:@"uid"];
+    [dic setValue:[UserDao share].user.token forKey:@"token"];
+    
+    [[WDNetAPIRequestWithAFNManage share]uploadFileWithMethod:@"POST" URL:urlStr Params:dic FilePath:file HTTPHeader:self.HTTPHeaderFieldPara success:^(id json) {
         if (success) {
             success(json);
         }
     } failure:^(NSError *error) {
         if (failure) {
-            NSError * myError = [[NSError alloc]initWithDomain:@"有米有连接网络失败，请检查网络状态！" code:-1 userInfo:nil];
+            NSError * myError = [[NSError alloc]initWithDomain:@"连接网络失败，请检查网络状态！" code:-1 userInfo:nil];
             failure(myError);
         }
     }];

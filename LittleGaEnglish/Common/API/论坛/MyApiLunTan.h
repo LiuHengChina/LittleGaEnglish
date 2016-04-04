@@ -12,6 +12,7 @@
 #import "WeiBaListModel.h"
 #import "HuaTiListModel.h"
 #import "ImageModel.h"
+#import "VoiceModel.h"
 
 @interface MyApiLunTan : BaseNetRequest
 
@@ -54,7 +55,29 @@
                                         Success:(void (^)(MyApiLunTan *request, ImageModel *model))success
                                         Failure:(void (^)(MyApiLunTan *request, NSError *error))failur;
 
-//- (void)sendYuYin
+// 上传文件
+- (void)sendYuYinSuccess:(void (^)(MyApiLunTan *request, VoiceModel *model))success
+                 Failure:(void (^)(MyApiLunTan *request, NSError *error))failur;
 
+
+
+// 发布帖子
+- (void)upThreadWithTitle:(NSString *)title
+                  content:(NSString *)content
+                 weiba_id:(NSString *)weiba_id
+                   urlStr:(NSString *)imageUrl
+                 vocie_id:(NSString *)voice_id
+                flash_url:(NSString *)flash_url
+                  Success:(void (^)(MyApiLunTan *request))success
+                  Failure:(void (^)(MyApiLunTan *request, NSError *error))failur;
+
+// 发布话题
+- (void)upTopicWithTitle:(NSString *)title
+                 content:(NSString *)content
+                  urlStr:(NSString *)imageUrl
+                vocie_id:(NSString *)voice_id
+               flash_url:(NSString *)flash_url
+                 Success:(void (^)(MyApiLunTan *request))success
+                 Failure:(void (^)(MyApiLunTan *request, NSError *error))failur;
 
 @end

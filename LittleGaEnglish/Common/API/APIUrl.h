@@ -55,3 +55,9 @@ UIKIT_EXTERN NSString *const k_url_topicList; // 话题列表
 UIKIT_EXTERN NSString *const k_url_forumList; // 微吧列表
 
 UIKIT_EXTERN NSString *const k_url_imageupLoad; // 图片上传
+
+UIKIT_EXTERN NSString *const k_url_voiceuoLoad; // 语音文件上传
+
+UIKIT_EXTERN NSString *const k_url_postThread;    // 发布帖子
+
+UIKIT_EXTERN NSString *const k_url_postTopic; // 发布话题

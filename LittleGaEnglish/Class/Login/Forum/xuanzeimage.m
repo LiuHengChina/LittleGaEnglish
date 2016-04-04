@@ -25,14 +25,13 @@
 }
 - (IBAction)paizhao:(id)sender {
     //先设定sourceType为相机，然后判断相机是否可用（ipod）没相机，不可用将sourceType设定为相片库
-    UIImagePickerControllerSourceType sourceType = UIImagePickerControllerSourceTypeCamera;
-    sourceType = UIImagePickerControllerSourceTypeCamera; //照相机
-    //sourceType = UIImagePickerControllerSourceTypePhotoLibrary; //图片库
-    UIImagePickerController *picker = [[UIImagePickerController alloc] init];//初始化
+    
+    UIImagePickerController *picker = [[UIImagePickerController alloc]init];
+    picker.view.backgroundColor = [UIColor orangeColor];
+    UIImagePickerControllerSourceType sourcheType = UIImagePickerControllerSourceTypeCamera;
+    picker.sourceType = sourcheType;
     picker.delegate = self;
-    picker.allowsEditing = NO;//设置可编辑
-    picker.cameraDevice = UIImagePickerControllerCameraCaptureModePhoto;
-    picker.sourceType = sourceType;
+    picker.allowsEditing = NO;
     [self presentViewController:picker animated:YES completion:nil];//进入照相界面
     
 }

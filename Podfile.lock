@@ -34,6 +34,7 @@ PODS:
   - SDWebImage (3.7.5):
     - SDWebImage/Core (= 3.7.5)
   - SDWebImage/Core (3.7.5)
+  - SVProgressHUD (1.1.3)
   - THSegmentedPager (1.1.3):
     - HMSegmentedControl (~> 1.5.2)
   - UAProgressView (0.1.3)
@@ -45,6 +46,7 @@ DEPENDENCIES:
   - MJRefresh
   - ReactiveCocoa (~> 2.5)
   - SDWebImage (~> 3.7.1)
+  - SVProgressHUD
   - THSegmentedPager (~> 1.1.3)
   - UAProgressView (~> 0.1.3)
 
@@ -56,6 +58,7 @@ SPEC CHECKSUMS:
   MJRefresh: 743e6404967d1c2c688472ea3ecfde247d872db4
   ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
   SDWebImage: 69c6303e3348fba97e03f65d65d4fbc26740f461
+  SVProgressHUD: 748080e4f36e603f6c02aec292664239df5279c1
   THSegmentedPager: 9d4fb2acc78d77246caf1e71d2e878bf5977b904
   UAProgressView: ce49aee47c14df6dc372f6fd57852f570ca97e6b
 

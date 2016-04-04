@@ -25,5 +25,6 @@
 
 + (UIImage *)reSizeImage:(UIImage *)image toSize:(CGSize)reSize;
 
++ (UIImage *)yasuoImage:(UIImage *)image;
 
 @end

@@ -53,3 +53,9 @@ NSString *const k_url_topicList = @"/bbs/topicList"; // 话题列表
 NSString *const k_url_forumList = @"/bbs/forumList"; // 微吧列表
 
 NSString *const k_url_imageupLoad = @"/bbs/imgupload"; // 图片上传
+
+NSString *const k_url_voiceuoLoad = @"/bbs/voiceupload"; // 语音文件上传
+
+NSString *const k_url_postThread = @"/bbs/postThread";    // 发布帖子
+
+NSString *const k_url_postTopic = @"/bbs/postTopic"; // 发布话题

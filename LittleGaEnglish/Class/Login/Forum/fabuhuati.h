@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface fabuhuati : UIViewController
+@interface fabuhuati : UIViewController 
 
 @end

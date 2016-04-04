@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "LunTanMainModel.h"
 
 @interface huati : UIViewController
+
+@property (nonatomic, copy) void(^selectBlock)(HotTopicModel *model);
 
 @end

@@ -69,7 +69,6 @@ static BOOL viewhiden;
     [self ttttt];
     self.previewfer.progress = 0;
     self.datatime = 0;
-//    self.timer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(updateProgress:) userInfo:nil repeats:YES];
 
     @weakify(self)
     self.previewfer.didSelectBlock = ^(UAProgressView *progressView){

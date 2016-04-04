@@ -41,7 +41,6 @@
 }
 - (IBAction)weiba:(id)sender {
     weiba *wei = [[UIStoryboard storyboardWithName:@"luntan" bundle:nil] instantiateViewControllerWithIdentifier:@"weiba"];
-    wei.str = @"传值";
     [self.navigationController pushViewController:wei animated:YES];
 }
 

@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
+#import "LunTanMainModel.h"
 @interface weiba : UIViewController
 
-@property (nonatomic,strong) NSString *str;
+@property (nonatomic, copy) void(^selectBlock)(HotWeibaModel *model);
 
 @end

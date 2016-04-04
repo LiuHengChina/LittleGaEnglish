@@ -226,9 +226,9 @@
     NSMutableURLRequest * urlRequest = [requestSerializer multipartFormRequestWithMethod:method URLString:urlPath parameters:para constructingBodyWithBlock:^(id<AFMultipartFormData> formData) {
         
         [formData appendPartWithFileData:fileData
-                                    name:@"db"
-                                fileName:@"YMYOfflineCache.sqlite"
-                                mimeType:@"application/octet-stream"];//file/sqlite
+                                    name:@"voice"
+                                fileName:@"record.mp3"
+                                mimeType:@"audio/mpeg"];//file/sqlite
         
         //任意的二进制数据MIMEType application/octet-stream
         

@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
+#import "VoiceModel.h"
 @interface luyinjiemian : UIViewController
+
+@property (nonatomic, copy) void (^dataBlock)(VoiceModel *model);
 
 @end

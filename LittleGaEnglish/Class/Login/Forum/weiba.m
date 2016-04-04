@@ -36,7 +36,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    NSLog(@"%@",self.str);
     self.title = @"全部微吧";
     self.navigationController.navigationBar.barStyle = UIStatusBarStyleDefault;
     UIColor *white = [UIColor whiteColor];
@@ -80,6 +79,14 @@
     } Failure:^(MyApiLunTan *request, NSError *requestError) {
         [WDTipsView showTipsViewWithString:requestError.domain];
     }];
+}
+
+
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    if(self.selectBlock){
+        self.selectBlock(self.dataArr[indexPath.row]);
+    }
 }
 
 /*
