@@ -61,3 +61,11 @@ UIKIT_EXTERN NSString *const k_url_voiceuoLoad; // 语音文件上传
 UIKIT_EXTERN NSString *const k_url_postThread;    // 发布帖子
 
 UIKIT_EXTERN NSString *const k_url_postTopic; // 发布话题
+
+UIKIT_EXTERN NSString *const k_url_threadShow;  // 帖子详情
+
+UIKIT_EXTERN NSString *const k_url_topicShow;  // 话题详情
+
+UIKIT_EXTERN NSString *const k_url_digThread;  // 帖子和帖子回复点赞接口
+
+UIKIT_EXTERN NSString *const k_url_favThread; // 帖子收藏接口

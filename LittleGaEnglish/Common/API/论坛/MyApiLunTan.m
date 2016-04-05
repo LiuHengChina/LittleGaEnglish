@@ -8,6 +8,11 @@
 
 #import "MyApiLunTan.h"
 #import "EngineManager.h"
+#import "MP3Player.h"
+
+@interface MyApiLunTan ()
+@property (nonatomic, strong) MP3Player *mp3;
+@end
 
 @implementation MyApiLunTan
 
@@ -216,7 +221,11 @@
     NSString *documentsDirectory = [paths objectAtIndex:0];
     NSString *path = [documentsDirectory stringByAppendingPathComponent:FILE_NAME_RECORDING];
     
-    [super uploadFileWithUrl:k_url_voiceuoLoad params:@{} FilePath:path success:^(id json) {
+    self.mp3 = [[MP3Player alloc]init];
+    [self.mp3 playWithFile:path];
+
+    NSString *time = [NSString TimeformatFromSeconds:self.mp3.getDuration];
+    [super uploadFileWithUrl:k_url_voiceuoLoad params:@{@"time_long":time} FilePath:path success:^(id json) {
         
         NSString * errmsg = @"";
         if (json) {
@@ -357,6 +366,143 @@
 
 }
 
+// 帖子内容页
+- (void)getThreadDetailWithThread_id:(NSString *)thread_id
+                                page:(NSString *)page
+                             Success:(void (^)(MyApiLunTan *request, ThreadDetailModel *model))success
+                             Failure:(void (^)(MyApiLunTan *request, NSError *error))failur
+{
+    if ( thread_id == nil || [thread_id isEmpty]) {
+        [WDTipsView showTipsViewWithString:@"数据错误"];
+        return;
+    }
+    
+    NSDictionary *dic = @{@"thread_id": thread_id,
+                          @"page":page};
+    
+    
+    [super postWithUrl:k_url_threadShow params:dic success:^(id json) {
+        
+        NSString * errmsg = @"";
+        if (json) {
+            ThreadDetailModel * responseModel = [[ThreadDetailModel alloc]initWithDictionary:json error:nil];
+            errmsg = responseModel.info;
+            if (responseModel.status == 1) {
+                success(self, responseModel);
+                return;
+            }
+        }
+        if(!errmsg || [errmsg isEqualToString:@""]){
+            errmsg = @"连接网络失败，请检查网络状态！";
+        }
+        NSError * error = [[NSError alloc]initWithDomain:errmsg code:0 userInfo:nil];
+        failur(self,error);
+        
+    } failure:^(NSError *error) {
+        failur(self,error);
+    }];
+}
 
+// 话题内容页
+- (void)getTopicDetailWithTopic_id:(NSString *)topic_id
+                              page:(NSString *)page
+                           Success:(void (^)(MyApiLunTan *request, TopicDetaiInfoModel *model))success
+                           Failure:(void (^)(MyApiLunTan *request, NSError *error))failur
+{
+    if ( topic_id == nil || [topic_id isEmpty]) {
+        [WDTipsView showTipsViewWithString:@"数据错误"];
+        return;
+    }
+    
+    NSDictionary *dic = @{@"topic_id": topic_id,
+                          @"page":page};
+    
+    
+    [super postWithUrl:k_url_topicShow params:dic success:^(id json) {
+        
+        NSString * errmsg = @"";
+        if (json) {
+            TopicDetaiInfoModel * responseModel = [[TopicDetaiInfoModel alloc]initWithDictionary:json error:nil];
+            errmsg = responseModel.info;
+            if (responseModel.status == 1) {
+                success(self, responseModel);
+                return;
+            }
+        }
+        if(!errmsg || [errmsg isEqualToString:@""]){
+            errmsg = @"连接网络失败，请检查网络状态！";
+        }
+        NSError * error = [[NSError alloc]initWithDomain:errmsg code:0 userInfo:nil];
+        failur(self,error);
+        
+    } failure:^(NSError *error) {
+        failur(self,error);
+    }];
+}
+
+
+// 帖子点赞
+- (void)dianzanThreadWithPost_id:(NSString *)post_id
+                         Success:(void (^)(MyApiLunTan *request))success
+                         Failure:(void (^)(MyApiLunTan *request, NSError *error))failur
+{
+    if (post_id == nil || [post_id isEmpty]) {
+        [WDTipsView showTipsViewWithString:@"点赞失败"];
+        return;
+    }
+    NSDictionary *dic = @{@"post_id": post_id};
+    
+    [super postWithUrl:k_url_digThread params:dic success:^(id json) {
+        NSString * errmsg = @"";
+        if (json) {
+            BaseModel * responseModel = [[BaseModel alloc]initWithDictionary:json error:nil];
+            errmsg = responseModel.info;
+            if (responseModel.status == 1) {
+                success(self);
+                return;
+            }
+        }
+        if(!errmsg || [errmsg isEqualToString:@""]){
+            errmsg = @"连接网络失败，请检查网络状态！";
+        }
+        NSError * error = [[NSError alloc]initWithDomain:errmsg code:0 userInfo:nil];
+        failur(self,error);
+        
+    } failure:^(NSError *error) {
+        failur(self,error);
+    }];
+}
+
+// 帖子收藏
+- (void)favThreadWithPost_id:(NSString *)post_id
+                     Success:(void (^)(MyApiLunTan *request))success
+                     Failure:(void (^)(MyApiLunTan *request, NSError *error))failur
+{
+    if (post_id == nil || [post_id isEmpty]) {
+        [WDTipsView showTipsViewWithString:@"收藏失败"];
+        return;
+    }
+    NSDictionary *dic = @{@"post_id": post_id};
+    
+    [super postWithUrl:k_url_favThread params:dic success:^(id json) {
+        NSString * errmsg = @"";
+        if (json) {
+            BaseModel * responseModel = [[BaseModel alloc]initWithDictionary:json error:nil];
+            errmsg = responseModel.info;
+            if (responseModel.status == 1) {
+                success(self);
+                return;
+            }
+        }
+        if(!errmsg || [errmsg isEqualToString:@""]){
+            errmsg = @"连接网络失败，请检查网络状态！";
+        }
+        NSError * error = [[NSError alloc]initWithDomain:errmsg code:0 userInfo:nil];
+        failur(self,error);
+        
+    } failure:^(NSError *error) {
+        failur(self,error);
+    }];
+}
 
 @end

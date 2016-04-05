@@ -35,6 +35,10 @@
     [super viewDidLoad];
     self.jindu.progress = 0;
     
+    self.tableview.rowHeight =UITableViewAutomaticDimension;
+    self.tableview.estimatedRowHeight = 44.0; // 设置为一个接近“平均”行高的值
+
+    
     @weakify(self)
     [RACObserve(self, jindu.progress) subscribeNext:^(id x) {
         @strongify(self)

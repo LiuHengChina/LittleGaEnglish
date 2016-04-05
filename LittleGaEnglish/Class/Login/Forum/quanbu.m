@@ -20,6 +20,7 @@
 @property (strong, nonatomic) IBOutlet UIButton *dianzanLab;
 @property (strong, nonatomic) IBOutlet UIButton *shoucangLab;
 @property (strong, nonatomic) IBOutlet UIButton *pinglunLab;
+@property (strong, nonatomic) IBOutlet UILabel *titleLab;
 @end
 
 @implementation quanbucell
@@ -32,6 +33,7 @@
     [self.dianzanLab setTitle:moedl.praise forState:UIControlStateNormal];
     [self.shoucangLab setTitle:moedl.favorite forState:UIControlStateNormal];
     [self.pinglunLab setTitle:moedl.reply_count forState:UIControlStateNormal];
+    self.titleLab.text = moedl.title;
 }
 
 @end
@@ -162,25 +164,6 @@
 {
 
     self.header = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"quanbuheader" forIndexPath:indexPath];
-    
-
-    
-//    RACSignal *zuixinhuifu = [header rac_signalForSelector:@selector(zuiixnhuifu:)];
-//    [zuixinhuifu subscribeNext:^(id x) {
-//        NSLog(@"最新回复");
-//        _model = nil;
-//        wself.page = 1;
-//        wself.order = @"1";
-//        [wself getData];
-//    }];
-//    RACSignal *zuixinfatie = [header rac_signalForSelector:@selector(zuixinfatie:)];
-//    [zuixinfatie subscribeNext:^(id x) {
-//        NSLog(@"最新时间");
-//        _model = nil;
-//        wself.page = 1;
-//        wself.order = @"2";
-//        [wself getData];
-//    }];
     return self.header;
 }
 
@@ -191,7 +174,7 @@
 -(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
     if (indexPath.row %2 == 0) {
-        [self performSegueWithIdentifier:@"quanbuweiba" sender:@(999999)];
+        [self performSegueWithIdentifier:@"quanbuweiba" sender:self.model.list[indexPath.row]];
     } else {
         [self performSegueWithIdentifier:@"quanbudaka" sender:self];
     }
@@ -200,18 +183,19 @@
 {
     [super prepareForSegue:segue sender:sender];
     if ([segue.identifier isEqualToString:@"quanbuweiba"]) {
-        [(weibaxiangqing *)segue.destinationViewController setIdd:[sender integerValue]];
+        HotThreadModel *model = (HotThreadModel *)sender;
+        [(weibaxiangqing *)segue.destinationViewController setThread_id:model.post_id];
     }
 }
 
 - (void)getData{
     [[MyApiLunTan share] getThreadListDataID:self.weiba_id digest:NO order:self.order page:[NSString stringWithFormat:@"%ld",(long)self.page] Success:^(MyApiLunTan *request, LunTanListModel *model) {
-        self.model = model;
         if (model.list.count == 0) {
             [self.collect.mj_footer endRefreshingWithNoMoreData];
             return;
         }
-        
+        self.model = model;
+        self.page++;
         [self.collect.mj_footer endRefreshing];
         [self.collect.mj_header endRefreshing];
         

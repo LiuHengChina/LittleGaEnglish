@@ -122,6 +122,8 @@
 		85A719D01CB0A61200C9DBD3 /* WeiBaListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 85A719CF1CB0A61200C9DBD3 /* WeiBaListModel.m */; };
 		85A719D31CB0E68800C9DBD3 /* ImageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 85A719D21CB0E68800C9DBD3 /* ImageModel.m */; };
 		85A719D61CB1811900C9DBD3 /* VoiceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 85A719D51CB1811900C9DBD3 /* VoiceModel.m */; };
+		85A719D91CB253AC00C9DBD3 /* ThreadDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 85A719D81CB253AC00C9DBD3 /* ThreadDetailModel.m */; };
+		85A719DC1CB25ED700C9DBD3 /* TopicDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 85A719DB1CB25ED700C9DBD3 /* TopicDetailModel.m */; };
 		85C52FC21C89EB8A008348D8 /* MyApiBuy.m in Sources */ = {isa = PBXBuildFile; fileRef = 85C52FC11C89EB8A008348D8 /* MyApiBuy.m */; };
 		85C52FC51C89EC26008348D8 /* BuyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 85C52FC41C89EC26008348D8 /* BuyModel.m */; };
 		85CCBF141C847CA20084B11C /* CoursesEvalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85CCBF121C847CA20084B11C /* CoursesEvalViewController.m */; };
@@ -445,6 +447,10 @@
 		85A719D21CB0E68800C9DBD3 /* ImageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageModel.m; sourceTree = "<group>"; };
 		85A719D41CB1811900C9DBD3 /* VoiceModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VoiceModel.h; sourceTree = "<group>"; };
 		85A719D51CB1811900C9DBD3 /* VoiceModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VoiceModel.m; sourceTree = "<group>"; };
+		85A719D71CB253AC00C9DBD3 /* ThreadDetailModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThreadDetailModel.h; sourceTree = "<group>"; };
+		85A719D81CB253AC00C9DBD3 /* ThreadDetailModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThreadDetailModel.m; sourceTree = "<group>"; };
+		85A719DA1CB25ED700C9DBD3 /* TopicDetailModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopicDetailModel.h; sourceTree = "<group>"; };
+		85A719DB1CB25ED700C9DBD3 /* TopicDetailModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopicDetailModel.m; sourceTree = "<group>"; };
 		85C52FC01C89EB8A008348D8 /* MyApiBuy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyApiBuy.h; sourceTree = "<group>"; };
 		85C52FC11C89EB8A008348D8 /* MyApiBuy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyApiBuy.m; sourceTree = "<group>"; };
 		85C52FC31C89EC26008348D8 /* BuyModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuyModel.h; sourceTree = "<group>"; };
@@ -1555,6 +1561,10 @@
 				85A719D21CB0E68800C9DBD3 /* ImageModel.m */,
 				85A719D41CB1811900C9DBD3 /* VoiceModel.h */,
 				85A719D51CB1811900C9DBD3 /* VoiceModel.m */,
+				85A719D71CB253AC00C9DBD3 /* ThreadDetailModel.h */,
+				85A719D81CB253AC00C9DBD3 /* ThreadDetailModel.m */,
+				85A719DA1CB25ED700C9DBD3 /* TopicDetailModel.h */,
+				85A719DB1CB25ED700C9DBD3 /* TopicDetailModel.m */,
 			);
 			path = "论坛";
 			sourceTree = "<group>";
@@ -1887,6 +1897,7 @@
 				858BBF251C82F6A300F54E42 /* CoursesDetailMovieTableViewCell.m in Sources */,
 				9A74482B1CAFA060009D3F42 /* zhifushibai.m in Sources */,
 				85230AD81C73048F00B6A48A /* MyConstantKey.m in Sources */,
+				85A719D91CB253AC00C9DBD3 /* ThreadDetailModel.m in Sources */,
 				85E295C41C97035100570196 /* EvaluationModel.m in Sources */,
 				045B6B7B1CABDE51000B38AF /* ListCell.m in Sources */,
 				85230B281C76026B00B6A48A /* RootTabBarController.m in Sources */,
@@ -1912,6 +1923,7 @@
 				9AEE02091C8D2A530027ACF0 /* CourseViewDetail.m in Sources */,
 				858BBEEB1C8138AB00F54E42 /* SegmentTapView.m in Sources */,
 				85230ACC1C73048F00B6A48A /* NSURL+Parameters.m in Sources */,
+				85A719DC1CB25ED700C9DBD3 /* TopicDetailModel.m in Sources */,
 				9A1E1F371C9AB3B200D77564 /* quanbu.m in Sources */,
 				9AEE022D1C8FF1D90027ACF0 /* wodefensi.m in Sources */,
 				9AEE020C1C8D2DCC0027ACF0 /* CompleteViewController.m in Sources */,

@@ -13,6 +13,8 @@
 #import "HuaTiListModel.h"
 #import "ImageModel.h"
 #import "VoiceModel.h"
+#import "ThreadDetailModel.h"
+#import "TopicDetailModel.h"
 
 @interface MyApiLunTan : BaseNetRequest
 
@@ -79,5 +81,33 @@
                flash_url:(NSString *)flash_url
                  Success:(void (^)(MyApiLunTan *request))success
                  Failure:(void (^)(MyApiLunTan *request, NSError *error))failur;
+
+
+// 帖子内容页
+- (void)getThreadDetailWithThread_id:(NSString *)thread_id
+                                page:(NSString *)page
+                             Success:(void (^)(MyApiLunTan *request, ThreadDetailModel *model))success
+                             Failure:(void (^)(MyApiLunTan *request, NSError *error))failur;
+
+
+// 话题内容页
+- (void)getTopicDetailWithTopic_id:(NSString *)topic_id
+                               page:(NSString *)page
+                            Success:(void (^)(MyApiLunTan *request, TopicDetaiInfoModel *model))success
+                            Failure:(void (^)(MyApiLunTan *request, NSError *error))failur;
+
+
+// 帖子点赞
+- (void)dianzanThreadWithPost_id:(NSString *)post_id
+                         Success:(void (^)(MyApiLunTan *request))success
+                         Failure:(void (^)(MyApiLunTan *request, NSError *error))failur;
+
+// 帖子收藏
+- (void)favThreadWithPost_id:(NSString *)post_id
+                     Success:(void (^)(MyApiLunTan *request))success
+                     Failure:(void (^)(MyApiLunTan *request, NSError *error))failur;
+
+
+
 
 @end

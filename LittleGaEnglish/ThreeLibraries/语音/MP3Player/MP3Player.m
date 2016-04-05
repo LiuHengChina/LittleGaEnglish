@@ -45,11 +45,22 @@
     return player.duration;
 }
 
+
+- (BOOL)playing
+{
+    return player.isPlaying;
+}
+
 - (void) stop
 {
     [player stop];
     
     //AudioSessionSetActive (false);
+}
+
+- (void)pause
+{
+    [player pause];
 }
 
 - (void)audioPlayerDidFinishPlaying:(AVAudioPlayer *)player successfully:(BOOL)flag

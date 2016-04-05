@@ -55,14 +55,12 @@
 }
 - (IBAction)xuanzezhaopian:(id)sender {
     self.jianpangaodu.constant = self.view.frame.size.height;
-
     [self performSegueWithIdentifier:@"xuangezhaopian" sender:self];
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    
+
     self.jindubool = true;
     self.kuandu.constant = self.view.frame.size.width*2;
     [self ttttt];
@@ -75,10 +73,9 @@
 
     
     [[NSNotificationCenter defaultCenter] addObserver:self
-     
                                              selector:@selector(keyboardWillBeHidden:)
-     
                                                  name:UIKeyboardWillHideNotification object:nil];
+    
     
     
     // Do any additional setup after loading the view.

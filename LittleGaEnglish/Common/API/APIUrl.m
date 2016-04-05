@@ -59,3 +59,11 @@ NSString *const k_url_voiceuoLoad = @"/bbs/voiceupload"; // 语音文件上传
 NSString *const k_url_postThread = @"/bbs/postThread";    // 发布帖子
 
 NSString *const k_url_postTopic = @"/bbs/postTopic"; // 发布话题
+
+NSString *const k_url_threadShow = @"/bbs/threadShow";  // 帖子详情
+
+NSString *const k_url_topicShow = @"/bbs/topicShow";  // 话题详情
+
+NSString *const k_url_digThread = @"/bbs/digThread";  // 帖子和帖子回复点赞接口
+
+NSString *const k_url_favThread = @"/bbs/favThread"; // 帖子收藏接口

@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
+// 帖子详情
 @interface weibaxiangqing : UIViewController
-@property (assign,nonatomic) NSInteger idd;
+
+@property (nonatomic, copy) NSString *thread_id;
+
 @end
