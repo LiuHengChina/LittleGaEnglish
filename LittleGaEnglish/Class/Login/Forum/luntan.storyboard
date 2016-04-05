@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -1055,6 +1055,7 @@
                                                             <constraints>
                                                                 <constraint firstItem="KHu-M3-xdS" firstAttribute="top" secondItem="sXp-1W-Ivd" secondAttribute="top" constant="18" id="7dj-ui-4oE"/>
                                                                 <constraint firstItem="A6P-zp-MtX" firstAttribute="trailing" secondItem="oJK-Dw-aWp" secondAttribute="trailing" id="7gl-am-jz5"/>
+                                                                <constraint firstAttribute="bottom" secondItem="cYi-mG-PJH" secondAttribute="bottom" constant="11.5" id="D4l-Hs-Amw"/>
                                                                 <constraint firstItem="FES-Mb-JtI" firstAttribute="trailing" secondItem="OKf-1A-4UJ" secondAttribute="trailing" id="F4n-uK-R6o"/>
                                                                 <constraint firstItem="KHu-M3-xdS" firstAttribute="leading" secondItem="hNX-du-zEP" secondAttribute="trailing" constant="9" id="GqO-hi-mPp"/>
                                                                 <constraint firstAttribute="trailing" secondItem="OKf-1A-4UJ" secondAttribute="trailing" constant="15" id="KZE-wQ-0dD"/>
@@ -1062,7 +1063,6 @@
                                                                 <constraint firstItem="oJK-Dw-aWp" firstAttribute="trailing" secondItem="OKf-1A-4UJ" secondAttribute="trailing" id="YRO-h4-UNH"/>
                                                                 <constraint firstItem="A6P-zp-MtX" firstAttribute="top" secondItem="cYi-mG-PJH" secondAttribute="top" id="ag2-rw-O47"/>
                                                                 <constraint firstItem="FES-Mb-JtI" firstAttribute="leading" secondItem="sXp-1W-Ivd" secondAttribute="leadingMargin" constant="50" id="apO-CP-97x"/>
-                                                                <constraint firstItem="cYi-mG-PJH" firstAttribute="top" secondItem="oJK-Dw-aWp" secondAttribute="bottom" constant="15" id="bUj-jq-dXY"/>
                                                                 <constraint firstItem="cYi-mG-PJH" firstAttribute="leading" secondItem="oJK-Dw-aWp" secondAttribute="leading" id="c3g-Vd-Rpb"/>
                                                                 <constraint firstItem="OKf-1A-4UJ" firstAttribute="top" secondItem="KHu-M3-xdS" secondAttribute="top" id="eRr-kp-w6y"/>
                                                                 <constraint firstItem="hNX-du-zEP" firstAttribute="top" secondItem="sXp-1W-Ivd" secondAttribute="top" constant="15" id="gbI-KM-DAI"/>
@@ -1073,6 +1073,9 @@
                                                                 <constraint firstItem="hNX-du-zEP" firstAttribute="leading" secondItem="sXp-1W-Ivd" secondAttribute="leading" constant="15" id="z07-UB-bw2"/>
                                                             </constraints>
                                                         </tableViewCellContentView>
+                                                        <connections>
+                                                            <outlet property="commentimage" destination="oJK-Dw-aWp" id="rXg-z3-M7z"/>
+                                                        </connections>
                                                     </tableViewCell>
                                                 </prototypes>
                                                 <connections>

@@ -10,6 +10,7 @@
 #import "ReactiveCocoa.h"
 
 @interface dakaxiangqingcell : UITableViewCell
+@property (strong, nonatomic) IBOutlet UIImageView *commentimage;
 
 @end
 @implementation dakaxiangqingcell
@@ -88,7 +89,21 @@
 {
     dakaxiangqingcell *cell = [tableView dequeueReusableCellWithIdentifier:@"dakaxiangqingcell" forIndexPath:indexPath];
     
+    if (indexPath.row % 2 == 0) {
+        cell.commentimage.hidden = false;
+
+    } else {
+        cell.commentimage.hidden = YES;
+    }
     return cell;
+}
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (indexPath.row % 2 == 0) {
+        return 309;
+    } else {
+        return 145;
+    }
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
