@@ -10,4 +10,6 @@
 
 @interface dakaxiangqing : UIViewController
 
+@property (nonatomic, copy) NSString *topic_id;
+
 @end

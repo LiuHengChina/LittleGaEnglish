@@ -173,11 +173,7 @@
 }
 -(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    if (indexPath.row %2 == 0) {
-        [self performSegueWithIdentifier:@"quanbuweiba" sender:self.model.list[indexPath.row]];
-    } else {
-        [self performSegueWithIdentifier:@"quanbudaka" sender:self];
-    }
+    [self performSegueWithIdentifier:@"quanbuweiba" sender:self.model.list[indexPath.row]];
 }
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {

@@ -93,7 +93,7 @@
 // 话题内容页
 - (void)getTopicDetailWithTopic_id:(NSString *)topic_id
                                page:(NSString *)page
-                            Success:(void (^)(MyApiLunTan *request, TopicDetaiInfoModel *model))success
+                            Success:(void (^)(MyApiLunTan *request, TopicDetailModel *model))success
                             Failure:(void (^)(MyApiLunTan *request, NSError *error))failur;
 
 

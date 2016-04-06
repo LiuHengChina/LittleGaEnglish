@@ -71,7 +71,7 @@
 
 @end
 
-@interface weibaxiangqing ()<UITableViewDelegate,UITableViewDataSource>
+@interface weibaxiangqing ()<UITableViewDelegate,UITableViewDataSource, UIWebViewDelegate>
 @property (strong, nonatomic) IBOutlet UIImageView *imagecover; // 头像
 @property (strong, nonatomic) IBOutlet UILabel *xiaokadaka; // 标题
 @property (strong, nonatomic) IBOutlet UILabel *name;   // 昵称
@@ -104,6 +104,8 @@
 @property (nonatomic, assign) NSInteger page;
 
 @property (nonatomic, strong) MP3Player *mp3;
+@property (strong, nonatomic) IBOutlet NSLayoutConstraint *headerHeight;
+@property (strong, nonatomic) IBOutlet UIWebView *webView;
 @end
 
 @implementation weibaxiangqing
@@ -111,6 +113,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.page = 1;
+    self.webView.delegate = self;
     
     self.widhtbutton.constant = self.view.frame.size.width/3;
     self.jindutiao.progress = 0;
@@ -211,23 +214,28 @@
 - (void)setInfoModel:(ThreadDetailInfoModel *)infoModel
 {
     _infoModel = infoModel;
-    [self.imagecover sd_setImageWithURL:[NSURL URLWithString:infoModel.avatar] placeholderImage:nil completed:nil];
     self.name.text = infoModel.uname;
     self.xiaokadaka.text = infoModel.title;
     self.dengji.text = [NSString stringWithFormat:@"Lv%@",infoModel.authority_level];
     self.weiba.text = infoModel.weiba_name;
     self.shijie.text = [NSString matterTime:[NSNumber numberWithInteger:[infoModel.post_time integerValue]]];
-
-    self.contentText.text = infoModel.content;
     [self.shoucangBtn setTitle:infoModel.favorite forState:UIControlStateNormal];
     [self.dianzanBtn setTitle:infoModel.praise forState:UIControlStateNormal];
     [self.pinglunBtn setTitle:infoModel.reply_count forState:UIControlStateNormal];
+    
+    [self.webView loadHTMLString:infoModel.content baseURL:nil];
     
     if (!infoModel.voice_url) {
         self.shijian.text = @"00：00";
     }
 }
 
+- (void)webViewDidFinishLoad:(UIWebView *)webView
+{
+    CGFloat height = [[webView stringByEvaluatingJavaScriptFromString:@"document.body.offsetHeight"]floatValue];
+    self.headerHeight.constant = height;
+    [self.view layoutIfNeeded];
+}
 
 - (void)getDta
 {

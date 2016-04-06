@@ -11,6 +11,7 @@
 #import "gengduoweibo.h"
 #import "remenhuati.h"
 #import "MyApiLunTan.h"
+#import "weibaxiangqing.h"
 
 @interface rementiezicell : UICollectionViewCell
 @property (strong, nonatomic) IBOutlet NSLayoutConstraint *widht;
@@ -59,7 +60,7 @@
 @property (nonatomic, strong) remenhuati *remenhuatiVC;
 @property (nonatomic, strong) gengduoweibo *gengduoweibaVC;
 
-@property (nonatomic, strong) NSMutableArray *dataArr;
+@property (nonatomic, strong) NSMutableArray<HotThreadModel *> *dataArr;
 @property (nonatomic, strong) singModel *mySignModel;
 
 @end
@@ -111,6 +112,14 @@
     headercollect *headerView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"headercollect" forIndexPath:indexPath];
     return headerView;
 }
+
+-(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    weibaxiangqing *huatiVC = [[UIStoryboard storyboardWithName:@"luntan" bundle:nil]instantiateViewControllerWithIdentifier:@"weibaxiangqing"];
+    huatiVC.thread_id = self.dataArr[indexPath.row].post_id;
+    [self.navigationController pushViewController:huatiVC animated:YES];
+}
+
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     [super prepareForSegue:segue sender:sender];

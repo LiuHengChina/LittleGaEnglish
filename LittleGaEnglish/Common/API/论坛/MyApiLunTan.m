@@ -406,7 +406,7 @@
 // 话题内容页
 - (void)getTopicDetailWithTopic_id:(NSString *)topic_id
                               page:(NSString *)page
-                           Success:(void (^)(MyApiLunTan *request, TopicDetaiInfoModel *model))success
+                           Success:(void (^)(MyApiLunTan *request, TopicDetailModel *model))success
                            Failure:(void (^)(MyApiLunTan *request, NSError *error))failur
 {
     if ( topic_id == nil || [topic_id isEmpty]) {
@@ -422,7 +422,7 @@
         
         NSString * errmsg = @"";
         if (json) {
-            TopicDetaiInfoModel * responseModel = [[TopicDetaiInfoModel alloc]initWithDictionary:json error:nil];
+            TopicDetailModel * responseModel = [[TopicDetailModel alloc]initWithDictionary:json error:nil];
             errmsg = responseModel.info;
             if (responseModel.status == 1) {
                 success(self, responseModel);

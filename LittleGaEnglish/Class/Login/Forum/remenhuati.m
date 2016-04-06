@@ -8,6 +8,8 @@
 
 #import "remenhuati.h"
 #import "huati.h"
+#import "weibaxiangqing.h"
+#import "dakaxiangqing.h"
 @interface remenhuaticell : UICollectionViewCell
 @property (strong, nonatomic) IBOutlet UILabel *label;
 
@@ -74,14 +76,14 @@
     
     return CGSizeMake([remenhuaticell wightForContent:@"#数据#" fixSize:self.collection.frame.size], 45);
 }
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    
+    dakaxiangqing *huatiVC = [[UIStoryboard storyboardWithName:@"luntan" bundle:nil]instantiateViewControllerWithIdentifier:@"dakaxiangqing"];
+    huatiVC.topic_id = self.dataArr[indexPath.row].topic_id;
+    [self.navigationController pushViewController:huatiVC animated:YES];
 }
-*/
+
 
 @end

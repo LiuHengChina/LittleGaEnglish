@@ -8,6 +8,8 @@
 
 #import "dakaxiangqing.h"
 #import "ReactiveCocoa.h"
+#import "MyApiLunTan.h"
+#import "MP3Player.h"
 
 @interface dakaxiangqingcell : UITableViewCell
 @property (strong, nonatomic) IBOutlet UIImageView *commentimage;
@@ -27,6 +29,14 @@
 @property (strong, nonatomic) IBOutlet NSLayoutConstraint *gandu;
 @property (strong, nonatomic) IBOutlet UITableView *tableview;
 @property (strong, nonatomic) IBOutlet UIScrollView *shuaxinjiazai;
+
+
+
+@property (nonatomic, strong) TopicDetaiInfoModel *infoModel;
+@property (nonatomic, strong) NSMutableArray<TopicDetailReplyModel *> *dataArr;
+@property (nonatomic, assign) NSInteger page;
+
+@property (nonatomic, strong) MP3Player *mp3;
 
 @end
 
@@ -109,6 +119,41 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+
+- (void)setInfoModel:(TopicDetaiInfoModel *)infoModel
+{
+    
+}
+
+- (void)getDta
+{
+    [SVProgressHUD show];
+    [[MyApiLunTan share] getTopicDetailWithTopic_id:self.topic_id page:[NSString stringWithFormat:@"%ld",(long)self.page] Success:^(MyApiLunTan *request, TopicDetailModel *model) {
+        [SVProgressHUD showSuccessWithStatus:@""];
+        if (model.replyList.count == 0) {
+            return ;
+        }
+        self.page ++;
+        
+        if (!self.dataArr) {
+            self.dataArr = model.replyList;
+        } else {
+            [self.dataArr addObjectsFromArray:model.replyList];
+        }
+        self.infoModel = model.topicInfo;
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self.tableview reloadData];
+        });
+        
+    } Failure:^(MyApiLunTan *request, NSError *error) {
+        [SVProgressHUD showErrorWithStatus:error.domain];
+        
+    }];
+}
+
+
+
 
 /*
 #pragma mark - Navigation
