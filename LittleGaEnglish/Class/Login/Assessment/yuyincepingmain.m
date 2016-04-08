@@ -246,6 +246,12 @@ static BOOL viewhiden;
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"我的测评";
+    
+    
+    self.yuyincepingxiangqing = [[NSBundle mainBundle] loadNibNamed:@"yuyinpingce" owner:nil options:nil].firstObject;
+    [self.view addSubview:self.yuyincepingxiangqing];
+    self.yuyincepingxiangqing.frame = self.view.bounds;
+    
     [self setCustomNavLeftBarButton:nil responderBlcok:nil];
     //    self.navigationController.navigationBar.barStyle = UIStatusBarStyleDefault;
 //    UIColor *white = [UIColor whiteColor];

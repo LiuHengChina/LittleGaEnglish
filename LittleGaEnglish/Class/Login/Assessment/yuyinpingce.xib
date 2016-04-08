@@ -11,12 +11,6 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请读出以下句子" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TL2-g9-yXZ">
-                    <rect key="frame" x="251" y="150" width="98" height="17"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
-                    <nil key="highlightedColor"/>
-                </label>
                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="SFE-pl-PFK">
                     <rect key="frame" x="10" y="184" width="580" height="155"/>
                     <color key="backgroundColor" red="0.21176470588235294" green="0.6705882352941176" blue="0.94509803921568625" alpha="1" colorSpace="calibratedRGB"/>
@@ -33,23 +27,23 @@
                         <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                     </userDefinedRuntimeAttributes>
                 </textView>
-                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="yuyincepinganniu" translatesAutoresizingMaskIntoConstraints="NO" id="UWM-G7-5W5">
+                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yuyincepinganniu" translatesAutoresizingMaskIntoConstraints="NO" id="UWM-G7-5W5">
                     <rect key="frame" x="256" y="434" width="87" height="87"/>
                     <gestureRecognizers/>
                 </imageView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="00:00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="klm-Ou-8j0">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="klm-Ou-8j0">
                     <rect key="frame" x="274" y="531" width="52.5" height="14.5"/>
                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                     <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="点击开始录制" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E3x-HW-nlp">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="点击开始录制" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E3x-HW-nlp">
                     <rect key="frame" x="258" y="556" width="84" height="17"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lYX-WK-0f3" customClass="UAProgressView">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lYX-WK-0f3" customClass="UAProgressView">
                     <rect key="frame" x="256" y="434" width="87" height="87"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <gestureRecognizers/>
@@ -67,10 +61,17 @@
                         <outletCollection property="gestureRecognizers" destination="6aC-qN-R6q" appends="YES" id="Cl3-Vv-pAy"/>
                     </connections>
                 </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请读出以下句子" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TL2-g9-yXZ">
+                    <rect key="frame" x="251" y="150" width="98" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="E3x-HW-nlp" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="0zj-m1-JBw"/>
+                <constraint firstAttribute="bottom" secondItem="E3x-HW-nlp" secondAttribute="bottom" constant="27" id="2L4-cK-O7P"/>
                 <constraint firstItem="TL2-g9-yXZ" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="2t9-n2-HH8"/>
                 <constraint firstItem="lYX-WK-0f3" firstAttribute="bottom" secondItem="UWM-G7-5W5" secondAttribute="bottom" id="Czg-9h-kwa"/>
                 <constraint firstItem="SFE-pl-PFK" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="EUs-us-zyI"/>
@@ -82,7 +83,6 @@
                 <constraint firstItem="lYX-WK-0f3" firstAttribute="trailing" secondItem="UWM-G7-5W5" secondAttribute="trailing" id="TqL-Hf-tIK"/>
                 <constraint firstItem="SFE-pl-PFK" firstAttribute="top" secondItem="TL2-g9-yXZ" secondAttribute="bottom" constant="17.5" id="UCn-lc-m7M"/>
                 <constraint firstItem="UWM-G7-5W5" firstAttribute="top" secondItem="SFE-pl-PFK" secondAttribute="bottom" constant="95" id="alt-aA-QZc"/>
-                <constraint firstItem="TL2-g9-yXZ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="150" id="hzC-ec-UdZ"/>
                 <constraint firstAttribute="trailing" secondItem="SFE-pl-PFK" secondAttribute="trailing" constant="10" id="iEo-A3-Rs5"/>
                 <constraint firstItem="lYX-WK-0f3" firstAttribute="centerX" secondItem="UWM-G7-5W5" secondAttribute="centerX" id="krR-0d-eNF"/>
                 <constraint firstItem="E3x-HW-nlp" firstAttribute="top" secondItem="klm-Ou-8j0" secondAttribute="bottom" constant="10" id="xJL-bR-Ho2"/>
