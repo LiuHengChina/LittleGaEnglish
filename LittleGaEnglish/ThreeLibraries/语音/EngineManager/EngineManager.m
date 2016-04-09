@@ -7,6 +7,16 @@
 //
 
 #import "EngineManager.h"
+//#import "USCRecognizer.h"
+
+//@interface xxxx : USCRecognizer
+//
+//@end
+//
+//@implementation xxxx : USCRecognizer
+//
+//
+//@end
 
 #define kTEST @"A,0,#OUT_SENT_REF_TEXT#OUT_SENT_ASR_TEXT#OUT_SENT_TIMESTAMP#OUT_SENT_SCORE#OUT_WORD_TEXT#OUT_WORD_CLASS#OUT_WORD_TIMESTAMP#OUT_WORD_SCORE#OUT_WORD_VOLUME#OUT_SENT_FLUENCY#OUT_SENT_INTEGRITY#OUT_SENT_PRONUNCIATION#OUT_WORD_STRESS#OUT_SENT_SYNTACTICAL_TEXT#OUT_SENT_SYNTACTICAL_ALL#OUT_SENT_SYNTACTICAL_PRO#OUT_SENT_SYNTACTICAL_FLU#OUT_SENT_SYNTACTICAL_INT#OUT_SENT_KEYWORDS_TEXT#OUT_SENT_KEYWORDS_ALL#OUT_SENT_KEYWORDS_SCORE#OUT_SENT_KEYWORDS_INT#OUT_SENT_KEYWORDS_FLU#OUT_SCORE_COEFFICIENT=1.0"
 
@@ -53,7 +63,7 @@ static EngineManager *mEngineManager;
 #ifdef __x86_64__
 #else
     NSString *sourcePath = [[NSBundle mainBundle].resourcePath stringByAppendingPathComponent:@"tmp_oral_offline.bundle"];
-    recognizer = [[USCRecognizer alloc] initWithSource:sourcePath];
+    recognizer = [USCRecognizer new];
     recognizer.delegate = self;
     recognizer.oralTask = @"B";         //默认B模式
     recognizer.audioType = AudioType_MP3;

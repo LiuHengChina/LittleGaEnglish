@@ -9,6 +9,12 @@
 #import "USCRecognizer.h"
 
 @implementation USCRecognizer : NSObject
-
-
+-(void)start
+{
+    NSLog(@"开始");
+}
+-(void)stop
+{
+    NSLog(@"结束");
+}
 @end

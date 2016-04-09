@@ -119,9 +119,9 @@ typedef NS_ENUM(NSInteger, AudioType) {
  */
 - (id)initWithSource:(NSString *)sourcePath;
 
-/**
- *开始录音
- */
+///**
+// *开始录音
+// */
 - (void)start;
 
 /**
