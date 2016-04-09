@@ -148,13 +148,13 @@
     if(self.model != nil){
         return self.model.list.count;
     } else {
-        return 0;
+        return 10;
     }
 }
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     quanbucell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"quanbucell" forIndexPath:indexPath];
-    cell.widht.constant = self.view.frame.size.width/3;
+    cell.widht.constant = (self.view.frame.size.width-20)/3;
     cell.moedl = self.model.list[indexPath.row];
     cell.pinglunLab.tag = indexPath.row;
     return cell;
@@ -203,8 +203,13 @@
     }];
 }
 - (IBAction)pinglubuttonpd:(id)sender {
+
+    
+}
+- (IBAction)pinglun:(id)sender {
     NSLog(@"点击评论的位置   %ld",[sender tag]);
     [self performSegueWithIdentifier:@"pinglunone" sender:self];
+    
     
 }
 

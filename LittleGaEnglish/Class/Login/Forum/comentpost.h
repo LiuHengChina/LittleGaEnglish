@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "VoiceModel.h"
 
 @interface comentpost : UIViewController
+@property (nonatomic, copy) void (^dataBlock)(VoiceModel *model);
+
+
+@property (nonatomic, assign) NSInteger pinglunid;
 
 @end
