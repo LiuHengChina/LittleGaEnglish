@@ -192,6 +192,7 @@
 		9A7448281CAFA055009D3F42 /* zhifujiemianone.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A7448271CAFA055009D3F42 /* zhifujiemianone.m */; };
 		9A74482B1CAFA060009D3F42 /* zhifushibai.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A74482A1CAFA060009D3F42 /* zhifushibai.m */; };
 		9A7448351CB0DB49009D3F42 /* comentpost.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A7448341CB0DB49009D3F42 /* comentpost.m */; };
+		9AC4C0001CB8D556008590AD /* USCRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AC4BFFF1CB8D556008590AD /* USCRecognizer.m */; };
 		9ADCCDCE1C93E639002F269F /* yuyincepingview.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ADCCDCD1C93E639002F269F /* yuyincepingview.m */; };
 		9ADCCDD21C93FF9D002F269F /* daojishiview.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9ADCCDD11C93FF9D002F269F /* daojishiview.xib */; };
 		9ADCCDDA1C940897002F269F /* yuyinpingce.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9ADCCDD91C940897002F269F /* yuyinpingce.xib */; };
@@ -590,6 +591,7 @@
 		9A74482A1CAFA060009D3F42 /* zhifushibai.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = zhifushibai.m; sourceTree = "<group>"; };
 		9A7448331CB0DB49009D3F42 /* comentpost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = comentpost.h; sourceTree = "<group>"; };
 		9A7448341CB0DB49009D3F42 /* comentpost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = comentpost.m; sourceTree = "<group>"; };
+		9AC4BFFF1CB8D556008590AD /* USCRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = USCRecognizer.m; sourceTree = "<group>"; };
 		9ADCCDCC1C93E639002F269F /* yuyincepingview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yuyincepingview.h; sourceTree = "<group>"; };
 		9ADCCDCD1C93E639002F269F /* yuyincepingview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = yuyincepingview.m; sourceTree = "<group>"; };
 		9ADCCDD11C93FF9D002F269F /* daojishiview.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = daojishiview.xib; sourceTree = "<group>"; };
@@ -1429,6 +1431,7 @@
 				85D43BE21C9D093700240091 /* EngineManager */,
 				85D43BDF1C9D092600240091 /* libusc.a */,
 				85D43BE01C9D092600240091 /* USCRecognizer.h */,
+				9AC4BFFF1CB8D556008590AD /* USCRecognizer.m */,
 			);
 			path = "语音";
 			sourceTree = "<group>";
@@ -1844,6 +1847,7 @@
 				8542F5D61C8DCEAB00C4FFFD /* BuyViewController.m in Sources */,
 				9A1E1F3A1C9BC2C400D77564 /* remenhuati.m in Sources */,
 				9AEE02151C8D7E740027ACF0 /* ReplyDetail.m in Sources */,
+				9AC4C0001CB8D556008590AD /* USCRecognizer.m in Sources */,
 				9AEE02031C8D21610027ACF0 /* CourseViewController.m in Sources */,
 				85230AF41C731AF500B6A48A /* BBConstColorKey.m in Sources */,
 				9AEE02121C8D7E0E0027ACF0 /* ReplyController.m in Sources */,
