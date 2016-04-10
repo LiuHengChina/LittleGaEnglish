@@ -11,6 +11,8 @@
 #import "MYApiCourese.h"
 #import "CoursesDetailViewController.h"
 
+#import "StudentsList.h"
+#import "ClassPackage.h"
 @interface BBCourseBobyViewController ()<UISearchBarDelegate,UITableViewDelegate>
 
 @property (strong, nonatomic) IBOutlet UISearchBar *searchBar;
@@ -87,11 +89,20 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    CoureseModel *model = self.tabView.dataArr[indexPath.row];
-    CoursesDetailViewController *detailVC = [CoursesDetailViewController new];
-    detailVC.courseID = model.id;
-    detailVC.title = model.name;
-    [self.VC.navigationController pushViewController:detailVC animated:YES];
+//    CoureseModel *model = self.tabView.dataArr[indexPath.row];
+//    CoursesDetailViewController *detailVC = [CoursesDetailViewController new];
+//    detailVC.courseID = model.id;
+//    detailVC.title = model.name;
+//    [self.VC.navigationController pushViewController:detailVC animated:YES];
+    
+//    StudentsList *studentlist = [StudentsList new];
+//    studentlist.hidesBottomBarWhenPushed = YES;
+//    [self.VC.navigationController pushViewController:studentlist animated:YES];
+    
+    ClassPackage *studentlist = [ClassPackage new];
+    studentlist.hidesBottomBarWhenPushed = YES;
+    [self.VC.navigationController pushViewController:studentlist animated:YES];
+    
 } 
 
 

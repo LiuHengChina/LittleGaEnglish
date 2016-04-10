@@ -124,7 +124,7 @@
      }];
     [RACObserve(self, tableview.contentSize) subscribeNext:^(id x) {
         @strongify(self)
-        self.gaodu.constant = self.tableview.contentSize.height + 410;
+        self.gaodu.constant = self.tableview.contentSize.height + 490;
         self.tabbargaodu.constant = self.view.frame.size.height-40;
 
     }];
