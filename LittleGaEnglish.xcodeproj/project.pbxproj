@@ -187,6 +187,10 @@
 		9A4794B31CA7B6AA005F3A15 /* GCPlaceholderTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A4794B21CA7B6AA005F3A15 /* GCPlaceholderTextView.m */; };
 		9A4794B61CA7B990005F3A15 /* luyinjiemian.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A4794B51CA7B990005F3A15 /* luyinjiemian.m */; };
 		9A4794B91CA7CA72005F3A15 /* xuanzeimage.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A4794B81CA7CA72005F3A15 /* xuanzeimage.m */; };
+		9A59CFCF1CCFB56200540230 /* imcollectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A59CFCE1CCFB56200540230 /* imcollectViewController.m */; };
+		9A59CFD21CCFB70300540230 /* xiaoxiliebiao.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A59CFD11CCFB70300540230 /* xiaoxiliebiao.m */; };
+		9A59CFD51CCFB71C00540230 /* tongzhi.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A59CFD41CCFB71C00540230 /* tongzhi.m */; };
+		9A59CFD81CCFC16100540230 /* liaotianjiemian.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A59CFD71CCFC16100540230 /* liaotianjiemian.m */; };
 		9A7448221CAF6D47009D3F42 /* weibaxiangqing.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A7448211CAF6D47009D3F42 /* weibaxiangqing.m */; };
 		9A7448251CAF87AD009D3F42 /* dakaxiangqing.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A7448241CAF87AD009D3F42 /* dakaxiangqing.m */; };
 		9A7448281CAFA055009D3F42 /* zhifujiemianone.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A7448271CAFA055009D3F42 /* zhifujiemianone.m */; };
@@ -230,6 +234,7 @@
 		9AEE02411C916A650027ACF0 /* assessment.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AEE02401C916A650027ACF0 /* assessment.xib */; };
 		9AEE02441C92A0920027ACF0 /* yuyincepingmain.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AEE02431C92A0920027ACF0 /* yuyincepingmain.m */; };
 		9AEE02461C92A0A10027ACF0 /* yuyincepingmain.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AEE02451C92A0A10027ACF0 /* yuyincepingmain.xib */; };
+		9AFE23901CD110CD00133279 /* reactlabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AFE238F1CD110CD00133279 /* reactlabel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -587,6 +592,14 @@
 		9A4794B51CA7B990005F3A15 /* luyinjiemian.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = luyinjiemian.m; sourceTree = "<group>"; };
 		9A4794B71CA7CA72005F3A15 /* xuanzeimage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xuanzeimage.h; sourceTree = "<group>"; };
 		9A4794B81CA7CA72005F3A15 /* xuanzeimage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = xuanzeimage.m; sourceTree = "<group>"; };
+		9A59CFCD1CCFB56200540230 /* imcollectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = imcollectViewController.h; sourceTree = "<group>"; };
+		9A59CFCE1CCFB56200540230 /* imcollectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = imcollectViewController.m; sourceTree = "<group>"; };
+		9A59CFD01CCFB70300540230 /* xiaoxiliebiao.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xiaoxiliebiao.h; sourceTree = "<group>"; };
+		9A59CFD11CCFB70300540230 /* xiaoxiliebiao.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = xiaoxiliebiao.m; sourceTree = "<group>"; };
+		9A59CFD31CCFB71C00540230 /* tongzhi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tongzhi.h; sourceTree = "<group>"; };
+		9A59CFD41CCFB71C00540230 /* tongzhi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tongzhi.m; sourceTree = "<group>"; };
+		9A59CFD61CCFC16100540230 /* liaotianjiemian.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = liaotianjiemian.h; sourceTree = "<group>"; };
+		9A59CFD71CCFC16100540230 /* liaotianjiemian.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = liaotianjiemian.m; sourceTree = "<group>"; };
 		9A7448201CAF6D47009D3F42 /* weibaxiangqing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = weibaxiangqing.h; sourceTree = "<group>"; };
 		9A7448211CAF6D47009D3F42 /* weibaxiangqing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = weibaxiangqing.m; sourceTree = "<group>"; };
 		9A7448231CAF87AD009D3F42 /* dakaxiangqing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dakaxiangqing.h; sourceTree = "<group>"; };
@@ -663,6 +676,8 @@
 		9AEE02421C92A0920027ACF0 /* yuyincepingmain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yuyincepingmain.h; sourceTree = "<group>"; };
 		9AEE02431C92A0920027ACF0 /* yuyincepingmain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = yuyincepingmain.m; sourceTree = "<group>"; };
 		9AEE02451C92A0A10027ACF0 /* yuyincepingmain.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = yuyincepingmain.xib; sourceTree = "<group>"; };
+		9AFE238E1CD110CD00133279 /* reactlabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = reactlabel.h; sourceTree = "<group>"; };
+		9AFE238F1CD110CD00133279 /* reactlabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = reactlabel.m; sourceTree = "<group>"; };
 		B4D6F1E398CD6B493E69B389 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -925,6 +940,7 @@
 		85230AA91C73048F00B6A48A /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				9A59CFCC1CCFB54600540230 /* IM */,
 				85230B101C7600AE00B6A48A /* Courses */,
 				85230B111C7600AE00B6A48A /* Forum */,
 				85230B121C7600AE00B6A48A /* Home */,
@@ -1621,6 +1637,23 @@
 			path = GCPlaceholderTextView;
 			sourceTree = "<group>";
 		};
+		9A59CFCC1CCFB54600540230 /* IM */ = {
+			isa = PBXGroup;
+			children = (
+				9A59CFCD1CCFB56200540230 /* imcollectViewController.h */,
+				9A59CFCE1CCFB56200540230 /* imcollectViewController.m */,
+				9A59CFD01CCFB70300540230 /* xiaoxiliebiao.h */,
+				9A59CFD11CCFB70300540230 /* xiaoxiliebiao.m */,
+				9A59CFD31CCFB71C00540230 /* tongzhi.h */,
+				9A59CFD41CCFB71C00540230 /* tongzhi.m */,
+				9A59CFD61CCFC16100540230 /* liaotianjiemian.h */,
+				9A59CFD71CCFC16100540230 /* liaotianjiemian.m */,
+				9AFE238E1CD110CD00133279 /* reactlabel.h */,
+				9AFE238F1CD110CD00133279 /* reactlabel.m */,
+			);
+			path = IM;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1889,6 +1922,7 @@
 				85E295751C94603400570196 /* MineModel.m in Sources */,
 				85F1D0C01C7F360B0041B09B /* ImagePlayerView.m in Sources */,
 				85230ACD1C73048F00B6A48A /* UIColor+Category.m in Sources */,
+				9AFE23901CD110CD00133279 /* reactlabel.m in Sources */,
 				045B6B7F1CABDE6D000B38AF /* CSAdPageView.m in Sources */,
 				858BBF0E1C81A32000F54E42 /* CoursesDetailView.m in Sources */,
 				85230AD11C73048F00B6A48A /* UILabel+Categoy.m in Sources */,
@@ -1919,6 +1953,8 @@
 				9A7448351CB0DB49009D3F42 /* comentpost.m in Sources */,
 				85230AD41C73048F00B6A48A /* UIViewController+Category.m in Sources */,
 				85E5779C1CA658AB00710C39 /* MyApiLunTan.m in Sources */,
+				9A59CFD51CCFB71C00540230 /* tongzhi.m in Sources */,
+				9A59CFD21CCFB70300540230 /* xiaoxiliebiao.m in Sources */,
 				9A7448251CAF87AD009D3F42 /* dakaxiangqing.m in Sources */,
 				045B6B661CABDE34000B38AF /* ScoredController.m in Sources */,
 				8554B10E1C72C08F00598E62 /* main.m in Sources */,
@@ -1980,6 +2016,7 @@
 				858BBEEE1C81448B00F54E42 /* BBCouresesTabView.m in Sources */,
 				85C52FC51C89EC26008348D8 /* BuyModel.m in Sources */,
 				9AEE023C1C90043A0027ACF0 /* zhifujiemian.m in Sources */,
+				9A59CFD81CCFC16100540230 /* liaotianjiemian.m in Sources */,
 				9AEE02361C8FFE570027ACF0 /* kecheng.m in Sources */,
 				9AEE022A1C8FD4650027ACF0 /* wodehaoyou.m in Sources */,
 				85230B1C1C7600FB00B6A48A /* ForumViewController.m in Sources */,
@@ -1999,6 +2036,7 @@
 				9A1E1F431C9BE32A00D77564 /* weiba.m in Sources */,
 				9AEE021B1C8D8BA40027ACF0 /* mycollection.m in Sources */,
 				85230AED1C7319FD00B6A48A /* MyUIViewController.m in Sources */,
+				9A59CFCF1CCFB56200540230 /* imcollectViewController.m in Sources */,
 				9AEE021E1C8D8CF90027ACF0 /* CollectionDelete.m in Sources */,
 				9A7448281CAFA055009D3F42 /* zhifujiemianone.m in Sources */,
 				9A1E1F491C9BECFD00D77564 /* fabu.m in Sources */,
